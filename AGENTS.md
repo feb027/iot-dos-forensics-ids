@@ -68,6 +68,7 @@ Preferred gate:
 
 - Use clear conventional-style commit messages.
 - Keep commits phase-based.
+- For future work after scaffold, prefer phase branches such as `phase-1-literature-review`; direct commits to `main` are only acceptable for small scaffold/admin fixes explicitly requested by the user.
 - Do not commit ignored data/model files.
 - Before finalizing, run relevant checks and inspect `git status -sb`.
 
@@ -110,10 +111,10 @@ paper: add final scientific manuscript
 ## Current Known Commands
 
 ```bash
-python -m py_compile scripts/*.py
-python -m pytest -q
-python scripts/generate_dashboard_data.py
-python -m http.server 8000 -d dashboard
+python3 -m py_compile scripts/*.py
+python3 -m pytest -q
+python3 scripts/generate_dashboard_data.py
+python3 -m http.server 8000 -d dashboard
 ```
 
 Some commands may become active after scripts/tests are added.

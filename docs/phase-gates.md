@@ -26,13 +26,15 @@ Done jika:
 
 Done jika:
 
-- [ ] GitHub repo dibuat.
+- [x] GitHub repo dibuat.
 - [x] Struktur folder dibuat.
 - [x] README awal dibuat.
 - [x] `.gitignore` melindungi dataset/model besar.
 - [x] `AGENTS.md` dibuat.
 - [x] Docs awal dibuat.
-- [ ] Initial commit pushed.
+- [x] Initial commit pushed.
+- [x] GitHub Pages placeholder aktif.
+- [x] Baseline smoke test tersedia dan dapat dijalankan.
 
 ## Fase 1 — Literature Review
 
