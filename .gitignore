@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.env
+.env.*
+
+# Large datasets and model artifacts
+data/raw/*
+data/processed/*
+results/models/*
+*.pcap
+*.pcapng
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Keep placeholders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/models/.gitkeep
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+/tmp/
+tmp/
+*.log
