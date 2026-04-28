@@ -65,9 +65,21 @@ Proyek dianggap selesai jika:
 - naskah ilmiah final selesai dan sesuai artifact,
 - final review menyatakan siap submit.
 
+## Literature Review Snapshot
+
+Fase 1 sudah selesai dan sudah di-*merge* ke `main` melalui PR #1. Ringkasan artefak:
+
+- `references/literature-matrix.md`: 18 sumber.
+- `references/references.bib`: 18 BibTeX entries.
+- `docs/research-log.md`: log seleksi dan sintesis awal.
+- `reports/progress-1-literature-review.md`: laporan progres Fase 1.
+- Final review: `docs/REVIEW_phase1_literature_final_approved.md` — **92/100 APPROVED**.
+
+Fase berikutnya adalah audit dataset BoT-IoT sebelum EDA atau training model.
+
 ## Status
 
-Current phase: **Fase 1 Literature Review approved; ready for Fase 2 — Dataset Audit**
+Current phase: **Fase 2 — Dataset Audit**
 
 ## Review History
 
@@ -86,3 +98,4 @@ Lihat:
 - `docs/REVIEW_phase0b.md`
 - `docs/REVIEW_phase0b_final.md`
 - `docs/REVIEW_phase0_gpt55_high.md`
+- `docs/REVIEW_phase1_literature_final_approved.md`
