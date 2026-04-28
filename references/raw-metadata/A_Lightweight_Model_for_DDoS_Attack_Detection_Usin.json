@@ -1,0 +1,991 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 11049149,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              25
+            ]
+          ],
+          "date-time": "2026-02-25T18:40:33Z",
+          "timestamp": 1772044833827,
+          "version": "3.50.1"
+        },
+        "reference-count": 26,
+        "publisher": "MDPI AG",
+        "issue": "17",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  9,
+                  2
+                ]
+              ],
+              "date-time": "2023-09-02T00:00:00Z",
+              "timestamp": 1693612800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Applied Sciences"
+        ],
+        "abstract": "<jats:p>The study in this paper characterizes lightweight IoT networks as being established by devices with few computer resources, such as reduced battery life, processing power, memory, and, more critically, minimal security and protection, which are easily vulnerable to DDoS attacks and propagating malware. A DDoS attack detection model is crucial for attacks in various industries, ensuring the availability and reliability of their networks and systems. The model distinguishes between legitimate and malicious traffic by analyzing network traffic patterns and identifying anomalies. This safeguards critical infrastructure, preserves business continuity, and protects the user experience, minimizing the impact of DDoS attacks. Numerous scholars have studied the notion that protecting lightweight IoT networks essentially requires improving intrusion detection systems. This research is valuable, as it follows a tailored pre-processing methodology specific to IoT network challenges, addressing a pressing need in cybersecurity by focusing on a growing concern related to IoT devices and DDoS attacks, enhancing the security of essential network systems in various industries by effectively detecting DDoS attacks, and developing a lightweight intrusion detection system that aligns with the limited resources of IoT devices. This manuscript proposes a compact and lightweight intrusion detection system that blends machine learning classifiers with a fresh approach to data pre-processing. The handling of missing values, data standardization using Standard Scalar, feature selection using ExtraTreeClassifier wherein only the 15 best features are extracted, and anomaly detection using a classifier are performed. The network dataset of TON-IOT and BOT-IOT datasets is used for experiments, specifically binary classifications and multiple-class classification for the experiment with DDoS and all attacks, respectively. There is an imbalance between the TON-IOT and BOT-IOT attack classes. In trials using the TON-IOT and BOT-IOT datasets, the classes were balanced using several iterations of the SMOTE approach. This research provides a number of classifier types, namely logistic regression, random forest, na\u00efve bayes, artificial neural network, and k nearest neighbor algorithms, which are used to build a lightweight intrusion detection system that is ideally suited for protecting against DDoS attacks in IoT networks. The time taken to train and predict the DDoS attacks is also implemented. Random forest performed well under TON-IOT and na\u00efve bayes performed well under BOT-IOT under binary and multiple-class classification, achieving an accuracy of 100% with less training and prediction time.</jats:p>",
+        "DOI": "10.3390/app13179937",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              4
+            ]
+          ],
+          "date-time": "2023-09-04T02:59:55Z",
+          "timestamp": 1693796395000
+        },
+        "page": "9937",
+        "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 39,
+        "title": [
+          "A Lightweight Model for DDoS Attack Detection Using Machine Learning Techniques"
+        ],
+        "prefix": "10.3390",
+        "volume": "13",
+        "author": [
+          {
+            "given": "Sapna",
+            "family": "Sadhwani",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, Birla Institute of Technology and Science Pilani, Dubai Campus, Dubai International Academic City, Dubai 345055, United Arab Emirates"
+              }
+            ]
+          },
+          {
+            "given": "Baranidharan",
+            "family": "Manibalan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, Birla Institute of Technology and Science Pilani, Dubai Campus, Dubai International Academic City, Dubai 345055, United Arab Emirates"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-0971-6235",
+            "authenticated-orcid": false,
+            "given": "Raja",
+            "family": "Muthalagu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, Birla Institute of Technology and Science Pilani, Dubai Campus, Dubai International Academic City, Dubai 345055, United Arab Emirates"
+              }
+            ]
+          },
+          {
+            "given": "Pranav",
+            "family": "Pawar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, Birla Institute of Technology and Science Pilani, Dubai Campus, Dubai International Academic City, Dubai 345055, United Arab Emirates"
+              }
+            ]
+          }
+        ],
+        "member": "1968",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              2
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "ref_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "2",
+            "DOI": "10.1007/s10922-022-09697-x",
+            "article-title": "Efficient Intelligent Intrusion Detection System for Heterogeneous Internet of Things (HetIoT)",
+            "volume": "31",
+            "author": "Mahadik",
+            "year": "2023",
+            "journal-title": "J. Netw. Syst. Manag."
+          },
+          {
+            "key": "ref_2",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hussain, F., Abbas, S.G., Husnain, M., Fayyaz, U.U., Shahzad, F., and Shah, G.A. (2020, January 5\u20137). IoT DoS and DDoS Attack Detection using ResNet. Proceedings of the 2020 IEEE 23rd International Multitopic Conference (INMIC), Bahawalpur, Pakistan.",
+            "DOI": "10.1109/INMIC50486.2020.9318216"
+          },
+          {
+            "key": "ref_3",
+            "doi-asserted-by": "crossref",
+            "first-page": "8481452",
+            "DOI": "10.1155/2022/8481452",
+            "article-title": "ML-DDoSnet: IoT Intrusion Detection Based on Denial-of-Service Attacks Using Machine Learning Methods and NSL-KDD",
+            "volume": "2022",
+            "author": "Esmaeili",
+            "year": "2022",
+            "journal-title": "Wirel. Commun. Mob. Comput."
+          },
+          {
+            "key": "ref_4",
+            "first-page": "93",
+            "article-title": "A Deep Learning based approach for DDoS attack detection in IoT-enabled smart environments",
+            "volume": "8",
+            "author": "Badamasi",
+            "year": "2020",
+            "journal-title": "Mach. Learn."
+          },
+          {
+            "key": "ref_5",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Aysa, M.H., Ibrahim, A.A., and Mohammed, A.H. (2020, January 22\u201324). IoT Ddos Attack Detection Using Machine Learning. Proceedings of the 2020 4th International Symposium on Multidisciplinary Studies and Innovative Technologies (ISMSIT), Istanbul, Turkey.",
+            "DOI": "10.1109/ISMSIT50672.2020.9254703"
+          },
+          {
+            "key": "ref_6",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Roopak, M., Tian, G.Y., and Chambers, J. (2020, January 6\u20138). An Intrusion Detection System against DDoS Attacks in IoT Networks. Proceedings of the 2020 10th Annual Computing and Communication Workshop and Conference (CCWC), Las Vegas, NV, USA.",
+            "DOI": "10.1109/CCWC47524.2020.9031206"
+          },
+          {
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sriram, S., Vinayakumar, R., Alazab, M., and Soman, K.P. (2020, January 6\u20139). Network Flow based IoT Botnet Attack Detection using Deep Learning. Proceedings of the IEEE INFOCOM 2020\u2014IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Toronto, ON, Canada.",
+            "DOI": "10.1109/INFOCOMWKSHPS50562.2020.9162668"
+          },
+          {
+            "key": "ref_8",
+            "doi-asserted-by": "crossref",
+            "first-page": "9552",
+            "DOI": "10.1109/JIOT.2020.2993782",
+            "article-title": "FlowGuard: An Intelligent Edge Defense Mechanism against IoT DDoS Attacks",
+            "volume": "7",
+            "author": "Jia",
+            "year": "2020",
+            "journal-title": "IEEE Internet Things J."
+          },
+          {
+            "key": "ref_9",
+            "doi-asserted-by": "crossref",
+            "first-page": "163412",
+            "DOI": "10.1109/ACCESS.2021.3131014",
+            "article-title": "A Two-Fold Machine Learning Approach to Prevent and Detect IoT Botnet Attacks",
+            "volume": "9",
+            "author": "Hussain",
+            "year": "2021",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_10",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Alzahrani, R.J., and Alzahrani, A. (2021). Security Analysis of DDoS Attacks Using Machine Learning Algorithms in Networks Traffic. Electronics, 10.",
+            "DOI": "10.3390/electronics10232919"
+          },
+          {
+            "key": "ref_11",
+            "doi-asserted-by": "crossref",
+            "first-page": "87",
+            "DOI": "10.1007/s11277-021-08890-6",
+            "article-title": "SAD-IoT: Security Analysis of DDoS Attacks in IoT Networks",
+            "volume": "122",
+            "author": "Kumar",
+            "year": "2022",
+            "journal-title": "Wirel. Pers. Commun."
+          },
+          {
+            "key": "ref_12",
+            "unstructured": "Pokhrel, S., Abbas, R., and Aryal, B. (2021). IoT Security: Botnet detection in IoT using Machine learning. arXiv."
+          },
+          {
+            "key": "ref_13",
+            "doi-asserted-by": "crossref",
+            "first-page": "8658",
+            "DOI": "10.1109/JIOT.2023.3245153",
+            "article-title": "Feature Engineering and Machine Learning Framework for DDoS Attack Detection in the Standardized Internet of Things",
+            "volume": "10",
+            "author": "Malik",
+            "year": "2023",
+            "journal-title": "IEEE Internet Things J."
+          },
+          {
+            "key": "ref_14",
+            "doi-asserted-by": "crossref",
+            "first-page": "1353",
+            "DOI": "10.1007/s13369-021-05947-3",
+            "article-title": "Analysis of Machine Learning Classifiers for Early Detection of DDoS Attacks on IoT Devices",
+            "volume": "47",
+            "author": "Gaur",
+            "year": "2022",
+            "journal-title": "Arab. J. Sci. Eng."
+          },
+          {
+            "key": "ref_15",
+            "unstructured": "Chopra, A., Behal, S., and Sharma, V. (2021, January 17\u201319). Evaluating Machine Learning Algorithms to detect and classify DDoS attacks in IoT. Proceedings of the 2021 8th International Conference on Computing for Sustainable Global Development (INDIACom), New Delhi, India."
+          },
+          {
+            "key": "ref_16",
+            "first-page": "24",
+            "article-title": "DDoS Detection using Machine Learning Techniques",
+            "volume": "4",
+            "author": "Amrish",
+            "year": "2022",
+            "journal-title": "J. IoT Soc. Mob. Anal. Cloud"
+          },
+          {
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "102918",
+            "DOI": "10.1016/j.cose.2022.102918",
+            "article-title": "A GPU-based machine learning approach for detection of botnet attacks",
+            "volume": "123",
+            "author": "Motylinski",
+            "year": "2022",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "ref_18",
+            "doi-asserted-by": "crossref",
+            "first-page": "107716",
+            "DOI": "10.1016/j.compeleceng.2022.107716",
+            "article-title": "Denial of service attack detection and mitigation for internet of things using looking-back-enabled machine learning techniques",
+            "volume": "98",
+            "author": "Mihoub",
+            "year": "2022",
+            "journal-title": "Comput. Electr. Eng."
+          },
+          {
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "first-page": "21443",
+            "DOI": "10.1109/ACCESS.2022.3152577",
+            "article-title": "A Machine Learning-Based Classification and Prediction Technique for DDoS Attacks",
+            "volume": "10",
+            "author": "Mohmand",
+            "year": "2022",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_20",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Adefemi Alimi, K.O., Ouahada, K., Abu-Mahfouz, A.M., Rimer, S., and Alimi, O.A. (2022). Refined LSTM Based Intrusion Detection for Denial-of-Service Attack in Internet of Things. J. Sens. Actuator Netw., 11.",
+            "DOI": "10.3390/jsan11030032"
+          },
+          {
+            "key": "ref_21",
+            "doi-asserted-by": "crossref",
+            "first-page": "2269",
+            "DOI": "10.1109/ACCESS.2021.3137201",
+            "article-title": "Protocol-Based Deep Intrusion Detection for DoS and DDoS Attacks Using UNSW-NB15 and BOT-IOT Data-Sets",
+            "volume": "10",
+            "author": "Zeeshan",
+            "year": "2022",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "119330",
+            "DOI": "10.1016/j.eswa.2022.119330",
+            "article-title": "Implementation of intrusion detection model for DDoS attacks in Lightweight IoT Networks",
+            "volume": "215",
+            "author": "Khanday",
+            "year": "2023",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "key": "ref_23",
+            "doi-asserted-by": "crossref",
+            "first-page": "e3803",
+            "DOI": "10.1002/ett.3803",
+            "article-title": "DL-IDS: A deep learning\u2013based intrusion detection framework for securing IoT",
+            "volume": "33",
+            "author": "Otoum",
+            "year": "2022",
+            "journal-title": "Trans. Emerg. Telecommun. Technol."
+          },
+          {
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "first-page": "142206",
+            "DOI": "10.1109/ACCESS.2021.3120626",
+            "article-title": "Intrusion Detection System Using Machine Learning for Vehicular Ad Hoc Networks Based on TON-IOT Dataset",
+            "volume": "9",
+            "author": "Gad",
+            "year": "2021",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_25",
+            "doi-asserted-by": "crossref",
+            "first-page": "165130",
+            "DOI": "10.1109/ACCESS.2020.3022862",
+            "article-title": "TON_IoT Telemetry Dataset: A New Generation Dataset of IoT and IIoT for Data-Driven Intrusion Detection Systems",
+            "volume": "8",
+            "author": "Alsaedi",
+            "year": "2020",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_26",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hossein Motlagh, N., Mohammadrezaei, M., Hunt, J., and Zakeri, B. (2020). Internet of Things (IoT) and the Energy Sector. Energies, 13.",
+            "DOI": "10.3390/en13020494"
+          }
+        ],
+        "container-title": [
+          "Applied Sciences"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://www.mdpi.com/2076-3417/13/17/9937/pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              10
+            ]
+          ],
+          "date-time": "2025-10-10T20:45:35Z",
+          "timestamp": 1760129135000
+        },
+        "score": 54.512333,
+        "resource": {
+          "primary": {
+            "URL": "https://www.mdpi.com/2076-3417/13/17/9937"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              2
+            ]
+          ]
+        },
+        "references-count": 26,
+        "journal-issue": {
+          "issue": "17",
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                9
+              ]
+            ]
+          }
+        },
+        "alternative-id": [
+          "app13179937"
+        ],
+        "URL": "https://doi.org/10.3390/app13179937",
+        "ISSN": [
+          "2076-3417"
+        ],
+        "issn-type": [
+          {
+            "value": "2076-3417",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              24
+            ]
+          ],
+          "date-time": "2026-02-24T18:28:27Z",
+          "timestamp": 1771957707720,
+          "version": "3.50.1"
+        },
+        "reference-count": 0,
+        "publisher": "Indian Society for Education and Environment",
+        "issue": "SP2",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IJST"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              15
+            ]
+          ]
+        },
+        "DOI": "10.17485/ijst/v16isp2.9526",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              19
+            ]
+          ],
+          "date-time": "2023-12-19T08:29:05Z",
+          "timestamp": 1702974545000
+        },
+        "page": "76-82",
+        "source": "Crossref",
+        "is-referenced-by-count": 3,
+        "title": [
+          "DDoS Attack Detection Using Machine Learning Techniques"
+        ],
+        "prefix": "10.17485",
+        "volume": "16",
+        "author": [
+          {
+            "name": "Department of Information Technology, Gauhati University, Guwahati, Assam, India",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Rituparna",
+            "family": "Borah",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Satyajit",
+            "family": "Sarmah",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Nitin",
+            "family": "Choudhury",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Hriman",
+            "family": "Mahanta",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Anjan",
+            "family": "Chodhury",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "7040",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              15
+            ]
+          ]
+        },
+        "container-title": [
+          "Indian Journal Of Science And Technology"
+        ],
+        "original-title": [
+          "DDoS Attack Detection Using Machine Learning Techniques"
+        ],
+        "link": [
+          {
+            "URL": "https://indjst.org/articles/ddos-attack-detection-using-machine-learning-techniques",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              19
+            ]
+          ],
+          "date-time": "2023-12-19T08:29:22Z",
+          "timestamp": 1702974562000
+        },
+        "score": 49.36191,
+        "resource": {
+          "primary": {
+            "URL": "https://indjst.org/articles/ddos-attack-detection-using-machine-learning-techniques"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              15
+            ]
+          ]
+        },
+        "references-count": 0,
+        "journal-issue": {
+          "issue": "SP2",
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                15
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                15
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.17485/ijst/v16isp2.9526",
+        "ISSN": [
+          "0974-6846",
+          "0974-5645"
+        ],
+        "issn-type": [
+          {
+            "value": "0974-6846",
+            "type": "print"
+          },
+          {
+            "value": "0974-5645",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              15
+            ]
+          ],
+          "date-time": "2026-04-15T20:10:51Z",
+          "timestamp": 1776283851233,
+          "version": "3.50.1"
+        },
+        "reference-count": 23,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  3,
+                  12
+                ]
+              ],
+              "date-time": "2026-03-12T00:00:00Z",
+              "timestamp": 1773273600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  3,
+                  12
+                ]
+              ],
+              "date-time": "2026-03-12T00:00:00Z",
+              "timestamp": 1773273600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              12
+            ]
+          ]
+        },
+        "DOI": "10.1109/iatmsi68868.2026.11465569",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              7
+            ]
+          ],
+          "date-time": "2026-04-07T19:55:00Z",
+          "timestamp": 1775591700000
+        },
+        "page": "1-6",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "DDoS Attack Detection using Machine Learning Techniques"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Shreshth",
+            "family": "Jain",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Manipal University,Department of Computer Applications,Jaipur"
+              }
+            ]
+          },
+          {
+            "given": "Rohan",
+            "family": "Mishra",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Manipal University,Department of Computer Applications,Jaipur"
+              }
+            ]
+          },
+          {
+            "given": "Monika",
+            "family": "Jyotiyana",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Manipal University,Department of Computer Applications,Jaipur"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/s41598-024-84879-y"
+          },
+          {
+            "issue": "2",
+            "key": "ref2",
+            "first-page": "1290",
+            "article-title": "Machine learning methods for ddos attack detection in 5g networks: A survey",
+            "volume": "26",
+            "author": "Oke",
+            "year": "2024",
+            "journal-title": "IEEE Communications Surveys & Tutorials"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1201/9781003682325"
+          },
+          {
+            "issue": "6",
+            "key": "ref4",
+            "first-page": "1223",
+            "article-title": "An optimized machine learning frame-work for ddos attack detection using cicddos2019 dataset",
+            "volume": "13",
+            "author": "Becerra-Suarez",
+            "year": "2024",
+            "journal-title": "MDPI Electronics"
+          },
+          {
+            "issue": "2",
+            "key": "ref5",
+            "first-page": "210",
+            "article-title": "Hyperparameter optimization for machine learning-based ddos detection on cicddos2019 and variants",
+            "volume": "25",
+            "author": "Chen",
+            "year": "2025",
+            "journal-title": "MDPI Sensors"
+          },
+          {
+            "key": "ref6",
+            "first-page": "134239",
+            "article-title": "Improving ddos attack detection using hybrid deep neural networks",
+            "volume": "12",
+            "author": "Elsayed",
+            "year": "2024",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref7",
+            "first-page": "389",
+            "article-title": "Autoencoder-based unsupervised learning for detecting volumetric and application-layer ddos attacks",
+            "volume": "153",
+            "author": "Li",
+            "year": "2024",
+            "journal-title": "Future Generation Computer Systems"
+          },
+          {
+            "key": "ref8",
+            "first-page": "04010",
+            "article-title": "Hybrid cnn-lstm model for high accuracy ddos detection using cicddos2019 dataset",
+            "volume-title": "ITM Web of Conferences",
+            "volume": "72",
+            "author": "Xu"
+          },
+          {
+            "issue": "3",
+            "key": "ref9",
+            "article-title": "Xgboost-based traffic classification for identifying ddos attacks in real-time",
+            "volume": "14",
+            "author": "Althubiti",
+            "year": "2024",
+            "journal-title": "Applied Sciences"
+          },
+          {
+            "key": "ref10",
+            "first-page": "7851",
+            "article-title": "A novel multi-stage machine learning pipeline for detecting high-rate ddos attacks",
+            "volume": "36",
+            "author": "Umer",
+            "year": "2024",
+            "journal-title": "Neural Computing and Applications"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10586-024-04662-6"
+          },
+          {
+            "key": "ref12",
+            "article-title": "Multi-lf: A multi-level machine learning frame-work for real-time ddos detection in ns-3 simulated networks",
+            "author": "Rustam",
+            "year": "2025",
+            "journal-title": "arXiv preprint"
+          },
+          {
+            "key": "ref13",
+            "first-page": "110892",
+            "article-title": "Cnn-bilstm with attention mechanism for enhanced ddos attack detection on cicddos2019 dataset",
+            "volume": "247",
+            "author": "Liu",
+            "year": "2025",
+            "journal-title": "Computer Networks"
+          },
+          {
+            "key": "ref14",
+            "article-title": "Anomaly-flow: Federated gan and ml pipeline for cross-domain ddos detection",
+            "author": "de Melo",
+            "year": "2025",
+            "journal-title": "arXiv preprint"
+          },
+          {
+            "key": "ref15",
+            "first-page": "25",
+            "article-title": "A federated learning-based ddos detection frame-work for distributed networks",
+            "volume": "19",
+            "author": "Rahman",
+            "year": "2024",
+            "journal-title": "IEEE Transactions on Information Forensics and Security"
+          },
+          {
+            "key": "ref16",
+            "first-page": "145",
+            "article-title": "Lightweight machine learning-based ddos detection frame-work for iot environments,",
+            "volume-title": "Proc. Int. Conf. Internet of Things and Smart Environments. SpringerLink",
+            "author": "Gavri\u0107",
+            "year": "2024"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2024.3384398"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2025.3526692"
+          },
+          {
+            "issue": "1",
+            "key": "ref19",
+            "first-page": "45",
+            "article-title": "Improving ddos detection in cloud networks using random forest and mutual feature selection",
+            "volume": "13",
+            "author": "Singh",
+            "year": "2024",
+            "journal-title": "Journal of Cloud Computing"
+          },
+          {
+            "key": "ref20",
+            "first-page": "103762",
+            "article-title": "Lightweight ml-based ddos attack detection in edge networks",
+            "volume": "228",
+            "author": "Kumar",
+            "year": "2024",
+            "journal-title": "Journal of Network and Computer Applications"
+          },
+          {
+            "key": "ref21",
+            "volume-title": "An efficient real time ddos detection model using machine learning algorithms",
+            "author": "Suvra",
+            "year": "2025"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/cicn63059.2024.10847458"
+          },
+          {
+            "key": "ref23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11227-024-06071-3"
+          }
+        ],
+        "event": {
+          "name": "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)",
+          "location": "Gwalior, India",
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                12
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                14
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/11465166/11465169/11465569.pdf?arnumber=11465569",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              15
+            ]
+          ],
+          "date-time": "2026-04-15T19:22:25Z",
+          "timestamp": 1776280945000
+        },
+        "score": 49.35683,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11465569/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              12
+            ]
+          ]
+        },
+        "references-count": 23,
+        "URL": "https://doi.org/10.1109/iatmsi68868.2026.11465569",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              12
+            ]
+          ]
+        }
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

@@ -1,0 +1,1061 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 10429766,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              22
+            ]
+          ],
+          "date-time": "2026-04-22T10:05:23Z",
+          "timestamp": 1776852323486,
+          "version": "3.51.2"
+        },
+        "reference-count": 57,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2022-01-01T00:00:00Z",
+              "timestamp": 1640995200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100004895",
+            "name": "European Union through the European Social Fund through the Project Information Communication Technology (ICT) Program",
+            "doi-asserted-by": "publisher",
+            "id": [
+              {
+                "id": "10.13039/501100004895",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Access"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "DOI": "10.1109/access.2022.3204001",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              5
+            ]
+          ],
+          "date-time": "2022-09-05T20:05:37Z",
+          "timestamp": 1662408337000
+        },
+        "page": "94518-94535",
+        "source": "Crossref",
+        "is-referenced-by-count": 61,
+        "title": [
+          "In-Depth Feature Selection for the Statistical Machine Learning-Based Botnet Detection in IoT Networks"
+        ],
+        "prefix": "10.1109",
+        "volume": "10",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7390-8034",
+            "authenticated-orcid": false,
+            "given": "Rajesh",
+            "family": "Kalakoti",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Software Science, School of Information Technology, Tallinn University of Technology (TalTech), Tallinn, Estonia"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5571-1692",
+            "authenticated-orcid": false,
+            "given": "Sven",
+            "family": "Nomm",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Software Science, School of Information Technology, Tallinn University of Technology (TalTech), Tallinn, Estonia"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8882-4095",
+            "authenticated-orcid": false,
+            "given": "Hayretdin",
+            "family": "Bahsi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Software Science, School of Information Technology, Tallinn University of Technology (TalTech), Tallinn, Estonia"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICEICE.2017.8191906"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.48009/3_iis_2018_33-41"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2019.2910750"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MC.2017.201"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2015.2457491"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-981-10-6005-2_12"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/1653662.1653738"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/01639625.2020.1794269"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ARES.2009.65"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2017.02.009"
+          },
+          {
+            "key": "ref11",
+            "first-page": "229",
+            "article-title": "Snort: Lightweight intrusion detection for networks",
+            "volume-title": "Proc. LISA",
+            "volume": "99",
+            "author": "Roesch"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/WAINA.2012.29"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2015.2494502"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3136625"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/NCA.2018.8548325"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICARCV.2018.8581205"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CNS.2014.6997492"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CONIELECOMP.2017.7891834"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CW.2019.00059"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICNSC.2017.8000162"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IoT52625.2021.9469605"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MPRV.2018.03367731"
+          },
+          {
+            "key": "ref23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5220/0009187802070218"
+          },
+          {
+            "key": "ref24",
+            "first-page": "235",
+            "article-title": "BotSniffer: Detecting botnet command and control channels in network traffic",
+            "volume-title": "Proc. 16th Annu. Netw. Distrib. Syst. Secur. Symp. (NDSS)",
+            "author": "Gu"
+          },
+          {
+            "key": "ref25",
+            "first-page": "139",
+            "article-title": "BotMiner: Clustering analysis of network traffic for protocol-and structure-independent botnet detection",
+            "volume-title": "Proc. 17th Conf. Secur. Symp.",
+            "author": "Gu"
+          },
+          {
+            "key": "ref26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.17762/ijcnis.v10i3.3624"
+          },
+          {
+            "key": "ref27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICM50269.2020.9331794"
+          },
+          {
+            "key": "ref28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.future.2019.05.041"
+          },
+          {
+            "key": "ref29",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICICSP.2018.8549713"
+          },
+          {
+            "key": "ref30",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2197/ipsjjip.24.522"
+          },
+          {
+            "key": "ref31",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICAIBD.2018.8396200"
+          },
+          {
+            "key": "ref32",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cose.2011.12.012"
+          },
+          {
+            "key": "ref33",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2020.3034156"
+          },
+          {
+            "key": "ref34",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2019.102479"
+          },
+          {
+            "key": "ref35",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-3-642-39235-1_4"
+          },
+          {
+            "key": "ref36",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ins.2014.03.066"
+          },
+          {
+            "key": "ref37",
+            "first-page": "1157",
+            "article-title": "An introduction to variable and feature selection",
+            "volume": "3",
+            "author": "Guyon",
+            "year": "2003",
+            "journal-title": "J. Mach. Learn. Res."
+          },
+          {
+            "key": "ref38",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00521-016-2564-5"
+          },
+          {
+            "key": "ref39",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/PST.2011.5971980"
+          },
+          {
+            "key": "ref40",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2021.3108222"
+          },
+          {
+            "key": "ref41",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cose.2014.05.011"
+          },
+          {
+            "key": "ref42",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/2522548.2523133"
+          },
+          {
+            "key": "ref43",
+            "first-page": "1",
+            "article-title": "Effective feature selection for botnet detection based on network flow analysis",
+            "volume-title": "Proc. Int. Conf. Automatics Informat.",
+            "author": "Pekta\u015f"
+          },
+          {
+            "key": "ref44",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-3-319-14142-8"
+          },
+          {
+            "key": "ref45",
+            "article-title": "Generalized Fisher score for feature selection",
+            "volume-title": "arXiv:1202.3725",
+            "author": "Gu",
+            "year": "2012"
+          },
+          {
+            "key": "ref46",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TNN.2008.2005601"
+          },
+          {
+            "issue": "6",
+            "key": "ref47",
+            "first-page": "1",
+            "article-title": "Classification and feature selection techniques in data mining",
+            "volume": "1",
+            "author": "Beniwal",
+            "year": "2012",
+            "journal-title": "Int. J. Eng. Res. Technol."
+          },
+          {
+            "key": "ref48",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5120/20462-2829"
+          },
+          {
+            "issue": "1",
+            "key": "ref49",
+            "doi-asserted-by": "crossref",
+            "first-page": "389",
+            "DOI": "10.1023/A:1012487302797",
+            "article-title": "Gene selection for cancer classification using support vector machines",
+            "volume": "46",
+            "author": "Guyon",
+            "year": "2002",
+            "journal-title": "Mach. Learn."
+          },
+          {
+            "key": "ref50",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0031-3203(99)00041-2"
+          },
+          {
+            "key": "ref51",
+            "volume-title": "The truth of the F-measure",
+            "author": "Sasaki",
+            "year": "2007"
+          },
+          {
+            "issue": "1",
+            "key": "ref52",
+            "first-page": "41",
+            "article-title": "A comparison of event models for naive Bayes text classification",
+            "volume-title": "Proc. AAAI Workshop Learn. Text Categorization",
+            "volume": "752",
+            "author": "McCallum"
+          },
+          {
+            "key": "ref53",
+            "first-page": "2825",
+            "article-title": "Scikit-learn: Machine learning in Python",
+            "volume": "12",
+            "author": "Pedregosa",
+            "year": "2011",
+            "journal-title": "J. Mach. Learn. Res."
+          },
+          {
+            "key": "ref54",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.21105/joss.00638"
+          },
+          {
+            "key": "ref55",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/telecom3010003"
+          },
+          {
+            "key": "ref56",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2020.102662"
+          },
+          {
+            "key": "ref57",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/SMARTCOMP52413.2021.00053"
+          }
+        ],
+        "container-title": [
+          "IEEE Access"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/6287639/9668973/09875261.pdf?arnumber=9875261",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2024-02-01T12:19:01Z",
+          "timestamp": 1706789941000
+        },
+        "score": 60.280212,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/9875261/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "references-count": 57,
+        "URL": "https://doi.org/10.1109/access.2022.3204001",
+        "ISSN": [
+          "2169-3536"
+        ],
+        "issn-type": [
+          {
+            "value": "2169-3536",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2026-04-01T19:21:21Z",
+          "timestamp": 1775071281004,
+          "version": "3.50.1"
+        },
+        "reference-count": 16,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  10,
+                  1
+                ]
+              ],
+              "date-time": "2019-10-01T00:00:00Z",
+              "timestamp": 1569888000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  10,
+                  1
+                ]
+              ],
+              "date-time": "2019-10-01T00:00:00Z",
+              "timestamp": 1569888000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  10,
+                  1
+                ]
+              ],
+              "date-time": "2019-10-01T00:00:00Z",
+              "timestamp": 1569888000000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              10
+            ]
+          ]
+        },
+        "DOI": "10.1109/cw.2019.00059",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2019,
+              12,
+              6
+            ]
+          ],
+          "date-time": "2019-12-06T07:18:16Z",
+          "timestamp": 1575616696000
+        },
+        "page": "324-327",
+        "source": "Crossref",
+        "is-referenced-by-count": 40,
+        "title": [
+          "Hybrid Feature Selection Models for Machine Learning Based Botnet Detection in IoT Networks"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Alejandro",
+            "family": "Guerra-Manzanares",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hayretdin",
+            "family": "Bahsi",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sven",
+            "family": "Nomm",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ARGENCON.2016.7585247"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/2676869"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/EIConRus.2018.8317041"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MPRV.2018.03367731"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.procs.2018.07.183"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/DASC-PICom-DataCom-CyberSciTec.2017.141"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.future.2019.05.041"
+          },
+          {
+            "key": "ref4",
+            "first-page": "1857",
+            "article-title": "Dimensionality reduction for machine learning based iot botnet detection",
+            "author": "bah?i",
+            "year": "2018",
+            "journal-title": "2018 15th International Conference on Control Automation Robotics and Vision (ICARCV)"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2015.2494502"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cose.2013.04.007"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/SPW.2018.00013"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICCNC.2014.6785439"
+          },
+          {
+            "key": "ref7",
+            "first-page": "129",
+            "article-title": "Disclosure: detecting botnet command and control servers through large-scale netflow analysis",
+            "author": "bilge",
+            "year": "2012",
+            "journal-title": "Proceedings of the 28th Annual Computer Security Applications Conference"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MC.2017.201"
+          },
+          {
+            "key": "ref1",
+            "year": "0",
+            "journal-title": "State of the IoT 2018 Number of IoT devices now at 7B &#x2013; Market accelerating"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2014/986428"
+          }
+        ],
+        "event": {
+          "name": "2019 International Conference on Cyberworlds (CW)",
+          "location": "Kyoto, Japan",
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                2
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                4
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2019 International Conference on Cyberworlds (CW)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/8910333/8918929/08919099.pdf?arnumber=8919099",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              18
+            ]
+          ],
+          "date-time": "2022-07-18T14:47:33Z",
+          "timestamp": 1658155653000
+        },
+        "score": 51.168564,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/8919099/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2019,
+              10
+            ]
+          ]
+        },
+        "references-count": 16,
+        "URL": "https://doi.org/10.1109/cw.2019.00059",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              10
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              3
+            ]
+          ],
+          "date-time": "2026-04-03T09:44:49Z",
+          "timestamp": 1775209489978,
+          "version": "3.50.1"
+        },
+        "reference-count": 19,
+        "publisher": "European Alliance for Innovation n.o.",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  9,
+                  25
+                ]
+              ],
+              "date-time": "2023-09-25T00:00:00Z",
+              "timestamp": 1695600000000
+            },
+            "content-version": "unspecified",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by-nc-sa/4.0"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "ICST Transactions on Scalable Information Systems"
+        ],
+        "abstract": "<jats:p>An increase in cyberattacks has coincided with the Internet of Things (IoT) expansion. When numerous systems are connected, more botnet attacks are possible. Because botnet attacks are constantly evolving to take advantage of security holes and weaknesses in internet traffic and IoT devices, they must be recognized. Voting ensemble (VE), Ada boost, K-Nearest Neighbour (KNN), and bootstrap aggregation are some methods used in this work for botnet detection. This study aims to first incorporate feature significance for enhanced efficacy, then estimate effectiveness in IoT botnet detection using traditional model-based machine learning, and finally evaluate the outcomes using ensemble models. It has been demonstrated that applying feature importance increases the effectiveness of ensemble models. VE algorithm provides the best botnet traffic detection compared to all currently used approaches.</jats:p>",
+        "DOI": "10.4108/eetsis.3971",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              25
+            ]
+          ],
+          "date-time": "2023-09-25T12:05:18Z",
+          "timestamp": 1695643518000
+        },
+        "source": "Crossref",
+        "is-referenced-by-count": 5,
+        "title": [
+          "Enhancing IoT Botnet Detection through Machine Learning-based Feature Selection and Ensemble Models"
+        ],
+        "prefix": "10.4108",
+        "author": [
+          {
+            "given": "Ravi",
+            "family": "Sharma",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Saika",
+            "family": "Mohi ud din",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Nonita",
+            "family": "Sharma",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Arun",
+            "family": "Kumar",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "2587",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              25
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "35290",
+            "doi-asserted-by": "crossref",
+            "unstructured": "M. Hasan, M. M. Islam, M. I. I. Zarif, and M. M. A. Hashem, \"Attack and anomaly detection in IoT sensors in IoT sites using machine learning approaches,\" Internet of Things, vol. 7, p. 100059, Sep. 2019, doi: 10.1016/J.IOT.2019.100059.",
+            "DOI": "10.1016/j.iot.2019.100059"
+          },
+          {
+            "key": "35291",
+            "unstructured": "A. Shahid, M. Z. Jasni, Z. Mohamad Fadli, and I. Zakira, \"A Review Paper on Botnet and Botnet Detection Techniques in Cloud Computing,\" 2014, Accessed: May 03, 2023. [Online]. Available: https://www.researchgate.net/profile/Shahid_Anwar3/publication/283257776_A_Review_Paper_on_Botnet_and_Botnet_Detection_Techniques_in_Cloud_Computing/links/562f525308ae4742240abea7.pdf"
+          },
+          {
+            "key": "35292",
+            "doi-asserted-by": "crossref",
+            "unstructured": "SharmaRavi and SharmaNonita, \"Attacks on Resource-Constrained IoT Devices and Security Solutions,\" International Journal of Software Science and Computational Intelligence (IJSSCI), vol. 14, no. 1, pp. 1\u201321, Oct. 2022, doi: 10.4018/IJSSCI.310943.",
+            "DOI": "10.4018/IJSSCI.310943"
+          },
+          {
+            "key": "35293",
+            "doi-asserted-by": "crossref",
+            "unstructured": "X. Liu, Y. Liu, A. Liu, and L. T. Yang, \"Defending ON-OFF attacks using light probing messages in smart sensors for industrial communication systems,\" IEEE Trans Industr Inform, vol. 14, no. 9, pp. 3801\u20133811, Sep. 2018, doi: 10.1109/TII.2018.2836150.",
+            "DOI": "10.1109/TII.2018.2836150"
+          },
+          {
+            "key": "35294",
+            "doi-asserted-by": "crossref",
+            "unstructured": "H. H. Pajouh, R. Javidan, R. Khayami, A. Dehghantanha, and K. K. R. Choo, \"A Two-Layer Dimension Reduction and Two-Tier Classification Model for Anomaly-Based Intrusion Detection in IoT Backbone Networks,\" IEEE Trans Emerg Top Comput, vol. 7, no. 2, pp. 314\u2013323, 2019, doi: 10.1109/TETC.2016.2633228.",
+            "DOI": "10.1109/TETC.2016.2633228"
+          },
+          {
+            "key": "35295",
+            "doi-asserted-by": "crossref",
+            "unstructured": "I. K. Poyner and R. S. Sherratt, \"Privacy and security of consumer IoT devices for the pervasive monitoring of vulnerable people,\" IET Conference Publications, vol. 2018, no. CP740, 2018, doi: 10.1049/CP.2018.0043.",
+            "DOI": "10.1049/cp.2018.0043"
+          },
+          {
+            "key": "35296",
+            "doi-asserted-by": "crossref",
+            "unstructured": "S. Al-mashhadi, M. Anbar, I. Hasbullah, and T. A. Alamiedy, \"Hybrid rule-based botnet detection approach using machine learning for analysing DNS traffic,\" PeerJ Comput Sci, vol. 7, pp. 1\u201334, 2021, doi: 10.7717/PEERJ-CS.640/SUPP-4.",
+            "DOI": "10.7717/peerj-cs.640"
+          },
+          {
+            "key": "35297",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A. Kumar et al., \"A Novel Decentralized Blockchain Architecture for the Preservation of Privacy and Data Security against Cyberattacks in Healthcare,\" Sensors, vol. 22, no. 15, Aug. 2022, doi: 10.3390/S22155921.",
+            "DOI": "10.3390/s22155921"
+          },
+          {
+            "key": "35298",
+            "doi-asserted-by": "crossref",
+            "unstructured": "R. A. Rodriguez-Gomez, G. Macia-Fernandez, and P. Garcia-Teodoro, \"Survey and taxonomy of botnet research through life-cycle,\" ACM Computing Surveys (CSUR), vol. 45, no. 4, Aug. 2013, doi: 10.1145/2501654.2501659.",
+            "DOI": "10.1145/2501654.2501659"
+          },
+          {
+            "key": "35299",
+            "doi-asserted-by": "crossref",
+            "unstructured": "M. Feily, A. Shahrestani, and S. Ramadass, \"A survey of botnet and botnet detection,\" Proceedings - 2009 3rd International Conference on Emerging Security Information, Systems and Technologies, SECURWARE 2009, pp. 268\u2013273, 2009, doi: 10.1109/SECURWARE.2009.48.",
+            "DOI": "10.1109/SECURWARE.2009.48"
+          },
+          {
+            "key": "35300",
+            "doi-asserted-by": "crossref",
+            "unstructured": "O. Jullian, B. Otero, E. Rodriguez, N. Gutierrez, H. Antona, and R. Canal, \"Deep-Learning Based Detection for Cyber-Attacks in IoT Networks: A Distributed Attack Detection Framework,\" Journal of Network and Systems Management, vol. 31, no. 2, pp. 1\u201324, Apr. 2023, doi: 10.1007/S10922-023-09722-7/FIGURES/8.",
+            "DOI": "10.1007/s10922-023-09722-7"
+          },
+          {
+            "key": "35301",
+            "doi-asserted-by": "crossref",
+            "unstructured": "C.-H. ; Cheng et al., \"Detection and Prevention of DDoS Attacks on the IoT,\" Applied Sciences 2022, Vol. 12, Page 12407, vol. 12, no. 23, p. 12407, Dec. 2022, doi: 10.3390/APP122312407.",
+            "DOI": "10.3390/app122312407"
+          },
+          {
+            "key": "35302",
+            "doi-asserted-by": "crossref",
+            "unstructured": "D. R. Janardhana, V. Pavan Kumar, S. R. Lavanya, and A. P. Manu, \"Detecting Security and Privacy Attacks in IoT Network using Deep Learning Algorithms,\" 2021 IEEE International Conference on Distributed Computing, VLSI, Electrical Circuits and Robotics, DISCOVER 2021 - Proceedings, pp. 35\u201340, 2021, doi: 10.1109/DISCOVER52564.2021.9663586.",
+            "DOI": "10.1109/DISCOVER52564.2021.9663586"
+          },
+          {
+            "key": "35303",
+            "doi-asserted-by": "crossref",
+            "unstructured": "K. Alissa, T. Alyas, K. Zafar, Q. Abbas, N. Tabassum, and S. Sakib, \"Botnet Attack Detection in IoT Using Machine Learning,\" Comput Intell Neurosci, vol. 2022, 2022, doi: 10.1155/2022/4515642.",
+            "DOI": "10.1155/2022/4515642"
+          },
+          {
+            "key": "35304",
+            "doi-asserted-by": "crossref",
+            "unstructured": "M. Alshamkhany, W. Alshamkhany, M. Mansour, M. Khan, S. Dhou, and F. Aloul, \"Botnet Attack Detection using Machine Learning,\" Proceedings of the 2020 14th International Conference on Innovations in Information Technology, IIT 2020, pp. 203\u2013208, Nov. 2020, doi: 10.1109/IIT50501.2020.9299061.",
+            "DOI": "10.1109/IIT50501.2020.9299061"
+          },
+          {
+            "key": "35305",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Q. A. Al-Haija and M. Al-Dala'ien, \"ELBA-IoT: An Ensemble Learning Model for Botnet Attack Detection in IoT Networks,\" Journal of Sensor and Actuator Networks 2022, Vol. 11, Page 18, vol. 11, no. 1, p. 18, Mar. 2022, doi: 10.3390/JSAN11010018.",
+            "DOI": "10.3390/jsan11010018"
+          },
+          {
+            "key": "35306",
+            "doi-asserted-by": "crossref",
+            "unstructured": "S. Afrifa, V. Varadarajan, P. Appiahene, T. Zhang, and E. A. Domfeh, \"Ensemble Machine Learning Techniques for Accurate and Efficient Detection of Botnet Attacks in Connected Computers,\" Eng, vol. 4, no. 1, pp. 650\u2013664, Feb. 2023, doi: 10.3390/ENG4010039.",
+            "DOI": "10.3390/eng4010039"
+          },
+          {
+            "key": "35307",
+            "doi-asserted-by": "crossref",
+            "unstructured": "S. Srinivasan and D. P, \"Enhancing the security in cyber-world by detecting the botnets using ensemble classification based machine learning,\" Measurement: Sensors, vol. 25, p. 100624, Feb. 2023, doi: 10.1016/J.MEASEN.2022.100624.",
+            "DOI": "10.1016/j.measen.2022.100624"
+          },
+          {
+            "key": "35308",
+            "unstructured": "\"The Bot-IoT Dataset | UNSW Research.\" https://research.unsw.edu.au/projects/bot-iot-dataset (accessed Apr. 16, 2023)."
+          }
+        ],
+        "container-title": [
+          "ICST Transactions on Scalable Information Systems"
+        ],
+        "link": [
+          {
+            "URL": "https://publications.eai.eu/index.php/sis/article/download/3971/2548",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://publications.eai.eu/index.php/sis/article/download/3971/2548",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              21
+            ]
+          ],
+          "date-time": "2024-09-21T17:07:59Z",
+          "timestamp": 1726938479000
+        },
+        "score": 46.532104,
+        "resource": {
+          "primary": {
+            "URL": "https://publications.eai.eu/index.php/sis/article/view/3971"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              25
+            ]
+          ]
+        },
+        "references-count": 19,
+        "URL": "https://doi.org/10.4108/eetsis.3971",
+        "ISSN": [
+          "2032-9407"
+        ],
+        "issn-type": [
+          {
+            "value": "2032-9407",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              25
+            ]
+          ]
+        }
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

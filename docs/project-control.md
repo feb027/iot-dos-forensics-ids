@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 0B — Repository Setup
+Fase 1 — Literature Review
 
 ## Status
 
-Fase 0A/0B approved. Initial repo, GitHub Pages, docs, prompts, tests, and scaffold are created and pushed.
+Fase 1 literature review completed and final verification APPROVED 92/100. Literature matrix contains 18 sources, BibTeX contains 18 entries, and network forensics coverage is strengthened. Ready for Fase 2 Dataset Audit after commit/merge decision.
 
 ## Fixed Decisions
 
@@ -30,10 +30,13 @@ Fase 0A/0B approved. Initial repo, GitHub Pages, docs, prompts, tests, and scaff
 | Phase gates | `docs/phase-gates.md` | created |
 | Workflow | `docs/workflow.md` | created |
 | Prompts | `prompts/` | created |
-| Literature matrix | `references/literature-matrix.md` | template created |
+| Literature matrix | `references/literature-matrix.md` | 18 sources drafted |
 | Dashboard spec | `docs/dashboard-spec.md` | created |
 | Experiment log | `docs/experiment-log.md` | template created |
 | Codex project config | `.codex/config.toml` | gpt-5.5 + high reasoning configured |
+| Fase 1 research log | `docs/research-log.md` | drafted |
+| Fase 1 progress report | `reports/progress-1-literature-review.md` | drafted |
+| BibTeX references | `references/references.bib` | 18 entries drafted |
 
 ## Review Status
 
@@ -42,14 +45,14 @@ Fase 0A/0B approved. Initial repo, GitHub Pages, docs, prompts, tests, and scaff
 | 0A/0B | Codex Lecturer Reviewer | 83 | NEEDS REVISION | `docs/REVIEW_phase0b.md` |
 | 0A/0B revision | Codex Lecturer Reviewer | 91 | APPROVED | `docs/REVIEW_phase0b_final.md` |
 | 0A/0B strict re-review | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase0_gpt55_high.md` |
+| 1 | Codex Lecturer Reviewer | 88 | APPROVED | `docs/REVIEW_phase1_literature.md` |
+| 1 final verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED | `docs/REVIEW_phase1_literature_final_approved.md` |
 
 ## Blockers
 
-None yet.
+None yet. Watch item: some publisher pages may require institutional access, so DOI metadata and official dataset pages are used as primary verification.
 
 ## Next Action
 
-1. Create branch `phase-1-literature-review`.
-2. Start Fase 1 literature review.
-3. Fill `docs/research-log.md` and `references/literature-matrix.md` in parallel.
-4. Group references into dataset, IoT IDS, DoS/DDoS ML detection, leakage/evaluation methodology, and network forensics.
+1. Commit and push branch `phase-1-literature-review`.
+2. Open/merge PR after user approval or continue to Fase 2 on a new branch after merge.
