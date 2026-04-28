@@ -14,7 +14,7 @@ def main() -> None:
             "theme": "IoT + Cyber Security + Digital Forensics",
             "primary_dataset": "BoT-IoT (UNSW)",
             "alternative_dataset": "RT-IoT2022 (UCI)",
-            "status": "Scaffold created; experiment results pending"
+            "status": "Fase 1 literature review approved; Fase 2 dataset audit pending"
         },
         "dataset_summary": {},
         "class_distribution": [],

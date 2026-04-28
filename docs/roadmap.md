@@ -4,7 +4,7 @@
 
 Tujuan: menyiapkan operating model Hermes + Codex, review gate, prompt template, dan aturan proyek.
 
-Status: scaffold stored in repo and governed by review gate.
+Status: completed and governed by review gate.
 
 ## Fase 0B — Repository Setup
 
@@ -23,9 +23,13 @@ Deliverables:
 
 Tujuan: mengumpulkan 10–15 referensi relevan tentang IoT security, IDS, DoS/DDoS, BoT-IoT, RT-IoT2022, dan network forensics.
 
+Status: completed — final review 92/100 APPROVED.
+
 ## Fase 2 — Dataset Audit
 
 Tujuan: memverifikasi akses dataset, label, fitur, ukuran, kelas DoS/DDoS, risiko imbalance, dan risiko leakage.
+
+Status: current phase.
 
 ## Fase 3 — EDA & Preprocessing
 

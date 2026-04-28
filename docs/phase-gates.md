@@ -40,12 +40,12 @@ Done jika:
 
 Done jika:
 
-- [ ] Minimal 10–15 paper relevan.
-- [ ] `references/literature-matrix.md` lengkap.
-- [ ] `docs/research-log.md` terisi.
-- [ ] Research gap sementara ditulis.
-- [ ] Referensi punya link/DOI saat tersedia.
-- [ ] Codex lecturer review score >= 85.
+- [x] Minimal 10–15 paper relevan.
+- [x] `references/literature-matrix.md` lengkap.
+- [x] `docs/research-log.md` terisi.
+- [x] Research gap sementara ditulis.
+- [x] Referensi punya link/DOI saat tersedia.
+- [x] Codex lecturer review score >= 85.
 
 ## Fase 2 — Dataset Audit
 
@@ -57,6 +57,9 @@ Done jika:
 - [ ] Kelas DoS/DDoS dikonfirmasi.
 - [ ] Ukuran data, fitur, dan missing values dicatat.
 - [ ] Risiko class imbalance dan leakage dicatat.
+- [ ] Kolom label atau fitur label-like yang harus dikeluarkan dicatat.
+- [ ] Duplikasi flow/baris diperiksa.
+- [ ] Strategi split awal ditentukan sebelum modeling.
 
 ## Fase 3 — EDA & Preprocessing
 
