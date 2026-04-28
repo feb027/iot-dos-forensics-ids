@@ -43,3 +43,15 @@ def test_dashboard_data_contract_is_valid_json() -> None:
     ]:
         assert key in data
     assert data["project"]["primary_dataset"] == "BoT-IoT (UNSW)"
+
+
+def test_dashboard_data_generator_runs_and_preserves_contract() -> None:
+    import subprocess
+    import sys
+
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "generate_dashboard_data.py")], check=True, cwd=ROOT)
+    data = json.loads((ROOT / "dashboard" / "data" / "dashboard-data.json").read_text(encoding="utf-8"))
+    assert data["project"]["title"] == "Sistem Analisis Serangan DoS pada Arsitektur IoT"
+    assert isinstance(data["class_distribution"], list)
+    assert isinstance(data["model_comparison"], list)
+    assert isinstance(data["feature_importance"], list)

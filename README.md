@@ -69,9 +69,19 @@ Proyek dianggap selesai jika:
 
 Current phase: **Fase 0A/0B approved; ready for Fase 1 — Literature Review**
 
+## Review History
+
+| Review | Model/Reviewer | Score | Verdict | File |
+|---|---|---:|---|---|
+| Initial Fase 0B | Codex lecturer | 83 | NEEDS REVISION | `docs/REVIEW_phase0b.md` |
+| Final Fase 0B | Codex lecturer | 91 | APPROVED | `docs/REVIEW_phase0b_final.md` |
+| Strict Re-review Fase 0 | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase0_gpt55_high.md` |
+
 Lihat:
 
 - `docs/project-control.md`
 - `docs/roadmap.md`
 - `docs/phase-gates.md`
 - `docs/REVIEW_phase0b.md`
+- `docs/REVIEW_phase0b_final.md`
+- `docs/REVIEW_phase0_gpt55_high.md`
