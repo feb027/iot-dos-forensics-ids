@@ -70,6 +70,18 @@ Use Codex Technical Reviewer for:
 - leakage checks,
 - dashboard-data consistency.
 
+## Git Branch Policy
+
+For future phases, prefer a phase branch, for example:
+
+```text
+phase-1-literature-review
+phase-2-dataset-audit
+phase-3-eda-preprocessing
+```
+
+Small scaffold/admin fixes may be committed directly to `main` when explicitly requested.
+
 ## Commit Policy
 
 Commit after each stable phase or meaningful artifact.

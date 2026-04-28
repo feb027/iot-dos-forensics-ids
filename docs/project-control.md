@@ -6,7 +6,7 @@ Fase 0B — Repository Setup
 
 ## Status
 
-In progress
+Revision after Codex review. Initial repo, GitHub Pages, docs, prompts, and scaffold are created and pushed.
 
 ## Fixed Decisions
 
@@ -38,7 +38,8 @@ In progress
 
 | Phase | Reviewer | Score | Verdict | File |
 |---|---|---:|---|---|
-| 0A/0B | pending | - | pending | - |
+| 0A/0B | Codex Lecturer Reviewer | 83 | NEEDS REVISION | `docs/REVIEW_phase0b.md` |
+| 0A/0B revision | pending | - | pending | - |
 
 ## Blockers
 
@@ -46,6 +47,6 @@ None yet.
 
 ## Next Action
 
-1. Push initial scaffold to GitHub.
-2. Run Fase 0B review if needed.
+1. Commit and push Fase 0B review fixes.
+2. Optionally rerun Codex Fase 0B verification.
 3. Start Fase 1 literature review.

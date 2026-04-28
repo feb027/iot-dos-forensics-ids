@@ -45,12 +45,33 @@ reports/     Progress report dan naskah ilmiah
 prompts/     Prompt template untuk Codex/Hermes workflow
 ```
 
+## Dashboard Preview
+
+GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
+
+Saat ini dashboard masih placeholder scaffold. Isi metrik akan diperbarui setelah eksperimen berjalan.
+
+## Definition of Done
+
+Proyek dianggap selesai jika:
+
+- literature review berisi minimal 10–15 referensi relevan,
+- dataset audit BoT-IoT jelas dan dapat direproduksi,
+- EDA dan preprocessing terdokumentasi,
+- minimal 3 model baseline dilatih dan dievaluasi,
+- tabel/grafik/metrik tersimpan di `results/`,
+- analisis forensik fitur tersedia,
+- dashboard static menampilkan hasil dari artifact,
+- naskah ilmiah final selesai dan sesuai artifact,
+- final review menyatakan siap submit.
+
 ## Status
 
-Current phase: **Fase 0B — Repository Setup**
+Current phase: **Fase 0B — Repository Setup revision after Codex review**
 
 Lihat:
 
 - `docs/project-control.md`
 - `docs/roadmap.md`
 - `docs/phase-gates.md`
+- `docs/REVIEW_phase0b.md`

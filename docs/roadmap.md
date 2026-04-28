@@ -4,7 +4,7 @@
 
 Tujuan: menyiapkan operating model Hermes + Codex, review gate, prompt template, dan aturan proyek.
 
-Status: done conceptually; scaffold stored in repo.
+Status: scaffold stored in repo and governed by review gate.
 
 ## Fase 0B — Repository Setup
 
