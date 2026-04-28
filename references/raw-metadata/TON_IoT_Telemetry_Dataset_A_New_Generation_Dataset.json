@@ -1,0 +1,1796 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 9609444,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              27
+            ]
+          ],
+          "date-time": "2026-04-27T10:23:47Z",
+          "timestamp": 1777285427044,
+          "version": "3.51.4"
+        },
+        "reference-count": 88,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2020,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2020-01-01T00:00:00Z",
+              "timestamp": 1577836800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Access"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2020
+            ]
+          ]
+        },
+        "DOI": "10.1109/access.2020.3022862",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              9
+            ]
+          ],
+          "date-time": "2020-09-09T16:16:47Z",
+          "timestamp": 1599668207000
+        },
+        "page": "165130-165150",
+        "source": "Crossref",
+        "is-referenced-by-count": 696,
+        "title": [
+          "TON_IoT Telemetry Dataset: A New Generation Dataset of IoT and IIoT for Data-Driven Intrusion Detection Systems"
+        ],
+        "prefix": "10.1109",
+        "volume": "8",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4588-5562",
+            "authenticated-orcid": false,
+            "given": "Abdullah",
+            "family": "Alsaedi",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6127-9349",
+            "authenticated-orcid": false,
+            "given": "Nour",
+            "family": "Moustafa",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1235-9673",
+            "authenticated-orcid": false,
+            "given": "Zahir",
+            "family": "Tari",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7769-3384",
+            "authenticated-orcid": false,
+            "given": "Abdun",
+            "family": "Mahmood",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Adnan",
+            "family": "Anwar",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref73",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1162/neco.1997.9.8.1735"
+          },
+          {
+            "key": "ref72",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/INDICON.2015.7443533"
+          },
+          {
+            "key": "ref71",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3178582"
+          },
+          {
+            "key": "ref70",
+            "author": "g\u00e9ron",
+            "year": "2017",
+            "journal-title": "Hands-on machine learning with Scikit-Learn and TensorFlow concepts tools and techniques to build intelligent systems"
+          },
+          {
+            "key": "ref76",
+            "first-page": "1",
+            "article-title": "Long short-term memory recurrent neural network architectures for large scale acoustic modeling",
+            "author": "sak",
+            "year": "2014",
+            "journal-title": "Proc Annu Conf Int Speech Commun Assoc"
+          },
+          {
+            "key": "ref77",
+            "year": "2020",
+            "journal-title": "Grid Search"
+          },
+          {
+            "key": "ref74",
+            "first-page": "89",
+            "article-title": "Long short-term memory networks for anomaly detection in time series",
+            "volume": "89",
+            "author": "malhotra",
+            "year": "2015",
+            "journal-title": "Libraire Universitaire Louvain"
+          },
+          {
+            "key": "ref39",
+            "year": "2020",
+            "journal-title": "Amazon Web Services (AWS) Lambda"
+          },
+          {
+            "key": "ref75",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-1-4614-7138-7"
+          },
+          {
+            "key": "ref38",
+            "year": "2020",
+            "journal-title": "Microsoft Azure IoT Hub"
+          },
+          {
+            "key": "ref78",
+            "author": "goodfellow",
+            "year": "2016",
+            "journal-title": "Deep Learning"
+          },
+          {
+            "key": "ref79",
+            "article-title": "Adam: A method for stochastic optimization",
+            "author": "kingma",
+            "year": "2014",
+            "journal-title": "arXiv 1412 6980"
+          },
+          {
+            "key": "ref33",
+            "year": "2020",
+            "journal-title": "VMware VSphere Hypervisor"
+          },
+          {
+            "key": "ref32",
+            "year": "2020",
+            "journal-title": "The VMware NSX vCloud NFV platform"
+          },
+          {
+            "key": "ref31",
+            "year": "2020",
+            "journal-title": "Cloud NFV"
+          },
+          {
+            "key": "ref30",
+            "year": "2020",
+            "journal-title": "Ever Thought Virtualizing Your Network"
+          },
+          {
+            "key": "ref37",
+            "year": "2020",
+            "journal-title": "Vulnerable Public PHP Website"
+          },
+          {
+            "key": "ref36",
+            "year": "2020",
+            "journal-title": "HiveMQ"
+          },
+          {
+            "key": "ref35",
+            "year": "2019",
+            "journal-title": "Node-RED"
+          },
+          {
+            "key": "ref34",
+            "year": "2020",
+            "journal-title": "KALI Linux"
+          },
+          {
+            "key": "ref60",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2019.2912022"
+          },
+          {
+            "key": "ref62",
+            "article-title": "Common Cybersecurity Vulnerabilities in Industrial Control Systems",
+            "author": "nelso",
+            "year": "2011",
+            "journal-title": "Control Syst Secur Program Washington DC Dept Homeland Secur (DHS) Nat Cyber Secur Division"
+          },
+          {
+            "key": "ref61",
+            "year": "2020",
+            "journal-title": "Cross-Site-Script Toolkit"
+          },
+          {
+            "key": "ref63",
+            "year": "2020",
+            "journal-title": "CeWL Package"
+          },
+          {
+            "key": "ref28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.future.2017.08.043"
+          },
+          {
+            "key": "ref64",
+            "year": "2020",
+            "journal-title": "Hydra Package"
+          },
+          {
+            "key": "ref27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MCOM.2018.1700332"
+          },
+          {
+            "key": "ref65",
+            "year": "2020",
+            "journal-title": "Ettercap"
+          },
+          {
+            "key": "ref66",
+            "author": "han",
+            "year": "2011",
+            "journal-title": "Data Mining Concepts Techninqs"
+          },
+          {
+            "key": "ref29",
+            "year": "2019",
+            "journal-title": "KDD Cup 1999 data"
+          },
+          {
+            "key": "ref67",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10115-007-0114-2"
+          },
+          {
+            "key": "ref68",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.protcy.2012.05.017"
+          },
+          {
+            "key": "ref69",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.eswa.2010.04.017"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TII.2018.2852491"
+          },
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.future.2013.01.010"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2017.04.002"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TAC.2019.2904438"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.neucom.2017.10.009"
+          },
+          {
+            "key": "ref24",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TETC.2016.2633228"
+          },
+          {
+            "key": "ref23",
+            "author": "moustafa",
+            "year": "2020",
+            "journal-title": "TON-IoT Dataset"
+          },
+          {
+            "key": "ref26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11227-018-2397-3"
+          },
+          {
+            "key": "ref25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/DASC-PICom-DataCom-CyberSciTec.2017.141"
+          },
+          {
+            "key": "ref50",
+            "author": "alsaedi",
+            "year": "2020",
+            "journal-title": "T-IIoT Dataset Evaluation"
+          },
+          {
+            "key": "ref51",
+            "year": "2020",
+            "journal-title": "ToN_IoT Attacks Scenarios"
+          },
+          {
+            "key": "ref59",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2019.2914390"
+          },
+          {
+            "key": "ref58",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cose.2018.01.001"
+          },
+          {
+            "key": "ref57",
+            "year": "2020",
+            "journal-title": "UFONet Toolkit"
+          },
+          {
+            "key": "ref56",
+            "year": "2020",
+            "journal-title": "DoS & DDoS Attack using Scapy"
+          },
+          {
+            "key": "ref55",
+            "year": "2020",
+            "journal-title": "Nessus A Securce Vulnerability Scanning Tool"
+          },
+          {
+            "key": "ref54",
+            "author": "lyon",
+            "year": "2009",
+            "journal-title": "Nmap Network Scanning The Official Nmap Project Guide to Network Discovery and Security Scanning"
+          },
+          {
+            "key": "ref53",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/2976749.2978293"
+          },
+          {
+            "key": "ref52",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/SURV.2013.031413.00127"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2018.2844341"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2015.2494502"
+          },
+          {
+            "key": "ref40",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.15439/2014F503"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CISDA.2009.5356528"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MilCIS.2015.7348942"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5220/0006639801080116"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ISSNIP.2010.5706782"
+          },
+          {
+            "key": "ref82",
+            "year": "2020",
+            "journal-title": "PANDA"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2015.2402161"
+          },
+          {
+            "key": "ref81",
+            "year": "2020",
+            "journal-title": "SciPy"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TMC.2018.2866249"
+          },
+          {
+            "key": "ref84",
+            "year": "2020",
+            "journal-title": "TensorFlow&#x2122;"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.future.2019.05.041"
+          },
+          {
+            "key": "ref83",
+            "year": "2020",
+            "journal-title": "Scikit-Learn"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3314148.3314352"
+          },
+          {
+            "key": "ref80",
+            "year": "2020",
+            "journal-title": "Numpy"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2018.2822842"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.adhoc.2013.04.014"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "crossref",
+            "first-page": "2233",
+            "DOI": "10.1109/TII.2014.2300753",
+            "article-title": "Internet of Things in industries: A survey",
+            "volume": "10",
+            "author": "da xu",
+            "year": "2014",
+            "journal-title": "IEEE Trans Ind Informat"
+          },
+          {
+            "key": "ref5",
+            "first-page": "1093",
+            "article-title": "Understanding the Mirai Botnet",
+            "author": "antonakakis",
+            "year": "2017",
+            "journal-title": "Proc 26th Conf Secur Symp"
+          },
+          {
+            "key": "ref85",
+            "year": "2020",
+            "journal-title": "Keras"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2018.12.006"
+          },
+          {
+            "key": "ref86",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TIFS.2017.2762828"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2017.02.009"
+          },
+          {
+            "key": "ref49",
+            "year": "2020",
+            "journal-title": "ThingPulse ESP8266 Weather Station"
+          },
+          {
+            "key": "ref87",
+            "author": "geller",
+            "year": "2020",
+            "journal-title": "Normalization vs Standardization Quantitative Analysis"
+          },
+          {
+            "key": "ref88",
+            "first-page": "1",
+            "article-title": "A Scaling Law for the Validation-set Training-set Size Ratio",
+            "volume": "15",
+            "author": "guyon",
+            "year": "1997",
+            "journal-title": "AT&T-Bell Lab Int"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2019.2896380"
+          },
+          {
+            "key": "ref46",
+            "year": "2020",
+            "journal-title": "OWASP Security"
+          },
+          {
+            "key": "ref45",
+            "year": "2020",
+            "journal-title": "Metasploitable3"
+          },
+          {
+            "key": "ref48",
+            "year": "2019",
+            "journal-title": "Node-RED-Contrib-Modbus"
+          },
+          {
+            "key": "ref47",
+            "year": "2020",
+            "journal-title": "Security Onion"
+          },
+          {
+            "key": "ref42",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2015.2444095"
+          },
+          {
+            "key": "ref41",
+            "year": "2020",
+            "journal-title": "VMware NSX"
+          },
+          {
+            "key": "ref44",
+            "year": "2020",
+            "journal-title": "DVWA"
+          },
+          {
+            "key": "ref43",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2018.2844794"
+          }
+        ],
+        "container-title": [
+          "IEEE Access"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/6287639/8948470/09189760.pdf?arnumber=9189760",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2021,
+              12,
+              17
+            ]
+          ],
+          "date-time": "2021-12-17T14:55:48Z",
+          "timestamp": 1639752948000
+        },
+        "score": 78.316376,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/9189760/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2020
+            ]
+          ]
+        },
+        "references-count": 88,
+        "URL": "https://doi.org/10.1109/access.2020.3022862",
+        "relation": {
+          "is-referenced-by": [
+            {
+              "id-type": "doi",
+              "id": "10.1007/s42979-025-04352-z",
+              "asserted-by": "object"
+            }
+          ]
+        },
+        "ISSN": [
+          "2169-3536"
+        ],
+        "issn-type": [
+          {
+            "value": "2169-3536",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              14
+            ]
+          ],
+          "date-time": "2026-04-14T16:18:31Z",
+          "timestamp": 1776183511151,
+          "version": "3.50.1"
+        },
+        "reference-count": 20,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  3,
+                  8
+                ]
+              ],
+              "date-time": "2023-03-08T00:00:00Z",
+              "timestamp": 1678233600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  3,
+                  8
+                ]
+              ],
+              "date-time": "2023-03-08T00:00:00Z",
+              "timestamp": 1678233600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              8
+            ]
+          ]
+        },
+        "DOI": "10.1109/ccwc57344.2023.10099144",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              18
+            ]
+          ],
+          "date-time": "2023-04-18T17:28:01Z",
+          "timestamp": 1681838881000
+        },
+        "page": "0333-0338",
+        "source": "Crossref",
+        "is-referenced-by-count": 24,
+        "title": [
+          "An IoT Intrusion Detection System Based on TON IoT Network Dataset"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Ge",
+            "family": "Guo",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Wuhan Qingchuan University,Wuhan,China"
+              }
+            ]
+          },
+          {
+            "given": "Xuefeng",
+            "family": "Pan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Wuhan Qingchuan University,Wuhan,China"
+              }
+            ]
+          },
+          {
+            "given": "He",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Wuhan Qingchuan University,Wuhan,China"
+              }
+            ]
+          },
+          {
+            "given": "Fen",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Wuhan Qingchuan University,Wuhan,China"
+              }
+            ]
+          },
+          {
+            "given": "Lang",
+            "family": "Pei",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Wuhan Qingchuan University,Wuhan,China"
+              }
+            ]
+          },
+          {
+            "given": "Kewei",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Wuhan Qingchuan University,Wuhan,China"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MDAT.2016.2526612"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CISDA.2009.5356528"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MilCIS.2015.7348942"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5220/0006639801080116"
+          },
+          {
+            "key": "ref5",
+            "volume-title": "TON_IoT Datasets",
+            "author": "Moustafa"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/exsy.12556"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s13369-020-05181-3"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s21134294"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2021/5579851"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s21092987"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.32604/cmc.2022.019636"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s20164583"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11227-021-03833-1"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2021.3087175"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2020/2804291"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.scs.2021.102994"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2020.3022862"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.comcom.2020.12.003"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.sysarc.2020.101954"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1186/s42400-021-00103-8"
+          }
+        ],
+        "event": {
+          "name": "2023 IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC)",
+          "location": "Las Vegas, NV, USA",
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                8
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                11
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2023 IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/10099037/10098906/10099144.pdf?arnumber=10099144",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              29
+            ]
+          ],
+          "date-time": "2024-02-29T23:51:52Z",
+          "timestamp": 1709250712000
+        },
+        "score": 58.49851,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/10099144/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              8
+            ]
+          ]
+        },
+        "references-count": 20,
+        "URL": "https://doi.org/10.1109/ccwc57344.2023.10099144",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              8
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              17
+            ]
+          ],
+          "date-time": "2026-04-17T05:15:28Z",
+          "timestamp": 1776402928725,
+          "version": "3.51.2"
+        },
+        "reference-count": 50,
+        "publisher": "Springer Science and Business Media LLC",
+        "issue": "16",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  6,
+                  28
+                ]
+              ],
+              "date-time": "2024-06-28T00:00:00Z",
+              "timestamp": 1719532800000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  6,
+                  28
+                ]
+              ],
+              "date-time": "2024-06-28T00:00:00Z",
+              "timestamp": 1719532800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100012166",
+            "name": "National Key R &D Program of China",
+            "doi-asserted-by": "crossref",
+            "award": [
+              "2021YFB201230"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "2021YFB201230"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100012166",
+                "id-type": "DOI",
+                "asserted-by": "crossref"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100001809",
+            "name": "National Natural Science Foundation of China",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "62173101"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "62173101"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100001809",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100021171",
+            "name": "Basic and Applied Basic Research Foundation of Guangdong Province",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "2022A1515011558"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "2022A1515011558"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100021171",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100021171",
+            "name": "Basic and Applied Basic Research Foundation of Guangdong Province",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "2022A1515010865"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "2022A1515010865"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100021171",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "DOI": "10.13039/501100010256",
+            "name": "Guangzhou Municipal Science and Technology Project",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "202201020217"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "202201020217"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100010256",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          },
+          {
+            "name": "Key Laboratory of Guangdong Higher Education Institutes",
+            "award": [
+              "2023KSYS002"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "2023KSYS002"
+                ]
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "link.springer.com"
+          ],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Multimed Tools Appl"
+        ],
+        "DOI": "10.1007/s11042-024-19695-7",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              28
+            ]
+          ],
+          "date-time": "2024-06-28T05:02:05Z",
+          "timestamp": 1719550925000
+        },
+        "page": "16425-16453",
+        "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 25,
+        "title": [
+          "Using the ToN-IoT dataset to develop a new intrusion detection system for industrial IoT devices"
+        ],
+        "prefix": "10.1007",
+        "volume": "84",
+        "author": [
+          {
+            "given": "Zhong",
+            "family": "Cao",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Zhicai",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6022-5381",
+            "authenticated-orcid": false,
+            "given": "Wenli",
+            "family": "Shang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Shan",
+            "family": "Ai",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Shen",
+            "family": "Shen",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "297",
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              28
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "19695_CR1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Saha HN, Mandal A, Sinha A (2017) Recent trends in the internet of things. In: 2017 IEEE 7th Annual computing and communication workshop and conference (CCWC), pp 1\u20134. IEEE",
+            "DOI": "10.1109/CCWC.2017.7868439"
+          },
+          {
+            "key": "19695_CR2",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sharma A, Zheng Z, Kim J, Bhaskar A, Haque MM (2021) Assessing traffic disturbance, efficiency, and safety of the mixed traffic flow of connected vehicles and traditional vehicles by considering human factors. Transp Res C: Emerg Technol 124:102934",
+            "DOI": "10.1016/j.trc.2020.102934"
+          },
+          {
+            "key": "19695_CR3",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Asha P, Natrayan L, Geetha B, Beulah JR, Sumathy R, Varalakshmi G, Neelakandan S (2022) Iot enabled environmental toxicology for air pollution monitoring using ai techniques. Environ Res 205:112574",
+            "DOI": "10.1016/j.envres.2021.112574"
+          },
+          {
+            "key": "19695_CR4",
+            "doi-asserted-by": "publisher",
+            "first-page": "1454",
+            "DOI": "10.1016/j.jclepro.2016.10.006",
+            "volume": "140",
+            "author": "BLR Stojkoska",
+            "year": "2017",
+            "unstructured": "Stojkoska BLR, Trivodaliev KV (2017) A review of internet of things for smart home: Challenges and solutions. J Cleaner Prod 140:1454\u20131464",
+            "journal-title": "J Cleaner Prod"
+          },
+          {
+            "issue": "8",
+            "key": "19695_CR5",
+            "doi-asserted-by": "publisher",
+            "first-page": "4687",
+            "DOI": "10.1016/j.jksuci.2021.06.005",
+            "volume": "34",
+            "author": "M Alshamrani",
+            "year": "2022",
+            "unstructured": "Alshamrani M (2022) Iot and artificial intelligence implementations for remote healthcare monitoring systems: A survey. J King Saud Univ-Comput Inf Sci 34(8):4687\u20134701",
+            "journal-title": "J King Saud Univ-Comput Inf Sci"
+          },
+          {
+            "issue": "1\u20132",
+            "key": "19695_CR6",
+            "doi-asserted-by": "publisher",
+            "first-page": "7",
+            "DOI": "10.1080/0267257X.2016.1217914",
+            "volume": "33",
+            "author": "M Balaji",
+            "year": "2017",
+            "unstructured": "Balaji M, Roy SK (2017) Value co-creation with internet of things technology in the retail industry. J Market Manage 33(1\u20132):7\u201331",
+            "journal-title": "J Market Manage"
+          },
+          {
+            "key": "19695_CR7",
+            "doi-asserted-by": "publisher",
+            "first-page": "2603",
+            "DOI": "10.1007/s11277-021-08348-9",
+            "volume": "119",
+            "author": "OI Abiodun",
+            "year": "2021",
+            "unstructured": "Abiodun OI, Abiodun EO, Alawida M, Alkhawaldeh RS, Arshad H (2021) A review on the security of the internet of things: Challenges and solutions. Wirel Personal Commun 119:2603\u20132637",
+            "journal-title": "Wirel Personal Commun"
+          },
+          {
+            "issue": "7",
+            "key": "19695_CR8",
+            "doi-asserted-by": "publisher",
+            "first-page": "1",
+            "DOI": "10.1145/3539605",
+            "volume": "55",
+            "author": "M Zipperle",
+            "year": "2022",
+            "unstructured": "Zipperle M, Gottwalt F, Chang E, Dillon T (2022) Provenance-based intrusion detection systems: A survey. ACM Comput Surv 55(7):1\u201336",
+            "journal-title": "ACM Comput Surv"
+          },
+          {
+            "key": "19695_CR9",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Pradeepthi C, Maheswari BU (2023) Network intrusion detection and prevention strategy with data encryption using hybrid detection classifier. Multimed Tools App 1\u201332",
+            "DOI": "10.1007/s11042-023-16853-1"
+          },
+          {
+            "key": "19695_CR10",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Yang Z, Liu X, Li T, Wu D, Wang J, Zhao Y, Han H (2022) A systematic literature review of methods and datasets for anomaly-based network intrusion detection. Comput Secur 116:102675",
+            "DOI": "10.1016/j.cose.2022.102675"
+          },
+          {
+            "key": "19695_CR11",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Kilincer IF, Ertam F, Sengur A (2022) A comprehensive intrusion detection framework using boosting algorithms. Comput Electr Eng 100:107869",
+            "DOI": "10.1016/j.compeleceng.2022.107869"
+          },
+          {
+            "key": "19695_CR12",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Maldonado J, Riff MC, Neveu B (2022) A review of recent approaches on wrapper feature selection for intrusion detection. Expert Syst Appl 198:116822",
+            "DOI": "10.1016/j.eswa.2022.116822"
+          },
+          {
+            "issue": "6",
+            "key": "19695_CR13",
+            "doi-asserted-by": "publisher",
+            "first-page": "4486",
+            "DOI": "10.1109/JIOT.2018.2822842",
+            "volume": "5",
+            "author": "G Falco",
+            "year": "2018",
+            "unstructured": "Falco G, Caldera C, Shrobe H (2018) Iiot cybersecurity risk modeling for scada systems. IEEE Int Things J 5(6):4486\u20134495",
+            "journal-title": "IEEE Int Things J"
+          },
+          {
+            "key": "19695_CR14",
+            "unstructured": "Antonakakis M, April T, Bailey M, Bernhard M, Bursztein E, Cochran J, Durumeric Z, Halderman JA, Invernizzi L, Kallitsis M et al (2017) Understanding the mirai botnet. In: 26th USENIX security symposium (USENIX Security 17), pp 1093\u20131110"
+          },
+          {
+            "issue": "2",
+            "key": "19695_CR15",
+            "doi-asserted-by": "publisher",
+            "first-page": "1667",
+            "DOI": "10.1007/s11277-020-07649-9",
+            "volume": "115",
+            "author": "PM Chanal",
+            "year": "2020",
+            "unstructured": "Chanal PM, Kakkasageri MS (2020) Security and privacy in iot: a survey. Wirel Personal Commun 115(2):1667\u20131693",
+            "journal-title": "Wirel Personal Commun"
+          },
+          {
+            "key": "19695_CR16",
+            "doi-asserted-by": "publisher",
+            "first-page": "1",
+            "DOI": "10.1186/s42400-021-00077-7",
+            "volume": "4",
+            "author": "A Khraisat",
+            "year": "2021",
+            "unstructured": "Khraisat A, Alazab A (2021) A critical review of intrusion detection systems in the internet of things: techniques, deployment strategy, validation strategy, attacks, public datasets and challenges. Cybersecurity 4:1\u201327",
+            "journal-title": "Cybersecurity"
+          },
+          {
+            "key": "19695_CR17",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Alazab M, Khurma RA, Awajan A, Camacho D (2022) A new intrusion detection system based on moth-flame optimizer algorithm. Expert Syst Appl 210:118439",
+            "DOI": "10.1016/j.eswa.2022.118439"
+          },
+          {
+            "issue": "19",
+            "key": "19695_CR18",
+            "doi-asserted-by": "publisher",
+            "first-page": "29643",
+            "DOI": "10.1007/s11042-021-11100-x",
+            "volume": "80",
+            "author": "C-Y Hsu",
+            "year": "2021",
+            "unstructured": "Hsu C-Y, Wang S, Qiao Y (2021) Intrusion detection by machine learning for multimedia platform. Multimed Tools App 80(19):29643\u201329656",
+            "journal-title": "Multimed Tools App"
+          },
+          {
+            "key": "19695_CR19",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Lee S-W, Mohammadi M, Rashidi S, Rahmani AM, Masdari M, Hosseinzadeh M et al (2021) Towards secure intrusion detection systems using deep learning techniques: Comprehensive analysis and review. J Netw Comput App 187:103111",
+            "DOI": "10.1016/j.jnca.2021.103111"
+          },
+          {
+            "key": "19695_CR20",
+            "doi-asserted-by": "publisher",
+            "first-page": "55",
+            "DOI": "10.1016/j.jpdc.2022.01.030",
+            "volume": "164",
+            "author": "R Kumar",
+            "year": "2022",
+            "unstructured": "Kumar R, Kumar P, Tripathi R, Gupta GP, Garg S, Hassan MM (2022) A distributed intrusion detection system to detect ddos attacks in blockchain-enabled iot network. J Parallel Distrib Comput 164:55\u201368",
+            "journal-title": "J Parallel Distrib Comput"
+          },
+          {
+            "key": "19695_CR21",
+            "doi-asserted-by": "publisher",
+            "first-page": "353",
+            "DOI": "10.1016/j.inffus.2022.09.026",
+            "volume": "90",
+            "author": "A Thakkar",
+            "year": "2023",
+            "unstructured": "Thakkar A, Lohiya R (2023) Fusion of statistical importance for feature selection in deep neural network-based intrusion detection system. Inf Fus 90:353\u2013363",
+            "journal-title": "Inf Fus"
+          },
+          {
+            "issue": "3",
+            "key": "19695_CR22",
+            "doi-asserted-by": "publisher",
+            "first-page": "2671",
+            "DOI": "10.1109/COMST.2019.2896380",
+            "volume": "21",
+            "author": "N Chaabouni",
+            "year": "2019",
+            "unstructured": "Chaabouni N, Mosbah M, Zemmari A, Sauvignac C, Faruki P (2019) Network intrusion detection for iot security based on learning techniques. IEEE Commun Surv Tutor 21(3):2671\u20132701",
+            "journal-title": "IEEE Commun Surv Tutor"
+          },
+          {
+            "key": "19695_CR23",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Tavallaee M, Bagheri E, Lu W, Ghorbani AA (2009) A detailed analysis of the kdd cup 99 data set. In: 2009 IEEE Symposium on Computational Intelligence for Security and Defense Applications, pp 1\u20136. Ieee",
+            "DOI": "10.1109/CISDA.2009.5356528"
+          },
+          {
+            "key": "19695_CR24",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Moustafa N, Slay J (2015) Unsw-nb15: a comprehensive data set for network intrusion detection systems (unsw-nb15 network data set). In: 2015 Military communications and information systems conference (MilCIS), pp 1\u20136. IEEE",
+            "DOI": "10.1109/MilCIS.2015.7348942"
+          },
+          {
+            "key": "19695_CR25",
+            "first-page": "108",
+            "volume": "1",
+            "author": "I Sharafaldin",
+            "year": "2018",
+            "unstructured": "Sharafaldin I, Lashkari AH, Ghorbani AA (2018) Toward generating a new intrusion detection dataset and intrusion traffic characterization. ICISSp 1:108\u2013116",
+            "journal-title": "ICISSp"
+          },
+          {
+            "key": "19695_CR26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.scs.2021.102994",
+            "volume": "72",
+            "author": "N Moustafa",
+            "year": "2021",
+            "unstructured": "Moustafa N (2021) A new distributed architecture for evaluating ai-based security systems at the edge: Network ton_iot datasets. Sustain Cities Soc 72:102994",
+            "journal-title": "Sustain Cities Soc"
+          },
+          {
+            "key": "19695_CR27",
+            "first-page": "240",
+            "volume": "727",
+            "author": "H Debar",
+            "year": "1992",
+            "unstructured": "Debar H, Becker M, Siboni D (1992) A neural network component for an intrusion detection system. IEEE Symp Secur Priv 727:240\u2013250",
+            "journal-title": "IEEE Symp Secur Priv"
+          },
+          {
+            "key": "19695_CR28",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Wang Z, Jiang D, Huo L, Yang W (2021) An efficient network intrusion detection approach based on deep learning. Wirel Netw 1\u201314",
+            "DOI": "10.1007/s11276-021-02698-9"
+          },
+          {
+            "issue": "11",
+            "key": "19695_CR29",
+            "doi-asserted-by": "publisher",
+            "first-page": "11041",
+            "DOI": "10.1109/JIOT.2020.2993410",
+            "volume": "7",
+            "author": "N Ravi",
+            "year": "2020",
+            "unstructured": "Ravi N, Shalinie SM (2020) Semisupervised-learning-based security to detect and mitigate intrusions in iot network. IEEE Int Things J 7(11):11041\u201311052",
+            "journal-title": "IEEE Int Things J"
+          },
+          {
+            "key": "19695_CR30",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Alzaqebah A, Aljarah I, Al-Kadi O (2023) A hierarchical intrusion detection system based on extreme learning machine and nature-inspired optimization. Comput Secur 124:102957",
+            "DOI": "10.1016/j.cose.2022.102957"
+          },
+          {
+            "key": "19695_CR31",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Mirsky Y, Doitshman T, Elovici Y, Shabtai A (2018) Kitsune: an ensemble of autoencoders for online network intrusion detection. arXiv preprint arXiv:1802.09089",
+            "DOI": "10.14722/ndss.2018.23204"
+          },
+          {
+            "key": "19695_CR32",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hazman C, Guezzaz A, Benkirane S, Azrour M (2023) Toward an intrusion detection model for iot-based smart environments. Multimed Tools App 1\u201322",
+            "DOI": "10.1007/s11042-023-16436-0"
+          },
+          {
+            "key": "19695_CR33",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Mohy-eddine M, Guezzaz A, Benkirane S, Azrour M (2023) An efficient network intrusion detection model for iot security using k-nn classifier and feature selection. Multimed Tools App 1\u201319",
+            "DOI": "10.34028/iajit/19/5/14"
+          },
+          {
+            "key": "19695_CR34",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Caville E, Lo WW, Layeghy S, Portmann M (2022) Anomal-e: A self-supervised network intrusion detection system based on graph neural networks. Knowl-Based Syst 258:110030",
+            "DOI": "10.1016/j.knosys.2022.110030"
+          },
+          {
+            "key": "19695_CR35",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Al-Yaseen WL, Idrees AK, Almasoudy FH (2022) Wrapper feature selection method based differential evolution and extreme learning machine for intrusion detection system. Pattern Recognit 132:108912",
+            "DOI": "10.1016/j.patcog.2022.108912"
+          },
+          {
+            "issue": "1",
+            "key": "19695_CR36",
+            "doi-asserted-by": "publisher",
+            "first-page": "65",
+            "DOI": "10.1186/s40537-021-00448-4",
+            "volume": "8",
+            "author": "F Laghrissi",
+            "year": "2021",
+            "unstructured": "Laghrissi F, Douzi S, Douzi K, Hssina B (2021) Intrusion detection systems using long short-term memory (lstm). J Big Data 8(1):65",
+            "journal-title": "J Big Data"
+          },
+          {
+            "key": "19695_CR37",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Mushtaq E, Zameer A, Umer M, Abbasi AA (2022) A two-stage intrusion detection system with auto-encoder and lstms. Appl Soft Comput 121:108768",
+            "DOI": "10.1016/j.asoc.2022.108768"
+          },
+          {
+            "key": "19695_CR38",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Rashid MM, Kamruzzaman J, Hassan MM, Imam T, Wibowo S, Gordon S, Fortino G (2022) Adversarial training for deep learning-based cyberattack detection in iot-based smart city applications. Comput Secur 120:102783",
+            "DOI": "10.1016/j.cose.2022.102783"
+          },
+          {
+            "key": "19695_CR39",
+            "doi-asserted-by": "publisher",
+            "first-page": "185",
+            "DOI": "10.1016/j.future.2022.08.011",
+            "volume": "138",
+            "author": "I Debicha",
+            "year": "2023",
+            "unstructured": "Debicha I, Bauwens R, Debatty T, Dricot J-M, Kenaza T, Mees W (2023) Tad: Transfer learning-based multi-adversarial detection of evasion attacks against network intrusion detection systems. Futur Gener Comput Syst 138:185\u2013197",
+            "journal-title": "Futur Gener Comput Syst"
+          },
+          {
+            "key": "19695_CR40",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sarhan M, Layeghy S, Moustafa N, Portmann M (2021) Netflow datasets for machine learning-based network intrusion detection systems. In: Big data technologies and applications: 10th EAI international conference, BDTA 2020, and 13th EAI International conference on wireless internet, WiCON 2020, Virtual Event, December 11, 2020, Proceedings 10, pp 117\u2013135. Springer",
+            "DOI": "10.1007/978-3-030-72802-1_9"
+          },
+          {
+            "key": "19695_CR41",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Lo WW, Layeghy S, Sarhan M, Gallagher M, Portmann M (2022) E-graphsage: A graph neural network based intrusion detection system for iot. In: NOMS 2022-2022 IEEE/IFIP Network Operations and Management Symposium, pp 1\u20139. IEEE",
+            "DOI": "10.1109/NOMS54207.2022.9789878"
+          },
+          {
+            "key": "19695_CR42",
+            "volume-title": "Encoding cyclical features for deep learning",
+            "author": "A Wyk",
+            "year": "2018",
+            "unstructured": "Wyk A (2018) Encoding cyclical features for deep learning. Rep, EPI-USE Lab, Pretoria, South Africa, Tech"
+          },
+          {
+            "key": "19695_CR43",
+            "doi-asserted-by": "publisher",
+            "first-page": "321",
+            "DOI": "10.1613/jair.953",
+            "volume": "16",
+            "author": "NV Chawla",
+            "year": "2002",
+            "unstructured": "Chawla NV, Bowyer KW, Hall LO, Kegelmeyer WP (2002) Smote: synthetic minority over-sampling technique. J Artif Intell Res 16:321\u2013357",
+            "journal-title": "J Artif Intell Res"
+          },
+          {
+            "issue": "1",
+            "key": "19695_CR44",
+            "doi-asserted-by": "publisher",
+            "first-page": "281",
+            "DOI": "10.1109/TSMCB.2008.2002909",
+            "volume": "39",
+            "author": "Y Tang",
+            "year": "2008",
+            "unstructured": "Tang Y, Zhang Y-Q, Chawla NV, Krasser S (2008) Svms modeling for highly imbalanced classification. IEEE Trans Syst Man Cybernet Part B (Cybernetics) 39(1):281\u2013288",
+            "journal-title": "IEEE Trans Syst Man Cybernet Part B (Cybernetics)"
+          },
+          {
+            "key": "19695_CR45",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Han H, Wang W-Y, Mao B-H (2005) Borderline-smote: a new over-sampling method in imbalanced data sets learning. In: International conference on intelligent computing, pp 878\u2013887. Springer",
+            "DOI": "10.1007/11538059_91"
+          },
+          {
+            "key": "19695_CR46",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Gupta N, Jindal V, Bedi P (2022) Cse-ids: Using cost-sensitive deep learning and ensemble algorithms to handle class imbalance in network-based intrusion detection systems. Comput Secur 112:102499",
+            "DOI": "10.1016/j.cose.2021.102499"
+          },
+          {
+            "key": "19695_CR47",
+            "doi-asserted-by": "publisher",
+            "first-page": "240",
+            "DOI": "10.1016/j.future.2022.01.026",
+            "volume": "131",
+            "author": "H Ding",
+            "year": "2022",
+            "unstructured": "Ding H, Chen L, Dong L, Fu Z, Cui X (2022) Imbalanced data classification: A knn and generative adversarial networks-based hybrid approach for intrusion detection. Futur Gener Comput Syst 131:240\u2013254",
+            "journal-title": "Futur Gener Comput Syst"
+          },
+          {
+            "issue": "1",
+            "key": "19695_CR48",
+            "doi-asserted-by": "publisher",
+            "first-page": "485",
+            "DOI": "10.1109/JIOT.2021.3085194",
+            "volume": "9",
+            "author": "TM Booij",
+            "year": "2021",
+            "unstructured": "Booij TM, Chiscop I, Meeuwissen E, Moustafa N, Den Hartog FT (2021) Ton_iot: The role of heterogeneity and the need for standardization of features and attack types in iot network intrusion data sets. IEEE Int Things J 9(1):485\u2013496",
+            "journal-title": "IEEE Int Things J"
+          },
+          {
+            "key": "19695_CR49",
+            "doi-asserted-by": "publisher",
+            "first-page": "17",
+            "DOI": "10.1016/j.jpdc.2022.03.003",
+            "volume": "165",
+            "author": "O Friha",
+            "year": "2022",
+            "unstructured": "Friha O, Ferrag MA, Shu L, Maglaras L, Choo K-KR, Nafaa M (2022) Felids: Federated learning-based intrusion detection system for agricultural internet of things. J Parallel Distrib Comput 165:17\u201331",
+            "journal-title": "J Parallel Distrib Comput"
+          },
+          {
+            "key": "19695_CR50",
+            "volume-title": "Book Review: Hands-on Machine Learning with Scikit-Learn, Keras, and Tensorflow, by Aur\u00e9lien G\u00e9ron: O\u2019Reilly Media, 2019, 600 pp ISBN: 978-1-492-03264-9",
+            "author": "MJ Douglass",
+            "year": "2020",
+            "unstructured": "Douglass MJ (2020) Book Review: Hands-on Machine Learning with Scikit-Learn, Keras, and Tensorflow, by Aur\u00e9lien G\u00e9ron: O\u2019Reilly Media, 2019, 600 pp ISBN: 978-1-492-03264-9. Springer"
+          }
+        ],
+        "container-title": [
+          "Multimedia Tools and Applications"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/s11042-024-19695-7.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/article/10.1007/s11042-024-19695-7/fulltext.html",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/s11042-024-19695-7.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              24
+            ]
+          ],
+          "date-time": "2025-05-24T03:15:27Z",
+          "timestamp": 1748056527000
+        },
+        "score": 54.078133,
+        "resource": {
+          "primary": {
+            "URL": "https://link.springer.com/10.1007/s11042-024-19695-7"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              28
+            ]
+          ]
+        },
+        "references-count": 50,
+        "journal-issue": {
+          "issue": "16",
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                5
+              ]
+            ]
+          }
+        },
+        "alternative-id": [
+          "19695"
+        ],
+        "URL": "https://doi.org/10.1007/s11042-024-19695-7",
+        "ISSN": [
+          "1573-7721"
+        ],
+        "issn-type": [
+          {
+            "value": "1573-7721",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              28
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "10 October 2023",
+            "order": 1,
+            "name": "received",
+            "label": "Received",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            }
+          },
+          {
+            "value": "21 February 2024",
+            "order": 2,
+            "name": "revised",
+            "label": "Revised",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            }
+          },
+          {
+            "value": "7 June 2024",
+            "order": 3,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            }
+          },
+          {
+            "value": "28 June 2024",
+            "order": 4,
+            "name": "first_online",
+            "label": "First Online",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            }
+          },
+          {
+            "order": 1,
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Declarations"
+            }
+          },
+          {
+            "value": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+            "order": 2,
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Conflicts of interests/competing interests"
+            }
+          }
+        ]
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

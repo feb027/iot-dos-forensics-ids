@@ -1,0 +1,1285 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 14594146,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              10
+            ]
+          ],
+          "date-time": "2026-04-10T23:28:34Z",
+          "timestamp": 1775863714523,
+          "version": "3.50.1"
+        },
+        "reference-count": 65,
+        "publisher": "MDPI AG",
+        "issue": "18",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  9,
+                  11
+                ]
+              ],
+              "date-time": "2024-09-11T00:00:00Z",
+              "timestamp": 1726012800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Electronics"
+        ],
+        "abstract": "<jats:p>The rise of the Internet of Things (IoT) has transformed our daily lives by connecting objects to the Internet, thereby creating interactive, automated environments. However, this rapid expansion raises major security concerns, particularly regarding intrusion detection. Traditional intrusion detection systems (IDSs) are often ill-suited to the dynamic and varied networks characteristic of the IoT. Machine learning is emerging as a promising solution to these challenges, offering the intelligence and flexibility needed to counter complex and evolving threats. This comprehensive review explores different machine learning approaches for intrusion detection in IoT systems, covering supervised, unsupervised, and deep learning methods, as well as hybrid models. It assesses their effectiveness, limitations, and practical applications, highlighting the potential of machine learning to enhance the security of IoT systems. In addition, the study examines current industry issues and trends, highlighting the importance of ongoing research to keep pace with the rapidly evolving IoT security ecosystem.</jats:p>",
+        "DOI": "10.3390/electronics13183601",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              11
+            ]
+          ],
+          "date-time": "2024-09-11T02:34:49Z",
+          "timestamp": 1726022089000
+        },
+        "page": "3601",
+        "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 55,
+        "title": [
+          "Machine Learning-Based Intrusion Detection Methods in IoT Systems: A Comprehensive Review"
+        ],
+        "prefix": "10.3390",
+        "volume": "13",
+        "author": [
+          {
+            "given": "Brunel Rolack",
+            "family": "Kikissagbe",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Mathematics, Computer Science and Engineering Departement, University of Quebec at Rimouski, Rimouski, QC G5L 3A1, Canada"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5327-1758",
+            "authenticated-orcid": false,
+            "given": "Meddi",
+            "family": "Adda",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Mathematics, Computer Science and Engineering Departement, University of Quebec at Rimouski, Rimouski, QC G5L 3A1, Canada"
+              }
+            ]
+          }
+        ],
+        "member": "1968",
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              11
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "ref_1",
+            "first-page": "97",
+            "article-title": "That \u2019Internet Of Things\u2019 Thing",
+            "volume": "2",
+            "author": "Ashton",
+            "year": "2009",
+            "journal-title": "RFID J."
+          },
+          {
+            "key": "ref_2",
+            "doi-asserted-by": "crossref",
+            "first-page": "1660",
+            "DOI": "10.1109/ACCESS.2015.2389854",
+            "article-title": "A Survey on Internet of Things From Industrial Market Perspective",
+            "volume": "2",
+            "author": "Perera",
+            "year": "2014",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_3",
+            "first-page": "1801",
+            "article-title": "Towards Machine Learning Based Intrusion Detection in IoT Networks",
+            "volume": "69",
+            "author": "Islam",
+            "year": "2021",
+            "journal-title": "Comput. Mater. Contin."
+          },
+          {
+            "key": "ref_4",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Ahmad, Z., Khan, A.S., Nisar, K., Haider, I., Hassan, R., Haque, M.R., Tarmizi, S., and Rodrigues, J.J.P.C. (2021). Anomaly Detection Using Deep Neural Network for IoT Architecture. Appl. Sci., 11.",
+            "DOI": "10.3390/app11157050"
+          },
+          {
+            "key": "ref_5",
+            "unstructured": "Union Internationale des T\u00e9l\u00e9communications (2012). Infrastructure Mondiale de l\u2019Information, Protocole Internet et R\u00c9Seaux de Prochaine G\u00e9n\u00e9ration, UIT."
+          },
+          {
+            "key": "ref_6",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Corici, A.A., Emmelmann, M., Luo, J., Shrestha, R., Corici, M., and Magedanz, T. (2016, January 12\u201314). IoT inter-security domain trust transfer and service dispatch solution. Proceedings of the 2016 IEEE 3rd World Forum on Internet of Things (WF-IoT), Reston, VA, USA.",
+            "DOI": "10.1109/WF-IoT.2016.7845443"
+          },
+          {
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sha, K., Errabelly, R., Wei, W., Yang, T.A., and Wang, Z. (2017, January 14\u201315). EdgeSec: Design of an Edge Layer Security Service to Enhance IoT Security. Proceedings of the 2017 IEEE 1st International Conference on Fog and Edge Computing (ICFEC), Madrid, Spain.",
+            "DOI": "10.1109/ICFEC.2017.7"
+          },
+          {
+            "key": "ref_8",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Al-Sarawi, S., Anbar, M., Abdullah, R., and Al Hawari, A.B. (2020, January 27\u201328). Internet of Things Market Analysis Forecasts, 2020\u20132030. Proceedings of the 2020 Fourth World Conference on Smart Trends in Systems, Security and Sustainability (WorldS4), London, UK.",
+            "DOI": "10.1109/WorldS450073.2020.9210375"
+          },
+          {
+            "key": "ref_9",
+            "first-page": "1247",
+            "article-title": "Security for the internet of things: A survey of existing mechanisms, protocols and open research issues",
+            "volume": "33",
+            "year": "2018",
+            "journal-title": "J. Fac. Eng. Archit. Gazi Univ."
+          },
+          {
+            "key": "ref_10",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Ibrahim, M., Abdullah, M.T., Abdullah, A., and Perumal, T. (2020). An Epidemic Based Model for the Predictions of OOFI in an IoT Platform. Int. J. Eng. Trends Technol., 52\u201356.",
+            "DOI": "10.14445/22315381/CATI2P208"
+          },
+          {
+            "key": "ref_11",
+            "unstructured": "Rebah, H.B. (2022). Gateway IoT de pilotage et de surveillance des capteurs domestiques via le protocole MQTT. Researche Gate, 3."
+          },
+          {
+            "key": "ref_12",
+            "doi-asserted-by": "crossref",
+            "first-page": "2787",
+            "DOI": "10.1016/j.comnet.2010.05.010",
+            "article-title": "The Internet of Things: A survey",
+            "volume": "54",
+            "author": "Atzori",
+            "year": "2010",
+            "journal-title": "Comput. Netw."
+          },
+          {
+            "key": "ref_13",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Lombardi, M., Pascale, F., and Santaniello, D. (2021). Internet of Things: A General Overview between Architectures, Protocols and Applications. Information, 12.",
+            "DOI": "10.3390/info12020087"
+          },
+          {
+            "key": "ref_14",
+            "first-page": "129",
+            "article-title": "Feature Selection for Intrusion Detection Using Random Forest",
+            "volume": "7",
+            "author": "Hasan",
+            "year": "2016",
+            "journal-title": "J. Inf. Secur."
+          },
+          {
+            "key": "ref_15",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Zhao, K., and Ge, L. (2013, January 14\u201315). A Survey on the Internet of Things Security. Proceedings of the 2013 Ninth International Conference on Computational Intelligence and Security, Emeishan, China.",
+            "DOI": "10.1109/CIS.2013.145"
+          },
+          {
+            "key": "ref_16",
+            "doi-asserted-by": "crossref",
+            "first-page": "10",
+            "DOI": "10.1016/j.jnca.2017.04.002",
+            "article-title": "Internet of Things security: A survey",
+            "volume": "88",
+            "author": "Alaba",
+            "year": "2017",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "146",
+            "DOI": "10.1016/j.comnet.2014.11.008",
+            "article-title": "Security, privacy and trust in Internet of Things: The road ahead",
+            "volume": "76",
+            "author": "Sicari",
+            "year": "2015",
+            "journal-title": "Comput. Netw."
+          },
+          {
+            "key": "ref_18",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Jing, D., and Chen, H.B. (November, January 29). SVM Based Network Intrusion Detection for the UNSW-NB15 Dataset. Proceedings of the 2019 IEEE 13th International Conference on ASIC (ASICON), Chongqing, China.",
+            "DOI": "10.1109/ASICON47005.2019.8983598"
+          },
+          {
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "first-page": "715",
+            "DOI": "10.1016/j.clsr.2016.07.002",
+            "article-title": "Cybersecurity in the Internet of Things: Legal aspects",
+            "volume": "32",
+            "author": "Weber",
+            "year": "2016",
+            "journal-title": "Comput. Law Secur. Rev."
+          },
+          {
+            "key": "ref_20",
+            "first-page": "1",
+            "article-title": "Machine Learning-Enabled IoT Security: Open Issues and Challenges under Advanced Persistent Threats",
+            "volume": "55",
+            "author": "Chen",
+            "year": "2023",
+            "journal-title": "ACM Comput. Surv."
+          },
+          {
+            "key": "ref_21",
+            "doi-asserted-by": "crossref",
+            "first-page": "79",
+            "DOI": "10.1016/j.asoc.2018.05.049",
+            "article-title": "Semi-supervised learning based distributed attack detection framework for IoT",
+            "volume": "72",
+            "author": "Rathore",
+            "year": "2018",
+            "journal-title": "Appl. Soft Comput."
+          },
+          {
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "379",
+            "DOI": "10.1109/JIOT.2018.2843769",
+            "article-title": "Analytical Model for Sybil Attack Phases in Internet of Things",
+            "volume": "6",
+            "author": "Mishra",
+            "year": "2019",
+            "journal-title": "IEEE Internet Things J."
+          },
+          {
+            "key": "ref_23",
+            "doi-asserted-by": "crossref",
+            "first-page": "1862",
+            "DOI": "10.1109/TCYB.2017.2716115",
+            "article-title": "Secure Fusion Estimation for Bandwidth Constrained Cyber-Physical Systems under Replay Attacks",
+            "volume": "48",
+            "author": "Chen",
+            "year": "2018",
+            "journal-title": "IEEE Trans. Cybern."
+          },
+          {
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Chen, L., Kuang, X., Xu, A., Suo, S., and Yang, Y. (2020, January 5\u20136). A Novel Network Intrusion Detection System Based on CNN. Proceedings of the 2020 Eighth International Conference on Advanced Cloud and Big Data (CBD), Taiyuan, China.",
+            "DOI": "10.1109/CBD51900.2020.00051"
+          },
+          {
+            "key": "ref_25",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Liu, H., and Lang, B. (2019). Machine Learning and Deep Learning Methods for Intrusion Detection Systems: A Survey. Appl. Sci., 9.",
+            "DOI": "10.3390/app9204396"
+          },
+          {
+            "key": "ref_26",
+            "first-page": "447",
+            "article-title": "A Contemporary Review on Drought Modeling Using Machine Learning Approaches",
+            "volume": "128",
+            "author": "Sundararajan",
+            "year": "2021",
+            "journal-title": "Comput. Model. Eng. Sci."
+          },
+          {
+            "key": "ref_27",
+            "doi-asserted-by": "crossref",
+            "first-page": "2583",
+            "DOI": "10.35940/ijitee.K1875.0981119",
+            "article-title": "ANNIDS: Artificial Neural Network based Intrusion Detection System for Internet of Things",
+            "volume": "8",
+            "author": "Anitha",
+            "year": "2019",
+            "journal-title": "Int. J. Innov. Technol. Explor. Eng."
+          },
+          {
+            "key": "ref_28",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hanif, S., Ilyas, T., and Zeeshan, M. (2019, January 6\u20139). Intrusion Detection In IoT Using Artificial Neural Networks On UNSW-15 Dataset. Proceedings of the 2019 IEEE 16th International Conference on Smart Cities: Improving Quality of Life Using ICT & IoT and AI (HONET-ICT), Charlotte, NC, USA.",
+            "DOI": "10.1109/HONET.2019.8908122"
+          },
+          {
+            "key": "ref_29",
+            "doi-asserted-by": "crossref",
+            "first-page": "80",
+            "DOI": "10.22581/muet1982.2201.08",
+            "article-title": "Malware Detection and Classification in IoT Network using ANN",
+            "volume": "41",
+            "author": "Jamal",
+            "year": "2022",
+            "journal-title": "Mehran Univ. Res. J. Eng. Technol."
+          },
+          {
+            "key": "ref_30",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Goeschel, K. (April, January 30). Reducing false positives in intrusion detection systems using data-mining techniques utilizing support vector machines, decision trees, and naive Bayes for off-line analysis. Proceedings of the SoutheastCon 2016, Norfolk, VA, USA.",
+            "DOI": "10.1109/SECON.2016.7506774"
+          },
+          {
+            "key": "ref_31",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Ioannou, C., and Vassiliou, V. (2021). Network Attack Classification in IoT Using Support Vector Machines. J. Sens. Actuator Netw., 10.",
+            "DOI": "10.3390/jsan10030058"
+          },
+          {
+            "key": "ref_32",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1145/3295748",
+            "article-title": "A Survey on Deep Learning",
+            "volume": "51",
+            "author": "Pouyanfar",
+            "year": "2019",
+            "journal-title": "ACM Comput. Surv."
+          },
+          {
+            "key": "ref_33",
+            "doi-asserted-by": "crossref",
+            "first-page": "42749",
+            "DOI": "10.1109/ACCESS.2020.2977114",
+            "article-title": "KNN-Based Approximate Outlier Detection Algorithm over IoT Streaming Data",
+            "volume": "8",
+            "author": "Zhu",
+            "year": "2020",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_34",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Abdaljabar, Z.H., Ucan, O.N., and Alheeti, K.M.A. (2021, January 4\u20136). An Intrusion Detection System for IoT Using KNN and Decision-Tree Based Classification. Proceedings of the 2021 International Conference of Modern Trends in Information and Communication Technology Industry (MTICTI), Sana\u2019a, Yemen.",
+            "DOI": "10.1109/MTICTI53925.2021.9664772"
+          },
+          {
+            "key": "ref_35",
+            "first-page": "1",
+            "article-title": "A New Intrusion Detection System Based on KNN Classification Algorithm in Wireless Sensor Network",
+            "volume": "2014",
+            "author": "Li",
+            "year": "2014",
+            "journal-title": "J. Electr. Comput. Eng."
+          },
+          {
+            "key": "ref_36",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Govindarajan, M., and Chandrasekaran, R. (2009, January 13\u201315). Intrusion detection using k-Nearest Neighbor. Proceedings of the 2009 First International Conference on Advanced Computing, Chennai, India.",
+            "DOI": "10.1109/ICADVC.2009.5377998"
+          },
+          {
+            "key": "ref_37",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Aref, M.A., Jayaweera, S.K., and Machuzak, S. (2017, January 19\u201322). Multi-Agent Reinforcement Learning Based Cognitive Anti-Jamming. Proceedings of the 2017 IEEE Wireless Communications and Networking Conference (WCNC), San Francisco, CA, USA.",
+            "DOI": "10.1109/WCNC.2017.7925694"
+          },
+          {
+            "key": "ref_38",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Bapat, R., Mandya, A., Liu, X., Abraham, B., Brown, D.E., Kang, H., and Veeraraghavan, M. (2018, January 27\u201327). Identifying malicious botnet traffic using logistic regression. Proceedings of the 2018 Systems and Information Engineering Design Symposium (SIEDS), Charlottesville, VA, USA.",
+            "DOI": "10.1109/SIEDS.2018.8374749"
+          },
+          {
+            "key": "ref_39",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sambangi, S., and Gondi, L. (2020).  A Machine Learning Approach for DDoS (Distributed Denial of Service) Attack Detection Using Multiple Linear Regression. Proceedings, 63.",
+            "DOI": "10.3390/proceedings2020063051"
+          },
+          {
+            "key": "ref_40",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Qaddoura, R., Al-Zoubi, A.M., Almomani, I., and Faris, H. (2021). A Multi-Stage Classification Approach for IoT Intrusion Detection Based on Clustering with Oversampling. Appl. Sci., 11.",
+            "DOI": "10.3390/app11073022"
+          },
+          {
+            "key": "ref_41",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Ingre, B., Yadav, A., and Soni, A.K. (2018). Decision Tree Based Intrusion Detection System for NSL-KDD Dataset, Springer.",
+            "DOI": "10.1007/978-3-319-63645-0_23"
+          },
+          {
+            "key": "ref_42",
+            "first-page": "2828",
+            "article-title": "Decision Tree Based Algorithm for Intrusion Detection",
+            "volume": "7",
+            "author": "Rai",
+            "year": "2016",
+            "journal-title": "Adv. Netw. Appl."
+          },
+          {
+            "key": "ref_43",
+            "doi-asserted-by": "crossref",
+            "first-page": "277",
+            "DOI": "10.1016/j.dcan.2017.09.009",
+            "article-title": "Semi-supervised multi-layered clustering model for intrusion detection",
+            "volume": "4",
+            "author": "Yoo",
+            "year": "2018",
+            "journal-title": "Digit. Commun. Netw."
+          },
+          {
+            "key": "ref_44",
+            "doi-asserted-by": "crossref",
+            "first-page": "174",
+            "DOI": "10.1016/j.proeng.2012.01.849",
+            "article-title": "Network Anomaly Detection by Cascading K-Means Clustering and C4.5 Decision Tree Algorithm",
+            "volume": "30",
+            "author": "Muniyandi",
+            "year": "2012",
+            "journal-title": "Procedia Eng."
+          },
+          {
+            "key": "ref_45",
+            "doi-asserted-by": "crossref",
+            "first-page": "11897",
+            "DOI": "10.1109/ACCESS.2018.2810267",
+            "article-title": "Clustering Approach Based on Mini Batch Kmeans for Intrusion Detection System over Big Data",
+            "volume": "6",
+            "author": "Peng",
+            "year": "2018",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "ref_46",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Luo, T., and Nagarajan, S.G. (2018, January 20\u201324). Distributed Anomaly Detection Using Autoencoder Neural Networks in WSN for IoT. Proceedings of the 2018 IEEE International Conference on Communications (ICC), Kansas City, MO, USA.",
+            "DOI": "10.1109/ICC.2018.8422402"
+          },
+          {
+            "key": "ref_47",
+            "doi-asserted-by": "crossref",
+            "first-page": "8462",
+            "DOI": "10.1109/JIOT.2020.2991693",
+            "article-title": "A Machine-Learning-Based Technique for False Data Injection Attacks Detection in Industrial IoT",
+            "volume": "7",
+            "author": "Aboelwafa",
+            "year": "2020",
+            "journal-title": "IEEE Internet Things J."
+          },
+          {
+            "key": "ref_48",
+            "doi-asserted-by": "crossref",
+            "first-page": "105",
+            "DOI": "10.1016/j.future.2019.09.038",
+            "article-title": "A multi-stage anomaly detection scheme for augmenting the security in IoT-enabled applications",
+            "volume": "104",
+            "author": "Garg",
+            "year": "2020",
+            "journal-title": "Future Gener. Comput. Syst."
+          },
+          {
+            "key": "ref_49",
+            "doi-asserted-by": "crossref",
+            "first-page": "1646",
+            "DOI": "10.1109/COMST.2020.2988293",
+            "article-title": "A Survey of Machine and Deep Learning Methods for Internet of Things (IoT) Security",
+            "volume": "22",
+            "author": "Mohamed",
+            "year": "2020",
+            "journal-title": "IEEE Commun. Surv. Tutor."
+          },
+          {
+            "key": "ref_50",
+            "unstructured": "Brun, O., Yin, Y., Yin, Y., and Gelenbe, E. (2018). Deep Learning with Dense Random Neural Network for Detecting Attacks against IoT-Connected Home Environments. Security in Computer and Information Sciences: First International ISCIS Security Workshop 2018, Euro-CYBERSEC 2018, London, UK, February 26\u201327 2018, Revised Selected Papers 1, Springer International Publishing."
+          },
+          {
+            "key": "ref_51",
+            "unstructured": "Kim, J., Shin, N., Jo, S.Y., and Kim, S.H. (2017, January 13\u201316). Method of intrusion detection using deep neural network. Proceedings of the 2017 IEEE International Conference on Big Data and Smart Computing (BigComp), Jeju, Republic of Korea."
+          },
+          {
+            "key": "ref_52",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Kim, J., Kim, J., Kim, H., Shim, M., and Choi, E. (2020). CNN-Based Network Intrusion Detection against Denial-of-Service Attacks. Electronics, 9.",
+            "DOI": "10.3390/electronics9060916"
+          },
+          {
+            "key": "ref_53",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Park, S.H., Park, H.J., and Choi, Y.J. (2020, January 19\u201321). RNN-Based Prediction for Network Intrusion Detection. Proceedings of the 2020 International Conference on Artificial Intelligence in Information and Communication (ICAIIC), Fukuoka, Japan.",
+            "DOI": "10.1109/ICAIIC48513.2020.9065249"
+          },
+          {
+            "key": "ref_54",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Tang, T.A., Mhamdi, L., McLernon, D., Zaidi, S.A.R., and Ghogho, M. (2018, January 25\u201329). Deep Recurrent Neural Network for Intrusion Detection in SDN-Based Networks. Proceedings of the 2018 4th IEEE Conference on Network Softwarization and Workshops (NetSoft), Montreal, QC, Canada.",
+            "DOI": "10.1109/NETSOFT.2018.8460090"
+          },
+          {
+            "key": "ref_55",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Torres, P., Catania, C., Garcia, S., and Garino, C.G. (2016, January 15\u201317). An analysis of Recurrent Neural Networks for Botnet detection behavior. Proceedings of the 2016 IEEE Biennial Congress of Argentina (ARGENCON), Buenos Aires, Argentina.",
+            "DOI": "10.1109/ARGENCON.2016.7585247"
+          },
+          {
+            "key": "ref_56",
+            "doi-asserted-by": "crossref",
+            "first-page": "1735",
+            "DOI": "10.1162/neco.1997.9.8.1735",
+            "article-title": "Long Short-Term Memory",
+            "volume": "9",
+            "author": "Hochreiter",
+            "year": "1997",
+            "journal-title": "Neural Comput."
+          },
+          {
+            "key": "ref_57",
+            "unstructured": "Chung, J., Gulcehre, C., Cho, K., and Bengio, Y. (2014). Evaluation of gated recurrent neural networks on sequence modeling. arXiv."
+          },
+          {
+            "key": "ref_58",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Ferdowsi, A., and Saad, W. (2019, January 9\u201313). Generative Adversarial Networks for Distributed Intrusion Detection in the Internet of Things. Proceedings of the 2019 IEEE Global Communications Conference (GLOBECOM), Waikoloa, HI, USA.",
+            "DOI": "10.1109/GLOBECOM38437.2019.9014102"
+          },
+          {
+            "key": "ref_59",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Liao, D., Huang, S., Tan, Y., and Bai, G. (2020, January 21\u201323). Network Intrusion Detection Method Based on GAN Model. Proceedings of the 2020 International Conference on Computer Communication and Network Security (CCNS), Xi\u2019an, China.",
+            "DOI": "10.1109/CCNS50731.2020.00041"
+          },
+          {
+            "key": "ref_60",
+            "first-page": "258",
+            "article-title": "Network Intrusion Detection Using Na\u00efve Bayes",
+            "volume": "7",
+            "author": "Panda",
+            "year": "2007",
+            "journal-title": "IJCSNS Int. J. Comput. Sci. Netw. Secur."
+          },
+          {
+            "key": "ref_61",
+            "unstructured": "Gumus, F., Sakar, C.O., and Kursun, O. (2014, January 17\u201320). Network Intrusion Detection Using Na\u00efve Bayes. Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Beijing, China."
+          },
+          {
+            "key": "ref_62",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Kim, J., Kim, J., Thu, H.L.T., and Kim, H. (2016, January 15\u201317). Long Short Term Memory Recurrent Neural Network Classifier for Intrusion Detection. Proceedings of the 2016 International Conference on Platform Technology and Service (PlatCon), Jeju, Republic of Korea.",
+            "DOI": "10.1109/PlatCon.2016.7456805"
+          },
+          {
+            "key": "ref_63",
+            "doi-asserted-by": "crossref",
+            "first-page": "25",
+            "DOI": "10.1016/j.jnca.2017.02.009",
+            "article-title": "A survey of intrusion detection in Internet of Things",
+            "volume": "84",
+            "author": "Miani",
+            "year": "2017",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "ref_64",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Cassales, G.W., Senger, H., de Faria, E.R., and Bifet, A. (July, January 29). IDSA-IoT: An Intrusion Detection System Architecture for IoT Networks. Proceedings of the 2019 IEEE Symposium on Computers and Communications (ISCC), Barcelona, Spain.",
+            "DOI": "10.1109/ISCC47284.2019.8969609"
+          },
+          {
+            "key": "ref_65",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Yahyaoui, A., Lakhdhar, H., Abdellatif, T., and Attia, R. (2021, January 28\u201330). Machine learning based network intrusion detection for data streaming IoT applications. Proceedings of the 2021 21st ACIS International Winter Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD-Winter), Ho Chi Minh City, Vietnam.",
+            "DOI": "10.1109/SNPDWinter52325.2021.00019"
+          }
+        ],
+        "container-title": [
+          "Electronics"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://www.mdpi.com/2079-9292/13/18/3601/pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              10
+            ]
+          ],
+          "date-time": "2025-10-10T15:53:29Z",
+          "timestamp": 1760111609000
+        },
+        "score": 52.29081,
+        "resource": {
+          "primary": {
+            "URL": "https://www.mdpi.com/2079-9292/13/18/3601"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              11
+            ]
+          ]
+        },
+        "references-count": 65,
+        "journal-issue": {
+          "issue": "18",
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                9
+              ]
+            ]
+          }
+        },
+        "alternative-id": [
+          "electronics13183601"
+        ],
+        "URL": "https://doi.org/10.3390/electronics13183601",
+        "ISSN": [
+          "2079-9292"
+        ],
+        "issn-type": [
+          {
+            "value": "2079-9292",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              11
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              19
+            ]
+          ],
+          "date-time": "2023-10-19T05:21:53Z",
+          "timestamp": 1697692913076
+        },
+        "reference-count": 0,
+        "publisher": "Auricle Technologies, Pvt., Ltd.",
+        "issue": "S-5",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  10,
+                  18
+                ]
+              ],
+              "date-time": "2023-10-18T00:00:00Z",
+              "timestamp": 1697587200000
+            },
+            "content-version": "unspecified",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "J. Adv. Zool."
+        ],
+        "abstract": "<jats:p>An ad hoc network is a transient network that is self-organizing and does not require any infrastructure. Therefore, the majority of its applications are in the field of military work and disaster assistance. Because of wireless connectivity and the ability to organize itself, ad hoc networks are becoming more common. Susceptible to a greater number of breaches or assaults than the conventional system. Blackhole assault is a significant routing disruption attack that a rogue node promotes itself as being capable of. as a step along the way to the final destination. In this research, we simulated a black hole using computer models. Assault in a setting with ad hoc networking, as well as data collection of important features for the purpose of classifying aggressive behaviour. Then, several different approaches to machine learning have been developed. utilized for the classification of information regarding benign and harmful packets. It seems to imply. a novel method for the selection of certain features, the gathering of crucial information, and the intrusion detection in an ad hoc network with the application of machine learning algorithms.</jats:p>",
+        "DOI": "10.17762/jaz.v44is-5.1089",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              18
+            ]
+          ],
+          "date-time": "2023-10-18T21:51:30Z",
+          "timestamp": 1697665890000
+        },
+        "page": "1045-1053",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "Exploring Machine Learning Methods for IoT Network Intrusion Detection Systems"
+        ],
+        "prefix": "10.17762",
+        "volume": "44",
+        "author": [
+          {
+            "given": "Reda",
+            "family": "Salama",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "family": "Wajdi Alghamdi",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sameer",
+            "family": "Yadav",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "family": "Harikumar Pallathadka",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "family": "Dolpriya Devi Manoharmayum",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Mohit",
+            "family": "Tiwari",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "7172",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Advanced Zoology"
+        ],
+        "link": [
+          {
+            "URL": "http://jazindia.com/index.php/jaz/article/download/1089/763",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://jazindia.com/index.php/jaz/article/download/1089/763",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              18
+            ]
+          ],
+          "date-time": "2023-10-18T21:51:30Z",
+          "timestamp": 1697665890000
+        },
+        "score": 41.786118,
+        "resource": {
+          "primary": {
+            "URL": "http://jazindia.com/index.php/jaz/article/view/1089"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              18
+            ]
+          ]
+        },
+        "references-count": 0,
+        "journal-issue": {
+          "issue": "S-5",
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                13
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.17762/jaz.v44is-5.1089",
+        "ISSN": [
+          "0253-7214"
+        ],
+        "issn-type": [
+          {
+            "value": "0253-7214",
+            "type": "print"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              18
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              3
+            ]
+          ],
+          "date-time": "2025-05-03T04:06:22Z",
+          "timestamp": 1746245182093,
+          "version": "3.40.4"
+        },
+        "publisher-location": "Cham",
+        "reference-count": 18,
+        "publisher": "Springer Nature Switzerland",
+        "isbn-type": [
+          {
+            "value": "9783031866227",
+            "type": "print"
+          },
+          {
+            "value": "9783031866234",
+            "type": "electronic"
+          }
+        ],
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2025-01-01T00:00:00Z",
+              "timestamp": 1735689600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2025-01-01T00:00:00Z",
+              "timestamp": 1735689600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "link.springer.com"
+          ],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "DOI": "10.1007/978-3-031-86623-4_40",
+        "type": "book-chapter",
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              2
+            ]
+          ],
+          "date-time": "2025-05-02T12:31:37Z",
+          "timestamp": 1746189097000
+        },
+        "page": "433-448",
+        "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "Explainable Machine Learning Based Intrusion Detection Systems for\u00a0IoT"
+        ],
+        "prefix": "10.1007",
+        "author": [
+          {
+            "given": "Amun",
+            "family": "Jackson",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Maria Camila",
+            "family": "Gaitan-Cardenas",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Kaushik",
+            "family": "Roy",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Bernard",
+            "family": "Aldrich",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Janelle",
+            "family": "Mason",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "297",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              3
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "40_CR1",
+            "unstructured": "Gillis, A.S.: What is IoT (Internet of Things) and how does it work?: Definition from TechTarget (2023). https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT"
+          },
+          {
+            "key": "40_CR2",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Santos, L., Rabadao, C., Gon\u00e7alves, R.: Intrusion detection systems in internet of things: a literature review. In: 2018 13th Iberian Conference on Information Systems and Technologies (CISTI), pp. 1\u20137. IEEE (2018)",
+            "DOI": "10.23919/CISTI.2018.8399291"
+          },
+          {
+            "key": "40_CR3",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sarhan, M., Layeghy, S., Portmann, M.: Towards a standard feature set for network intrusion detection system datasets. Mobile Netw. Appl., 1\u201314 (2022)",
+            "DOI": "10.1007/s11036-021-01843-0"
+          },
+          {
+            "key": "40_CR4",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sarhan,\u00a0M., Layeghy,\u00a0S., Moustafa,\u00a0N., Portmann,\u00a0M.: Netflow datasets for machine learning-based network intrusion detection systems. In: Big Data Technologies and Applications: 10th EAI International Conference, BDTA 2020, and 13th EAI International Conference on Wireless Internet, WiCON 2020, Virtual Event, December 11, 2020, Proceedings 10, pp. 117\u2013135. Springer (2021)",
+            "DOI": "10.1007/978-3-030-72802-1_9"
+          },
+          {
+            "key": "40_CR5",
+            "doi-asserted-by": "publisher",
+            "first-page": "121751",
+            "DOI": "10.1016/j.eswa.2023.121751",
+            "volume": "238",
+            "author": "B Sharma",
+            "year": "2024",
+            "unstructured": "Sharma, B., Sharma, L., Lal, C., Roy, S.: Explainable artificial intelligence for intrusion detection in IoT networks: a deep learning based approach. Expert Syst. Appl. 238, 121751 (2024)",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "key": "40_CR6",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Abou El Houda, Z., Brik, B., Khoukhi, L.: Why should I trust your IDs? An explainable deep learning framework for intrusion detection systems in internet of things networks. IEEE Open J. Commun. Soc. 3, 1164\u20131176 (2022)",
+            "DOI": "10.1109/OJCOMS.2022.3188750"
+          },
+          {
+            "key": "40_CR7",
+            "unstructured": "Mane,\u00a0S., Rao,\u00a0D.: Explaining network intrusion detection system using explainable AI framework. arXiv preprint arXiv:2103.07110 (2021)"
+          },
+          {
+            "key": "40_CR8",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Gaitan-Cardenas,\u00a0M.C., Abdelsalam,\u00a0M., Roy,\u00a0K.: Explainable AI-based intrusion detection systems for cloud and IoT. In: 2023 32nd International Conference on Computer Communications and Networks (ICCCN), pp. 1\u20137 . IEEE (2023)",
+            "DOI": "10.1109/ICCCN58024.2023.10230177"
+          },
+          {
+            "key": "40_CR9",
+            "unstructured": "(2024). https://www.ibm.com/topics/decision-trees#:~:text=A%20decision%20tree%20is%20a,internal%20nodes%20and%20leaf%20nodes"
+          },
+          {
+            "key": "40_CR10",
+            "unstructured": "Kanade,\u00a0V.: Logistic regression: equation, assumptions, types, and best practices (2022). https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-logistic-regression/"
+          },
+          {
+            "key": "40_CR11",
+            "unstructured": "(2024). https://www.ibm.com/topics/naive-bayes#:~:text=The%20Na%C3%AFve%20Bayes%20classifier%20is,tasks%20such%20as%20text%20classification"
+          },
+          {
+            "key": "40_CR12",
+            "unstructured": "(2024). https://www.ibm.com/topics/neural-networks"
+          },
+          {
+            "key": "40_CR13",
+            "unstructured": "Kanade,\u00a0V.: All you need to know about support vector machines (2022). https://www.spiceworks.com/tech/big-data/articles/what-is-support-vector-machine/#:~:text=A%20support%20vector%20machine%20(SVM,on%20predefined%20classes%2C%20labels%2C%20or"
+          },
+          {
+            "key": "40_CR14",
+            "unstructured": "(2024). https://www.geeksforgeeks.org/random-forest-algorithm-in-machine-learning/"
+          },
+          {
+            "key": "40_CR15",
+            "unstructured": "Harrison, O.: Machine learning basics with the k-nearest neighbors algorithm (2019). https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761"
+          },
+          {
+            "key": "40_CR16",
+            "doi-asserted-by": "publisher",
+            "first-page": "119000",
+            "DOI": "10.1016/j.ins.2023.119000",
+            "volume": "639",
+            "author": "M Keshk",
+            "year": "2023",
+            "unstructured": "Keshk, M., Koroniotis, N., Pham, N., Moustafa, N., Turnbull, B., Zomaya, A.Y.: An explainable deep learning-enabled intrusion detection framework in IoT networks. Inf. Sci. 639, 119000 (2023)",
+            "journal-title": "Inf. Sci."
+          },
+          {
+            "key": "40_CR17",
+            "unstructured": "Trevisan, V.: Using SHAP values to explain how your machine learning model works (2022). https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works"
+          },
+          {
+            "issue": "1",
+            "key": "40_CR18",
+            "doi-asserted-by": "publisher",
+            "first-page": "54",
+            "DOI": "10.3390/info14010054",
+            "volume": "14",
+            "author": "T Wongvorachan",
+            "year": "2023",
+            "unstructured": "Wongvorachan, T., He, S., Bulut, O.: A comparison of undersampling, oversampling, and smote methods for dealing with imbalanced classification in educational data mining. Information 14(1), 54 (2023)",
+            "journal-title": "Information"
+          }
+        ],
+        "container-title": [
+          "Communications in Computer and Information Science",
+          "Artificial Intelligence and Applications"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/978-3-031-86623-4_40",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              2
+            ]
+          ],
+          "date-time": "2025-05-02T12:31:50Z",
+          "timestamp": 1746189110000
+        },
+        "score": 41.68999,
+        "resource": {
+          "primary": {
+            "URL": "https://link.springer.com/10.1007/978-3-031-86623-4_40"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "ISBN": [
+          "9783031866227",
+          "9783031866234"
+        ],
+        "references-count": 18,
+        "URL": "https://doi.org/10.1007/978-3-031-86623-4_40",
+        "ISSN": [
+          "1865-0929",
+          "1865-0937"
+        ],
+        "issn-type": [
+          {
+            "value": "1865-0929",
+            "type": "print"
+          },
+          {
+            "value": "1865-0937",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "3 May 2025",
+            "order": 1,
+            "name": "first_online",
+            "label": "First Online",
+            "group": {
+              "name": "ChapterHistory",
+              "label": "Chapter History"
+            }
+          },
+          {
+            "value": "CSCE",
+            "order": 1,
+            "name": "conference_acronym",
+            "label": "Conference Acronym",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "World Congress in Computer Science, Computer Engineering & Applied Computing",
+            "order": 2,
+            "name": "conference_name",
+            "label": "Conference Name",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "Las Vegas, NV",
+            "order": 3,
+            "name": "conference_city",
+            "label": "Conference City",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "USA",
+            "order": 4,
+            "name": "conference_country",
+            "label": "Conference Country",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "2024",
+            "order": 5,
+            "name": "conference_year",
+            "label": "Conference Year",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "22 July 2024",
+            "order": 7,
+            "name": "conference_start_date",
+            "label": "Conference Start Date",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "25 July 2024",
+            "order": 8,
+            "name": "conference_end_date",
+            "label": "Conference End Date",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "csce-12024",
+            "order": 10,
+            "name": "conference_id",
+            "label": "Conference ID",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          },
+          {
+            "value": "https://american-cse.org/csce2024/",
+            "order": 11,
+            "name": "conference_url",
+            "label": "Conference URL",
+            "group": {
+              "name": "ConferenceInfo",
+              "label": "Conference Information"
+            }
+          }
+        ]
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}
