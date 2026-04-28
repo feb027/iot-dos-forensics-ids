@@ -1,0 +1,973 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          6
+        ]
+      ],
+      "date-time": "2026-04-06T11:28:54Z",
+      "timestamp": 1775474934604,
+      "version": "3.50.1"
+    },
+    "reference-count": 84,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2020-09-01T00:00:00Z",
+          "timestamp": 1598918400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2020-09-01T00:00:00Z",
+          "timestamp": 1598918400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Future Generation Computer Systems"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.future.2020.03.042",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2020-03-30T10:53:07Z",
+      "timestamp": 1585565587000
+    },
+    "page": "91-106",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 198,
+    "special_numbering": "C",
+    "title": [
+      "A new network forensic framework based on deep learning for Internet of Things networks: A particle deep framework"
+    ],
+    "prefix": "10.1016",
+    "volume": "110",
+    "author": [
+      {
+        "given": "Nickolaos",
+        "family": "Koroniotis",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Nour",
+        "family": "Moustafa",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Elena",
+        "family": "Sitnikova",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.future.2020.03.042_b1",
+        "article-title": "60+ IoT statistics and facts",
+        "author": "Cook",
+        "year": "2019",
+        "journal-title": "Comparitech"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "61764",
+        "DOI": "10.1109/ACCESS.2019.2916717",
+        "article-title": "Forensics and deep learning mechanisms for botnets in internet of things: A survey of challenges and solutions",
+        "volume": "7",
+        "author": "Koroniotis",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.future.2020.03.042_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "817",
+        "DOI": "10.3390/s18030817",
+        "article-title": "Cyber and physical security vulnerability assessment for IoT-based smart homes",
+        "volume": "18",
+        "author": "Ali",
+        "year": "2018",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b4",
+        "series-title": "Internet Security Threat Report, Volume 24",
+        "author": "Corporation",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b5",
+        "series-title": "Finding vulnerabilities in IoT devices: Ethical hacking of electronic locks",
+        "author": "Robberts",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b6",
+        "series-title": "2017 IEEE Symposium on Security and Privacy (SP)",
+        "first-page": "195",
+        "article-title": "Iot goes nuclear: Creating a ZigBee chain reaction",
+        "author": "Ronen",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b7",
+        "series-title": "Proceedings of the 12th International Conference on Availability, Reliability and Security",
+        "first-page": "56",
+        "article-title": "Forensic state acquisition from Internet of Things (FSAIoT): A general framework and practical approach for IoT forensics through IoT device state acquisition",
+        "author": "Meffert",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b8",
+        "series-title": "2017 8th International Conference on Information Technology (ICIT)",
+        "first-page": "685",
+        "article-title": "Internet of Things (IoT) Communication protocols",
+        "author": "Al-Sarawi",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "544",
+        "DOI": "10.1016/j.future.2017.07.060",
+        "article-title": "Internet of things security and forensics: Challenges and opportunities",
+        "volume": "78",
+        "author": "Conti",
+        "year": "2018",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.future.2020.03.042_b10",
+        "article-title": "Digital forensics",
+        "volume": "50",
+        "author": "Kaur",
+        "year": "2012",
+        "journal-title": "Int. J. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b11",
+        "series-title": "2018 IEEE International Congress on Internet of Things (ICIOT)",
+        "first-page": "33",
+        "article-title": "FIF-IoT: A forensic investigation framework for IoT using a public digital ledger",
+        "author": "Hossain",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M.M. Hossain, R. Hasan, S. Zawoad, Probe-IoT: A public digital ledger based forensic investigation framework for IoT, in: INFOCOM Workshops, 2018, pp. 1\u20132.",
+        "DOI": "10.1109/INFCOMW.2018.8406875"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.future.2020.03.042_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1109/MCOM.2018.1800137",
+        "article-title": "Block4forensic: An integrated lightweight blockchain framework for forensics applications of connected vehicles",
+        "volume": "56",
+        "author": "Cebe",
+        "year": "2018",
+        "journal-title": "IEEE Commun. Mag."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.future.2020.03.042_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1109/TETCI.2017.2772792",
+        "article-title": "A deep learning approach to network intrusion detection",
+        "volume": "2",
+        "author": "Shone",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Emerg. Top. Comput. Intell."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.future.2020.03.042_b15",
+        "first-page": "012046",
+        "article-title": "Survey of analysis of crime detection techniques using data mining and machine learning",
+        "volume": "1000",
+        "author": "Prabakaran",
+        "year": "2018",
+        "journal-title": "J. Phys.: Conf. Ser."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b16",
+        "article-title": "The applications of deep learning on traffic identification",
+        "volume": "24",
+        "author": "Wang",
+        "year": "2015",
+        "journal-title": "BlackHat USA"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b17",
+        "series-title": "2017 IEEE International Conference on Computational Science and Engineering (CSE) and IEEE International Conference on Embedded and Ubiquitous Computing (EUC), vol. 1",
+        "first-page": "639",
+        "article-title": "Intrusion detection using deep belief network and probabilistic neural network",
+        "author": "Zhao",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b18",
+        "unstructured": "A. Zela, A. Klein, S. Falkner, F. Hutter, Towards automated deep learning: Efficient joint neural architecture and hyperparameter search, in: ICML 2018 AutoML Workshop, 2018."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b19",
+        "series-title": "2018 IEEE Symposium on Security and Privacy (SP)",
+        "first-page": "36",
+        "article-title": "Stealing hyperparameters in machine learning",
+        "author": "Wang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b20",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "3389",
+        "article-title": "Learning to optimize tensor programs",
+        "author": "Chen",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b21",
+        "series-title": "Combination of hyperband and Bayesian optimization for hyperparameter optimization in deep learning",
+        "author": "Wang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b22",
+        "series-title": "2018 Design, Automation & Test in Europe Conference & Exhibition (DATE)",
+        "first-page": "19",
+        "article-title": "Hyperpower: Power-and memory-constrained hyper-parameter optimization for neural networks",
+        "author": "Stamoulis",
+        "year": "2018"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.future.2020.03.042_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1016/S1361-3723(15)30045-2",
+        "article-title": "Digital forensics: the missing piece of the internet of things promise",
+        "volume": "2016",
+        "author": "Watson",
+        "year": "2016",
+        "journal-title": "Comput. Fraud Secur."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.future.2020.03.042_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1109/MITP.2018.032501747",
+        "article-title": "Internet of things forensics: The need, process models, and open issues",
+        "volume": "20",
+        "author": "Chernyshev",
+        "year": "2018",
+        "journal-title": "IT Prof."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b25",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.future.2019.05.041",
+        "article-title": "Towards the development of realistic botnet dataset in the internet of things for network forensic analytics: Bot-iot dataset",
+        "author": "Koroniotis",
+        "year": "2019",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b26",
+        "series-title": "2015 Military Communications and Information Systems Conference (MilCIS)",
+        "first-page": "1",
+        "article-title": "UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-nb15 network data set)",
+        "author": "Moustafa",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b27",
+        "series-title": "Military Communications and Information Systems Conference (MilCIS), 2015",
+        "first-page": "1",
+        "article-title": "UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-nb15 network data set)",
+        "author": "Moustafa",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b28",
+        "series-title": "A Road Map for Digital Forensics Research-Report from the First Digital Forensics Research Workshop (DFRWS)(Technical Report DTR-T001-01 Final)",
+        "first-page": "1",
+        "author": "Palmer",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b29",
+        "series-title": "First International Conference on Artificial Intelligence and Cognitive Computing",
+        "first-page": "701",
+        "article-title": "An analysis of digital forensics in cyber security",
+        "author": "Joseph",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b30",
+        "series-title": "TENCON 2018-2018 IEEE Region 10 Conference",
+        "first-page": "2372",
+        "article-title": "Biff: A blockchain-based IoT forensics framework with identity privacy",
+        "author": "Le",
+        "year": "2018"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.future.2020.03.042_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1467",
+        "DOI": "10.1111/1556-4029.12823",
+        "article-title": "A comprehensive and harmonized digital forensic investigation process model",
+        "volume": "60",
+        "author": "Valjarevic",
+        "year": "2015",
+        "journal-title": "J. Forensic Sci."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.future.2020.03.042_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1109/MSP.2017.4251117",
+        "article-title": "The future of digital forensics: Challenges and the road ahead",
+        "volume": "15",
+        "author": "Caviglione",
+        "year": "2017",
+        "journal-title": "IEEE Secur. Privacy"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b33",
+        "series-title": "2016 Eighth International Conference on Ubiquitous and Future Networks (ICUFN)",
+        "first-page": "724",
+        "article-title": "A survey on MITM and its countermeasures in the TLS handshake protocol",
+        "author": "Han",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b34",
+        "series-title": "IoTDots: A digital forensics framework for smart environments",
+        "author": "Babun",
+        "year": "2018"
+      },
+      {
+        "issue": "17",
+        "key": "10.1016/j.future.2020.03.042_b35",
+        "doi-asserted-by": "crossref",
+        "first-page": "1881",
+        "DOI": "10.1016/j.comcom.2009.07.013",
+        "article-title": "Network forensics based on fuzzy logic and expert system",
+        "volume": "32",
+        "author": "Liao",
+        "year": "2009",
+        "journal-title": "Comput. Commun."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "467",
+        "DOI": "10.1016/j.jocs.2017.09.007",
+        "article-title": "SAIRF: A similarity approach for attack intention recognition using fuzzy min-max neural network",
+        "volume": "25",
+        "author": "Ahmed",
+        "year": "2018",
+        "journal-title": "J. Comput. Sci."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.future.2020.03.042_b37",
+        "first-page": "177",
+        "article-title": "DDoS classification using neural network and Na\u00efve Bayes methods for network forensics",
+        "volume": "9",
+        "author": "Yudhana",
+        "year": "2018",
+        "journal-title": "Int. J. Adv. Comput. Sci. Appl."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b38",
+        "series-title": "2014 11th International Conference on Fuzzy Systems and Knowledge Discovery (FSKD)",
+        "first-page": "655",
+        "article-title": "An approach to detect network attacks applied for network forensics",
+        "author": "Nguyen",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b39",
+        "series-title": "2016 15th IEEE International Conference on Machine Learning and Applications (ICMLA)",
+        "first-page": "195",
+        "article-title": "Toward an online anomaly intrusion detection system based on deep learning",
+        "author": "Alrawashdeh",
+        "year": "2016"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.future.2020.03.042_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "88",
+        "DOI": "10.1109/TSUSC.2018.2809665",
+        "article-title": "Robust malware detection for internet of (battlefield) things devices using deep eigenspace learning",
+        "volume": "4",
+        "author": "Azmoodeh",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Sustain. Comput."
+      },
+      {
+        "issue": "7553",
+        "key": "10.1016/j.future.2020.03.042_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "436",
+        "DOI": "10.1038/nature14539",
+        "article-title": "Deep learning",
+        "volume": "521",
+        "author": "LeCun",
+        "year": "2015",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b42",
+        "series-title": "2017 IEEE International Conference on Smart Computing (SMARTCOMP)",
+        "first-page": "1",
+        "article-title": "Deepdefense: identifying DDoS attack via deep learning",
+        "author": "Yuan",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b43",
+        "doi-asserted-by": "crossref",
+        "first-page": "458",
+        "DOI": "10.1016/j.procs.2018.07.183",
+        "article-title": "Deep learning with dense random neural network for detecting attacks against IoT-connected home environments",
+        "volume": "134",
+        "author": "Brun",
+        "year": "2018",
+        "journal-title": "Procedia Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b44",
+        "series-title": "2017 International Conference on System Science and Engineering (ICSSE)",
+        "first-page": "210",
+        "article-title": "An anomaly-based network intrusion detection system using deep learning",
+        "author": "Van",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b45",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/nem.2039",
+        "article-title": "Botnet detection based on network flow summary and deep learning",
+        "author": "Pekta\u015f",
+        "year": "2018",
+        "journal-title": "Int. J. Netw. Manag."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b46",
+        "series-title": "D2PI: Identifying malware through deep packet inspection with deep learning",
+        "author": "Cheng",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "S118",
+        "DOI": "10.1016/j.diin.2018.04.024",
+        "article-title": "Deep learning at the shallow end: Malware classification for non-domain experts",
+        "volume": "26",
+        "author": "Le",
+        "year": "2018",
+        "journal-title": "Digit. Invest."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b48",
+        "series-title": "2019 IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC)",
+        "first-page": "0305",
+        "article-title": "AD-IoT: anomaly detection of IoT cyberattacks in smart city using machine learning",
+        "author": "Alrashdi",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b49",
+        "series-title": "Cyber Threat Intelligence",
+        "first-page": "137",
+        "article-title": "Botshark: A deep learning approach for botnet traffic detection",
+        "author": "Homayoun",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b50",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jnca.2019.02.022",
+        "article-title": "Implementation of deep packet inspection in smart grids and industrial Internet of Things: Challenges and opportunities",
+        "author": "De\u00a0La\u00a0Torre",
+        "year": "2019",
+        "journal-title": "J. Netw. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b51",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J. Kennedy, R. Eberhart, Particle swarm optimization (PSO), in: Proc. IEEE International Conference on Neural Networks, Perth, Australia, 1995, pp. 1942\u20131948.",
+        "DOI": "10.1109/ICNN.1995.488968"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.future.2020.03.042_b52",
+        "doi-asserted-by": "crossref",
+        "first-page": "387",
+        "DOI": "10.1007/s00500-016-2474-6",
+        "article-title": "Particle swarm optimization algorithm: an overview",
+        "volume": "22",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "Soft Comput."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b53",
+        "doi-asserted-by": "crossref",
+        "first-page": "153",
+        "DOI": "10.1016/j.chemolab.2015.08.020",
+        "article-title": "Particle swarm optimization (PSO). A tutorial",
+        "volume": "149",
+        "author": "Marini",
+        "year": "2015",
+        "journal-title": "Chemometr. Intell. Lab. Syst."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b54",
+        "series-title": "1998 IEEE International Conference on Evolutionary Computation Proceedings. IEEE World Congress on Computational Intelligence (Cat. No. 98TH8360)",
+        "first-page": "69",
+        "article-title": "A modified particle swarm optimizer",
+        "author": "Shi",
+        "year": "1998"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b55",
+        "series-title": "Proceedings of the 2001 Congress on Evolutionary Computation (IEEE Cat. No. 01TH8546), vol. 1",
+        "first-page": "94",
+        "article-title": "Tracking and optimizing dynamic systems with particle swarms",
+        "author": "Eberhart",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b56",
+        "article-title": "Particle swarm optimization algorithms with adaptive inertia weight: A survey of the state of the art and a novel method",
+        "author": "Nikabadi",
+        "year": "2008",
+        "journal-title": "IEEE J. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b57",
+        "series-title": "Handbook of Heuristics",
+        "first-page": "1",
+        "article-title": "Particle swarm methods",
+        "author": "Parsopoulos",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b58",
+        "series-title": "Computational Intelligence PC Tools",
+        "author": "Eberhart",
+        "year": "1996"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b59",
+        "series-title": "Proceedings of the 1999 Congress on Evolutionary Computation-CEC99 (Cat. No. 99TH8406), vol. 3",
+        "first-page": "1951",
+        "article-title": "The swarm and the queen: towards a deterministic and adaptive particle swarm optimization",
+        "author": "Clerc",
+        "year": "1999"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b60",
+        "series-title": "Proceedings of the 2000 Congress on Evolutionary Computation. CEC00 (Cat. No. 00TH8512), vol. 1",
+        "first-page": "84",
+        "article-title": "Comparing inertia weights and constriction factors in particle swarm optimization",
+        "author": "Eberhart",
+        "year": "2000"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b61",
+        "series-title": "1997 IEEE International Conference on Systems, Man, and Cybernetics. Computational Cybernetics and Simulation, vol. 5",
+        "first-page": "4104",
+        "article-title": "A discrete binary version of the particle swarm algorithm",
+        "author": "Kennedy",
+        "year": "1997"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.future.2020.03.042_b62",
+        "doi-asserted-by": "crossref",
+        "first-page": "204",
+        "DOI": "10.1109/TEVC.2004.826074",
+        "article-title": "The fully informed particle swarm: simpler, maybe better",
+        "volume": "8",
+        "author": "Mendes",
+        "year": "2004",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.future.2020.03.042_b63",
+        "doi-asserted-by": "crossref",
+        "first-page": "225",
+        "DOI": "10.1109/TEVC.2004.826069",
+        "article-title": "A cooperative approach to particle swarm optimization",
+        "volume": "8",
+        "author": "Van\u00a0den Bergh",
+        "year": "2004",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b64",
+        "doi-asserted-by": "crossref",
+        "first-page": "S127",
+        "DOI": "10.1016/j.diin.2015.05.003",
+        "article-title": "Privacy-preserving email forensics",
+        "volume": "14",
+        "author": "Armknecht",
+        "year": "2015",
+        "journal-title": "Digit. Invest."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b65",
+        "series-title": "IECON 2015-41st Annual Conference of the IEEE Industrial Electronics Society",
+        "first-page": "004345",
+        "article-title": "A fuzzy logic controller tuned with PSO for delta robot trajectory control",
+        "author": "Lu",
+        "year": "2015"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.future.2020.03.042_b66",
+        "article-title": "A comprehensive review of swarm optimization algorithms",
+        "volume": "10",
+        "author": "Ab\u00a0Wahab",
+        "year": "2015",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b67",
+        "series-title": "Particle Swarm Optimization for Single Objective Continuous Space Problems: a Review",
+        "author": "Bonyadi",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b68",
+        "series-title": "Fractional Order Darwinian Particle Swarm Optimization: Applications and Evaluation of an Evolutionary Algorithm",
+        "first-page": "1",
+        "article-title": "Particle swarm optimization",
+        "author": "Couceiro",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b69",
+        "series-title": "Multilayer perceptron tutorial",
+        "author": "Noriega",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b70",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1016/j.neunet.2014.09.003",
+        "article-title": "Deep learning in neural networks: An overview",
+        "volume": "61",
+        "author": "Schmidhuber",
+        "year": "2015",
+        "journal-title": "Neural Netw."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b71",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "8778",
+        "article-title": "Generalized cross entropy loss for training deep neural networks with noisy labels",
+        "author": "Zhang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b72",
+        "series-title": "2017 International Conference on Mathematics and Information Technology (ICMIT)",
+        "first-page": "214",
+        "article-title": "Formal specification, verification and evaluation of the MQTT protocol in the internet of things",
+        "author": "Houimli",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b73",
+        "series-title": "2016 IEEE International Conference on Smart Computing (SMARTCOMP)",
+        "first-page": "1",
+        "article-title": "Exploring container virtualization in IoT clouds",
+        "author": "Celesti",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b74",
+        "series-title": "Proceedings of the International Workshop on Technical Computing for Machine Learning and Mathematical Engineering, vol. 1",
+        "first-page": "3",
+        "article-title": "Hyperparameter tuning in python using optunity",
+        "author": "Claesen",
+        "year": "2014"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.future.2020.03.042_b75",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.heliyon.2018.e00938",
+        "article-title": "State-of-the-art in artificial neural network applications: A survey",
+        "volume": "4",
+        "author": "Abiodun",
+        "year": "2018",
+        "journal-title": "Heliyon"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.future.2020.03.042_b76",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1016/j.dcan.2017.10.002",
+        "article-title": "Machine learning for Internet of Things data analysis: A survey",
+        "volume": "4",
+        "author": "Mahdavinejad",
+        "year": "2018",
+        "journal-title": "Digit. Commun. Netw."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b77",
+        "doi-asserted-by": "crossref",
+        "first-page": "88",
+        "DOI": "10.1016/j.future.2018.03.007",
+        "article-title": "A deep recurrent neural network based approach for Internet of Things malware threat hunting",
+        "volume": "85",
+        "author": "HaddadPajouh",
+        "year": "2018",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b78",
+        "series-title": "Deep learning for anomaly detection: A survey",
+        "author": "Chalapathy",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b79",
+        "doi-asserted-by": "crossref",
+        "first-page": "21954",
+        "DOI": "10.1109/ACCESS.2017.2762418",
+        "article-title": "A deep learning approach for intrusion detection using recurrent neural networks",
+        "volume": "5",
+        "author": "Yin",
+        "year": "2017",
+        "journal-title": "Ieee Access"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b80",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1016/j.jnca.2013.08.001",
+        "article-title": "Network attacks: Taxonomy, tools and systems",
+        "volume": "40",
+        "author": "Hoque",
+        "year": "2014",
+        "journal-title": "J. Netw. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b81",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1016/j.comcom.2017.02.003",
+        "article-title": "Detection of DDoS attacks and flash events using information theory metrics\u2013An empirical investigation",
+        "volume": "103",
+        "author": "Behal",
+        "year": "2017",
+        "journal-title": "Comput. Commun."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.future.2020.03.042_b82",
+        "doi-asserted-by": "crossref",
+        "first-page": "2046",
+        "DOI": "10.1109/SURV.2013.031413.00127",
+        "article-title": "A survey of defense mechanisms against distributed denial of service (DDoS) flooding attacks",
+        "volume": "15",
+        "author": "Zargar",
+        "year": "2013",
+        "journal-title": "IEEE Commun. Surv. Tutor."
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b83",
+        "first-page": "71",
+        "article-title": "A survey on authentication attacks and countermeasures in a distributed environment",
+        "volume": "5",
+        "author": "Jesudoss",
+        "year": "2014",
+        "journal-title": "Indian J. Comput. Sci. Eng. IJCSE"
+      },
+      {
+        "key": "10.1016/j.future.2020.03.042_b84",
+        "series-title": "International Conference on Mobile Networks and Management",
+        "first-page": "30",
+        "article-title": "Towards developing network forensic mechanism for botnet activities in the IoT based on machine learning techniques",
+        "author": "Koroniotis",
+        "year": "2017"
+      }
+    ],
+    "container-title": [
+      "Future Generation Computer Systems"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0167739X19325105?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0167739X19325105?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2025-09-29T04:15:09Z",
+      "timestamp": 1759119309000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167739X19325105"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          9
+        ]
+      ]
+    },
+    "references-count": 84,
+    "alternative-id": [
+      "S0167739X19325105"
+    ],
+    "URL": "https://doi.org/10.1016/j.future.2020.03.042",
+    "relation": {},
+    "ISSN": [
+      "0167-739X"
+    ],
+    "issn-type": [
+      {
+        "value": "0167-739X",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A new network forensic framework based on deep learning for Internet of Things networks: A particle deep framework",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Future Generation Computer Systems",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.future.2020.03.042",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2020 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

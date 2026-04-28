@@ -1,0 +1,1427 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 4704653,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              28
+            ]
+          ],
+          "date-time": "2026-04-28T14:17:58Z",
+          "timestamp": 1777385878475,
+          "version": "3.51.4"
+        },
+        "reference-count": 71,
+        "publisher": "Elsevier BV",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  11,
+                  1
+                ]
+              ],
+              "date-time": "2019-11-01T00:00:00Z",
+              "timestamp": 1572566400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  11,
+                  1
+                ]
+              ],
+              "date-time": "2019-11-01T00:00:00Z",
+              "timestamp": 1572566400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "elsevier.com",
+            "sciencedirect.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [
+          "Future Generation Computer Systems"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              11
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.future.2019.05.041",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2019,
+              5,
+              22
+            ]
+          ],
+          "date-time": "2019-05-22T13:56:44Z",
+          "timestamp": 1558533404000
+        },
+        "page": "779-796",
+        "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 1543,
+        "special_numbering": "C",
+        "title": [
+          "Towards the development of realistic botnet dataset in the Internet of Things for network forensic analytics: Bot-IoT dataset"
+        ],
+        "prefix": "10.1016",
+        "volume": "100",
+        "author": [
+          {
+            "given": "Nickolaos",
+            "family": "Koroniotis",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Nour",
+            "family": "Moustafa",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Elena",
+            "family": "Sitnikova",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Benjamin",
+            "family": "Turnbull",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "78",
+        "reference": [
+          {
+            "key": "10.1016/j.future.2019.05.041_b1",
+            "series-title": "Bot-iot",
+            "year": "2018"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b2",
+            "series-title": "2018 IEEE International Conference on Industrial Internet, ICII",
+            "first-page": "139",
+            "article-title": "Towards automation of vulnerability and exploitation identification in iiot networks",
+            "author": "Moustafa",
+            "year": "2018"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b3",
+            "article-title": "An ensemble intrusion detection technique based on proposed statistical flow features for protecting network traffic of internet of things",
+            "author": "Moustafa",
+            "year": "2018",
+            "journal-title": "IEEE Internet Things J."
+          },
+          {
+            "issue": "7",
+            "key": "10.1016/j.future.2019.05.041_b4",
+            "doi-asserted-by": "crossref",
+            "first-page": "80",
+            "DOI": "10.1109/MC.2017.201",
+            "article-title": "Ddos in the iot: Mirai and other botnets",
+            "volume": "50",
+            "author": "Kolias",
+            "year": "2017",
+            "journal-title": "Computer"
+          },
+          {
+            "issue": "10",
+            "key": "10.1016/j.future.2019.05.041_b5",
+            "doi-asserted-by": "crossref",
+            "first-page": "1082",
+            "DOI": "10.3390/app7101082",
+            "article-title": "Cybersecurity and network forensics: Analysis of malicious traffic towards a honeynet with deep packet inspection",
+            "volume": "7",
+            "author": "Pimenta\u00a0Rodrigues",
+            "year": "2017",
+            "journal-title": "Appl. Sci."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b6",
+            "doi-asserted-by": "crossref",
+            "first-page": "58",
+            "DOI": "10.1016/j.future.2014.08.007",
+            "article-title": "External integrity verification for outsourced big data in cloud and iot: A big picture",
+            "volume": "49",
+            "author": "Liu",
+            "year": "2015",
+            "journal-title": "Future Gener. Comput. Syst."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b7",
+            "doi-asserted-by": "crossref",
+            "first-page": "S94",
+            "DOI": "10.1016/j.diin.2017.06.004",
+            "article-title": "Availability of datasets for digital forensics\u2013and what is missing",
+            "volume": "22",
+            "author": "Grajeda",
+            "year": "2017",
+            "journal-title": "Digit. Investig."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b8",
+            "unstructured": "KDDcup99 dataset, URL http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b9",
+            "doi-asserted-by": "crossref",
+            "unstructured": "I. Sharafaldin, A. Lashkari, A.A. Ghorbani, Toward generating a new intrusion detection dataset and intrusion traffic characterization, in: Proceedings of Fourth International Conference on Information Systems Security and Privacy, ICISSP, 2018.",
+            "DOI": "10.5220/0006639801080116"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b10",
+            "series-title": "Military Communications and Information Systems Conference (MilCIS), 2015",
+            "first-page": "1",
+            "article-title": "UNSW-Nb15: a comprehensive data set for network intrusion detection systems (UNSW-nb15 network data set)",
+            "author": "Moustafa",
+            "year": "2015"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b11",
+            "unstructured": "1998 DARPA intrusion detection evaluation data set, URL https://www.ll.mit.edu/ideval/data/1998data.html."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b12",
+            "series-title": "International Conference on Mobile Networks and Management",
+            "first-page": "30",
+            "article-title": "Towards developing network forensic mechanism for botnet activities in the iot based on machine learning techniques",
+            "author": "Koroniotis",
+            "year": "2017"
+          },
+          {
+            "issue": "7",
+            "key": "10.1016/j.future.2019.05.041_b13",
+            "doi-asserted-by": "crossref",
+            "first-page": "1645",
+            "DOI": "10.1016/j.future.2013.01.010",
+            "article-title": "Internet of things (iot): A vision, architectural elements, and future directions",
+            "volume": "29",
+            "author": "Gubbi",
+            "year": "2013",
+            "journal-title": "Future Gener. Comput. Syst."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.future.2019.05.041_b14",
+            "doi-asserted-by": "crossref",
+            "first-page": "378",
+            "DOI": "10.1016/j.comnet.2012.07.021",
+            "article-title": "Botnets: A survey",
+            "volume": "57",
+            "author": "Silva",
+            "year": "2013",
+            "journal-title": "Comput. Netw."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.future.2019.05.041_b15",
+            "doi-asserted-by": "crossref",
+            "first-page": "898",
+            "DOI": "10.1109/SURV.2013.091213.00134",
+            "article-title": "A taxonomy of botnet behavior, detection, and defense",
+            "volume": "16",
+            "author": "Khattak",
+            "year": "2014",
+            "journal-title": "IEEE Commun. Surv. Tutor."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b16",
+            "series-title": "Electronics Symposium (IES), 2015 International",
+            "first-page": "233",
+            "article-title": "A survey on botnet: classification, detection and defense",
+            "author": "Amini",
+            "year": "2015"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b17",
+            "series-title": "A road map for digital forensic research: Report from the first digital forensic workshop, 7\u20138 August 2001",
+            "author": "Palmer",
+            "year": "2001"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b18",
+            "series-title": "IFIP International Conference on Digital Forensics",
+            "first-page": "225",
+            "article-title": "A network forensic scheme using correntropy-variation for attack detection",
+            "author": "Moustafa",
+            "year": "2018"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b19",
+            "series-title": "Advanced Communication Technology, ICACT, 2014 16th International Conference on",
+            "first-page": "1265",
+            "article-title": "Design, deployment and use of HTTP-based botnet (HBB) testbed",
+            "author": "Alomari",
+            "year": "2014"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b20",
+            "series-title": "Local Computer Networks, Proceedings 2006 31st IEEE Conference on",
+            "article-title": "Using machine learning technliques to identify botnet traffic",
+            "author": "Carl",
+            "year": "2006"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b21",
+            "doi-asserted-by": "crossref",
+            "first-page": "95",
+            "DOI": "10.1016/j.cose.2013.11.005",
+            "article-title": "A framework for generating realistic traffic for distributed denial-of-service attacks and flash events",
+            "volume": "40",
+            "author": "Bhatia",
+            "year": "2014",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b22",
+            "doi-asserted-by": "crossref",
+            "first-page": "18",
+            "DOI": "10.1016/j.comcom.2017.02.003",
+            "article-title": "Detection of ddos attacks and flash events using information theory metrics\u2013an empirical investigation",
+            "volume": "103",
+            "author": "Behal",
+            "year": "2017",
+            "journal-title": "Comput. Commun."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b23",
+            "series-title": "Machine learning ddos detection for consumer internet of things devices",
+            "author": "Doshi",
+            "year": "2018"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b24",
+            "series-title": "Networks, Computers and Communications, ISNCC, 2016 International Symposium on",
+            "first-page": "1",
+            "article-title": "Threat analysis of iot networks using artificial neural network intrusion detection system",
+            "author": "Hodo",
+            "year": "2016"
+          },
+          {
+            "issue": "1\u20132",
+            "key": "10.1016/j.future.2019.05.041_b25",
+            "doi-asserted-by": "crossref",
+            "first-page": "18",
+            "DOI": "10.1016/j.cose.2008.08.003",
+            "article-title": "Anomaly-based network intrusion detection: Techniques, systems and challenges",
+            "volume": "28",
+            "author": "Garcia-Teodoro",
+            "year": "2009",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b26",
+            "series-title": "2017 Military Communications and Information Systems Conference, MilCIS",
+            "first-page": "1",
+            "article-title": "Collaborative anomaly detection framework for handling big data of cloud computing",
+            "author": "Moustafa",
+            "year": "2017"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b27",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1109/TIFS.2018.2890808",
+            "article-title": "Outlier dirichlet mixture mechanism: Adversarial statistical learning for anomaly detection in the fog",
+            "author": "Moustafa",
+            "year": "2019",
+            "journal-title": "IEEE Trans. Inf. Forensics Secur."
+          },
+          {
+            "issue": "6",
+            "key": "10.1016/j.future.2019.05.041_b28",
+            "doi-asserted-by": "crossref",
+            "first-page": "49",
+            "DOI": "10.1109/MNET.2016.1600113NM",
+            "article-title": "Attack detection and distributed forensics in machine-to-machine networks",
+            "volume": "30",
+            "author": "Wang",
+            "year": "2016",
+            "journal-title": "IEEE Netw."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b29",
+            "series-title": "International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment",
+            "first-page": "108",
+            "article-title": "Learning and classification of malware behavior",
+            "author": "Rieck",
+            "year": "2008"
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.future.2019.05.041_b30",
+            "doi-asserted-by": "crossref",
+            "first-page": "56",
+            "DOI": "10.1109/SURV.2008.080406",
+            "article-title": "A survey of techniques for internet traffic classification using machine learning",
+            "volume": "10",
+            "author": "Nguyen",
+            "year": "2008",
+            "journal-title": "IEEE commun. Surv. Tutor."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b31",
+            "series-title": "Progress in Computing, Analytics and Networking",
+            "first-page": "19",
+            "article-title": "Flow aggregator module for analysing network traffic",
+            "author": "Moustafa",
+            "year": "2018"
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.future.2019.05.041_b32",
+            "doi-asserted-by": "crossref",
+            "first-page": "55",
+            "DOI": "10.1145/604264.604272",
+            "article-title": "Mining e-mail content for author identification forensics",
+            "volume": "30",
+            "author": "De\u00a0Vel",
+            "year": "2001",
+            "journal-title": "ACM SIGMOD Rec."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b33",
+            "unstructured": "Ostinato, URL https://ostinato.org/."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b34",
+            "series-title": "Proceeding of the International Conference on Telecommunication, Power Analysis and Computing Techniques",
+            "article-title": "A survey on MQTT: a protocol of internet of things (iot)",
+            "author": "Soni",
+            "year": "2017"
+          },
+          {
+            "issue": "2007",
+            "key": "10.1016/j.future.2019.05.041_b35",
+            "first-page": "22",
+            "article-title": "An assessment of the DARPA IDS evaluation dataset using snort",
+            "volume": "1",
+            "author": "Brugger",
+            "year": "2007",
+            "journal-title": "UCDAVIS Dep. Comput. Sci."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b36",
+            "unstructured": "G.M. Fern\u00e1ndez, J. Camacho, R. Mag\u00e1n-Carri\u00f3n, P. Garc\u0131a-Teodoro, R. Theron, UGR\u201916: A new dataset for the evaluation of cyclostationarity-based network IDSs."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b37",
+            "series-title": "Computational Intelligence for Security and Defense Applications, 2009. CISDA 2009. IEEE Symposium on",
+            "first-page": "1",
+            "article-title": "A detailed analysis of the KDD cup 99 data set",
+            "author": "Tavallaee",
+            "year": "2009"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b38",
+            "series-title": "Unibs, university of brescia dataset",
+            "year": "2009"
+          },
+          {
+            "issue": "6",
+            "key": "10.1016/j.future.2019.05.041_b39",
+            "first-page": "683",
+            "article-title": "Towards generating real-life datasets for network intrusion detection",
+            "volume": "17",
+            "author": "Bhuyan",
+            "year": "2015",
+            "journal-title": "IJ Netw. Secur."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b40",
+            "unstructured": "Center of Applied Internet Data Analysis, URL https://www.caida.org/data/."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b41",
+            "series-title": "Lawrence berkley national laboratory (LBNL), icsi, LBNL/icsi enterprise tracing project",
+            "year": "2005"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b42",
+            "unstructured": "Canadian Institute of Cybersecurity , University of new Brunswick, ISCX dataset, URL http://www.unb.ca/cic/datasets/index.html."
+          },
+          {
+            "issue": "04",
+            "key": "10.1016/j.future.2019.05.041_b43",
+            "doi-asserted-by": "crossref",
+            "first-page": "52",
+            "DOI": "10.4236/jcc.2015.34006",
+            "article-title": "A decision tree classifier for intrusion detection priority tagging",
+            "volume": "3",
+            "author": "Ammar",
+            "year": "2015",
+            "journal-title": "J. Comput. Commun."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b44",
+            "series-title": "International Conference on Contemporary Computing",
+            "first-page": "322",
+            "article-title": "Packet and flow based network intrusion dataset",
+            "author": "Gogoi",
+            "year": "2012"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b45",
+            "unstructured": "Node-Red tool, URL https://nodered.org/."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b46",
+            "unstructured": "Argus tool, URL https://qosient.com/argus/index.shtml."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b47",
+            "unstructured": "ESXi hypervisor, URL https://www.vmware.com/au/products/esxi-and-esx.html."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b48",
+            "unstructured": "vSphere client, URL https://www.vmware.com/au/products/vsphere.html."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b49",
+            "unstructured": "IoT hub AWS, URL https://aws.amazon.com/iot-core/features/."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b50",
+            "unstructured": "Mosquitto MQTT broker, URL https://mosquitto.org/."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.future.2019.05.041_b51",
+            "doi-asserted-by": "crossref",
+            "first-page": "242",
+            "DOI": "10.1177/0145482X1510900311",
+            "article-title": "Causation and pearson\u2019s correlation coefficient",
+            "volume": "109",
+            "author": "Emerson",
+            "year": "2015",
+            "journal-title": "J. Visual Impair. Blind."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.future.2019.05.041_b52",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1017/S0960129512000783",
+            "article-title": "Shannon Entropy: a rigorous notion at the crossroads between probability, information theory, dynamical systems and statistical physics",
+            "volume": "24",
+            "author": "Lesne",
+            "year": "2014",
+            "journal-title": "Math. Struct. Comput. Sci."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b53",
+            "unstructured": "Cron scheduling package, URL https://packages.ubuntu.com/search?keywords=cron."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b54",
+            "unstructured": "Tshark network analysis tool, URL https://www.wireshark.org/."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b55",
+            "unstructured": "Argus (audit record generation and utilization system), URL https://qosient.com/argus/."
+          },
+          {
+            "issue": "19",
+            "key": "10.1016/j.future.2019.05.041_b56",
+            "first-page": "57",
+            "article-title": "Denial-of-service, probing & remote to user (r2l) attack detection using genetic algorithm",
+            "volume": "60",
+            "author": "Paliwal",
+            "year": "2012",
+            "journal-title": "Int. J. Comput. Appl."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b57",
+            "series-title": "Understanding passive and active service discovery (extended)",
+            "author": "Bartlett",
+            "year": "2007"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b58",
+            "doi-asserted-by": "crossref",
+            "first-page": "307",
+            "DOI": "10.1016/j.jnca.2013.08.001",
+            "article-title": "Network attacks: Taxonomy, tools and systems",
+            "volume": "40",
+            "author": "Hoque",
+            "year": "2014",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b59",
+            "series-title": "Nmap network scanning: The official Nmap project guide to network discovery and security scanning",
+            "author": "Lyon",
+            "year": "2009"
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b60",
+            "unstructured": "hping, URL http://www.hping.org."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b61",
+            "unstructured": "Xprobe2, URL https://www.aldeid.com/wiki/Xprobe2."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.future.2019.05.041_b62",
+            "doi-asserted-by": "crossref",
+            "first-page": "2046",
+            "DOI": "10.1109/SURV.2013.031413.00127",
+            "article-title": "A survey of defense mechanisms against distributed denial of service (ddos) flooding attacks",
+            "volume": "15",
+            "author": "Zargar",
+            "year": "2013",
+            "journal-title": "IEEE commun. Surv. Tutor."
+          },
+          {
+            "issue": "8",
+            "key": "10.1016/j.future.2019.05.041_b63",
+            "doi-asserted-by": "crossref",
+            "first-page": "16",
+            "DOI": "10.1016/S1353-4858(11)70086-1",
+            "article-title": "Advanced persistent threats and how to monitor and deter them",
+            "volume": "2011",
+            "author": "Tankard",
+            "year": "2011",
+            "journal-title": "Netw. Secur."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b64",
+            "first-page": "71",
+            "article-title": "A survey on authentication attacks and countermeasures in a distributed environment",
+            "volume": "5",
+            "author": "Jesudoss",
+            "year": "2014",
+            "journal-title": "Indian J. Comput. Sci. Eng."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b65",
+            "unstructured": "Metasploit framework, URL https://www.metasploit.com/."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b66",
+            "unstructured": "Logkeys software, URL http://manpages.ubuntu.com/manpages/xenial/man8/logkeys.8.html."
+          },
+          {
+            "key": "10.1016/j.future.2019.05.041_b67",
+            "unstructured": "Hydra software, URL https://packages.ubuntu.com/trusty/net/hydra."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.future.2019.05.041_b68",
+            "doi-asserted-by": "crossref",
+            "first-page": "860",
+            "DOI": "10.3390/e13040860",
+            "article-title": "A feature subset selection method based on high-dimensional mutual information",
+            "volume": "13",
+            "author": "Zheng",
+            "year": "2011",
+            "journal-title": "Entropy"
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.future.2019.05.041_b69",
+            "first-page": "23",
+            "article-title": "Support vector machines",
+            "volume": "1",
+            "author": "Meyer",
+            "year": "2001",
+            "journal-title": "R News"
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.future.2019.05.041_b70",
+            "doi-asserted-by": "crossref",
+            "first-page": "1888",
+            "DOI": "10.4249/scholarpedia.1888",
+            "article-title": "Recurrent neural networks",
+            "volume": "8",
+            "author": "Grossberg",
+            "year": "2013",
+            "journal-title": "Scholarpedia"
+          },
+          {
+            "issue": "10",
+            "key": "10.1016/j.future.2019.05.041_b71",
+            "doi-asserted-by": "crossref",
+            "first-page": "2222",
+            "DOI": "10.1109/TNNLS.2016.2582924",
+            "article-title": "LSTM: A search space odyssey",
+            "volume": "28",
+            "author": "Greff",
+            "year": "2017",
+            "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+          }
+        ],
+        "container-title": [
+          "Future Generation Computer Systems"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0167739X18327687?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0167739X18327687?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              29
+            ]
+          ],
+          "date-time": "2025-09-29T04:14:29Z",
+          "timestamp": 1759119269000
+        },
+        "score": 82.61948,
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167739X18327687"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2019,
+              11
+            ]
+          ]
+        },
+        "references-count": 71,
+        "alternative-id": [
+          "S0167739X18327687"
+        ],
+        "URL": "https://doi.org/10.1016/j.future.2019.05.041",
+        "ISSN": [
+          "0167-739X"
+        ],
+        "issn-type": [
+          {
+            "value": "0167-739X",
+            "type": "print"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              11
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "Elsevier",
+            "name": "publisher",
+            "label": "This article is maintained by"
+          },
+          {
+            "value": "Towards the development of realistic botnet dataset in the Internet of Things for network forensic analytics: Bot-IoT dataset",
+            "name": "articletitle",
+            "label": "Article Title"
+          },
+          {
+            "value": "Future Generation Computer Systems",
+            "name": "journaltitle",
+            "label": "Journal Title"
+          },
+          {
+            "value": "https://doi.org/10.1016/j.future.2019.05.041",
+            "name": "articlelink",
+            "label": "CrossRef DOI link to publisher maintained version"
+          },
+          {
+            "value": "article",
+            "name": "content_type",
+            "label": "Content Type"
+          },
+          {
+            "value": "\u00a9 2019 Elsevier B.V. All rights reserved.",
+            "name": "copyright",
+            "label": "Copyright"
+          }
+        ]
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              23
+            ]
+          ],
+          "date-time": "2026-04-23T20:47:31Z",
+          "timestamp": 1776977251818,
+          "version": "3.51.4"
+        },
+        "reference-count": 20,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  2,
+                  4
+                ]
+              ],
+              "date-time": "2026-02-04T00:00:00Z",
+              "timestamp": 1770163200000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  2,
+                  4
+                ]
+              ],
+              "date-time": "2026-02-04T00:00:00Z",
+              "timestamp": 1770163200000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ]
+        },
+        "DOI": "10.1109/idciot67589.2026.11455754",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2026-04-01T20:07:19Z",
+          "timestamp": 1775074039000
+        },
+        "page": "171-180",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "Multiprotocol Internet of Things Networks - A Mini Review on BoT-IoT Dataset and Ton-IoT Dataset"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Vishal Arun",
+            "family": "Pawar",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "RCPET&#x0027;s Institute of Management Research and Development,Department of MCA,Shirpur,India"
+              }
+            ]
+          },
+          {
+            "given": "Vaishali Bhagawat",
+            "family": "Patil",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "RCPET&#x0027;s Institute of Management Research and Development,Shirpur,India"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2020.2993363"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5220/0013637600003967"
+          },
+          {
+            "key": "ref3",
+            "first-page": "1",
+            "article-title": "Design and Implementation of Node Gateway with MQTT and CoAP Protocol for IoT Applications",
+            "volume-title": "International Conference on Information Technology, Information Systems and Electrical Engineering",
+            "author": "Zainudin",
+            "year": "2019"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.20965/jaciii.2022.p0715"
+          },
+          {
+            "key": "ref5",
+            "first-page": "1",
+            "article-title": "Multi-Protocol IoT Network Reconnaissance",
+            "volume-title": "IEEE Conference on Communications and Network Security",
+            "author": "Gvozdenovic",
+            "year": "2022"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3323503.3349546"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s19194217"
+          },
+          {
+            "key": "ref8",
+            "first-page": "1",
+            "article-title": "Toward a realistic Intrusion Detection System dedicated to smart-home environments",
+            "author": "Lourme",
+            "year": "2022",
+            "journal-title": "HAL Open Science"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2021.3137201"
+          },
+          {
+            "key": "ref10",
+            "first-page": "1",
+            "article-title": "An Easy-to-Classify Approach for the Bot-IoT Dataset",
+            "volume-title": "IEEE Third International Conference on Cognitive Machine Intelligence",
+            "author": "Joffrey",
+            "year": "2021"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/electronics14081653"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s24072083"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.48084/etasr.6421"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2021.3094024"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/orss62274.2024.10697949"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2020.3022862"
+          },
+          {
+            "key": "ref17",
+            "first-page": "1",
+            "article-title": "Comprehensive Insights into Machine Learning for Intrusion Detection Systems in IoT and its Datasets",
+            "volume-title": "4th IEEE International Conference on Data Engineering and Communication Systems",
+            "author": "N",
+            "year": "2024"
+          },
+          {
+            "key": "ref18",
+            "first-page": "1",
+            "article-title": "Deep Ensemble Learning With Pruning for DDoS Attack Detection in IoT Networks",
+            "volume": "2",
+            "author": "Saiyed",
+            "year": "2024",
+            "journal-title": "IEEE Computer Society"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3934/mbe.2022493"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/app13074482"
+          }
+        ],
+        "event": {
+          "name": "2026 4th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT)",
+          "location": "Ottapalam, India",
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                4
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                6
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2026 4th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/11455509/11455630/11455754.pdf?arnumber=11455754",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              23
+            ]
+          ],
+          "date-time": "2026-04-23T19:56:37Z",
+          "timestamp": 1776974197000
+        },
+        "score": 48.033184,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11455754/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ]
+        },
+        "references-count": 20,
+        "URL": "https://doi.org/10.1109/idciot67589.2026.11455754",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              22
+            ]
+          ],
+          "date-time": "2026-04-22T20:24:20Z",
+          "timestamp": 1776889460406,
+          "version": "3.51.2"
+        },
+        "reference-count": 23,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  8,
+                  22
+                ]
+              ],
+              "date-time": "2022-08-22T00:00:00Z",
+              "timestamp": 1661126400000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  8,
+                  22
+                ]
+              ],
+              "date-time": "2022-08-22T00:00:00Z",
+              "timestamp": 1661126400000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              22
+            ]
+          ]
+        },
+        "DOI": "10.1109/pst55820.2022.9851966",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              25
+            ]
+          ],
+          "date-time": "2022-08-25T18:46:39Z",
+          "timestamp": 1661453199000
+        },
+        "page": "1-11",
+        "source": "Crossref",
+        "is-referenced-by-count": 163,
+        "title": [
+          "Towards the Development of a Realistic Multidimensional IoT Profiling Dataset"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Sajjad",
+            "family": "Dadkhah",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of New Brunswick,Canadian Institute for Cybersecurity,Fredericton,Canada"
+              }
+            ]
+          },
+          {
+            "given": "Hassan",
+            "family": "Mahdikhani",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New Brunswick,Canadian Institute for Cybersecurity,Fredericton,Canada"
+              }
+            ]
+          },
+          {
+            "given": "Priscilla Kyei",
+            "family": "Danso",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New Brunswick,Canadian Institute for Cybersecurity,Fredericton,Canada"
+              }
+            ]
+          },
+          {
+            "given": "Alireza",
+            "family": "Zohourian",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New Brunswick,Canadian Institute for Cybersecurity,Fredericton,Canada"
+              }
+            ]
+          },
+          {
+            "given": "Kevin Anh",
+            "family": "Truong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New Brunswick,Canadian Institute for Cybersecurity,Fredericton,Canada"
+              }
+            ]
+          },
+          {
+            "given": "Ali A.",
+            "family": "Ghorbani",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New Brunswick,Canadian Institute for Cybersecurity,Fredericton,Canada"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "article-title": "Python packet creation library",
+            "year": "2022"
+          },
+          {
+            "key": "ref2",
+            "article-title": "Is alexa always listening? is your smart speaker spying on you?",
+            "year": "2022"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2019.2926365"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.isprsjprs.2016.01.011"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s17061357"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CDC.2010.5717499"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2019.2896380"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2020.3035087"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/SPW.2018.00013"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/GLOBECOM38437.2019.9014300"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/DASC-PICom-CBDCom-CyberSciTech52372.2021.00101"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/PRDC47002.2019.00056"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11276-014-0761-7"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cose.2020.101851"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4018/IJMCMC.2014100102"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/COMST.2018.2874978"
+          },
+          {
+            "key": "ref17",
+            "first-page": "242",
+            "volume-title": "From the Internet of Computers to the Internet of Things",
+            "author": "Mattern",
+            "year": "2010"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ACCESS.2021.3065123"
+          },
+          {
+            "key": "ref19",
+            "article-title": "Detection of unauthorized iot devices using machine learning techniques",
+            "author": "Meidan",
+            "year": "2017",
+            "journal-title": "CoRR"
+          },
+          {
+            "key": "ref20",
+            "author": "Meola",
+            "year": "2022",
+            "journal-title": "Applications of iot technology in the education sector for smarter schooling"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11227-021-04188-3"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3355369.3355577"
+          },
+          {
+            "key": "ref23",
+            "author": "Vailshery",
+            "year": "2021",
+            "journal-title": "Iot and non-iot connections worldwide 2010-2025"
+          }
+        ],
+        "event": {
+          "name": "2022 19th Annual International Conference on Privacy, Security & Trust (PST)",
+          "location": "Fredericton, NB, Canada",
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                22
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                24
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2022 19th Annual International Conference on Privacy, Security &amp; Trust (PST)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/9851848/9851959/09851966.pdf?arnumber=9851966",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              24
+            ]
+          ],
+          "date-time": "2024-01-24T03:27:55Z",
+          "timestamp": 1706066875000
+        },
+        "score": 42.709373,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/9851966/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              22
+            ]
+          ]
+        },
+        "references-count": 23,
+        "URL": "https://doi.org/10.1109/pst55820.2022.9851966",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              22
+            ]
+          ]
+        }
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

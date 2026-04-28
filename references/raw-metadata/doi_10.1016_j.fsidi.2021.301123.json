@@ -1,0 +1,453 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2025-12-15T13:40:36Z",
+      "timestamp": 1765806036489,
+      "version": "3.45.0"
+    },
+    "reference-count": 28,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              1,
+              28
+            ]
+          ],
+          "date-time": "2021-01-28T00:00:00Z",
+          "timestamp": 1611792000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Forensic Science International: Digital Investigation"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.fsidi.2021.301123",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          23
+        ]
+      ],
+      "date-time": "2021-11-23T16:21:33Z",
+      "timestamp": 1637684493000
+    },
+    "page": "301123",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "special_numbering": "S",
+    "title": [
+      "IoT network traffic analysis: Opportunities and challenges for forensic investigators?"
+    ],
+    "prefix": "10.1016",
+    "volume": "38",
+    "author": [
+      {
+        "given": "Tina",
+        "family": "Wu",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Frank",
+        "family": "Breitinger",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen",
+        "family": "Niemann",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib1",
+        "series-title": "Proceedings - IEEE Symposium on Security and Privacy, 2019-May",
+        "first-page": "1362",
+        "article-title": "SoK: security evaluation of home-based IoT deployments",
+        "author": "Alrawi",
+        "year": "2019"
+      },
+      {
+        "year": "2018",
+        "series-title": "Amazon",
+        "author": "Amazon",
+        "key": "10.1016/j.fsidi.2021.301123_bib2"
+      },
+      {
+        "year": "2018",
+        "series-title": "Amazon",
+        "author": "Amazon",
+        "key": "10.1016/j.fsidi.2021.301123_bib3"
+      },
+      {
+        "year": "2018",
+        "series-title": "FitBit and Wearables Proving to be a valuable tool in Forensics",
+        "author": "Buhecker",
+        "key": "10.1016/j.fsidi.2021.301123_bib4"
+      },
+      {
+        "year": "2016",
+        "series-title": "Microsoft Warns of Risks to Irish Operation in US Search Warrant Case",
+        "author": "Carswell",
+        "key": "10.1016/j.fsidi.2021.301123_bib5"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "2916",
+        "DOI": "10.1109/TIFS.2019.2911156",
+        "article-title": "HEDGE: efficient traffic classification of encrypted and compressed packets",
+        "volume": "14",
+        "author": "Casino",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Inf. Forensics Secur."
+      },
+      {
+        "year": "2001",
+        "series-title": "Hack Attacks Revealed: A Complete Reference with Custom Security Hacking Toolkit",
+        "author": "Chirillo",
+        "key": "10.1016/j.fsidi.2021.301123_bib7"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "S15",
+        "DOI": "10.1016/j.diin.2017.06.010",
+        "article-title": "Digital forensic approaches for amazon alexa ecosystem",
+        "volume": "22",
+        "author": "Chung",
+        "year": "2017",
+        "journal-title": "Digit. Invest."
+      },
+      {
+        "year": "2020",
+        "series-title": "Hacker Leaks Passwords for More Than 500,000 Servers, Routers, and IoT Devices",
+        "author": "Cimpanu",
+        "key": "10.1016/j.fsidi.2021.301123_bib9"
+      },
+      {
+        "year": "2018",
+        "series-title": "Amazon Ordered to give Alexa Evidence in Double Murder Case",
+        "author": "Cuthbertson",
+        "key": "10.1016/j.fsidi.2021.301123_bib10"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib11",
+        "series-title": "Proceedings of the ACM SIGCOMM Internet Measurement Conference",
+        "first-page": "463",
+        "article-title": "A\u00a0look at router geolocation in public and commercial databases",
+        "author": "Gharaibeh",
+        "year": "2017"
+      },
+      {
+        "year": "2014",
+        "series-title": "Digital Evidence Challenges in the Internet of Things",
+        "author": "Hegarty",
+        "key": "10.1016/j.fsidi.2021.301123_bib12"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib13",
+        "series-title": "IEEE International Conference on Communications, 2019-May",
+        "first-page": "1",
+        "article-title": "Analysis of IoT traffic using HTTP proxy",
+        "author": "Kayode",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib14",
+        "series-title": "Proceedings of the 28th USENIX Conference on Security Symposium SEC19",
+        "first-page": "11691185",
+        "article-title": "All things considered: an analysis of iot devices on home networks",
+        "author": "Kumar",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib15",
+        "series-title": "IoT S and P 2017 - Proceedings of the 2017 Workshop on Internet of Things Security and Privacy",
+        "first-page": "1",
+        "article-title": "Systematically evaluating security and privacy for consumer IoT devices",
+        "author": "Loi",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib16",
+        "series-title": "Proceedings of the 8th ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+        "article-title": "Short: danger is my middle name - experimenting with SSL vulnerabilities in android apps",
+        "author": "Onwuzurike",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib17",
+        "series-title": "Proceedings of the Internet Measurement Conference IMC 19",
+        "first-page": "267279",
+        "article-title": "Information exposure from consumer iot devices: a multidimensional, network-informed measurement approach",
+        "author": "Ren",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "S22",
+        "DOI": "10.1016/j.diin.2019.01.012",
+        "article-title": "Iot forensic challenges and opportunities for digital traces",
+        "volume": "28",
+        "author": "Servida",
+        "year": "2019",
+        "journal-title": "Digit. Invest."
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "656",
+        "DOI": "10.1002/j.1538-7305.1949.tb00928.x",
+        "article-title": "Communication theory of secrecy systems",
+        "volume": "28",
+        "author": "Shannon",
+        "year": "1949",
+        "journal-title": "Bell Syst. Tech. J."
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib20",
+        "article-title": "Classifying IoT devices in smart environments using network traffic characteristics",
+        "author": "Sivaraman",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Mobile Comput."
+      },
+      {
+        "year": "2020",
+        "series-title": "Port 554 Details",
+        "author": "Speedguidenet",
+        "key": "10.1016/j.fsidi.2021.301123_bib21"
+      },
+      {
+        "year": "2017",
+        "series-title": "This smart Doorbell was Accidently sending Data to China, until People started Freaking out",
+        "author": "Tilley",
+        "key": "10.1016/j.fsidi.2021.301123_bib22"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib23",
+        "series-title": "IoT S and P 2017 - Proceedings of the 2017 Workshop on Internet of Things Security and Privacy",
+        "first-page": "19",
+        "article-title": "Security & privacy in smart toys",
+        "author": "Valente",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib24",
+        "series-title": "CODASPY 2018 - Proceedings of the 8th ACM Conference on Data and Application Security and Privacy, 2018-January",
+        "first-page": "196",
+        "article-title": "The next domino to fall: empirical analysis of user passwords across online services",
+        "author": "Wang",
+        "year": "2018"
+      },
+      {
+        "year": "2018",
+        "series-title": "Map of Amazon's Data Centers",
+        "author": "WikiLeaks",
+        "key": "10.1016/j.fsidi.2021.301123_bib25"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib26",
+        "series-title": "IoT S and P 2017 - Proceedings of the 2017 Workshop on Internet of Things Security and Privacy, co-located with CCS 2017 IoT S and P 2017 - Proceedings of the 2017 Workshop on Internet of Things Security and Privacy",
+        "first-page": "7",
+        "article-title": "Clear text data transmissions in consumer iot medical devices",
+        "author": "Wood",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib27",
+        "series-title": "Proceedings of the 14th International Conference on Availability",
+        "first-page": "1",
+        "article-title": "Iot ignorance is digital forensics research bliss: a survey to understand iot forensics definitions, challenges and future research directions",
+        "author": "Wu",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.fsidi.2021.301123_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1016/j.future.2018.09.058",
+        "article-title": "Internet of things forensics: recent advances, taxonomy, requirements, and open challenges",
+        "volume": "92",
+        "author": "Yaqoob",
+        "year": "2019",
+        "journal-title": "Future Generat. Comput. Syst."
+      }
+    ],
+    "container-title": [
+      "Forensic Science International: Digital Investigation"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2666281721000214?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2666281721000214?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2025-11-12T20:53:22Z",
+      "timestamp": 1762980802000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2666281721000214"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "references-count": 28,
+    "alternative-id": [
+      "S2666281721000214"
+    ],
+    "URL": "https://doi.org/10.1016/j.fsidi.2021.301123",
+    "relation": {},
+    "ISSN": [
+      "2666-2817"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "2666-2817"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "IoT network traffic analysis: Opportunities and challenges for forensic investigators?",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Forensic Science International: Digital Investigation",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.fsidi.2021.301123",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2021 The Authors. Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "301123"
+  }
+}
