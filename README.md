@@ -67,7 +67,7 @@ Proyek dianggap selesai jika:
 
 ## Status
 
-Current phase: **Fase 0B — Repository Setup revision after Codex review**
+Current phase: **Fase 0A/0B approved; ready for Fase 1 — Literature Review**
 
 Lihat:
 
