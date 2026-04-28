@@ -1,0 +1,1984 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 5868030,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              24
+            ]
+          ],
+          "date-time": "2026-04-24T15:04:11Z",
+          "timestamp": 1777043051918,
+          "version": "3.51.4"
+        },
+        "reference-count": 103,
+        "publisher": "Elsevier BV",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  12,
+                  1
+                ]
+              ],
+              "date-time": "2025-12-01T00:00:00Z",
+              "timestamp": 1764547200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  12,
+                  1
+                ]
+              ],
+              "date-time": "2025-12-01T00:00:00Z",
+              "timestamp": 1764547200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  12,
+                  18
+                ]
+              ],
+              "date-time": "2024-12-18T00:00:00Z",
+              "timestamp": 1734480000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "elsevier.com",
+            "sciencedirect.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [
+          "Cyber Security and Applications"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.csa.2024.100082",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              20
+            ]
+          ],
+          "date-time": "2024-12-20T14:24:50Z",
+          "timestamp": 1734704690000
+        },
+        "page": "100082",
+        "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 65,
+        "special_numbering": "C",
+        "title": [
+          "A survey on intrusion detection system in IoT networks"
+        ],
+        "prefix": "10.1016",
+        "volume": "3",
+        "author": [
+          {
+            "given": "Md Mahbubur",
+            "family": "Rahman",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0000-5212-8178",
+            "authenticated-orcid": false,
+            "given": "Shaharia Al",
+            "family": "Shakil",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Mizanur Rahman",
+            "family": "Mustakim",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "78",
+        "reference": [
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0001",
+            "first-page": "106",
+            "article-title": "A training-resistant anomaly detection system",
+            "volume": "73",
+            "author": "Verma",
+            "year": "2018",
+            "journal-title": "Computers & Security"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0002",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1186/s42400-019-0038-7",
+            "article-title": "Survey of intrusion detection systems techniques datasets and challenges",
+            "volume": "2",
+            "author": "Khraisat",
+            "year": "2019",
+            "journal-title": "Cybersecurity"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0003",
+            "article-title": "Toward enhancing web privacy on https traffic: a novel superlearner attack model and an efficient defense approach with adversarial examples",
+            "volume": "139",
+            "author": "Abolfathi",
+            "year": "2023",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0004",
+            "series-title": "Proceedings of the Network Security Conference",
+            "article-title": "Tversky loss for detecting rare network intrusions in IoT",
+            "author": "Ahmed",
+            "year": "2019"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0005",
+            "doi-asserted-by": "crossref",
+            "first-page": "19",
+            "DOI": "10.1016/j.jnca.2015.11.016",
+            "article-title": "A survey of network anomaly detection techniques",
+            "volume": "60",
+            "author": "Ahmed",
+            "year": "2016",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0006",
+            "doi-asserted-by": "crossref",
+            "first-page": "415",
+            "DOI": "10.1016/j.aej.2023.11.078",
+            "article-title": "Golden jackal optimization algorithm with deep learning assisted intrusion detection system for network security",
+            "volume": "86",
+            "author": "Aljehane",
+            "year": "2024",
+            "journal-title": "Alex. Eng. J."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0007",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.eswa.2023.122198",
+            "article-title": "HDA-IDS: a hybrid dos attacks intrusion detection system for IoT by using semi-supervised CL-GAN",
+            "volume": "238",
+            "author": "Li",
+            "year": "2024",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0008",
+            "article-title": "Detecting cyberattacks using anomaly detection in industrial control systems: a federated learning approach",
+            "volume": "132",
+            "author": "Truong",
+            "year": "2021",
+            "journal-title": "Comput. Ind."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0009",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.compeleceng.2022.108156",
+            "article-title": "Recurrent deep learning-based feature fusion ensemble meta-classifier approach for intelligent network intrusion detection system",
+            "volume": "102",
+            "author": "Ravi",
+            "year": "2022",
+            "journal-title": "Comput. Electr. Eng."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_sbref0010",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1186/s13677-023-00491-x",
+            "article-title": "Intrusion detection in cloud computing based on time series anomalies utilizing machine learning",
+            "volume": "12",
+            "author": "Al-Ghuwairi",
+            "year": "2023",
+            "journal-title": "J. Cloud Comput."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0011",
+            "article-title": "Unravelling the three lines model in cybersecurity: a systematic literature review",
+            "volume": "139",
+            "author": "Bongiovanni",
+            "year": "2024",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "issue": "5",
+            "key": "10.1016/j.csa.2024.100082_bib0012",
+            "doi-asserted-by": "crossref",
+            "first-page": "412",
+            "DOI": "10.1093/bioinformatics/16.5.412",
+            "article-title": "Assessing the accuracy of prediction algorithms for classification: an overview",
+            "volume": "16",
+            "author": "Baldi",
+            "year": "2000",
+            "journal-title": "Bioinformatics"
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0013",
+            "first-page": "147",
+            "article-title": "Regression techniques for anomaly detection in IoT networks",
+            "volume": "9",
+            "author": "Brown",
+            "year": "2020",
+            "journal-title": "IoT J. Secur."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0014",
+            "first-page": "305",
+            "article-title": "Training time analysis for IDS models",
+            "volume": "17",
+            "author": "Brown",
+            "year": "2023",
+            "journal-title": "J. Mach. Learn. Res."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0015",
+            "first-page": "827",
+            "article-title": "Research on network intrusion detection based on improved PSO and SVM",
+            "volume": "9",
+            "author": "Bu",
+            "year": "2014",
+            "journal-title": "J. Comput."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0016",
+            "first-page": "22",
+            "article-title": "Support vector machine-based intrusion detection in IoT networks",
+            "volume": "5",
+            "author": "Chen",
+            "year": "2018",
+            "journal-title": "IoT Secur. Rev."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0017",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1186/s12864-019-6413-7",
+            "article-title": "The advantages of the matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation",
+            "volume": "21",
+            "author": "Chicco",
+            "year": "2020",
+            "journal-title": "BMC Genomics"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0018",
+            "first-page": "102",
+            "article-title": "Machine learning in cybersecurity: a comprehensive survey",
+            "volume": "19",
+            "author": "Dasgupta",
+            "year": "2020",
+            "journal-title": "J. Def. Model. Simul."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0019",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.eswa.2023.123027",
+            "article-title": "Dugat-LSTM: deep learning based network intrusion detection system using chaotic optimization strategy",
+            "volume": "245",
+            "author": "Devendiran",
+            "year": "2024",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.csa.2024.100082_bib0020",
+            "first-page": "45",
+            "article-title": "Deep learning techniques for intrusion detection in IoT networks",
+            "volume": "12",
+            "author": "Doe",
+            "year": "2020",
+            "journal-title": "J. IoT Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0021",
+            "doi-asserted-by": "crossref",
+            "unstructured": "R. Doriguzzi-Corin, D. Siracusa, FLAD: adaptive federated learning for DDoS attack detection (2024). [Online]. Available: doi:10.1016/j.cose.2023.103597.",
+            "DOI": "10.1016/j.cose.2023.103597"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0022",
+            "doi-asserted-by": "crossref",
+            "first-page": "303",
+            "DOI": "10.1016/j.future.2017.01.029",
+            "article-title": "A novel statistical technique for intrusion detection systems",
+            "volume": "79",
+            "author": "Kabir",
+            "year": "2018",
+            "journal-title": "Future Gen. Comput. Syst."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0023",
+            "doi-asserted-by": "crossref",
+            "first-page": "1044",
+            "DOI": "10.3390/electronics12041044",
+            "article-title": "A machine learning-based intrusion detection system for IoT electric vehicle charging stations (EVCSs)",
+            "volume": "12",
+            "author": "ElKashlan",
+            "year": "2023",
+            "journal-title": "Electronics"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_sbref0023",
+            "article-title": "IDC forecasts connected IoT devices to generate 79.4ZB of data In 2025 - FutureIoT",
+            "author": "Estopace",
+            "year": "2019",
+            "journal-title": "FutureIoT"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0025",
+            "unstructured": "W. Lee, J. Seok, E. Seo, Adversarial attack of ML-based intrusion detection system on in-vehicle system using GAN (2023) 3503\u20133538."
+          },
+          {
+            "issue": "8",
+            "key": "10.1016/j.csa.2024.100082_bib0026",
+            "doi-asserted-by": "crossref",
+            "first-page": "861",
+            "DOI": "10.1016/j.patrec.2005.10.010",
+            "article-title": "An introduction to ROC analysis",
+            "volume": "27",
+            "author": "Fawcett",
+            "year": "2006",
+            "journal-title": "Pattern Recognit. Lett."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0027",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1155/2023/3939895",
+            "article-title": "Industrial internet of things intrusion detection method using machine learning and optimization techniques",
+            "volume": "2023",
+            "author": "Gaber",
+            "year": "2023",
+            "journal-title": "Wirel. Commun. Mob. Comput."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0028",
+            "first-page": "102",
+            "article-title": "Challenges in securing the SCADA systems",
+            "volume": "3",
+            "author": "Gates",
+            "year": "2006",
+            "journal-title": "Ind. Control Syst. Secur."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.csa.2024.100082_bib0029",
+            "first-page": "7",
+            "article-title": "Recall and sensitivity of IDS",
+            "volume": "18",
+            "author": "Glezer",
+            "year": "2021",
+            "journal-title": "ACM Trans. Privacy Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0030",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.cose.2020.102158",
+            "article-title": "An effective intrusion detection approach using svm with na\u00efve bayes feature embedding",
+            "volume": "103",
+            "author": "Gu",
+            "year": "2021",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0031",
+            "doi-asserted-by": "crossref",
+            "first-page": "78",
+            "DOI": "10.1016/j.neucom.2015.07.135",
+            "article-title": "An effective intrusion detection framework based on MCLP/SVM optimized by time-varying chaos particle swarm optimization",
+            "volume": "211",
+            "author": "Guo",
+            "year": "2016",
+            "journal-title": "Neurocomputing"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0032",
+            "first-page": "3527",
+            "article-title": "A lightweight intelligent network intrusion detection system using OCSVM and pigeon inspired optimizer",
+            "volume": "52",
+            "author": "Sabri",
+            "year": "2021",
+            "journal-title": "Appl. Intell."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0033",
+            "article-title": "Supervised contrastive resnet and transfer learning for the in-vehicle intrusion detection system",
+            "volume": "242",
+            "author": "Hoang",
+            "year": "2024",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0034",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.array.2023.100306",
+            "article-title": "Ensuring network security with a robust intrusion detection system using ensemble-based machine learning",
+            "volume": "19",
+            "author": "Hossain",
+            "year": "2023",
+            "journal-title": "Array"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0035",
+            "article-title": "APELID: Enhancing real-time intrusion detection with augmented WGAN and parallel ensemble learning",
+            "volume": "136",
+            "author": "Du",
+            "year": "2024",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0036",
+            "first-page": "115",
+            "article-title": "A systematic review of patient use of mobile health technologies in adult diabetes management",
+            "volume": "24",
+            "author": "Idowu",
+            "year": "2018",
+            "journal-title": "Health Inf. J."
+          },
+          {
+            "issue": "403",
+            "key": "10.1016/j.csa.2024.100082_bib0037",
+            "first-page": "36",
+            "article-title": "Federated learning for intrusion detection systems in internet of vehicles",
+            "volume": "15",
+            "author": "Alsamiri",
+            "year": "2023",
+            "journal-title": "Future Internet"
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0038",
+            "first-page": "70",
+            "article-title": "Comprehensive review of intrusion detection systems and machine learning",
+            "volume": "15",
+            "author": "Jiang",
+            "year": "2021",
+            "journal-title": "Cybersecur. Adv."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0039",
+            "doi-asserted-by": "crossref",
+            "first-page": "517",
+            "DOI": "10.1007/s42979-023-01954-3",
+            "article-title": "Intrusion detection system with svm and ensemble learning algorithms",
+            "volume": "4",
+            "author": "Maisnam",
+            "year": "2023",
+            "journal-title": "SN Comput. Sci."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0040",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.cose.2024.103712",
+            "article-title": "DivaCAN: detecting in-vehicle intrusion attacks on a controller area network using ensemble learning",
+            "volume": "139",
+            "author": "Khan",
+            "year": "2024",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0041",
+            "unstructured": "N. Khan, F. Ali, Robust regression for intrusion detection in IoT environments (2021) 230\u2013242."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0042",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.eswa.2022.119330",
+            "article-title": "Implementation of intrusion detection model for DDoS attacks in Lightweight IoT Networks",
+            "volume": "215",
+            "author": "Khanday",
+            "year": "2023",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0043",
+            "article-title": "Intrusion detection based on machine learning and statistical feature ranking techniques",
+            "author": "Kumar",
+            "year": "2023",
+            "journal-title": "IEEE"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0044",
+            "unstructured": "R. Kumar, P. Singh, Efficient IoT Intrusion Detection Using Binary Cross-Entropy Loss, 2021."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0045",
+            "first-page": "123",
+            "article-title": "Overall correctness of the IDS",
+            "volume": "45",
+            "author": "Kutlu",
+            "year": "2019",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0046",
+            "first-page": "123",
+            "article-title": "Anomaly detection in IoT using regression-based techniques",
+            "volume": "7",
+            "author": "Lee",
+            "year": "2019",
+            "journal-title": "Int. J. IoT Secur."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0047",
+            "doi-asserted-by": "crossref",
+            "first-page": "227",
+            "DOI": "10.1145/382912.382914",
+            "article-title": "A framework for constructing features and models for intrusion detection systems",
+            "volume": "3",
+            "author": "Lee",
+            "year": "2000",
+            "journal-title": "ACM Trans. Inf. Syst. Secur. (TISSEC)"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0048",
+            "doi-asserted-by": "crossref",
+            "unstructured": "D.D. Lewis, Sequential Sampling Algorithms for Training Text Classifiers, 1994.",
+            "DOI": "10.1007/978-1-4471-2099-5_1"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0049",
+            "first-page": "45",
+            "article-title": "Auc optimization for IoT intrusion detection systems",
+            "volume": "5",
+            "author": "Li",
+            "year": "2021",
+            "journal-title": "J. Cybersecur. Metrics"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0050",
+            "doi-asserted-by": "crossref",
+            "first-page": "16",
+            "DOI": "10.1016/j.jnca.2012.09.004",
+            "article-title": "Intrusion detection system: a comprehensive review",
+            "volume": "36",
+            "author": "Liao",
+            "year": "2013",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0051",
+            "first-page": "81",
+            "article-title": "Iou-based evaluation for IoT intrusion detection",
+            "volume": "102",
+            "author": "Lin",
+            "year": "2019",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0052",
+            "first-page": "135",
+            "article-title": "Balancing precision and recall: F1-score in IDS",
+            "volume": "8",
+            "author": "Lundy",
+            "year": "2021",
+            "journal-title": "IEEE Access"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0053",
+            "doi-asserted-by": "crossref",
+            "unstructured": "M. Maddu, Y.N. Rao, Network intrusion detection and mitigation in SDN using deep learning models (2023).",
+            "DOI": "10.1007/s10207-023-00771-2"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0054",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.eswa.2023.122709",
+            "article-title": "On the trade-off between ranking effectiveness and fairness",
+            "volume": "241",
+            "author": "Melucci",
+            "year": "2024",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.csa.2024.100082_bib0055",
+            "first-page": "45",
+            "article-title": "Holistic approach for anomaly-based intrusion detection systems",
+            "volume": "5",
+            "author": "Moustafa",
+            "year": "2019",
+            "journal-title": "Netw. Secur. Adv."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0056",
+            "article-title": "Anomaly-based intrusion detection systems in IoT using deep learning: a systematic literature review",
+            "volume": "11",
+            "author": "Siraj",
+            "year": "2021",
+            "journal-title": "Appl. Sci."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0057",
+            "doi-asserted-by": "crossref",
+            "first-page": "29",
+            "DOI": "10.3390/jsan12020029",
+            "article-title": "Intrusion detection system using feature extraction with machine learning algorithms in IoT",
+            "volume": "12",
+            "author": "Musleh",
+            "year": "2023",
+            "journal-title": "J. Sens. Actuator Netw."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0058",
+            "article-title": "Automated DDoS attack detection in software defined networking",
+            "volume": "187",
+            "author": "Mukhopadhyay",
+            "year": "2021",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0059",
+            "article-title": "Flow-based anomaly intrusion detection using machine learning model with software defined networking for openflow network",
+            "volume": "79",
+            "author": "Rajeshkumar",
+            "year": "2020",
+            "journal-title": "Microprocess. Microsyst."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0060",
+            "first-page": "41-50",
+            "article-title": "A deep learning approach to network intrusion detection",
+            "volume": "2",
+            "author": "Phai",
+            "year": "2018",
+            "journal-title": "IEEE Trans. Emerg. Top. Comput. Intell."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0061",
+            "series-title": "Machine Learning-Based Intrusion Detection: Feature Selection Versus Feature Extraction",
+            "author": "Ngo",
+            "year": "2023"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0062",
+            "series-title": "Improving IoT Intrusion Detection with Dice Loss",
+            "author": "Nguyen",
+            "year": "2021"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_sbref0057",
+            "article-title": "Fusion of federated learning and industrial internet of things: a survey",
+            "volume": "212",
+            "author": "Pham",
+            "year": "2022",
+            "journal-title": "Comput. Netw."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0064",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.comnet.2020.107464",
+            "article-title": "On packet marking and markov modeling for IP traceback: a deep probabilistic and stochastic analysis",
+            "volume": "182",
+            "author": "Fazio",
+            "year": "2020",
+            "journal-title": "Comput. Netw."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0065",
+            "doi-asserted-by": "crossref",
+            "first-page": "215",
+            "DOI": "10.1016/j.comcom.2019.09.014",
+            "article-title": "VARMAN: multi-plane security framework for software defined networks",
+            "volume": "148",
+            "author": "Duttagupta",
+            "year": "2019",
+            "journal-title": "Comput. Commun."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0066",
+            "article-title": "Malicious attacks detection using GRU-BWFA classifier",
+            "volume": "79",
+            "author": "Magudeeswaran",
+            "year": "2023",
+            "journal-title": "Biomed. Signal Process. Control"
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.csa.2024.100082_bib0067",
+            "first-page": "112",
+            "article-title": "Sparse categorical cross-entropy for IoT intrusion detection",
+            "volume": "6",
+            "author": "Patel",
+            "year": "2019",
+            "journal-title": "IoT Secur. J."
+          },
+          {
+            "issue": "22",
+            "key": "10.1016/j.csa.2024.100082_bib0068",
+            "first-page": "8609-8624",
+            "article-title": "An intrusion detection system using network traffic profiling and online sequential extreme learning machine",
+            "volume": "42",
+            "author": "Kumar",
+            "year": "2015",
+            "journal-title": "Expert Syst. Appl."
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.csa.2024.100082_bib0069",
+            "doi-asserted-by": "crossref",
+            "first-page": "98",
+            "DOI": "10.3390/fi15030098",
+            "article-title": "Towards an integrated methodology and toolchain for machine learning-based intrusion detection in urban IoT networks and platforms",
+            "volume": "15",
+            "author": "Rangelov",
+            "year": "2023",
+            "journal-title": "Future Internet"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0070",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.cose.2023.103685",
+            "article-title": "Proactive defense mechanism: enhancing IoT security through diversity-based moving target defense and cyber deception",
+            "volume": "139",
+            "author": "Rehman",
+            "year": "2024",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0071",
+            "article-title": "Intrusion detection in cyber-physical systems using a generic and domain-specific deep autoencoder model",
+            "volume": "91",
+            "author": "Kumar",
+            "year": "2021",
+            "journal-title": "Comput. Electr. Eng."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0072",
+            "doi-asserted-by": "crossref",
+            "unstructured": "D. Mohanty, S. Vadigi, K. Sethi, S.P. Das, Federated reinforcement learning based intrusion detection system using dynamic attention mechanism (2023). [Online]. Available: doi:10.1016/j.jisa.2023.103608.",
+            "DOI": "10.1016/j.jisa.2023.103608"
+          },
+          {
+            "issue": "17",
+            "key": "10.1016/j.csa.2024.100082_bib0073",
+            "doi-asserted-by": "crossref",
+            "first-page": "9937",
+            "DOI": "10.3390/app13179937",
+            "article-title": "A lightweight model for DDOS attack detection using machine learning techniques",
+            "volume": "13",
+            "author": "Sadhwani",
+            "year": "2023",
+            "journal-title": "Appl. Sci."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0074",
+            "doi-asserted-by": "crossref",
+            "first-page": "356-361",
+            "DOI": "10.1016/j.jer.2023.100122",
+            "article-title": "Enhancing intrusion detection in IoT systems: a hybrid metaheuristics-deep learning approach with ensemble of recurrent neural networks",
+            "volume": "11",
+            "author": "Sanju",
+            "year": "2023",
+            "journal-title": "J. Eng. Res."
+          },
+          {
+            "issue": "16",
+            "key": "10.1016/j.csa.2024.100082_bib0075",
+            "doi-asserted-by": "crossref",
+            "first-page": "6058",
+            "DOI": "10.3390/en16166058",
+            "article-title": "Assessing machine learning techniques for intrusion detection in cyber-physical systems",
+            "volume": "16",
+            "author": "Santos",
+            "year": "2023",
+            "journal-title": "Energies"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0076",
+            "doi-asserted-by": "crossref",
+            "first-page": "2049",
+            "DOI": "10.1016/j.procs.2023.01.181",
+            "article-title": "A comparative study of supervised machine learning classifiers for intrusion detection in internet of things",
+            "volume": "218",
+            "author": "Saran",
+            "year": "2023",
+            "journal-title": "Procedia Comput. Sci."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0077",
+            "first-page": "55",
+            "article-title": "A survey of multi-access edge computing: Definition, application, and research challenges",
+            "volume": "12",
+            "author": "Sarker",
+            "year": "2020",
+            "journal-title": "Edge Comput. Rev."
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0078",
+            "first-page": "15",
+            "article-title": "Security and privacy considerations in the internet of things",
+            "volume": "8",
+            "author": "Sheikh",
+            "year": "2020",
+            "journal-title": "IoT Secur. J."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0079",
+            "article-title": "Hybrid optimization and deep learning based intrusion detection system",
+            "volume": "100",
+            "author": "Grover",
+            "year": "2022",
+            "journal-title": "Comput. Electr. Eng."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0080",
+            "first-page": "70",
+            "article-title": "Using focal loss to handle imbalance in IoT intrusion detection",
+            "volume": "15",
+            "author": "Smith",
+            "year": "2020",
+            "journal-title": "Cybersecur. Adv."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0081",
+            "first-page": "75",
+            "article-title": "Evaluating the false positive rate in IDS",
+            "volume": "20",
+            "author": "Smith",
+            "year": "2022",
+            "journal-title": "Int. J. Netw. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0082",
+            "doi-asserted-by": "crossref",
+            "unstructured": "S. Srinivas Akkepalli, Anomaly-based network intrusion detection using hybrid CNN, Bi-LSTM deep learning techniques (2024) 0950\u20130958.",
+            "DOI": "10.1109/IRASET60544.2024.10548678"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0083",
+            "first-page": "152",
+            "article-title": "Network intrusion detection system based on recursive feature addition and bigram technique",
+            "volume": "73",
+            "author": "Dara",
+            "year": "2018",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0084",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Y. Shiraishi, T.T. Thein, M. Morii, Personalized federated learning-based intrusion detection system: poisoning attack and defense (2024). [Online]. Available: doi:10.1016/j.future.2023.10.005.",
+            "DOI": "10.1016/j.future.2023.10.005"
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0085",
+            "article-title": "A dependable hybrid machine learning model for network intrusion detection",
+            "volume": "72",
+            "author": "Talukder",
+            "year": "2023",
+            "journal-title": "J. Inf. Secur. Appl."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0086",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.iot.2022.100670",
+            "article-title": "Energy consumption of on-device machine learning models for IoT intrusion detection",
+            "volume": "21",
+            "author": "Tekin",
+            "year": "2023",
+            "journal-title": "Internet Things"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0087",
+            "first-page": "45",
+            "article-title": "Multi-label classification in IoT intrusion detection using hamming loss",
+            "volume": "3",
+            "author": "Thomas",
+            "year": "2018",
+            "journal-title": "IoT Secur. Privacy"
+          },
+          {
+            "issue": "5",
+            "key": "10.1016/j.csa.2024.100082_bib0088",
+            "first-page": "1012",
+            "article-title": "Precision in intrusion detection systems",
+            "volume": "14",
+            "author": "Tsai",
+            "year": "2020",
+            "journal-title": "IEEE Trans. Inf. Forensics Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_sbref0080",
+            "series-title": "A Survey on Security and Privacy of Federated Learning",
+            "author": "Pouriyeh",
+            "year": "2021"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.csa.2024.100082_bib0090",
+            "doi-asserted-by": "crossref",
+            "first-page": "849",
+            "DOI": "10.32604/iasc.2023.032324",
+            "article-title": "Improved AnT colony optimization and machine learning based ensemble Intrusion Detection model",
+            "volume": "36",
+            "author": "Vanitha",
+            "year": "2023",
+            "journal-title": "Intell. Autom. Soft Comput."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0091",
+            "doi-asserted-by": "crossref",
+            "first-page": "70",
+            "DOI": "10.1109/IOTM.001.2300106",
+            "article-title": "Toward a reliable evaluation of machine learning schemes for network-based intrusion detection",
+            "volume": "6",
+            "author": "Viegas",
+            "year": "2023",
+            "journal-title": "IEEE Internet Things Mag."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0092",
+            "article-title": "A new two-phase intrusion detection system with Na\u00efve Bayes machine learning for data classification and elliptic envelop method for anomaly detection",
+            "volume": "7",
+            "author": "Vishwakarma",
+            "year": "2023",
+            "journal-title": "Decis. Anal. J."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0093",
+            "article-title": "Edge-based intrusion detection using machine learning over the IoT network",
+            "author": "Wadate",
+            "year": "2023",
+            "journal-title": "IEEE"
+          },
+          {
+            "issue": "11",
+            "key": "10.1016/j.csa.2024.100082_bib0094",
+            "first-page": "145",
+            "article-title": "Resource utilization in ids for IoT environments",
+            "volume": "67",
+            "author": "Wang",
+            "year": "2023",
+            "journal-title": "IEEE Trans. Comput."
+          },
+          {
+            "issue": "2",
+            "key": "10.1016/j.csa.2024.100082_bib0095",
+            "first-page": "89",
+            "article-title": "Optimizing cohen\u2019s kappa for intrusion detection in IoT",
+            "volume": "6",
+            "author": "White",
+            "year": "2018",
+            "journal-title": "J. IoT Cybersecur."
+          },
+          {
+            "issue": "20",
+            "key": "10.1016/j.csa.2024.100082_bib0096",
+            "doi-asserted-by": "crossref",
+            "first-page": "4289",
+            "DOI": "10.3390/electronics12204289",
+            "article-title": "IoT intrusion detection system based on machine learning",
+            "volume": "12",
+            "author": "Xu",
+            "year": "2023",
+            "journal-title": "Electronics"
+          },
+          {
+            "issue": "19",
+            "key": "10.1016/j.csa.2024.100082_bib0097",
+            "doi-asserted-by": "crossref",
+            "first-page": "14469",
+            "DOI": "10.1007/s00500-023-09037-4",
+            "article-title": "A data-driven approach for intrusion and anomaly detection using automated machine learning for the internet of things",
+            "volume": "27",
+            "author": "Xu",
+            "year": "2023",
+            "journal-title": "Soft Comput."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0098",
+            "article-title": "A feature selection based on genetic algorithm for intrusion detection of industrial control systems",
+            "volume": "139",
+            "author": "Lin",
+            "year": "2024",
+            "journal-title": "Comput. Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0099",
+            "article-title": "A network intrusion detection method based on semantic re-encoding and deep learning",
+            "volume": "164",
+            "author": "Hu",
+            "year": "2020",
+            "journal-title": "J. Netw. Comput. Appl."
+          },
+          {
+            "issue": "11",
+            "key": "10.1016/j.csa.2024.100082_bib0100",
+            "doi-asserted-by": "crossref",
+            "first-page": "6504",
+            "DOI": "10.3390/app13116504",
+            "article-title": "Machine learning-based adaptive synthetic sampling technique for intrusion detection",
+            "volume": "13",
+            "author": "Zakariah",
+            "year": "2023",
+            "journal-title": "Appl. Sci."
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.csa.2024.100082_bib0101",
+            "first-page": "255",
+            "article-title": "Real-time intrusion detection: inference time considerations",
+            "volume": "9",
+            "author": "Zhang",
+            "year": "2023",
+            "journal-title": "IEEE Internet Things J."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0102",
+            "first-page": "1302",
+            "article-title": "Kl divergence for anomaly detection in IoT networks",
+            "volume": "16",
+            "author": "Zhang",
+            "year": "2021",
+            "journal-title": "IEEE Trans. Inf. Forensics Secur."
+          },
+          {
+            "key": "10.1016/j.csa.2024.100082_bib0103",
+            "doi-asserted-by": "crossref",
+            "unstructured": "P. Zhu, Z. Fan, S. Guo, K. Tang, X. Li, Improving adversarial transferability through hybrid augmentation, Comput. Secur. 139(2024) 103674. doi:10.1016/j.cose.2023.103674.",
+            "DOI": "10.1016/j.cose.2023.103674"
+          }
+        ],
+        "container-title": [
+          "Cyber Security and Applications"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2772918424000481?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2772918424000481?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              30
+            ]
+          ],
+          "date-time": "2025-12-30T16:03:20Z",
+          "timestamp": 1767110600000
+        },
+        "score": 38.40647,
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2772918424000481"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "references-count": 103,
+        "alternative-id": [
+          "S2772918424000481"
+        ],
+        "URL": "https://doi.org/10.1016/j.csa.2024.100082",
+        "ISSN": [
+          "2772-9184"
+        ],
+        "issn-type": [
+          {
+            "value": "2772-9184",
+            "type": "print"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "Elsevier",
+            "name": "publisher",
+            "label": "This article is maintained by"
+          },
+          {
+            "value": "A survey on intrusion detection system in IoT networks",
+            "name": "articletitle",
+            "label": "Article Title"
+          },
+          {
+            "value": "Cyber Security and Applications",
+            "name": "journaltitle",
+            "label": "Journal Title"
+          },
+          {
+            "value": "https://doi.org/10.1016/j.csa.2024.100082",
+            "name": "articlelink",
+            "label": "CrossRef DOI link to publisher maintained version"
+          },
+          {
+            "value": "article",
+            "name": "content_type",
+            "label": "Content Type"
+          },
+          {
+            "value": "\u00a9 2024 The Authors. Publishing Services by Elsevier B.V. on behalf of KeAi Communications Co., Ltd.",
+            "name": "copyright",
+            "label": "Copyright"
+          }
+        ],
+        "article-number": "100082"
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              11
+            ]
+          ],
+          "date-time": "2026-04-11T05:41:40Z",
+          "timestamp": 1775886100075,
+          "version": "3.50.1"
+        },
+        "reference-count": 29,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  7
+                ]
+              ],
+              "date-time": "2023-12-07T00:00:00Z",
+              "timestamp": 1701907200000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  7
+                ]
+              ],
+              "date-time": "2023-12-07T00:00:00Z",
+              "timestamp": 1701907200000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "DOI": "10.1109/icotl59758.2023.10435271",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              19
+            ]
+          ],
+          "date-time": "2024-02-19T19:54:25Z",
+          "timestamp": 1708372465000
+        },
+        "page": "1-6",
+        "source": "Crossref",
+        "is-referenced-by-count": 7,
+        "title": [
+          "Intrusion Detection System for IoT Networks"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "V.",
+            "family": "Jyothsna",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Mohan Babu University (Erstwhile Sree Vidyanikethan Engineering College),Department of Data Science,Tirupati,India"
+              }
+            ]
+          },
+          {
+            "given": "E.",
+            "family": "Sandhya",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Madanapalle Institute of Technology &#x0026; Science,Department of CSE(Artificial Intelligence),Madanapalle,India"
+              }
+            ]
+          },
+          {
+            "given": "R.",
+            "family": "Roopa",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Madanapalle Institute of Technology &#x0026; Science,Department of CSE (Data Science),Madanapalle,India"
+              }
+            ]
+          },
+          {
+            "given": "B.",
+            "family": "Deena Divya Nayomi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "G. Pullaiah College of Engineering and Technology,CSE,Kurnool,India"
+              }
+            ]
+          },
+          {
+            "given": "D. K.",
+            "family": "Shareef",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "S. V. Institute of Technology,CSE,Anantapur,India"
+              }
+            ]
+          },
+          {
+            "given": "P.",
+            "family": "Bhasha",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Mohan Babu University (Erstwhile Sree Vidyanikethan Engineering College),Department of Data Science,Tirupati,India"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/tits.2022.3188671"
+          },
+          {
+            "key": "ref2",
+            "first-page": "1",
+            "article-title": "Detection of Real-Time Malicious Intrusions and Attacks",
+            "author": "Ali",
+            "year": "2023",
+            "journal-title": "IoT Empowered Cybersecurity Infrastructures. IEEE Access"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1186/s42400-022-00133-w"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/icai55435.2022.9773747"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s12652-022-04407-6"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.micpro.2022.104622"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.46792/fuoyejet.v7i2.802"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.icte.2021.04.012"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jnca.2021.103106"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ins.2020.05.130"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.adhoc.2021.102643"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.knosys.2021.107264"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/bigdatasecurity-hpsc-ids49724.2020.00048"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/iciptm54933.2022.9754187"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s20164583"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/a15060189"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.eswa.2020.113338"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/biomimetics7040241"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/access.2021.3130933"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/fones-aiot54873.2021.00012"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/wpmc55625.2022.10014866"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/comsnets53615.2022.9668340"
+          },
+          {
+            "key": "ref23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/honet53078.2021.9615458"
+          },
+          {
+            "key": "ref24",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/icatiece56365.2022.10047483"
+          },
+          {
+            "key": "ref25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/icenco55801.2022.10032515"
+          },
+          {
+            "key": "ref26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/icspc51351.2021.9451786"
+          },
+          {
+            "key": "ref27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/icccmla56841.2022.9988997"
+          },
+          {
+            "key": "ref28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/iot52625.2021.9469723"
+          },
+          {
+            "key": "ref29",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ciot53061.2022.9766759"
+          }
+        ],
+        "event": {
+          "name": "2023 1st International Conference on Optimization Techniques for Learning (ICOTL)",
+          "location": "Bengaluru, India",
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                7
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                8
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2023 1st International Conference on Optimization Techniques for Learning (ICOTL)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/10434936/10434955/10435271.pdf?arnumber=10435271",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              29
+            ]
+          ],
+          "date-time": "2024-02-29T23:51:32Z",
+          "timestamp": 1709250692000
+        },
+        "score": 36.385647,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/10435271/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "references-count": 29,
+        "URL": "https://doi.org/10.1109/icotl59758.2023.10435271",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              31
+            ]
+          ],
+          "date-time": "2025-12-31T05:37:58Z",
+          "timestamp": 1767159478142,
+          "version": "build-2238731810"
+        },
+        "reference-count": 17,
+        "publisher": "IOP Publishing",
+        "issue": "1",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  5,
+                  1
+                ]
+              ],
+              "date-time": "2021-05-01T00:00:00Z",
+              "timestamp": 1619827200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by/3.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  5,
+                  1
+                ]
+              ],
+              "date-time": "2021-05-01T00:00:00Z",
+              "timestamp": 1619827200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "iopscience.iop.org"
+          ],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "J. Phys.: Conf. Ser."
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ]
+        },
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Over the past few years the development in the mobile industry and development of internet, network for all, 4G, 5G etc. enabled the ordinary people as well as the elite people to depend upon mobile networks for regular business developments, entertainment, medical and educational needs. Almost all areas of development depend on the so called improvement of the mobile network. As the advantages and flexibility increases, the consumers entering by new registration increase widely and service requirement of existing consumers increase massively. It is mandatory to provide high level of security and dual privacy protection to the users sharing the large set of information through the cloud. The massive crowd sensing is important for any kind of network security system to ensure the detection of any miscellaneous activity entering the network grid. The study is focused on gathering various literature evidences on demand for intrusion detection system, analyzing the pitfalls in current models and creating an idea that would be helpful for us to proceed further with the research on intrusion detection system implementations and innovating a novel methodology that improvise from the present system. The future enhancement and interpretations on solutions would be discussed too.</jats:p>",
+        "DOI": "10.1088/1742-6596/1916/1/012179",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              27
+            ]
+          ],
+          "date-time": "2021-05-27T21:18:33Z",
+          "timestamp": 1622150313000
+        },
+        "page": "012179",
+        "update-policy": "https://doi.org/10.1088/crossmark-policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "A survey on intrusion detection system and prerequisite demands in IoT networks"
+        ],
+        "prefix": "10.1088",
+        "volume": "1916",
+        "author": [
+          {
+            "given": "Parthiban",
+            "family": "Aravamudhan",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "T",
+            "family": "Kanimozhi",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "member": "266",
+        "reference": [
+          {
+            "key": "JPCS_1916_1_012179bib1",
+            "article-title": "An adaptive intrusion detection and prevention system for Internet of Things SAGE open access",
+            "volume": "15",
+            "author": "Bakhsh",
+            "year": "2019",
+            "journal-title": "journal in Soft Computing in Intrusion Detection System, published"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib2",
+            "author": "Akhil",
+            "year": "2020"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib3",
+            "article-title": "Research entitled Novel three-tier Intrusion Detection and Prevention System in Software Defined Network",
+            "volume": "8",
+            "author": "Amir",
+            "year": "2020",
+            "journal-title": "IEEE Open-Access"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib4",
+            "article-title": "Key-Free Authentication Protocol Against Subverted Indoor Smart Devices for Smart Home",
+            "volume": "7",
+            "author": "Zhigang",
+            "year": "2019",
+            "journal-title": "IEEE Internet of Things journal"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib5",
+            "article-title": "Machine Learning Techniques for Cyber Attacks Detection",
+            "volume": "233",
+            "author": "Rafal",
+            "year": "2014",
+            "journal-title": "Advances in Intelligent Systems and Computing book series Springer International Published"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib6",
+            "author": "Islabudeen",
+            "year": "2020"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib7",
+            "volume": "21",
+            "author": "Nadia",
+            "year": "2019",
+            "journal-title": "Network Intrusion Detection for IoT Security Based on Learning Techniques, in IEEE Communication Surveys"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib8",
+            "author": "Yue",
+            "year": "2018"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib9",
+            "volume": "7",
+            "author": "Fuhong",
+            "year": "2018"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib10",
+            "first-page": "161",
+            "volume": "4",
+            "author": "Mahdavinejad",
+            "year": "2018",
+            "journal-title": "Sheth Machine learning for internet of things data analysis: a survey Digital Communications and Networks Science Direct"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib11",
+            "doi-asserted-by": "publisher",
+            "first-page": "91",
+            "DOI": "10.1109/ICIEV.2012.6317381",
+            "author": "PrakashDuraisamy",
+            "year": "2012"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib12",
+            "doi-asserted-by": "crossref",
+            "first-page": "459",
+            "DOI": "10.3844/jcssp.2011.459.465",
+            "article-title": "A New Speaker Recognition System with Combined Feature Extraction Techniques",
+            "volume": "7",
+            "author": "Sumithra",
+            "year": "2011",
+            "journal-title": "Journal of Computer Science"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib13",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1016/j.matpr.2020.10.132",
+            "article-title": "Big data analytic of contexts and cascading tourism for smart city",
+            "author": "Balasaraswathi",
+            "year": "2020"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib14",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1007/s11082-020-02616-x",
+            "article-title": "Ultra-high capacity long-haul PDM-16-QAM-based WDM-FSO transmission system using coherent detection and digital signal processing",
+            "volume": "52",
+            "author": "Sivakumar",
+            "year": "2020",
+            "journal-title": "Optical and Quantum Electronics"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib15",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.17662/ksdim.2016.12.1.089",
+            "article-title": "A Comparative Study on Performance of Open Source IDS/IPS Snort and Suricata",
+            "author": "Seok",
+            "year": "2016"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib16",
+            "article-title": "Bhilare Cloud Security through Intrusion Detection System (IDS): Review of Existing Solutions",
+            "volume": "4",
+            "author": "Tayyebi",
+            "year": "2015",
+            "journal-title": "International Journal of Emerging Trends & Technology in Computer Science (IJETTCS)"
+          },
+          {
+            "key": "JPCS_1916_1_012179bib17",
+            "author": "Smith",
+            "year": "2017"
+          }
+        ],
+        "updated-by": [
+          {
+            "DOI": "10.1088/1742-6596/1916/1/012416",
+            "type": "retraction",
+            "label": "Retraction",
+            "source": "retraction-watch",
+            "updated": {
+              "date-parts": [
+                [
+                  2022,
+                  2,
+                  23
+                ]
+              ],
+              "date-time": "2022-02-23T00:00:00Z",
+              "timestamp": 1645574400000
+            },
+            "record-id": "35926"
+          },
+          {
+            "DOI": "10.1088/1742-6596/1916/1/012416",
+            "type": "retraction",
+            "label": "Retraction",
+            "source": "publisher",
+            "updated": {
+              "date-parts": [
+                [
+                  2021,
+                  5,
+                  1
+                ]
+              ],
+              "date-time": "2021-05-01T00:00:00Z",
+              "timestamp": 1619827200000
+            }
+          }
+        ],
+        "container-title": [
+          "Journal of Physics: Conference Series"
+        ],
+        "link": [
+          {
+            "URL": "https://iopscience.iop.org/article/10.1088/1742-6596/1916/1/012179",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://iopscience.iop.org/article/10.1088/1742-6596/1916/1/012179/pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://iopscience.iop.org/article/10.1088/1742-6596/1916/1/012179/pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "https://iopscience.iop.org/article/10.1088/1742-6596/1916/1/012179/pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              23
+            ]
+          ],
+          "date-time": "2022-02-23T06:41:40Z",
+          "timestamp": 1645598500000
+        },
+        "score": 34.427895,
+        "resource": {
+          "primary": {
+            "URL": "https://iopscience.iop.org/article/10.1088/1742-6596/1916/1/012179"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ]
+        },
+        "references-count": 17,
+        "journal-issue": {
+          "issue": "1",
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                5,
+                1
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1088/1742-6596/1916/1/012179",
+        "ISSN": [
+          "1742-6588",
+          "1742-6596"
+        ],
+        "issn-type": [
+          {
+            "value": "1742-6588",
+            "type": "print"
+          },
+          {
+            "value": "1742-6596",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "A survey on intrusion detection system and prerequisite demands in IoT networks",
+            "name": "article_title",
+            "label": "Article Title"
+          },
+          {
+            "value": "Journal of Physics: Conference Series",
+            "name": "journal_title",
+            "label": "Journal Title"
+          },
+          {
+            "value": "paper",
+            "name": "article_type",
+            "label": "Article Type"
+          },
+          {
+            "value": "Published under licence by IOP Publishing Ltd",
+            "name": "copyright_information",
+            "label": "Copyright Information"
+          },
+          {
+            "name": "date_received",
+            "label": "Date Received",
+            "group": {
+              "name": "publication_dates",
+              "label": "Publication dates"
+            }
+          },
+          {
+            "name": "date_accepted",
+            "label": "Date Accepted",
+            "group": {
+              "name": "publication_dates",
+              "label": "Publication dates"
+            }
+          },
+          {
+            "name": "date_epub",
+            "label": "Online publication date",
+            "group": {
+              "name": "publication_dates",
+              "label": "Publication dates"
+            }
+          }
+        ]
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}
