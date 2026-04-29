@@ -56,10 +56,11 @@ Done jika:
 - [ ] Label mapping terdokumentasi.
 - [ ] Kelas DoS/DDoS dikonfirmasi.
 - [ ] Ukuran data, fitur, dan missing values dicatat.
-- [ ] Risiko class imbalance dan leakage dicatat.
-- [ ] Kolom label atau fitur label-like yang harus dikeluarkan dicatat.
-- [ ] Duplikasi flow/baris diperiksa.
-- [ ] Strategi split awal ditentukan sebelum modeling.
+- [x] Risiko class imbalance dan leakage dicatat.
+- [x] Kolom label atau fitur label-like yang harus dikeluarkan dicatat.
+- [x] Duplikasi flow/baris diperiksa.
+- [x] Strategi split awal ditentukan sebelum modeling.
+- [x] Codex review Fase 2 approved.
 
 ## Fase 3 — EDA & Preprocessing
 

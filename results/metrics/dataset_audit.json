@@ -1,0 +1,220 @@
+{
+  "generated_at_utc": "2026-04-29T02:41:10.214323+00:00",
+  "source_name": "Mireu-Lab/UNSW-IoT Hugging Face mirror",
+  "official_primary_source": "https://research.unsw.edu.au/projects/bot-iot-dataset",
+  "working_mirror": "https://huggingface.co/datasets/Mireu-Lab/UNSW-IoT",
+  "scope_decision": "Use inspected train/test CSV mirror for Fase 2 audit; cite UNSW BoT-IoT as primary dataset source. DoS/DDoS-vs-normal modeling should filter to normal and DoS/DDoS rows, excluding other attacks or treating them only in optional multiclass analysis.",
+  "label_mapping": {
+    "binary_attack": "attack=0 means normal; attack=1 means attack",
+    "dos_scope": "category in {DoS, DDoS} -> dos_or_ddos; attack=0/category=Normal -> normal; other attack categories -> other_attack"
+  },
+  "recommended_excluded_columns_for_baseline": [
+    "attack",
+    "category",
+    "daddr",
+    "dport",
+    "pkSeqID",
+    "saddr",
+    "seq",
+    "sport",
+    "subcategory"
+  ],
+  "recommended_candidate_features": [
+    "proto",
+    "stddev",
+    "N_IN_Conn_P_SrcIP",
+    "min",
+    "state_number",
+    "mean",
+    "N_IN_Conn_P_DstIP",
+    "drate",
+    "srate",
+    "max"
+  ],
+  "files": [
+    {
+      "split": "train",
+      "path": "data/raw/bot-iot-hf/train.csv",
+      "bytes": 369103929,
+      "sha256": "047e577cd9c7f8f61d44ac170114497904c33091bf80d1dd5e682e353a69c15b",
+      "rows": 2934817,
+      "columns": 19,
+      "column_names": [
+        "pkSeqID",
+        "proto",
+        "saddr",
+        "sport",
+        "daddr",
+        "dport",
+        "seq",
+        "stddev",
+        "N_IN_Conn_P_SrcIP",
+        "min",
+        "state_number",
+        "mean",
+        "N_IN_Conn_P_DstIP",
+        "drate",
+        "srate",
+        "max",
+        "attack",
+        "category",
+        "subcategory"
+      ],
+      "exact_duplicate_rows": 0,
+      "duplicate_pkseqid_rows": 0,
+      "duplicate_model_feature_rows_excluding_ids_labels": 1487901,
+      "attack_counts": {
+        "1": 2934447,
+        "0": 370
+      },
+      "category_counts": {
+        "DDoS": 1541315,
+        "DoS": 1320148,
+        "Reconnaissance": 72919,
+        "Normal": 370,
+        "Theft": 65
+      },
+      "subcategory_counts": {
+        "UDP": 1584650,
+        "TCP": 1274843,
+        "OS_Fingerprint": 14293,
+        "Service_Scan": 58626,
+        "HTTP": 1970,
+        "Normal": 370,
+        "Keylogging": 59,
+        "Data_Exfiltration": 6
+      },
+      "dos_scope_counts": {
+        "dos_or_ddos": 2861463,
+        "other_attack": 72984,
+        "normal": 370
+      },
+      "model_feature_columns_excluding_ids_labels": [
+        "proto",
+        "stddev",
+        "N_IN_Conn_P_SrcIP",
+        "min",
+        "state_number",
+        "mean",
+        "N_IN_Conn_P_DstIP",
+        "drate",
+        "srate",
+        "max"
+      ],
+      "high_leakage_or_excluded_columns": [
+        "attack",
+        "category",
+        "daddr",
+        "dport",
+        "pkSeqID",
+        "saddr",
+        "seq",
+        "sport",
+        "subcategory"
+      ]
+    },
+    {
+      "split": "test",
+      "path": "data/raw/bot-iot-hf/test.csv",
+      "bytes": 92281052,
+      "sha256": "8617de2ac5d6ca4c2f77272c7409253a396f2a9e667c29c8e797ab9f57a1868e",
+      "rows": 733705,
+      "columns": 19,
+      "column_names": [
+        "pkSeqID",
+        "proto",
+        "saddr",
+        "sport",
+        "daddr",
+        "dport",
+        "seq",
+        "stddev",
+        "N_IN_Conn_P_SrcIP",
+        "min",
+        "state_number",
+        "mean",
+        "N_IN_Conn_P_DstIP",
+        "drate",
+        "srate",
+        "max",
+        "attack",
+        "category",
+        "subcategory"
+      ],
+      "exact_duplicate_rows": 0,
+      "duplicate_pkseqid_rows": 0,
+      "duplicate_model_feature_rows_excluding_ids_labels": 202630,
+      "attack_counts": {
+        "1": 733598,
+        "0": 107
+      },
+      "category_counts": {
+        "DoS": 330112,
+        "DDoS": 385309,
+        "Reconnaissance": 18163,
+        "Normal": 107,
+        "Theft": 14
+      },
+      "subcategory_counts": {
+        "UDP": 396580,
+        "TCP": 318337,
+        "Service_Scan": 14542,
+        "HTTP": 504,
+        "OS_Fingerprint": 3621,
+        "Normal": 107,
+        "Keylogging": 14
+      },
+      "dos_scope_counts": {
+        "dos_or_ddos": 715421,
+        "other_attack": 18177,
+        "normal": 107
+      },
+      "model_feature_columns_excluding_ids_labels": [
+        "proto",
+        "stddev",
+        "N_IN_Conn_P_SrcIP",
+        "min",
+        "state_number",
+        "mean",
+        "N_IN_Conn_P_DstIP",
+        "drate",
+        "srate",
+        "max"
+      ],
+      "high_leakage_or_excluded_columns": [
+        "attack",
+        "category",
+        "daddr",
+        "dport",
+        "pkSeqID",
+        "saddr",
+        "seq",
+        "sport",
+        "subcategory"
+      ]
+    }
+  ],
+  "split_leakage_checks": [
+    {
+      "check": "pkSeqID overlap train/test",
+      "value": 0,
+      "interpretation": "Should be 0 for clean split identifiers."
+    },
+    {
+      "check": "Exact full-row overlap train/test",
+      "value": 0,
+      "interpretation": "Should be 0 to avoid direct duplicate leakage."
+    },
+    {
+      "check": "Model-feature signature overlap train/test excluding ids/network ids/labels",
+      "value": 327338,
+      "interpretation": "Non-zero can occur in aggregated flow features; high values mean random split similarity risk and should be disclosed."
+    }
+  ],
+  "outputs": {
+    "dataset_files": "results/tables/dataset_files.csv",
+    "class_distribution": "results/tables/class_distribution.csv",
+    "column_profile": "results/tables/column_profile.csv",
+    "split_leakage_checks": "results/tables/split_leakage_checks.csv"
+  }
+}

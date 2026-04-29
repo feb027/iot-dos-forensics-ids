@@ -77,6 +77,20 @@ Fase 1 sudah selesai dan sudah di-*merge* ke `main` melalui PR #1. Ringkasan art
 
 Fase berikutnya adalah audit dataset BoT-IoT sebelum EDA atau training model.
 
+## Dataset Audit Snapshot
+
+Fase 2 Dataset Audit sudah menghasilkan artifact awal dari BoT-IoT/UNSW-IoT CSV mirror:
+
+- `scripts/audit_botiot_dataset.py`: script audit reproducible tanpa pandas.
+- `results/metrics/dataset_audit.json`: ringkasan audit machine-readable.
+- `results/tables/dataset_files.csv`: file, row count, checksum, duplicate summary.
+- `results/tables/class_distribution.csv`: distribusi `attack`, `category`, `subcategory`, dan scope DoS/DDoS.
+- `results/tables/column_profile.csv`: profil kolom dan missing values.
+- `results/tables/split_leakage_checks.csv`: cek overlap train/test.
+- `reports/progress-2-dataset-audit.md`: laporan progres Fase 2.
+
+Temuan utama: DoS/DDoS tersedia, tetapi normal class sangat kecil dan ada risiko kemiripan fitur agregat antar split. Fase 3 harus memakai evaluasi yang tidak bergantung pada accuracy saja.
+
 ## Status
 
 Current phase: **Fase 2 — Dataset Audit**
