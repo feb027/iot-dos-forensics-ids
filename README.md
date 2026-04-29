@@ -93,7 +93,7 @@ Temuan utama: DoS/DDoS tersedia, tetapi normal class sangat kecil dan ada risiko
 
 ## EDA & Preprocessing Snapshot
 
-Fase 3 menambahkan EDA dan preprocessing plan sebelum modeling:
+Fase 3 EDA & Preprocessing sudah selesai dan di-*merge* ke `main` melalui PR #3. Artifact utama:
 
 - `scripts/run_eda_preprocessing.py`: script EDA/preprocessing streaming untuk BoT-IoT/UNSW-IoT CSV split.
 - `notebooks/01_eda_preprocessing.ipynb`: notebook wrapper untuk menjalankan script.
@@ -107,9 +107,19 @@ Fase 3 menambahkan EDA dan preprocessing plan sebelum modeling:
 
 Keputusan utama: `other_attack` tidak dianggap normal; baseline utama adalah `normal` vs `dos_or_ddos`, dengan jalur imbalanced dan balanced controlled subset.
 
+## Baseline Modeling Plan
+
+Fase 4 berikutnya akan melatih baseline model berdasarkan rencana Fase 3:
+
+- Track A: realistic imbalanced baseline mengikuti distribusi asli setelah `other_attack` dikeluarkan.
+- Track B: balanced controlled 1:1 memakai semua normal dan sampel DoS/DDoS dengan seed tetap.
+- Track C: balanced controlled 1:2 sebagai sensitivity check opsional.
+
+Metrik wajib: precision, recall, F1-score, confusion matrix, dan diskusi false positive/false negative. Accuracy tidak boleh menjadi klaim utama karena normal class sangat kecil.
+
 ## Status
 
-Current phase: **Fase 3 — EDA & Preprocessing**
+Current phase: **Fase 4 — Baseline Modeling**
 
 ## Review History
 

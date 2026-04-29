@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 3 — EDA & Preprocessing
+Fase 4 — Baseline Modeling
 
 ## Status
 
-Fase 2 Dataset Audit has been merged to `main` via PR #2 and approved with score 89/100. Fase 3 EDA & Preprocessing artifacts have been generated, reviewed, and final-verified by Codex with score 92/100. The phase defines filtered binary logic, leakage-safe feature handling, EDA tables/figures, and imbalanced/balanced dataset tracks for Fase 4 baseline modeling. Main carried-forward risks: normal class is extremely underrepresented, network identifiers must be excluded, duplicate feature signatures are high, and split-similarity risk must be disclosed.
+Fase 3 EDA & Preprocessing has been merged to `main` via PR #3 and final-verified by Codex with score 92/100. Current work is Fase 4 Baseline Modeling: train leakage-safe baseline models using the Fase 3 track plan, save metrics/figures, and keep dashboard model outputs empty until real artifacts exist. Main carried-forward risks: normal class is extremely underrepresented, network identifiers must remain excluded, duplicate feature signatures are high, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -66,10 +66,11 @@ Fase 2 Dataset Audit has been merged to `main` via PR #2 and approved with score
 
 ## Blockers
 
-Fase 3 review APPROVED and follow-up fixes applied. Watch items for Fase 4: normal class is extremely small, network identifiers must remain excluded, duplicate model-feature signatures are high, and train/test feature-signature overlap must be disclosed as split-similarity risk.
+No blockers after PR #3 merge. Watch items for Fase 4: normal class is extremely small, network identifiers must remain excluded, duplicate model-feature signatures are high, train/test feature-signature overlap must be disclosed as split-similarity risk, and accuracy must not be the primary claim.
 
 ## Next Action
 
-1. Commit and open PR `phase-3-eda-preprocessing`.
-2. Merge after user approval.
-3. After merge, run post-merge status sync and proceed to Fase 4 Baseline Modeling.
+1. Create branch `phase-4-baseline-modeling`.
+2. Implement leakage-safe baseline modeling using Fase 3 feature and dataset plans.
+3. Save metrics to `results/metrics/` and `results/tables/`, confusion matrices/model comparison to `results/figures/`.
+4. Run Codex technical review before entering Fase 5 Forensic Analysis.

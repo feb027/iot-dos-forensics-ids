@@ -35,11 +35,13 @@ Status: completed — Codex review 89/100 APPROVED.
 
 Tujuan: eksplorasi dataset, cleaning, encoding, split strategy, dan visualisasi awal.
 
-Status: completed — Codex review 88/100 APPROVED.
+Status: completed — final verification 92/100 APPROVED; merged via PR #3.
 
 ## Fase 4 — Baseline Modeling
 
 Tujuan: melatih minimal 3 model baseline dan menyimpan metrik evaluasi.
+
+Status: current phase after PR #3 merge.
 
 ## Fase 5 — Forensic Analysis
 

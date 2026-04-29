@@ -83,7 +83,7 @@ def main() -> None:
     dataset_summary, class_distribution = load_dataset_audit()
     eda_summary = load_eda_summary()
     if eda_summary:
-        status = "Fase 3 EDA & Preprocessing completed; modeling not started"
+        status = "Fase 4 Baseline Modeling current; no model results yet"
     elif dataset_summary:
         status = "Fase 3 EDA & Preprocessing ready; modeling not started"
     else:
