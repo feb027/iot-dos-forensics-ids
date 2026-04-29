@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive AI SOC Demo | IoT DoS Forensics IDS</title>
+  <meta name="description" content="VPS-backed interactive AI SOC demo untuk replay dan analisis trafik DoS/DDoS IoT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/demo.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script type="module" src="scripts/demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#demo-main">Lewati ke demo utama</a>
+  <header class="topbar">
+    <nav class="nav-shell" aria-label="Navigasi demo">
+      <a class="brand" href="index.html" aria-label="Kembali ke dashboard utama">
+        <span class="brand-mark" aria-hidden="true">⌁</span>
+        <span>
+          <strong>IoT DoS Forensics IDS</strong>
+          <small>Interactive AI SOC Demo</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Dashboard</a>
+        <a href="#incident-replay">Replay</a>
+        <a href="#what-if">What-if</a>
+        <a href="#analyst">AI SOC</a>
+        <a href="#evidence">Evidence</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="demo-main">
+    <section class="demo-hero section">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> VPS-backed SOC prototype</div>
+        <h1>Interactive AI SOC Analyst untuk Trafik DoS/DDoS IoT</h1>
+        <p class="hero-lead">Pilih skenario trafik, replay timeline, lihat prediksi/risk score, lalu baca ringkasan investigasi berbasis evidence fitur dari artifact BoT-IoT.</p>
+        <div class="chip-row">
+          <span>Incident Replay</span>
+          <span>What-if Simulator</span>
+          <span>Artifact-grounded AI SOC</span>
+          <span>FastAPI Backend</span>
+        </div>
+      </div>
+      <aside class="panel api-panel" aria-labelledby="api-title">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">Backend</p>
+            <h2 id="api-title">API Status</h2>
+          </div>
+          <span class="status-pill" id="api-status">checking...</span>
+        </div>
+        <div class="metric-list" id="api-details"></div>
+        <p class="note">Jika API tidak tersedia, demo tetap memakai fallback client-side dari JSON artifact.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="incident-replay" aria-labelledby="replay-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Incident Replay</p>
+          <h2 id="replay-title">Pilih Skenario Trafik</h2>
+        </div>
+        <button class="primary-button" type="button" id="replay-button">Replay timeline</button>
+      </div>
+      <div class="demo-grid">
+        <article class="panel scenario-panel">
+          <div id="scenario-list" class="scenario-list" aria-live="polite"></div>
+        </article>
+        <article class="panel timeline-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Timeline</p>
+              <h3 id="scenario-title">Memuat skenario...</h3>
+            </div>
+            <span class="mono-pill" id="scenario-outcome">-</span>
+          </div>
+          <div id="timeline" class="timeline"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="what-if" aria-labelledby="whatif-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">What-if Simulator</p>
+          <h2 id="whatif-title">Ubah Fitur Trafik dan Jalankan Analisis</h2>
+        </div>
+        <button class="primary-button" type="button" id="analyze-button">Analyze via API</button>
+      </div>
+      <div class="content-grid simulator-grid">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Flow Features</p>
+              <h3>Input Trafik</h3>
+            </div>
+            <span class="mono-pill">surrogate IDS</span>
+          </div>
+          <form id="whatif-form" class="whatif-form"></form>
+          <p class="note">Simulator ini educational dan artifact-grounded; bukan klaim production real-time IDS.</p>
+        </article>
+        <article class="panel result-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Prediction</p>
+              <h3>Risk Result</h3>
+            </div>
+            <span class="risk-badge" id="risk-level">-</span>
+          </div>
+          <div class="risk-meter" aria-hidden="true"><span id="risk-meter-fill" style="--value:0%"></span></div>
+          <div class="metric-list" id="prediction-summary"></div>
+          <div id="evidence-bars" class="evidence-bars"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="analyst" aria-labelledby="analyst-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">AI SOC Analyst</p>
+          <h2 id="analyst-title">Artifact-grounded Investigation Report</h2>
+        </div>
+        <button class="secondary-button" type="button" id="copy-report-button">Copy report</button>
+      </div>
+      <article class="panel analyst-panel" id="analyst-report" aria-live="polite"></article>
+    </section>
+
+    <section class="section" id="evidence" aria-labelledby="evidence-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Evidence Boundary</p>
+          <h2 id="evidence-title">Klaim, Batasan, dan Sumber Artifact</h2>
+        </div>
+      </div>
+      <div class="evidence-grid" id="demo-evidence-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Interactive AI SOC Demo</span>
+    <span>Generated from repo artifacts; backend API optional but preferred on VPS.</span>
+  </footer>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Fase 7 — Scientific Manuscript
+Fase 6B — Interactive AI SOC Demo / Fase 7 Manuscript Preparation
 
 ## Status
 
@@ -75,6 +75,7 @@ Fase 4 Baseline Modeling, Fase 5 Forensic Analysis, Fase 6A Advanced/SOTA Modeli
 | Fase 6 dashboard design brief | `docs/phase6-dashboard-design-brief.md` | drafted |
 | Fase 6 dashboard review | `docs/REVIEW_phase6_dashboard.md`, `docs/REVIEW_phase6_dashboard_final.md` | final approved |
 | Fase 7 manuscript plan | `docs/phase7-manuscript-plan.md` | drafted |
+| Fase 6B interactive AI SOC demo | `dashboard/demo.html`, `backend/iot_soc_api/`, `reports/progress-6b-interactive-ai-soc-demo.md` | implemented + VPS deployed |
 
 ## Review Status
 
@@ -96,11 +97,11 @@ Fase 4 Baseline Modeling, Fase 5 Forensic Analysis, Fase 6A Advanced/SOTA Modeli
 
 ## Blockers
 
-No active blockers. GitHub Pages verified after Fase 6 dashboard status sync. Watch item for Fase 7: keep manuscript language cautious around controlled-subset scores.
+No active blockers for code. Fase 6B demo is live under `https://iot.aquarise.my.id/soc-demo/demo.html`; Caddy route was applied at runtime, so persistent `/etc/caddy/Caddyfile` update needs sudo if the service restarts. Watch item for Fase 7: frame demo as artifact-grounded prototype, not production real-time IDS.
 
 ## Next Action
 
-1. Create Fase 7 manuscript branch from updated `main`.
-2. Draft `reports/manuscript-draft.md` from committed artifact tables/figures only.
-3. Run Codex lecturer/technical review for the manuscript draft.
-4. Fix manuscript review issues and prepare final UAS release audit.
+1. Run Codex review for Fase 6B interactive AI SOC demo.
+2. Fix any demo review issues, then PR/merge Fase 6B.
+3. Continue Fase 7 manuscript draft using Fase 6B demo as prototype contribution.
+4. Prepare final UAS release audit.

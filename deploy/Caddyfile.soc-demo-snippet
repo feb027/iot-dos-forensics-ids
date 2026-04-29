@@ -1,0 +1,20 @@
+# Add inside the existing iot.aquarise.my.id block, before generic /api/* and catch-all handlers.
+# Runtime loaded during Fase 6B with: caddy reload --config /tmp/Caddyfile.iot-soc-demo
+# Persistent install requires sudo edit of /etc/caddy/Caddyfile.
+
+handle /soc-demo/api/* {
+    uri strip_prefix /soc-demo
+    reverse_proxy localhost:8766
+}
+
+handle_path /soc-demo* {
+    root * /home/aqua/public_html/iot-soc-demo
+    encode gzip zstd
+    file_server
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        -Server
+    }
+}

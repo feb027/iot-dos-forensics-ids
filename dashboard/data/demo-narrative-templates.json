@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-04-29T08:50:40.819970+00:00",
+  "report_sections": [
+    "summary",
+    "evidence_chain",
+    "risk_note",
+    "recommendations",
+    "limitation",
+    "grounding"
+  ],
+  "guardrail": "Only summarize evidence present in demo-scenarios.json and project artifacts."
+}
