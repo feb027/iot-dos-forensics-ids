@@ -17,7 +17,7 @@ VPS diperlukan hanya jika ingin fitur dinamis seperti:
 - database session/history,
 - auth/private demo.
 
-Rekomendasi untuk UAS: **static-first GitHub Pages + optional VPS backend later**. Ini paling aman, reproducible, ringan, dan tetap terlihat modern.
+Rekomendasi terbaru setelah diskusi: **VPS-backed demo as primary target + GitHub Pages static fallback**. MVP tetap harus artifact-grounded, tetapi fitur unggulan memakai backend agar demo terasa lebih modern dan hidup.
 
 ## Nama fitur
 
@@ -110,19 +110,19 @@ Implementasi opsional VPS: LLM enrichment via backend OpenAI-compatible/local Ol
 
 ### Phase 6B-MVP
 
-Deploy di GitHub Pages.
+Deploy **full-stack ke VPS** sebagai target utama, dengan GitHub Pages sebagai static fallback/demo cadangan.
 
 Alasan:
 
-- sudah ada Pages aktif,
-- tidak butuh backend,
-- bisa dipresentasikan langsung,
-- artifact-driven dan reproducible,
-- aman dari masalah API key/geolocation/rate limit.
+- fitur live LLM/SOC analyst bisa berjalan aman karena API key disimpan di backend,
+- model inference atau explain endpoint bisa dijalankan server-side,
+- demo terasa lebih modern daripada static-only,
+- domain/subdomain VPS memberi kesan produk/prototype nyata,
+- GitHub Pages tetap dipakai sebagai bukti static artifact dan fallback kalau backend bermasalah saat presentasi.
 
 ### Phase 6B-Plus optional
 
-Deploy full-stack ke VPS jika MVP sudah stabil.
+Tambahkan fitur lanjutan setelah full-stack MVP stabil.
 
 Subdomain kandidat:
 
@@ -136,6 +136,50 @@ VPS stack:
 - optional FastAPI backend for `/api/explain`, `/api/predict`, `/api/chat`,
 - PM2/systemd for backend process,
 - Caddy API route before SPA/static catch-all.
+
+
+## VPS-backed feature set
+
+Target fitur yang memang membutuhkan VPS/backend:
+
+1. **Live AI SOC Analyst**
+   - Endpoint: `POST /api/soc/analyze`
+   - Input: selected scenario + model evidence + SHAP/evidence features.
+   - Output: structured incident report: summary, evidence chain, FP/FN risk, recommended action.
+   - Guardrail: backend only accepts artifact-grounded JSON, not free-form hallucinated claims.
+
+2. **Server-side prediction/explanation endpoint**
+   - Endpoint: `POST /api/predict`
+   - Input: what-if feature values.
+   - Output: predicted label, risk score, top features, explanation.
+   - MVP can use deterministic/surrogate rules; later can load actual exported LightGBM/XGBoost model if model artifact is safe to store on VPS but not committed.
+
+3. **Upload CSV/flow sample for demo**
+   - Endpoint: `POST /api/flow/analyze`
+   - User uploads or pastes one flow row.
+   - Backend validates allowed columns only, rejects label/leakage columns, returns prediction/explanation.
+
+4. **Analyst chat constrained to project evidence**
+   - Endpoint: `POST /api/chat`
+   - Chatbot answers only from project artifacts: metrics, tables, references, limitations.
+   - If answer is not grounded, return "tidak tersedia di artifact".
+
+## Proposed VPS stack
+
+```text
+Caddy HTTPS
+  ├── /                  -> modular static frontend
+  ├── /assets/*          -> static assets
+  └── /api/*             -> FastAPI backend on localhost:<port>
+
+FastAPI backend
+  ├── loads sanitized dashboard/demo JSON
+  ├── optional loads local model artifacts from ignored server path
+  ├── calls LLM provider/local Ollama only server-side
+  └── returns structured JSON reports
+```
+
+Suggested subdomain: `soc-iot.aquarise.my.id` or `iot-dos.aquarise.my.id`.
 
 ## Modular dashboard structure
 
@@ -264,4 +308,4 @@ Avoid wording:
 
 ## Final recommendation
 
-Build GitHub Pages MVP first. Only move to VPS if the user wants live LLM/backend inference after static demo is approved.
+Build VPS-backed MVP first because the user wants features that require backend/live AI. Keep GitHub Pages as static fallback and artifact showcase.
