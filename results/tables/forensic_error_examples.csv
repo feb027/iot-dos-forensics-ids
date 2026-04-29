@@ -1,0 +1,17 @@
+track,model,error_type,row_position_in_track_test,proto,category,subcategory,stddev,N_IN_Conn_P_SrcIP,min,state_number,mean,N_IN_Conn_P_DstIP,drate,srate,max
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,45395,arp,DoS,UDP,1.418512,1,0.019531,2,3.493474,1,0.857241,0.8577940000000001,4.128143
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,49235,arp,DDoS,TCP,0.0,1,0.094199,2,0.094199,1,0.0,0.0,0.094199
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,81046,arp,DoS,TCP,0.522889,1,3.066688,2,4.072383,1,0.81188,0.81188,4.850078
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,116452,arp,DoS,HTTP,0.0,2,0.000131,2,0.000131,1,0.0,0.0,0.000131
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,146780,arp,DDoS,TCP,0.0,1,0.0682789999999999,2,0.0682789999999999,1,0.0,0.0,0.0682789999999999
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,236568,arp,DDoS,UDP,0.0,1,0.031279,2,0.031279,1,0.0,0.0,0.031279
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,325623,arp,DDoS,UDP,0.0,4,0.012489,2,0.012489,1,0.0,0.0,0.012489
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,347453,arp,DDoS,UDP,0.0,1,0.020798,2,0.020798,1,0.0,0.0,0.020798
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,355071,arp,DoS,UDP,0.587255,1,3.039977,2,4.02452,1,0.651617,0.685912,4.890692
+A_realistic_imbalanced,decision_tree,FN_attack_as_normal,445435,tcp,DDoS,TCP,0.160921,4,0.000483,1,0.161404,4,0.223258,0.223258,0.322325
+A_realistic_imbalanced,decision_tree,FP_normal_as_attack,543143,tcp,Normal,Normal,0.350856,23,0.155417,6,0.301399,1,0.211536,0.276624,1.160759
+A_realistic_imbalanced,decision_tree,FP_normal_as_attack,573889,udp,Normal,Normal,1.401733,4,0.011294,2,1.413027,10,0.00283,0.002853,2.81476
+B_balanced_controlled_1_to_1,decision_tree,FN_attack_as_normal,128,udp,DoS,UDP,0.017415,19,4.081593,4,4.102134,19,0.0,0.243478,4.1242540000000005
+C_balanced_controlled_1_to_2,decision_tree,FN_attack_as_normal,145,udp,DoS,UDP,0.830514,21,2.561666,4,3.027991,21,0.0,0.358935,4.686172
+C_balanced_controlled_1_to_2,decision_tree,FN_attack_as_normal,163,udp,DoS,UDP,0.017415,19,4.081593,4,4.102134,19,0.0,0.243478,4.1242540000000005
+C_balanced_controlled_1_to_2,decision_tree,FN_attack_as_normal,233,udp,DoS,UDP,0.453257,18,1.370839,4,2.384023,18,0.0,0.404668,2.605122

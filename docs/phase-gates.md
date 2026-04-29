@@ -97,10 +97,11 @@ Done jika:
 
 Done jika:
 
-- [ ] Feature importance CSV/figure tersedia.
-- [ ] Interpretasi forensik tertulis.
-- [ ] False positive/false negative dibahas jika artifact tersedia.
-- [ ] Semua klaim terkait artifact.
+- [x] Feature importance CSV/figure tersedia.
+- [x] Interpretasi forensik tertulis.
+- [x] False positive/false negative dibahas jika artifact tersedia.
+- [x] Semua klaim terkait artifact.
+- [x] Codex review Fase 5 approved.
 
 ## Fase 6 — Dashboard
 
