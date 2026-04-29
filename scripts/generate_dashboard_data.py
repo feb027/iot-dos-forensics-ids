@@ -11,6 +11,9 @@ PREPROCESSING_METRICS = ROOT / "results" / "metrics" / "preprocessing_summary.js
 CLASS_DISTRIBUTION = ROOT / "results" / "tables" / "class_distribution.csv"
 EDA_SCOPE_DISTRIBUTION = ROOT / "results" / "tables" / "eda_binary_scope_distribution.csv"
 PREPROCESSING_DATASET_PLAN = ROOT / "results" / "tables" / "preprocessing_dataset_plan.csv"
+BASELINE_METRICS = ROOT / "results" / "tables" / "baseline_model_metrics.csv"
+BASELINE_CONFUSION = ROOT / "results" / "tables" / "baseline_confusion_matrices.csv"
+BASELINE_SUMMARY = ROOT / "results" / "metrics" / "baseline_summary.json"
 
 
 def load_dataset_audit() -> tuple[dict, list[dict]]:
@@ -79,10 +82,59 @@ def load_eda_summary() -> dict:
     }
 
 
+def load_baseline_results() -> tuple[list[dict], list[dict], dict]:
+    model_comparison: list[dict] = []
+    confusion_matrix: list[dict] = []
+    baseline_summary: dict = {}
+
+    if BASELINE_METRICS.exists() and BASELINE_METRICS.read_text(encoding="utf-8").strip():
+        with BASELINE_METRICS.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                model_comparison.append(
+                    {
+                        "track": row["track"],
+                        "model": row["model"],
+                        "model_display_name": row.get("model_display_name", row["model"]),
+                        "model_family": row.get("model_family", ""),
+                        "macro_f1": float(row["macro_f1"]),
+                        "mcc": float(row["mcc"]),
+                        "balanced_accuracy": float(row["balanced_accuracy"]),
+                        "precision_attack": float(row["precision_attack"]),
+                        "recall_attack": float(row["recall_attack"]),
+                        "precision_normal": float(row["precision_normal"]),
+                        "recall_normal": float(row["recall_normal"]),
+                        "accuracy": float(row["accuracy"]),
+                    }
+                )
+        model_comparison.sort(key=lambda r: (r["macro_f1"], r["mcc"], r["recall_normal"]), reverse=True)
+
+    if BASELINE_CONFUSION.exists() and BASELINE_CONFUSION.read_text(encoding="utf-8").strip():
+        with BASELINE_CONFUSION.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                confusion_matrix.append(
+                    {
+                        "track": row["track"],
+                        "model": row["model"],
+                        "tn_normal_correct": int(row["tn_normal_correct"]),
+                        "fp_normal_as_attack": int(row["fp_normal_as_attack"]),
+                        "fn_attack_as_normal": int(row["fn_attack_as_normal"]),
+                        "tp_attack_correct": int(row["tp_attack_correct"]),
+                    }
+                )
+
+    if BASELINE_SUMMARY.exists():
+        baseline_summary = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
+
+    return model_comparison, confusion_matrix, baseline_summary
+
+
 def main() -> None:
     dataset_summary, class_distribution = load_dataset_audit()
     eda_summary = load_eda_summary()
-    if eda_summary:
+    model_comparison, confusion_matrix, baseline_summary = load_baseline_results()
+    if model_comparison:
+        status = "Fase 4 Baseline Modeling completed; technical review pending"
+    elif eda_summary:
         status = "Fase 4 Baseline Modeling current; no model results yet"
     elif dataset_summary:
         status = "Fase 3 EDA & Preprocessing ready; modeling not started"
@@ -99,9 +151,10 @@ def main() -> None:
         "dataset_summary": dataset_summary,
         "class_distribution": class_distribution,
         "eda_summary": eda_summary,
-        "model_comparison": [],
-        "confusion_matrix": {},
+        "model_comparison": model_comparison,
+        "confusion_matrix": confusion_matrix,
         "feature_importance": [],
+        "baseline_summary": baseline_summary,
         "forensic_notes": [
             "Fase 3 menyiapkan dua jalur eksperimen: distribusi asli yang sangat imbalanced dan controlled balanced subset untuk mitigasi normal class kecil.",
             "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia.",

@@ -49,7 +49,7 @@ prompts/     Prompt template untuk Codex/Hermes workflow
 
 GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
 
-Dashboard saat ini menampilkan ringkasan audit dataset Fase 2 serta EDA/preprocessing Fase 3. Isi metrik model, confusion matrix, feature importance, dan interpretasi forensik akan diperbarui setelah eksperimen berjalan.
+Dashboard saat ini menampilkan ringkasan audit dataset Fase 2, EDA/preprocessing Fase 3, dan hasil baseline modeling Fase 4. Feature importance dan interpretasi forensik detail akan diperbarui setelah Fase 5 berjalan.
 
 ## Definition of Done
 
@@ -107,15 +107,20 @@ Fase 3 EDA & Preprocessing sudah selesai dan di-*merge* ke `main` melalui PR #3.
 
 Keputusan utama: `other_attack` tidak dianggap normal; baseline utama adalah `normal` vs `dos_or_ddos`, dengan jalur imbalanced dan balanced controlled subset.
 
-## Baseline Modeling Plan
+## Baseline Modeling Snapshot
 
-Fase 4 berikutnya akan melatih baseline model berdasarkan rencana Fase 3:
+Fase 4 sudah menjalankan baseline modeling untuk target `normal` vs `dos_or_ddos`:
 
-- Track A: realistic imbalanced baseline mengikuti distribusi asli setelah `other_attack` dikeluarkan.
-- Track B: balanced controlled 1:1 memakai semua normal dan sampel DoS/DDoS dengan seed tetap.
-- Track C: balanced controlled 1:2 sebagai sensitivity check opsional.
+- `scripts/run_baseline_modeling.py`: runner baseline reproducible untuk Track A/B/C.
+- `notebooks/02_baseline_modeling.ipynb`: notebook wrapper untuk menjalankan runner.
+- `results/metrics/baseline_summary.json`: ringkasan baseline machine-readable.
+- `results/tables/baseline_model_metrics.csv`: metrik model baseline.
+- `results/tables/baseline_confusion_matrices.csv`: confusion matrix tiap run.
+- `results/tables/baseline_dataset_tracks.csv`: ukuran dataset per track/split.
+- `results/figures/baseline_*.png`: visualisasi perbandingan macro F1, MCC, dan confusion matrix.
+- `reports/progress-4-baseline-modeling.md`: laporan progres Fase 4.
 
-Metrik wajib: precision, recall, F1-score, confusion matrix, dan diskusi false positive/false negative. Accuracy tidak boleh menjadi klaim utama karena normal class sangat kecil.
+Keputusan utama: accuracy disimpan tetapi bukan klaim utama; interpretasi memakai macro F1, MCC, balanced accuracy, recall normal/attack, dan FP/FN.
 
 ## Status
 
@@ -132,6 +137,7 @@ Current phase: **Fase 4 — Baseline Modeling**
 | Fase 2 Dataset Audit | Codex gpt-5.5 + high reasoning | 89 | APPROVED | `docs/REVIEW_phase2_dataset_audit.md` |
 | Fase 3 EDA & Preprocessing | Codex gpt-5.5 + high reasoning | 88 | APPROVED | `docs/REVIEW_phase3_eda_preprocessing.md` |
 | Fase 3 Final Verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
+| Fase 4 Baseline Modeling | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
 
 Lihat:
 
@@ -145,3 +151,4 @@ Lihat:
 - `docs/REVIEW_phase2_dataset_audit.md`
 - `docs/REVIEW_phase3_eda_preprocessing.md`
 - `docs/REVIEW_phase3_final_verification.md`
+- `docs/REVIEW_phase4_baseline_modeling.md`

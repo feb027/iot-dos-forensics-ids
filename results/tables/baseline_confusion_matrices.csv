@@ -1,0 +1,15 @@
+track,model,tn_normal_correct,fp_normal_as_attack,fn_attack_as_normal,tp_attack_correct
+A_realistic_imbalanced,dummy_majority,0,107,0,715421
+A_realistic_imbalanced,gaussian_nb,24,83,449,714972
+A_realistic_imbalanced,sgd_logistic,107,0,7378,708043
+A_realistic_imbalanced,decision_tree,105,2,13,715408
+B_balanced_controlled_1_to_1,dummy_majority,107,0,107,0
+B_balanced_controlled_1_to_1,gaussian_nb,78,29,0,107
+B_balanced_controlled_1_to_1,sgd_logistic,107,0,2,105
+B_balanced_controlled_1_to_1,decision_tree,107,0,1,106
+B_balanced_controlled_1_to_1,random_forest,107,0,0,107
+C_balanced_controlled_1_to_2,dummy_majority,0,107,0,214
+C_balanced_controlled_1_to_2,gaussian_nb,90,17,0,214
+C_balanced_controlled_1_to_2,sgd_logistic,107,0,4,210
+C_balanced_controlled_1_to_2,decision_tree,107,0,3,211
+C_balanced_controlled_1_to_2,random_forest,107,0,0,214
