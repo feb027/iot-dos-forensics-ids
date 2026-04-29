@@ -4,14 +4,148 @@
     "theme": "IoT + Cyber Security + Digital Forensics",
     "primary_dataset": "BoT-IoT (UNSW)",
     "alternative_dataset": "RT-IoT2022 (UCI)",
-    "status": "Fase 1 literature review approved; Fase 2 dataset audit pending"
+    "status": "Fase 2 dataset audit completed; modeling not started"
   },
-  "dataset_summary": {},
-  "class_distribution": [],
+  "dataset_summary": {
+    "source": "Mireu-Lab/UNSW-IoT Hugging Face mirror",
+    "official_primary_source": "https://research.unsw.edu.au/projects/bot-iot-dataset",
+    "working_mirror": "https://huggingface.co/datasets/Mireu-Lab/UNSW-IoT",
+    "rows": 3668522,
+    "files": 2,
+    "bytes": 461384981,
+    "columns": 19,
+    "candidate_features": 10,
+    "excluded_columns": [
+      "attack",
+      "category",
+      "daddr",
+      "dport",
+      "pkSeqID",
+      "saddr",
+      "seq",
+      "sport",
+      "subcategory"
+    ]
+  },
+  "class_distribution": [
+    {
+      "split": "train",
+      "group": "category_counts",
+      "label": "DDoS",
+      "count": 1541315,
+      "rate": 0.52518266
+    },
+    {
+      "split": "train",
+      "group": "category_counts",
+      "label": "DoS",
+      "count": 1320148,
+      "rate": 0.44982294
+    },
+    {
+      "split": "train",
+      "group": "category_counts",
+      "label": "Normal",
+      "count": 370,
+      "rate": 0.00012607
+    },
+    {
+      "split": "train",
+      "group": "category_counts",
+      "label": "Reconnaissance",
+      "count": 72919,
+      "rate": 0.02484618
+    },
+    {
+      "split": "train",
+      "group": "category_counts",
+      "label": "Theft",
+      "count": 65,
+      "rate": 2.215e-05
+    },
+    {
+      "split": "train",
+      "group": "dos_scope_counts",
+      "label": "dos_or_ddos",
+      "count": 2861463,
+      "rate": 0.9750056
+    },
+    {
+      "split": "train",
+      "group": "dos_scope_counts",
+      "label": "normal",
+      "count": 370,
+      "rate": 0.00012607
+    },
+    {
+      "split": "train",
+      "group": "dos_scope_counts",
+      "label": "other_attack",
+      "count": 72984,
+      "rate": 0.02486833
+    },
+    {
+      "split": "test",
+      "group": "category_counts",
+      "label": "DDoS",
+      "count": 385309,
+      "rate": 0.52515521
+    },
+    {
+      "split": "test",
+      "group": "category_counts",
+      "label": "DoS",
+      "count": 330112,
+      "rate": 0.4499247
+    },
+    {
+      "split": "test",
+      "group": "category_counts",
+      "label": "Normal",
+      "count": 107,
+      "rate": 0.00014584
+    },
+    {
+      "split": "test",
+      "group": "category_counts",
+      "label": "Reconnaissance",
+      "count": 18163,
+      "rate": 0.02475518
+    },
+    {
+      "split": "test",
+      "group": "category_counts",
+      "label": "Theft",
+      "count": 14,
+      "rate": 1.908e-05
+    },
+    {
+      "split": "test",
+      "group": "dos_scope_counts",
+      "label": "dos_or_ddos",
+      "count": 715421,
+      "rate": 0.9750799
+    },
+    {
+      "split": "test",
+      "group": "dos_scope_counts",
+      "label": "normal",
+      "count": 107,
+      "rate": 0.00014584
+    },
+    {
+      "split": "test",
+      "group": "dos_scope_counts",
+      "label": "other_attack",
+      "count": 18177,
+      "rate": 0.02477426
+    }
+  ],
   "model_comparison": [],
   "confusion_matrix": {},
   "feature_importance": [],
   "forensic_notes": [
-    "Hasil forensik akan diisi setelah feature importance dan error analysis tersedia."
+    "Fase 2 menemukan risiko utama: class imbalance ekstrem dan kemiripan fitur agregat antar split; mitigasi harus diterapkan sebelum modeling.",
+    "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia."
   ]
 }
