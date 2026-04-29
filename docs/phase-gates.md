@@ -120,7 +120,7 @@ Done jika:
 
 - [x] Static dashboard tersedia.
 - [x] Dashboard data generated via script.
-- [ ] Local preview works after Fase 6A merge.
+- [x] Local preview works after Fase 6A merge.
 - [ ] GitHub Pages works after Fase 6A status sync.
 - [ ] Dashboard claims cocok dengan result artifacts after polish review.
 

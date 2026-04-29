@@ -98,3 +98,9 @@
 - Dashboard generator status updated to `Fase 6A merged; Fase 6 dashboard polish current`.
 - Added `docs/phase6-dashboard-polish-plan.md`.
 
+## 2026-04-29 — Fase 6 dashboard redesign prototype
+
+- Created `docs/phase6-dashboard-design-brief.md` using UI/UX Pro Max guidance and design reference research.
+- Redesigned static dashboard into dark SOC-style command center with sticky nav, KPI bento, Chart.js desktop charts, mobile fallback bars, interactive model tabs, confusion matrix selector, forensics/SHAP evidence, advanced Track A cards, and evidence accordion.
+- Validated local preview with Playwright at 1440px and 375px: no JavaScript console errors and no horizontal overflow.
+
