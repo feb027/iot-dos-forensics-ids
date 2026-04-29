@@ -4,7 +4,7 @@
     "theme": "IoT + Cyber Security + Digital Forensics",
     "primary_dataset": "BoT-IoT (UNSW)",
     "alternative_dataset": "RT-IoT2022 (UCI)",
-    "status": "Fase 2 dataset audit completed; modeling not started"
+    "status": "Fase 3 EDA & Preprocessing ready; modeling not started"
   },
   "dataset_summary": {
     "source": "Mireu-Lab/UNSW-IoT Hugging Face mirror",

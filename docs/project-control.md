@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 2 — Dataset Audit
+Fase 3 — EDA & Preprocessing
 
 ## Status
 
-Fase 1 literature review has been merged to `main` via PR #1 and approved with final score 92/100. Fase 2 Dataset Audit artifacts have been generated and are pending Codex review. BoT-IoT access was verified via official UNSW/GitHub sources, and a practical Hugging Face CSV mirror was audited locally. Main finding: DoS/DDoS rows are available, but normal traffic is extremely underrepresented and feature-similarity leakage risk must be disclosed before modeling.
+Fase 2 Dataset Audit has been merged to `main` via PR #2 and approved with score 89/100. Current work is Fase 3 EDA & Preprocessing: generate exploratory tables/figures, define filtered binary dataset logic, document preprocessing, and prepare leakage-safe datasets before baseline modeling. Main carried-forward risks: normal class is extremely underrepresented, network identifiers must be excluded, duplicate feature signatures are high, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -43,6 +43,8 @@ Fase 1 literature review has been merged to `main` via PR #1 and approved with f
 | Dataset audit script | `scripts/audit_botiot_dataset.py` | completed |
 | Dataset audit metrics | `results/metrics/dataset_audit.json` | generated |
 | Dataset audit tables | `results/tables/dataset_files.csv`, `results/tables/class_distribution.csv`, `results/tables/column_profile.csv`, `results/tables/split_leakage_checks.csv` | generated |
+| Fase 3 EDA script/notebook | TBD | next |
+| Fase 3 preprocessing artifacts | TBD | next |
 
 ## Review Status
 
@@ -57,10 +59,11 @@ Fase 1 literature review has been merged to `main` via PR #1 and approved with f
 
 ## Blockers
 
-Fase 2 review APPROVED with required sync fixes applied. Technical watch items for Fase 3: normal class is extremely small, network identifiers must be excluded, duplicate model-feature signatures are high, and train/test feature-signature overlap must be disclosed as split-similarity risk.
+No blockers after PR #2 merge. Watch items for Fase 3: normal class is extremely small, network identifiers must be excluded, duplicate model-feature signatures are high, and train/test feature-signature overlap must be disclosed as split-similarity risk.
 
 ## Next Action
 
-1. Commit and open PR `phase-2-dataset-audit`.
-2. Merge after user approval.
-3. After merge, run post-merge status sync and proceed to Fase 3 EDA & Preprocessing.
+1. Create branch `phase-3-eda-preprocessing`.
+2. Build EDA/preprocessing script or notebook using Fase 2 constraints.
+3. Save class distribution figures, key feature plots, and preprocessing outputs under `results/`.
+4. Run Codex review before entering Fase 4 baseline modeling.
