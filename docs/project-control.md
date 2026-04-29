@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 4 — Baseline Modeling
+Fase 5 — Forensic Analysis
 
 ## Status
 
-Fase 4 Baseline Modeling artifacts have been generated and approved by Codex Technical Reviewer with score 90/100. The phase trains leakage-safe baseline models using the Fase 3 track plan, saves metrics/confusion matrices/figures, and updates dashboard model outputs from real artifacts. Main carried-forward risks for Fase 5: normal class is extremely underrepresented, network identifiers must remain excluded, duplicate feature signatures are high, and split-similarity risk must be disclosed.
+Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Current work is Fase 5 Forensic Analysis: interpret feature importance, confusion matrix behavior, false positives/false negatives, and traffic-pattern evidence from the baseline artifacts. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -57,6 +57,7 @@ Fase 4 Baseline Modeling artifacts have been generated and approved by Codex Tec
 | Fase 4 baseline summary | `results/metrics/baseline_summary.json` | generated |
 | Fase 4 baseline tables | `results/tables/baseline_*.csv` | generated |
 | Fase 4 baseline figures | `results/figures/baseline_*.png` | generated |
+| Fase 5 plan | `docs/phase5-plan.md` | drafted |
 
 ## Review Status
 
@@ -74,11 +75,11 @@ Fase 4 Baseline Modeling artifacts have been generated and approved by Codex Tec
 
 ## Blockers
 
-No Fase 4 blockers remain before PR. Watch items for Fase 5: very high baseline scores must be interpreted carefully due to tiny normal class and split-similarity risk; feature importance and FP/FN analysis are needed before making forensic claims.
+No blockers after PR #4 merge. Watch items for Fase 5: do not overclaim perfect controlled-subset metrics, keep raw/model files ignored, use artifact-backed feature importance, and explicitly discuss FP/FN plus normal-class limitations.
 
 ## Next Action
 
-1. Commit Fase 4 Baseline Modeling artifacts.
-2. Push branch `phase-4-baseline-modeling`.
-3. Open PR to `main`.
-4. After PR merge, sync `main` and proceed to Fase 5 Forensic Analysis.
+1. Create branch `phase-5-forensic-analysis` from updated `main`.
+2. Implement feature importance/permutation importance and FP/FN analysis from Fase 4 outputs.
+3. Save forensic tables/figures under `results/` and write `reports/progress-5-forensic-analysis.md`.
+4. Run Codex review before entering dashboard/manuscript polishing.

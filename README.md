@@ -122,9 +122,19 @@ Fase 4 sudah menjalankan baseline modeling untuk target `normal` vs `dos_or_ddos
 
 Keputusan utama: accuracy disimpan tetapi bukan klaim utama; interpretasi memakai macro F1, MCC, balanced accuracy, recall normal/attack, dan FP/FN.
 
+## Next Phase — Forensic Analysis
+
+Setelah Fase 4 di-*merge*, Fase 5 berfokus pada interpretasi forensik dari hasil baseline:
+
+- feature importance dan/atau permutation importance,
+- analisis false positive dan false negative,
+- interpretasi pola trafik DoS/DDoS dari fitur dominan,
+- pembahasan risiko normal class kecil dan split-similarity,
+- rekomendasi mitigasi IDS IoT berbasis temuan eksperimen.
+
 ## Status
 
-Current phase: **Fase 4 — Baseline Modeling**
+Current phase: **Fase 5 — Forensic Analysis**
 
 ## Review History
 

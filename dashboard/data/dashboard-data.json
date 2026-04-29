@@ -4,7 +4,7 @@
     "theme": "IoT + Cyber Security + Digital Forensics",
     "primary_dataset": "BoT-IoT (UNSW)",
     "alternative_dataset": "RT-IoT2022 (UCI)",
-    "status": "Fase 4 Baseline Modeling completed; technical review pending"
+    "status": "Fase 5 Forensic Analysis current; baseline modeling completed"
   },
   "dataset_summary": {
     "source": "Mireu-Lab/UNSW-IoT Hugging Face mirror",
@@ -783,7 +783,7 @@
     }
   },
   "forensic_notes": [
-    "Fase 3 menyiapkan dua jalur eksperimen: distribusi asli yang sangat imbalanced dan controlled balanced subset untuk mitigasi normal class kecil.",
-    "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia."
+    "Fase 4 telah menghasilkan baseline metrics dan confusion matrix untuk Track A/B/C.",
+    "Fase 5 berjalan: feature importance dan error analysis akan dipakai untuk interpretasi forensik DoS/DDoS."
   ]
 }

@@ -133,7 +133,7 @@ def main() -> None:
     eda_summary = load_eda_summary()
     model_comparison, confusion_matrix, baseline_summary = load_baseline_results()
     if model_comparison:
-        status = "Fase 4 Baseline Modeling completed; technical review pending"
+        status = "Fase 5 Forensic Analysis current; baseline modeling completed"
     elif eda_summary:
         status = "Fase 4 Baseline Modeling current; no model results yet"
     elif dataset_summary:
@@ -156,8 +156,8 @@ def main() -> None:
         "feature_importance": [],
         "baseline_summary": baseline_summary,
         "forensic_notes": [
-            "Fase 3 menyiapkan dua jalur eksperimen: distribusi asli yang sangat imbalanced dan controlled balanced subset untuk mitigasi normal class kecil.",
-            "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia.",
+            "Fase 4 telah menghasilkan baseline metrics dan confusion matrix untuk Track A/B/C.",
+            "Fase 5 berjalan: feature importance dan error analysis akan dipakai untuk interpretasi forensik DoS/DDoS.",
         ] if eda_summary else ([
             "Fase 2 menemukan risiko utama: class imbalance ekstrem dan kemiripan fitur agregat antar split; mitigasi harus diterapkan sebelum modeling.",
             "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia.",

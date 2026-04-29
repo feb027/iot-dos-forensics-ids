@@ -59,3 +59,10 @@
 - Key interpretation rule: accuracy is not the primary claim; use macro F1, MCC, balanced accuracy, recall normal/attack, and FP/FN discussion.
 - Codex technical review Fase 4 approved: `docs/REVIEW_phase4_baseline_modeling.md`, score 90/100. Post-review sync fixes applied to README and dashboard hero text.
 
+## 2026-04-29 — PR #4 merged and Fase 5 prepared
+
+- Merged PR #4 (`phase-4-baseline-modeling`) into `main`.
+- Merge commit: `8ae010124316f786ddaf2b56492a2a4cc3429775`.
+- Current phase updated to Fase 5 Forensic Analysis.
+- Carry-forward constraints: interpret high baseline scores carefully, keep feature importance artifact-backed, discuss FP/FN, and disclose normal-class/split-similarity limitations.
+
