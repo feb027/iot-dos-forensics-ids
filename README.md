@@ -182,6 +182,20 @@ Artifact Fase 6:
 - `docs/REVIEW_phase6_dashboard_final.md`: final verification 94/100 APPROVED / MERGE.
 
 
+
+## SOC Replay Visual Overhaul Snapshot
+
+Fase 6C meningkatkan halaman demo dari timeline statis menjadi SOC replay visual:
+
+- Packet replay map: source/bot → IoT gateway → device/service.
+- Replay controls: speed, scrubber, event timestamp.
+- Live SOC event stream.
+- Threat meter berbasis risk score heuristic.
+- Modular components: `network-replay.js`, `event-stream.js`, `threat-meter.js`, `replay-engine.js`.
+- Progress report: `reports/progress-6c-soc-replay-visual-overhaul.md`.
+
+Boundary: visual replay adalah representasi edukatif artifact, bukan PCAP replay aktual dan bukan metrik eksperimen baru.
+
 ## Interactive AI SOC Demo Snapshot
 
 Fase 6B menambahkan prototype demo interaktif berbasis VPS untuk membuat hasil modeling lebih hidup saat presentasi:

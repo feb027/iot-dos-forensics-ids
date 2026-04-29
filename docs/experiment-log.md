@@ -132,3 +132,10 @@
 - Deployed prototype to `https://iot.aquarise.my.id/soc-demo/demo.html` with PM2 process `iot-dos-soc-demo-api`.
 - Caddy route applied at runtime via `/tmp/Caddyfile.iot-soc-demo`; persistent `/etc/caddy/Caddyfile` update needs sudo if service restarts.
 
+## 2026-04-29 — Fase 6C SOC Replay Visual Overhaul
+
+- Added SOC Replay Console to `dashboard/demo.html`.
+- Added modular visual components: `network-replay.js`, `event-stream.js`, `threat-meter.js`, and `replay-engine.js`.
+- Added speed control, scrubber, packet animation, threat meter, compact timeline, and live event stream.
+- UI framing remains artifact-grounded: visual replay is educational, not actual PCAP replay or a new model metric.
+

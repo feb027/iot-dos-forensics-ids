@@ -4,7 +4,11 @@ import { loadScenarioBundle, scenarioById } from './demo/scenario-store.js';
 import { predictRisk } from './demo/what-if-engine.js';
 import { apiGet, apiPost } from './demo/api-client.js';
 import { renderEvidenceBars } from './components/evidence-bar.js';
-import { renderTimeline, replayTimeline } from './components/timeline.js';
+import { renderTimeline } from './components/timeline.js';
+import { renderNetworkReplay } from './components/network-replay.js';
+import { renderEventStream } from './components/event-stream.js';
+import { renderThreatMeter } from './components/threat-meter.js';
+import { startReplay, scrubReplay } from './demo/replay-engine.js';
 import { renderAnalystReport, reportToText } from './components/analyst-report.js';
 import { buildLocalReport } from './demo/soc-narrative.js';
 
@@ -92,6 +96,20 @@ function renderPrediction(prediction) {
     ['Model', prediction.model || 'surrogate IDS'],
   ]);
   renderEvidenceBars(qs('#evidence-bars'), prediction.evidence || []);
+  renderReplayFrame(state.scenario?.timeline?.length ? state.scenario.timeline.length - 1 : -1);
+}
+
+function renderReplayFrame(activeIndex = -1) {
+  if (!state.scenario) return;
+  const steps = state.scenario.timeline || [];
+  renderTimeline(qs('#timeline'), steps, activeIndex);
+  renderNetworkReplay(qs('#network-replay'), state.scenario, state.prediction || predictRisk(state.scenario.features || {}), activeIndex);
+  renderEventStream(qs('#event-stream'), steps, activeIndex, state.scenario);
+  renderThreatMeter(qs('#threat-meter'), state.prediction || predictRisk(state.scenario.features || {}), state.scenario);
+  const scrub = qs('#replay-scrub');
+  scrub.max = String(Math.max(0, steps.length - 1));
+  scrub.value = String(activeIndex);
+  qs('#replay-clock').textContent = activeIndex < 0 ? 'ready' : `00:${String(activeIndex * 2).padStart(2, '0')}`;
 }
 
 function runLocalPrediction() {
@@ -121,7 +139,6 @@ function selectScenario(id) {
   renderScenarios();
   qs('#scenario-title').textContent = state.scenario.name;
   qs('#scenario-outcome').textContent = state.scenario.expected_outcome || 'demo';
-  renderTimeline(qs('#timeline'), state.scenario.timeline || []);
   renderForm(state.scenario.features || {});
   runLocalPrediction();
   state.report = buildLocalReport(state.scenario, state.prediction);
@@ -143,7 +160,16 @@ async function init() {
   await checkApi();
   selectScenario(state.bundle.scenarios.scenarios?.[0]?.id);
   renderEvidenceBoundary();
-  qs('#replay-button').addEventListener('click', () => replayTimeline(qs('#timeline'), state.scenario.timeline || []));
+  qs('#replay-button').addEventListener('click', () => startReplay({
+    steps: state.scenario.timeline || [],
+    speed: Number(qs('#replay-speed').value || 1),
+    onFrame: (index) => renderReplayFrame(index),
+  }));
+  qs('#replay-scrub').addEventListener('input', (event) => scrubReplay({
+    steps: state.scenario.timeline || [],
+    index: event.target.value,
+    onFrame: (index) => renderReplayFrame(index),
+  }));
   qs('#analyze-button').addEventListener('click', analyzeScenarioViaApi);
   qs('#copy-report-button').addEventListener('click', async () => navigator.clipboard?.writeText(reportToText(state.report)));
   renderLucideIcons();
