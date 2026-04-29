@@ -70,3 +70,7 @@ h1 {
 .dataset-summary {
   margin-top: 8px;
 }
+.note {
+  margin-top: 12px;
+  font-size: 14px;
+}
