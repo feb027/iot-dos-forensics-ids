@@ -1,0 +1,3 @@
+split,path,bytes,sha256,rows,columns,exact_duplicate_rows,duplicate_pkseqid_rows,duplicate_model_feature_rows_excluding_ids_labels
+train,data/raw/bot-iot-hf/train.csv,369103929,047e577cd9c7f8f61d44ac170114497904c33091bf80d1dd5e682e353a69c15b,2934817,19,0,0,1487901
+test,data/raw/bot-iot-hf/test.csv,92281052,8617de2ac5d6ca4c2f77272c7409253a396f2a9e667c29c8e797ab9f57a1868e,733705,19,0,0,202630
