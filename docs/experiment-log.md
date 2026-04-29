@@ -104,3 +104,10 @@
 - Redesigned static dashboard into dark SOC-style command center with sticky nav, KPI bento, Chart.js desktop charts, mobile fallback bars, interactive model tabs, confusion matrix selector, forensics/SHAP evidence, advanced Track A cards, and evidence accordion.
 - Validated local preview with Playwright at 1440px and 375px: no JavaScript console errors and no horizontal overflow.
 
+## 2026-04-29 — Fase 6 dashboard review fixes
+
+- Codex dashboard review wrote `docs/REVIEW_phase6_dashboard.md` with score 86/100 NEEDS REVISION.
+- Fixed class distribution desktop fallback visibility so Chart.js and fallback bars do not duplicate.
+- Updated `docs/dashboard-spec.md` to match the approved dark SOC/cybersecurity dashboard direction and current data contract.
+- Codex final verification wrote `docs/REVIEW_phase6_dashboard_final.md` with score 94/100 APPROVED / MERGE.
+

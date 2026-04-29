@@ -97,7 +97,7 @@ paper: add final scientific manuscript
 - Prefer static GitHub Pages dashboard.
 - Dashboard must read generated JSON/CSV artifacts, not hardcoded manually copied results.
 - Dashboard claims must match `results/tables/` and `results/metrics/`.
-- Keep design clean, academic, white/light background, readable charts.
+- Keep design clean, academic, and readable. A dark SOC/cybersecurity theme is acceptable when explicitly chosen for Fase 6 dashboard polish, as long as contrast and mobile readability are verified.
 
 ## Academic Writing Rules
 

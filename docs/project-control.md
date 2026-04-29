@@ -73,6 +73,7 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic An
 | Fase 6A progress report | `reports/progress-6a-advanced-modeling.md` | completed |
 | Fase 6 dashboard polish plan | `docs/phase6-dashboard-polish-plan.md` | drafted |
 | Fase 6 dashboard design brief | `docs/phase6-dashboard-design-brief.md` | drafted |
+| Fase 6 dashboard review | `docs/REVIEW_phase6_dashboard.md`, `docs/REVIEW_phase6_dashboard_final.md` | final approved |
 
 ## Review Status
 
@@ -89,14 +90,16 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic An
 | 4 | Codex Technical Reviewer | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
 | 5 | Codex Technical/Lecturer Reviewer | 90 | APPROVED | `docs/REVIEW_phase5_forensic_analysis.md` |
 | 6A | Codex Technical/Lecturer Reviewer | 90 | APPROVED | `docs/REVIEW_phase6a_advanced_modeling.md` |
+| 6 dashboard polish | Codex gpt-5.5 + high reasoning | 86 | NEEDS REVISION | `docs/REVIEW_phase6_dashboard.md` |
+| 6 dashboard final verification | Codex gpt-5.5 + high reasoning | 94 | APPROVED / MERGE | `docs/REVIEW_phase6_dashboard_final.md` |
 
 ## Blockers
 
-No active blockers. Watch items for Fase 6/7: verify GitHub Pages after status sync, keep dashboard claims tied to artifact JSON/CSV, emphasize Track A realistic highlight, and keep manuscript language cautious around controlled-subset scores.
+No active blockers. Fase 6 dashboard polish is Codex-approved for merge. Watch items for Fase 7: verify GitHub Pages after merge/status sync and keep manuscript language cautious around controlled-subset scores.
 
 ## Next Action
 
-1. Review redesigned dashboard visuals on branch `phase-6-dashboard-polish`.
-2. Run Codex dashboard review gate after user approves the visual direction.
-3. Open/merge Fase 6 dashboard polish PR after review fixes.
-4. Draft manuscript sections from committed artifact tables/figures only.
+1. Merge PR #7 after committing final review fixes.
+2. Sync `main` status docs and dashboard JSON after merge.
+3. Verify GitHub Pages live dashboard and JSON.
+4. Start Fase 7 manuscript drafting from committed artifact tables/figures only.
