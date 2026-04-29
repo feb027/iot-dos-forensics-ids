@@ -1,0 +1,4 @@
+check,value,interpretation
+pkSeqID overlap train/test,0,Should be 0 for clean split identifiers.
+Exact full-row overlap train/test,0,Should be 0 to avoid direct duplicate leakage.
+Model-feature signature overlap train/test excluding ids/network ids/labels,327338,Non-zero can occur in aggregated flow features; high values mean random split similarity risk and should be disclosed.
