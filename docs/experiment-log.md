@@ -75,3 +75,10 @@
 - Updated dashboard data to include forensic feature importance and error analysis.
 - Codex review Fase 5 approved: `docs/REVIEW_phase5_forensic_analysis.md`, score 90/100. Follow-up fixes applied: README wording, review status sync, and stronger regression tests for leakage, permutation importance, and FP/FN consistency.
 
+## 2026-04-29 — Fase 6A Advanced Modeling branch initialized
+
+- PR #5 Fase 5 merged to `main`.
+- Created branch `phase-6a-advanced-modeling`.
+- Added advanced modeling plan and local WSL run guide.
+- Implemented runner plan for LightGBM/XGBoost/CatBoost with sampled SHAP explainability.
+

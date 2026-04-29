@@ -17,6 +17,10 @@ BASELINE_SUMMARY = ROOT / "results" / "metrics" / "baseline_summary.json"
 FORENSIC_FEATURE_IMPORTANCE = ROOT / "results" / "tables" / "forensic_feature_importance.csv"
 FORENSIC_ERROR_ANALYSIS = ROOT / "results" / "tables" / "forensic_error_analysis.csv"
 FORENSIC_SUMMARY = ROOT / "results" / "metrics" / "forensic_summary.json"
+ADVANCED_METRICS = ROOT / "results" / "tables" / "advanced_model_metrics.csv"
+ADVANCED_CONFUSION = ROOT / "results" / "tables" / "advanced_confusion_matrices.csv"
+ADVANCED_SHAP_SUMMARY = ROOT / "results" / "tables" / "advanced_shap_summary.csv"
+ADVANCED_SUMMARY = ROOT / "results" / "metrics" / "advanced_summary.json"
 
 
 def load_dataset_audit() -> tuple[dict, list[dict]]:
@@ -176,12 +180,85 @@ def load_forensic_results() -> tuple[list[dict], list[dict], dict]:
     return feature_importance, error_analysis, forensic_summary
 
 
+def load_advanced_results() -> tuple[list[dict], list[dict], list[dict], dict]:
+    advanced_models: list[dict] = []
+    advanced_confusion: list[dict] = []
+    advanced_shap: list[dict] = []
+    advanced_summary: dict = {}
+
+    if ADVANCED_METRICS.exists() and ADVANCED_METRICS.read_text(encoding="utf-8").strip():
+        with ADVANCED_METRICS.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                advanced_models.append(
+                    {
+                        "track": row["track"],
+                        "model": row["model"],
+                        "model_display_name": row.get("model_display_name", row["model"]),
+                        "model_family": row.get("model_family", ""),
+                        "macro_f1": float(row["macro_f1"]),
+                        "mcc": float(row["mcc"]),
+                        "balanced_accuracy": float(row["balanced_accuracy"]),
+                        "precision_attack": float(row["precision_attack"]),
+                        "recall_attack": float(row["recall_attack"]),
+                        "precision_normal": float(row["precision_normal"]),
+                        "recall_normal": float(row["recall_normal"]),
+                        "accuracy": float(row["accuracy"]),
+                        "baseline_best_model_for_track": row.get("baseline_best_model_for_track", ""),
+                        "baseline_macro_f1_for_track": float(row.get("baseline_macro_f1_for_track") or 0),
+                        "delta_macro_f1_vs_baseline": float(row.get("delta_macro_f1_vs_baseline") or 0),
+                        "delta_mcc_vs_baseline": float(row.get("delta_mcc_vs_baseline") or 0),
+                    }
+                )
+        advanced_models.sort(key=lambda r: (r["macro_f1"], r["mcc"], r["recall_normal"]), reverse=True)
+
+    if ADVANCED_CONFUSION.exists() and ADVANCED_CONFUSION.read_text(encoding="utf-8").strip():
+        with ADVANCED_CONFUSION.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                advanced_confusion.append(
+                    {
+                        "track": row["track"],
+                        "model": row["model"],
+                        "tn_normal_correct": int(row["tn_normal_correct"]),
+                        "fp_normal_as_attack": int(row["fp_normal_as_attack"]),
+                        "fn_attack_as_normal": int(row["fn_attack_as_normal"]),
+                        "tp_attack_correct": int(row["tp_attack_correct"]),
+                    }
+                )
+
+    if ADVANCED_SHAP_SUMMARY.exists() and ADVANCED_SHAP_SUMMARY.read_text(encoding="utf-8").strip():
+        with ADVANCED_SHAP_SUMMARY.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                advanced_shap.append(
+                    {
+                        "track": row["track"],
+                        "model": row["model"],
+                        "method": row["method"],
+                        "rank": int(row["rank"]),
+                        "feature": row["feature"],
+                        "feature_group": row["feature_group"],
+                        "mean_abs_shap": float(row["mean_abs_shap"]),
+                        "normalized_mean_abs_shap": float(row["normalized_mean_abs_shap"]),
+                        "sample_rows": int(float(row["sample_rows"])),
+                        "interpretation_hint": row.get("interpretation_hint", ""),
+                    }
+                )
+        advanced_shap.sort(key=lambda r: (r["normalized_mean_abs_shap"], r["mean_abs_shap"]), reverse=True)
+
+    if ADVANCED_SUMMARY.exists():
+        advanced_summary = json.loads(ADVANCED_SUMMARY.read_text(encoding="utf-8"))
+
+    return advanced_models, advanced_confusion, advanced_shap, advanced_summary
+
+
 def main() -> None:
     dataset_summary, class_distribution = load_dataset_audit()
     eda_summary = load_eda_summary()
     model_comparison, confusion_matrix, baseline_summary = load_baseline_results()
     feature_importance, forensic_error_analysis, forensic_summary = load_forensic_results()
-    if forensic_summary:
+    advanced_models, advanced_confusion, advanced_shap, advanced_summary = load_advanced_results()
+    if advanced_summary:
+        status = "Fase 6A Advanced/SOTA Modeling completed; technical review pending"
+    elif forensic_summary:
         status = "Fase 6A Advanced/SOTA Modeling current; Fase 5 merged"
     elif model_comparison:
         status = "Fase 5 Forensic Analysis current; baseline modeling completed"
@@ -208,6 +285,10 @@ def main() -> None:
         "baseline_summary": baseline_summary,
         "forensic_error_analysis": forensic_error_analysis,
         "forensic_summary": forensic_summary,
+        "advanced_models": advanced_models,
+        "advanced_confusion": advanced_confusion,
+        "advanced_shap": advanced_shap[:30],
+        "advanced_summary": advanced_summary,
         "forensic_notes": (
             [
                 "Fase 5 telah menghasilkan feature importance dan error analysis dari selected baseline runs.",
