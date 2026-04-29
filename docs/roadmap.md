@@ -53,11 +53,13 @@ Status: completed and merged via PR #5 — Codex review 90/100 APPROVED.
 
 Tujuan: membandingkan model tabular modern seperti LightGBM/XGBoost/CatBoost terhadap baseline Fase 4 dan menambahkan explainability sampel untuk memperkuat interpretasi forensik.
 
-Status: current phase after PR #5 merge.
+Status: completed and merged via PR #6 — Codex review 90/100 APPROVED.
 
 ## Fase 6 — Dashboard
 
-Tujuan: membangun static dashboard untuk menampilkan dataset summary, model performance, confusion matrix, dan feature importance.
+Tujuan: membangun static dashboard untuk menampilkan dataset summary, model performance, confusion matrix, feature importance, forensic interpretation, dan advanced modeling highlight.
+
+Status: current phase after PR #6 merge; dashboard exists and needs final polish/Pages verification.
 
 ## Fase 7 — Scientific Manuscript
 

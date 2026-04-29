@@ -91,3 +91,10 @@
 - Top SHAP feature group: `N_IN_Conn_P_DstIP`.
 - Codex review Fase 6A approved: `docs/REVIEW_phase6a_advanced_modeling.md`, score 90/100. Minor follow-up applied: README dashboard wording and dashboard Track A highlight.
 
+## 2026-04-29 — Post-merge Fase 6A status sync
+
+- PR #6 Fase 6A Advanced/SOTA Modeling merged to `main`.
+- Current phase updated to Fase 6 Dashboard Polish & Manuscript Preparation.
+- Dashboard generator status updated to `Fase 6A merged; Fase 6 dashboard polish current`.
+- Added `docs/phase6-dashboard-polish-plan.md`.
+
