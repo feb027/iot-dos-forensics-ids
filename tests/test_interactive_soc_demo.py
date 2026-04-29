@@ -86,3 +86,11 @@ def test_fastapi_health_and_soc_report():
     body = report.json()
     assert "risk score" in body["summary"]
     assert body["recommendations"]
+
+    tampered = client.post(
+        "/api/soc/analyze",
+        json={**payload, "prediction": {"label": "normal", "risk_score": 0.01}},
+    )
+    assert tampered.status_code == 200
+    assert "DoS/DDoS" in tampered.json()["summary"]
+    assert "ignored" in tampered.json()["client_prediction_note"]

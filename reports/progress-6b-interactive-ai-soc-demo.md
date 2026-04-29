@@ -97,3 +97,21 @@ Live HTTP checks:
 Use this wording in manuscript/demo:
 
 > Interactive AI SOC prototype berbasis artifact eksperimen BoT-IoT. Sistem ini menampilkan replay, risk scoring, evidence features, dan SOC-style report untuk mendukung interpretasi hasil modeling; bukan production real-time IDS dan bukan bukti attribution dunia nyata.
+
+
+## Reviewer follow-up fixes
+
+Applied after review:
+
+- `/api/soc/analyze` now recomputes prediction server-side and ignores inconsistent client-supplied prediction labels.
+- Constructed high/low demo cases are explicitly labeled as `Simulated ... Pattern`, not real artifact replay.
+- The risk score is documented as a heuristic demonstration based on artifact-important features/SHAP, not a LightGBM/XGBoost probability and not a new model performance metric.
+- `/api/flow/analyze` is documented as a single-row flow analyzer, not batch analysis.
+
+## Surrogate risk score boundary
+
+The server-side and client-side what-if score is an educational heuristic aligned with dominant artifact features (`N_IN_Conn_P_DstIP`, `N_IN_Conn_P_SrcIP`, `srate`, `stddev`, `state_number`, `mean`, `max`, `drate`). It is used for interactive demonstration only. It is not the actual LightGBM/XGBoost probability output and must not be reported as a new experimental metric.
+
+## Flow analyzer boundary
+
+`POST /api/flow/analyze` accepts a CSV string but analyzes only the first data row. This is intentional for single-flow SOC demo triage, not batch IDS evaluation.

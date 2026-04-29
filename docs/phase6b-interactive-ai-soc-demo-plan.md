@@ -309,3 +309,11 @@ Avoid wording:
 ## Final recommendation
 
 Build VPS-backed MVP first because the user wants features that require backend/live AI. Keep GitHub Pages as static fallback and artifact showcase.
+
+
+## Reviewer follow-up boundary notes
+
+- The what-if risk score is a heuristic demo score grounded in artifact-important features/SHAP, not a LightGBM/XGBoost probability and not a new experimental metric.
+- `POST /api/soc/analyze` must recompute prediction server-side and ignore inconsistent client-supplied prediction.
+- Constructed demo cases must be labeled as simulation/educational patterns, not real artifact replay.
+- `POST /api/flow/analyze` is single-row analysis only.

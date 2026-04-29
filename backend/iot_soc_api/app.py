@@ -67,11 +67,15 @@ def create_app() -> FastAPI:
     def soc_analyze(request: SocAnalyzeRequest) -> dict[str, Any]:
         scenario = find_scenario(request.scenario_id)
         try:
-            prediction = request.prediction or predict(request.features)
-            validate_features(request.features)
+            # Always recompute server-side so the SOC report is grounded to backend logic,
+            # not an arbitrary client-supplied prediction payload.
+            prediction = predict(request.features)
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
-        return build_report(scenario, prediction, request.features)
+        report = build_report(scenario, prediction, request.features)
+        if request.prediction and request.prediction.get("label") != prediction.get("label"):
+            report["client_prediction_note"] = "Client-supplied prediction differed from server recomputation and was ignored."
+        return report
 
     @app.post("/api/flow/analyze")
     def flow_analyze(request: FlowAnalyzeRequest) -> dict[str, Any]:

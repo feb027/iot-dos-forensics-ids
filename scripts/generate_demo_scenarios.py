@@ -177,9 +177,9 @@ def main() -> None:
     scenarios.extend([
         synthetic_scenario(
             "simulated-high-confidence-dos",
-            "High-confidence DoS/DDoS Replay",
-            "Skenario edukatif dengan konsentrasi destination/source dan packet rate tinggi untuk menunjukkan alert yang mudah dijelaskan.",
-            "TP_attack_detected",
+            "Simulated High-risk DoS/DDoS Pattern",
+            "Skenario edukatif yang dikonstruksi dari pola artifact: konsentrasi destination/source dan packet rate tinggi untuk menunjukkan alert yang mudah dijelaskan.",
+            "educational_simulated_attack_pattern",
             {
                 "proto": "udp",
                 "stddev": 1.35,
@@ -195,9 +195,9 @@ def main() -> None:
         ),
         synthetic_scenario(
             "simulated-low-risk-normal",
-            "Low-risk Normal Replay",
-            "Skenario edukatif trafik normal dengan concentration dan packet rate rendah untuk pembanding baseline.",
-            "TN_normal_detected",
+            "Simulated Low-risk Normal Pattern",
+            "Skenario edukatif yang dikonstruksi dari pola artifact: trafik rendah risiko dengan concentration dan packet rate rendah sebagai pembanding baseline.",
+            "educational_simulated_normal_pattern",
             {
                 "proto": "tcp",
                 "stddev": 0.08,

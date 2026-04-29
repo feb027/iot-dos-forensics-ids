@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-29T08:50:40.818757+00:00",
+  "generated_at_utc": "2026-04-29T09:29:25.500109+00:00",
   "phase": "Fase 6B — Interactive AI SOC Demo",
   "status": "vps_backed_demo_primary_static_fallback",
   "metric_context": {
@@ -155,10 +155,10 @@
     },
     {
       "id": "simulated-high-confidence-dos",
-      "name": "High-confidence DoS/DDoS Replay",
-      "description": "Skenario edukatif dengan konsentrasi destination/source dan packet rate tinggi untuk menunjukkan alert yang mudah dijelaskan.",
+      "name": "Simulated High-risk DoS/DDoS Pattern",
+      "description": "Skenario edukatif yang dikonstruksi dari pola artifact: konsentrasi destination/source dan packet rate tinggi untuk menunjukkan alert yang mudah dijelaskan.",
       "scenario_type": "constructed_from_artifact_patterns",
-      "expected_outcome": "TP_attack_detected",
+      "expected_outcome": "educational_simulated_attack_pattern",
       "track": "A_realistic_imbalanced",
       "model": "lightgbm_surrogate",
       "features": {
@@ -176,7 +176,7 @@
       "timeline": [
         {
           "title": "Flow captured",
-          "description": "Satu flow trafik IoT dipilih untuk skenario High-confidence DoS/DDoS Replay; label/outcome demo: TP_attack_detected."
+          "description": "Satu flow trafik IoT dipilih untuk skenario Simulated High-risk DoS/DDoS Pattern; label/outcome demo: educational_simulated_attack_pattern."
         },
         {
           "title": "Feature extraction",
@@ -199,10 +199,10 @@
     },
     {
       "id": "simulated-low-risk-normal",
-      "name": "Low-risk Normal Replay",
-      "description": "Skenario edukatif trafik normal dengan concentration dan packet rate rendah untuk pembanding baseline.",
+      "name": "Simulated Low-risk Normal Pattern",
+      "description": "Skenario edukatif yang dikonstruksi dari pola artifact: trafik rendah risiko dengan concentration dan packet rate rendah sebagai pembanding baseline.",
       "scenario_type": "constructed_from_artifact_patterns",
-      "expected_outcome": "TN_normal_detected",
+      "expected_outcome": "educational_simulated_normal_pattern",
       "track": "A_realistic_imbalanced",
       "model": "lightgbm_surrogate",
       "features": {
@@ -220,7 +220,7 @@
       "timeline": [
         {
           "title": "Flow captured",
-          "description": "Satu flow trafik IoT dipilih untuk skenario Low-risk Normal Replay; label/outcome demo: TN_normal_detected."
+          "description": "Satu flow trafik IoT dipilih untuk skenario Simulated Low-risk Normal Pattern; label/outcome demo: educational_simulated_normal_pattern."
         },
         {
           "title": "Feature extraction",
