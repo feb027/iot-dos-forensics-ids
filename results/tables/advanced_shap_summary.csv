@@ -1,0 +1,93 @@
+track,model,method,rank,feature,feature_group,mean_abs_shap,normalized_mean_abs_shap,sample_rows,interpretation_hint,shap_seconds_for_run
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,1,mean,mean,0.2224676282,0.3218430459,3000,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,2,proto=udp,proto,0.1336529285,0.1933551678,3000,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,3,state_number,state_number,0.1319243971,0.1908545082,3000,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,4,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.0382488756,0.0553344984,3000,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,5,stddev,stddev,0.0358510165,0.051865525,3000,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,6,srate,srate,0.0338655303,0.0489931299,3000,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,7,min,min,0.0327478142,0.0473761345,3000,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,8,max,max,0.0274039653,0.0396452093,3000,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,9,proto=tcp,proto,0.0209587,0.0303208691,3000,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,10,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.011641876,0.0168422563,3000,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,11,drate,drate,0.0017723263,0.0025640175,3000,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,12,proto=arp,proto,0.0006878659,0.0009951329,3000,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,13,proto=icmp,proto,7.2615e-06,1.05053e-05,3000,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.5579
+A_realistic_imbalanced,lightgbm,tree_shap_mean_abs,14,proto=ipv6-icmp,proto,0.0,0.0,3000,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.5579
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,8.1368167779,0.5458969641,214,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,2.46289924,0.1652352824,214,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,3,max,max,1.9280076116,0.1293495393,214,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,4,stddev,stddev,0.8220653631,0.0551521557,214,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,5,srate,srate,0.462751892,0.0310459065,214,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,6,mean,mean,0.4090075058,0.0274402093,214,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,7,state_number,state_number,0.3817019607,0.0256082873,214,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,8,drate,drate,0.1438939498,0.0096538084,214,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,9,proto=tcp,proto,0.0939494064,0.0063030417,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,10,min,min,0.0466666432,0.0031308532,214,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,11,proto=arp,proto,0.0100692283,0.000675542,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,12,proto=udp,proto,0.0075780583,0.00050841,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0932
+B_balanced_controlled_1_to_1,lightgbm,tree_shap_mean_abs,13,proto=ipv6-icmp,proto,0.0,0.0,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0932
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,4.1516504288,0.559331827,214,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,2,stddev,stddev,1.0837956667,0.1460145599,214,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,3,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,1.045655489,0.1408761178,214,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,4,state_number,state_number,0.4451549351,0.0599735762,214,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,5,srate,srate,0.2587945163,0.0348661363,214,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,6,max,max,0.2407998443,0.032441801,214,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,7,mean,mean,0.1552048326,0.0209099981,214,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,8,min,min,0.0244340282,0.0032918787,214,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,9,drate,drate,0.0137956701,0.0018586241,214,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,10,proto=tcp,proto,0.0032320947,0.0004354445,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,11,proto=arp,proto,0.0,0.0,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,12,proto=ipv6-icmp,proto,0.0,0.0,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0222
+B_balanced_controlled_1_to_1,xgboost,tree_shap_mean_abs,13,proto=udp,proto,0.0,0.0,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0222
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,4.0414257056,0.4735080608,214,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,2,stddev,stddev,1.2885753627,0.1509741526,214,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,3,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.846577175,0.0991880454,214,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,4,max,max,0.7255412696,0.0850070407,214,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,5,mean,mean,0.4447910744,0.0521133319,214,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,6,srate,srate,0.3355964444,0.0393196939,214,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,7,state_number,state_number,0.2834777634,0.0332132806,214,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,8,proto=tcp,proto,0.1790256248,0.0209752901,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,9,drate,drate,0.1466216328,0.0171787211,214,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,10,proto=udp,proto,0.122653277,0.0143705018,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,11,min,min,0.084908481,0.0099481849,214,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,12,proto=arp,proto,0.0351607323,0.0041195586,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0838
+B_balanced_controlled_1_to_1,catboost,tree_shap_mean_abs,13,proto=ipv6-icmp,proto,0.0007181206,8.41376e-05,214,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0838
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,7.9737351866,0.5680300867,321,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,2,max,max,1.8517734315,0.1319159714,321,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,3,proto=tcp,proto,1.2554101318,0.0894324566,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,4,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.9503133578,0.0676980821,321,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,5,mean,mean,0.6573784445,0.0468300898,321,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,6,stddev,stddev,0.5901629603,0.0420418172,321,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,7,srate,srate,0.2945486688,0.0209829524,321,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,8,state_number,state_number,0.2851911779,0.0203163468,321,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,9,drate,drate,0.1027784276,0.0073216928,321,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,10,min,min,0.068558506,0.0048839463,321,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,11,proto=arp,proto,0.0045110658,0.0003213577,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,12,proto=udp,proto,0.003161255,0.0002252004,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1064
+C_balanced_controlled_1_to_2,lightgbm,tree_shap_mean_abs,13,proto=ipv6-icmp,proto,0.0,0.0,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1064
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,4.8524365425,0.6098101422,321,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,2,stddev,stddev,1.1503368616,0.1445638864,321,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,3,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.849217236,0.1067219074,321,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,4,state_number,state_number,0.4464525878,0.0561061054,321,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,5,srate,srate,0.2537805438,0.0318928333,321,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,6,max,max,0.2484398484,0.0312216632,321,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,7,mean,mean,0.0630281866,0.0079208099,321,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,8,drate,drate,0.054295063,0.0068233103,321,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,9,min,min,0.0276957303,0.0034805478,321,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,10,proto=tcp,proto,0.0116080558,0.001458795,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,11,proto=arp,proto,0.0,0.0,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,12,proto=ipv6-icmp,proto,0.0,0.0,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0232
+C_balanced_controlled_1_to_2,xgboost,tree_shap_mean_abs,13,proto=udp,proto,0.0,0.0,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.0232
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,4.5591597945,0.5214567731,321,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,2,stddev,stddev,1.2586425125,0.1439580301,321,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,3,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,1.0255967527,0.1173032746,321,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,4,srate,srate,0.3790277893,0.0433515421,321,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,5,mean,mean,0.3585203312,0.0410059887,321,rata-rata statistik flow; merepresentasikan intensitas umum trafik,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,6,max,max,0.2843236359,0.0325196949,321,nilai maksimum statistik flow; menangkap spike intensitas trafik,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,7,state_number,state_number,0.2800641833,0.0320325174,321,kode status koneksi; membantu membaca pola koneksi gagal/abnormal,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,8,proto=tcp,proto,0.2165724143,0.0247706063,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,9,drate,drate,0.1613628485,0.0184559774,321,destination packet rate; membantu membaca ketidakseimbangan aliran request-response,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,10,min,min,0.1134833814,0.0129797332,321,nilai minimum statistik flow; mendukung pembacaan rentang trafik,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,11,proto=udp,proto,0.0550058628,0.0062913302,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,12,proto=arp,proto,0.0511923544,0.0058551578,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1053
+C_balanced_controlled_1_to_2,catboost,tree_shap_mean_abs,13,proto=ipv6-icmp,proto,0.0001693899,1.93741e-05,321,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT,0.1053

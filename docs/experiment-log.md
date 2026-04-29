@@ -75,3 +75,19 @@
 - Updated dashboard data to include forensic feature importance and error analysis.
 - Codex review Fase 5 approved: `docs/REVIEW_phase5_forensic_analysis.md`, score 90/100. Follow-up fixes applied: README wording, review status sync, and stronger regression tests for leakage, permutation importance, and FP/FN consistency.
 
+## 2026-04-29 — Fase 6A Advanced Modeling branch initialized
+
+- PR #5 Fase 5 merged to `main`.
+- Created branch `phase-6a-advanced-modeling`.
+- Added advanced modeling plan and local WSL run guide.
+- Implemented runner plan for LightGBM/XGBoost/CatBoost with sampled SHAP explainability.
+
+## 2026-04-29 — Fase 6A Advanced/SOTA Modeling full run
+
+- Ran `scripts/run_advanced_modeling.py --models all --tracks all --shap-sample 3000` on local WSL PC through reverse SSH tunnel.
+- Completed 7 advanced runs.
+- Best overall advanced run: `xgboost` on `C_balanced_controlled_1_to_2` with macro F1=0.9965, MCC=0.9930.
+- Track A highlight: LightGBM macro F1=0.9885, Δ Macro F1 vs baseline=0.0218.
+- Top SHAP feature group: `N_IN_Conn_P_DstIP`.
+- Codex review Fase 6A approved: `docs/REVIEW_phase6a_advanced_modeling.md`, score 90/100. Minor follow-up applied: README dashboard wording and dashboard Track A highlight.
+

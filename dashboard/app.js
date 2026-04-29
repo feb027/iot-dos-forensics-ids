@@ -5,6 +5,7 @@ async function main() {
   const edaSummaryEl = document.querySelector('#eda-summary');
   const baselineSummaryEl = document.querySelector('#baseline-summary');
   const forensicSummaryEl = document.querySelector('#forensic-summary');
+  const advancedSummaryEl = document.querySelector('#advanced-summary');
   try {
     const res = await fetch('data/dashboard-data.json');
     const data = await res.json();
@@ -14,6 +15,9 @@ async function main() {
     const baseline = data.model_comparison || [];
     const featureImportance = data.feature_importance || [];
     const forensicSummary = data.forensic_summary || {};
+    const advancedModels = data.advanced_models || [];
+    const advancedShap = data.advanced_shap || [];
+    const advancedSummary = data.advanced_summary || {};
     statusEl.textContent = project.status || 'Experiment results pending.';
     const items = [
       ['Dataset utama', project.primary_dataset || '-'],
@@ -118,12 +122,47 @@ async function main() {
     } else {
       forensicSummaryEl.textContent = 'Feature importance dan error analysis akan muncul setelah Fase 5 dijalankan.';
     }
+
+    if (advancedModels.length) {
+      const bestAdvanced = advancedModels[0];
+      const trackAHighlight = advancedModels.find((row) => row.track === 'A_realistic_imbalanced') || null;
+      const topShapGroups = advancedSummary.top_shap_feature_groups || [];
+      const advancedItems = [
+        ['Completed runs', advancedModels.length],
+        ['Best advanced model', bestAdvanced.model_display_name || bestAdvanced.model],
+        ['Best track', bestAdvanced.track],
+        ['Macro F1', Number(bestAdvanced.macro_f1).toFixed(4)],
+        ['Δ Macro F1 vs baseline', Number(bestAdvanced.delta_macro_f1_vs_baseline || 0).toFixed(4)],
+        ['Top SHAP group', topShapGroups[0]?.feature_group || advancedShap[0]?.feature_group || '-'],
+        ['Track A highlight', trackAHighlight ? `${trackAHighlight.model} ΔF1 ${Number(trackAHighlight.delta_macro_f1_vs_baseline || 0).toFixed(4)}` : '-']
+      ];
+      const shapRows = advancedShap.slice(0, 6);
+      advancedSummaryEl.innerHTML = `
+        <div class="grid compact">
+          ${advancedItems.map(([label, value]) => `
+            <article class="metric"><span>${label}</span><strong>${value}</strong></article>
+          `).join('')}
+        </div>
+        <div class="feature-list">
+          ${shapRows.map((row) => `
+            <div class="feature-row">
+              <strong>${row.feature_group}</strong>
+              <span>${Number(row.normalized_mean_abs_shap || row.mean_abs_shap).toFixed(4)} · ${row.model} · ${row.track}</span>
+            </div>
+          `).join('')}
+        </div>
+        <p class="note">Advanced/SOTA models dibandingkan terhadap baseline track yang sama; Track A realistis ditampilkan sebagai highlight utama, sedangkan SHAP memakai sample terbatas untuk menjaga memori.</p>
+      `;
+    } else if (advancedSummaryEl) {
+      advancedSummaryEl.textContent = 'Advanced/SOTA modeling akan muncul setelah Fase 6A dijalankan.';
+    }
   } catch (error) {
     statusEl.textContent = 'Gagal memuat dashboard-data.json. Jalankan scripts/generate_dashboard_data.py terlebih dahulu.';
     if (datasetSummaryEl) datasetSummaryEl.textContent = 'Gagal memuat ringkasan dataset.';
     if (edaSummaryEl) edaSummaryEl.textContent = 'Gagal memuat ringkasan EDA.';
     if (baselineSummaryEl) baselineSummaryEl.textContent = 'Gagal memuat ringkasan baseline.';
     if (forensicSummaryEl) forensicSummaryEl.textContent = 'Gagal memuat ringkasan forensik.';
+    if (advancedSummaryEl) advancedSummaryEl.textContent = 'Gagal memuat ringkasan advanced modeling.';
     console.error(error);
   }
 }

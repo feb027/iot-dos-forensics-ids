@@ -1,0 +1,8 @@
+track,model,tn_normal_correct,fp_normal_as_attack,fn_attack_as_normal,tp_attack_correct
+A_realistic_imbalanced,lightgbm,106,1,4,715417
+B_balanced_controlled_1_to_1,lightgbm,106,1,0,107
+B_balanced_controlled_1_to_1,xgboost,107,0,1,106
+B_balanced_controlled_1_to_1,catboost,107,0,1,106
+C_balanced_controlled_1_to_2,lightgbm,106,1,0,214
+C_balanced_controlled_1_to_2,xgboost,107,0,1,213
+C_balanced_controlled_1_to_2,catboost,107,0,2,212

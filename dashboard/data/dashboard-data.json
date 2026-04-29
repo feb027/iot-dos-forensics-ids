@@ -4,7 +4,7 @@
     "theme": "IoT + Cyber Security + Digital Forensics",
     "primary_dataset": "BoT-IoT (UNSW)",
     "alternative_dataset": "RT-IoT2022 (UCI)",
-    "status": "Fase 6A Advanced/SOTA Modeling current; Fase 5 merged"
+    "status": "Fase 6A Advanced/SOTA Modeling completed; technical review pending"
   },
   "dataset_summary": {
     "source": "Mireu-Lab/UNSW-IoT Hugging Face mirror",
@@ -1338,6 +1338,1094 @@
       "figures": [
         "results/figures/forensic_feature_importance.png",
         "results/figures/forensic_confusion_error_summary.png"
+      ]
+    }
+  },
+  "advanced_models": [
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "model_display_name": "XGBoost Histogram Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.99650346,
+      "mcc": 0.99303127,
+      "balanced_accuracy": 0.99766355,
+      "precision_attack": 1.0,
+      "recall_attack": 0.9953271,
+      "precision_normal": 0.99074074,
+      "recall_normal": 1.0,
+      "accuracy": 0.99688474,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "delta_macro_f1_vs_baseline": -0.00349654,
+      "delta_mcc_vs_baseline": -0.00696873
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "lightgbm",
+      "model_display_name": "LightGBM Gradient Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.99648708,
+      "mcc": 0.99299875,
+      "balanced_accuracy": 0.9953271,
+      "precision_attack": 0.99534884,
+      "recall_attack": 1.0,
+      "precision_normal": 1.0,
+      "recall_normal": 0.99065421,
+      "accuracy": 0.99688474,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "delta_macro_f1_vs_baseline": -0.00351292,
+      "delta_mcc_vs_baseline": -0.00700125
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "xgboost",
+      "model_display_name": "XGBoost Histogram Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.995327,
+      "mcc": 0.99069747,
+      "balanced_accuracy": 0.9953271,
+      "precision_attack": 1.0,
+      "recall_attack": 0.99065421,
+      "precision_normal": 0.99074074,
+      "recall_normal": 1.0,
+      "accuracy": 0.9953271,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "delta_macro_f1_vs_baseline": -0.004673,
+      "delta_mcc_vs_baseline": -0.00930253
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "model_display_name": "CatBoost Gradient Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.995327,
+      "mcc": 0.99069747,
+      "balanced_accuracy": 0.9953271,
+      "precision_attack": 1.0,
+      "recall_attack": 0.99065421,
+      "precision_normal": 0.99074074,
+      "recall_normal": 1.0,
+      "accuracy": 0.9953271,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "delta_macro_f1_vs_baseline": -0.004673,
+      "delta_mcc_vs_baseline": -0.00930253
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "lightgbm",
+      "model_display_name": "LightGBM Gradient Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.995327,
+      "mcc": 0.99069747,
+      "balanced_accuracy": 0.9953271,
+      "precision_attack": 0.99074074,
+      "recall_attack": 1.0,
+      "precision_normal": 1.0,
+      "recall_normal": 0.99065421,
+      "accuracy": 0.9953271,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "delta_macro_f1_vs_baseline": -0.004673,
+      "delta_mcc_vs_baseline": -0.00930253
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "catboost",
+      "model_display_name": "CatBoost Gradient Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.99302295,
+      "mcc": 0.98614252,
+      "balanced_accuracy": 0.9953271,
+      "precision_attack": 1.0,
+      "recall_attack": 0.99065421,
+      "precision_normal": 0.98165138,
+      "recall_normal": 1.0,
+      "accuracy": 0.99376947,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "delta_macro_f1_vs_baseline": -0.00697705,
+      "delta_mcc_vs_baseline": -0.01385748
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "model_display_name": "LightGBM Gradient Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "macro_f1": 0.98847752,
+      "mcc": 0.97704843,
+      "balanced_accuracy": 0.99532431,
+      "precision_attack": 0.9999986,
+      "recall_attack": 0.99999441,
+      "precision_normal": 0.96363636,
+      "recall_normal": 0.99065421,
+      "accuracy": 0.99999301,
+      "baseline_best_model_for_track": "decision_tree",
+      "baseline_macro_f1_for_track": 0.96666142,
+      "delta_macro_f1_vs_baseline": 0.0218161,
+      "delta_mcc_vs_baseline": 0.04260782
+    }
+  ],
+  "advanced_confusion": [
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "tn_normal_correct": 106,
+      "fp_normal_as_attack": 1,
+      "fn_attack_as_normal": 4,
+      "tp_attack_correct": 715417
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "lightgbm",
+      "tn_normal_correct": 106,
+      "fp_normal_as_attack": 1,
+      "fn_attack_as_normal": 0,
+      "tp_attack_correct": 107
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "xgboost",
+      "tn_normal_correct": 107,
+      "fp_normal_as_attack": 0,
+      "fn_attack_as_normal": 1,
+      "tp_attack_correct": 106
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "tn_normal_correct": 107,
+      "fp_normal_as_attack": 0,
+      "fn_attack_as_normal": 1,
+      "tp_attack_correct": 106
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "lightgbm",
+      "tn_normal_correct": 106,
+      "fp_normal_as_attack": 1,
+      "fn_attack_as_normal": 0,
+      "tp_attack_correct": 214
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "tn_normal_correct": 107,
+      "fp_normal_as_attack": 0,
+      "fn_attack_as_normal": 1,
+      "tp_attack_correct": 213
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "catboost",
+      "tn_normal_correct": 107,
+      "fp_normal_as_attack": 0,
+      "fn_attack_as_normal": 2,
+      "tp_attack_correct": 212
+    }
+  ],
+  "advanced_shap": [
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 4.8524365425,
+      "normalized_mean_abs_shap": 0.6098101422,
+      "sample_rows": 321,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 7.9737351866,
+      "normalized_mean_abs_shap": 0.5680300867,
+      "sample_rows": 321,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 4.1516504288,
+      "normalized_mean_abs_shap": 0.559331827,
+      "sample_rows": 214,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 8.1368167779,
+      "normalized_mean_abs_shap": 0.5458969641,
+      "sample_rows": 214,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 4.5591597945,
+      "normalized_mean_abs_shap": 0.5214567731,
+      "sample_rows": 321,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 4.0414257056,
+      "normalized_mean_abs_shap": 0.4735080608,
+      "sample_rows": 214,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 1,
+      "feature": "mean",
+      "feature_group": "mean",
+      "mean_abs_shap": 0.2224676282,
+      "normalized_mean_abs_shap": 0.3218430459,
+      "sample_rows": 3000,
+      "interpretation_hint": "rata-rata statistik flow; merepresentasikan intensitas umum trafik"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "proto=udp",
+      "feature_group": "proto",
+      "mean_abs_shap": 0.1336529285,
+      "normalized_mean_abs_shap": 0.1933551678,
+      "sample_rows": 3000,
+      "interpretation_hint": "protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "mean_abs_shap": 0.1319243971,
+      "normalized_mean_abs_shap": 0.1908545082,
+      "sample_rows": 3000,
+      "interpretation_hint": "kode status koneksi; membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_abs_shap": 2.46289924,
+      "normalized_mean_abs_shap": 0.1652352824,
+      "sample_rows": 214,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "mean_abs_shap": 1.2885753627,
+      "normalized_mean_abs_shap": 0.1509741526,
+      "sample_rows": 214,
+      "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "mean_abs_shap": 1.0837956667,
+      "normalized_mean_abs_shap": 0.1460145599,
+      "sample_rows": 214,
+      "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "mean_abs_shap": 1.1503368616,
+      "normalized_mean_abs_shap": 0.1445638864,
+      "sample_rows": 321,
+      "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "mean_abs_shap": 1.2586425125,
+      "normalized_mean_abs_shap": 0.1439580301,
+      "sample_rows": 321,
+      "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_abs_shap": 1.045655489,
+      "normalized_mean_abs_shap": 0.1408761178,
+      "sample_rows": 214,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 2,
+      "feature": "max",
+      "feature_group": "max",
+      "mean_abs_shap": 1.8517734315,
+      "normalized_mean_abs_shap": 0.1319159714,
+      "sample_rows": 321,
+      "interpretation_hint": "nilai maksimum statistik flow; menangkap spike intensitas trafik"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "max",
+      "feature_group": "max",
+      "mean_abs_shap": 1.9280076116,
+      "normalized_mean_abs_shap": 0.1293495393,
+      "sample_rows": 214,
+      "interpretation_hint": "nilai maksimum statistik flow; menangkap spike intensitas trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_abs_shap": 1.0255967527,
+      "normalized_mean_abs_shap": 0.1173032746,
+      "sample_rows": 321,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_abs_shap": 0.849217236,
+      "normalized_mean_abs_shap": 0.1067219074,
+      "sample_rows": 321,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_abs_shap": 0.846577175,
+      "normalized_mean_abs_shap": 0.0991880454,
+      "sample_rows": 214,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 3,
+      "feature": "proto=tcp",
+      "feature_group": "proto",
+      "mean_abs_shap": 1.2554101318,
+      "normalized_mean_abs_shap": 0.0894324566,
+      "sample_rows": 321,
+      "interpretation_hint": "protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 4,
+      "feature": "max",
+      "feature_group": "max",
+      "mean_abs_shap": 0.7255412696,
+      "normalized_mean_abs_shap": 0.0850070407,
+      "sample_rows": 214,
+      "interpretation_hint": "nilai maksimum statistik flow; menangkap spike intensitas trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 4,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_abs_shap": 0.9503133578,
+      "normalized_mean_abs_shap": 0.0676980821,
+      "sample_rows": 321,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 4,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "mean_abs_shap": 0.4451549351,
+      "normalized_mean_abs_shap": 0.0599735762,
+      "sample_rows": 214,
+      "interpretation_hint": "kode status koneksi; membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 4,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "mean_abs_shap": 0.4464525878,
+      "normalized_mean_abs_shap": 0.0561061054,
+      "sample_rows": 321,
+      "interpretation_hint": "kode status koneksi; membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 4,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_abs_shap": 0.0382488756,
+      "normalized_mean_abs_shap": 0.0553344984,
+      "sample_rows": 3000,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 4,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "mean_abs_shap": 0.8220653631,
+      "normalized_mean_abs_shap": 0.0551521557,
+      "sample_rows": 214,
+      "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "catboost",
+      "method": "tree_shap_mean_abs",
+      "rank": 5,
+      "feature": "mean",
+      "feature_group": "mean",
+      "mean_abs_shap": 0.4447910744,
+      "normalized_mean_abs_shap": 0.0521133319,
+      "sample_rows": 214,
+      "interpretation_hint": "rata-rata statistik flow; merepresentasikan intensitas umum trafik"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 5,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "mean_abs_shap": 0.0358510165,
+      "normalized_mean_abs_shap": 0.051865525,
+      "sample_rows": 3000,
+      "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm",
+      "method": "tree_shap_mean_abs",
+      "rank": 6,
+      "feature": "srate",
+      "feature_group": "srate",
+      "mean_abs_shap": 0.0338655303,
+      "normalized_mean_abs_shap": 0.0489931299,
+      "sample_rows": 3000,
+      "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+    }
+  ],
+  "advanced_summary": {
+    "generated_at_utc": "2026-04-29T06:19:48.917888+00:00",
+    "phase": "Fase 6A — Advanced/SOTA Modeling Extension",
+    "source_data_dir": "data/raw/bot-iot-hf",
+    "target_definition": {
+      "normal": 0,
+      "dos_or_ddos": 1,
+      "other_attack_policy": "excluded_from_primary_binary_advanced_modeling"
+    },
+    "candidate_features": [
+      "proto",
+      "stddev",
+      "N_IN_Conn_P_SrcIP",
+      "min",
+      "state_number",
+      "mean",
+      "N_IN_Conn_P_DstIP",
+      "drate",
+      "srate",
+      "max"
+    ],
+    "excluded_columns": [
+      "attack",
+      "category",
+      "subcategory",
+      "pkSeqID",
+      "seq",
+      "saddr",
+      "sport",
+      "daddr",
+      "dport"
+    ],
+    "tracks_requested": [
+      "all"
+    ],
+    "models_requested": [
+      "all"
+    ],
+    "models_available": {
+      "lightgbm": {
+        "display_name": "LightGBM Gradient Boosting",
+        "family": "advanced_gradient_boosting",
+        "package": "lightgbm",
+        "skip_track_a_by_default": false,
+        "forensic_note": "fast histogram gradient boosting for tabular network-flow IDS features"
+      },
+      "xgboost": {
+        "display_name": "XGBoost Histogram Boosting",
+        "family": "advanced_gradient_boosting",
+        "package": "xgboost",
+        "skip_track_a_by_default": true,
+        "forensic_note": "strong tabular boosting baseline; Track A is skipped by default for memory/runtime control"
+      },
+      "catboost": {
+        "display_name": "CatBoost Gradient Boosting",
+        "family": "advanced_gradient_boosting",
+        "package": "catboost",
+        "skip_track_a_by_default": true,
+        "forensic_note": "ordered boosting model included as a modern tabular comparison; Track A is skipped by default for memory/runtime control"
+      }
+    },
+    "random_state": 42,
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "shap_sample": 3000,
+    "sample_limited": false,
+    "metric_policy": "Advanced models must be compared against Fase 4 baselines using macro F1, MCC, recall, confusion matrix, FP/FN, and explainability; accuracy is not the primary claim.",
+    "best_by_track": {
+      "C_balanced_controlled_1_to_2": {
+        "track": "C_balanced_controlled_1_to_2",
+        "model": "xgboost",
+        "model_display_name": "XGBoost Histogram Boosting",
+        "model_family": "advanced_gradient_boosting",
+        "train_rows": 1110,
+        "train_normal_rows": 370,
+        "train_dos_or_ddos_rows": 740,
+        "test_rows": 321,
+        "test_normal_rows": 107,
+        "test_dos_or_ddos_rows": 214,
+        "fit_seconds": 0.1356,
+        "predict_seconds": 0.0028,
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "random_state": 42,
+        "sample_limited": false,
+        "baseline_best_model_for_track": "random_forest",
+        "baseline_macro_f1_for_track": 1.0,
+        "baseline_mcc_for_track": 1.0,
+        "tn": 107,
+        "fp": 0,
+        "fn": 1,
+        "tp": 213,
+        "accuracy": 0.99688474,
+        "balanced_accuracy": 0.99766355,
+        "precision_attack": 1.0,
+        "recall_attack": 0.9953271,
+        "f1_attack": 0.99765808,
+        "precision_normal": 0.99074074,
+        "recall_normal": 1.0,
+        "f1_normal": 0.99534884,
+        "macro_f1": 0.99650346,
+        "weighted_f1": 0.99688833,
+        "mcc": 0.99303127,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0046729,
+        "delta_macro_f1_vs_baseline": -0.00349654,
+        "delta_mcc_vs_baseline": -0.00696873
+      },
+      "B_balanced_controlled_1_to_1": {
+        "track": "B_balanced_controlled_1_to_1",
+        "model": "xgboost",
+        "model_display_name": "XGBoost Histogram Boosting",
+        "model_family": "advanced_gradient_boosting",
+        "train_rows": 740,
+        "train_normal_rows": 370,
+        "train_dos_or_ddos_rows": 370,
+        "test_rows": 214,
+        "test_normal_rows": 107,
+        "test_dos_or_ddos_rows": 107,
+        "fit_seconds": 0.0444,
+        "predict_seconds": 0.0025,
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "random_state": 42,
+        "sample_limited": false,
+        "baseline_best_model_for_track": "random_forest",
+        "baseline_macro_f1_for_track": 1.0,
+        "baseline_mcc_for_track": 1.0,
+        "tn": 107,
+        "fp": 0,
+        "fn": 1,
+        "tp": 106,
+        "accuracy": 0.9953271,
+        "balanced_accuracy": 0.9953271,
+        "precision_attack": 1.0,
+        "recall_attack": 0.99065421,
+        "f1_attack": 0.99530516,
+        "precision_normal": 0.99074074,
+        "recall_normal": 1.0,
+        "f1_normal": 0.99534884,
+        "macro_f1": 0.995327,
+        "weighted_f1": 0.995327,
+        "mcc": 0.99069747,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.00934579,
+        "delta_macro_f1_vs_baseline": -0.004673,
+        "delta_mcc_vs_baseline": -0.00930253
+      },
+      "A_realistic_imbalanced": {
+        "track": "A_realistic_imbalanced",
+        "model": "lightgbm",
+        "model_display_name": "LightGBM Gradient Boosting",
+        "model_family": "advanced_gradient_boosting",
+        "train_rows": 2861833,
+        "train_normal_rows": 370,
+        "train_dos_or_ddos_rows": 2861463,
+        "test_rows": 715528,
+        "test_normal_rows": 107,
+        "test_dos_or_ddos_rows": 715421,
+        "fit_seconds": 6.7728,
+        "predict_seconds": 0.4019,
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "random_state": 42,
+        "sample_limited": false,
+        "baseline_best_model_for_track": "decision_tree",
+        "baseline_macro_f1_for_track": 0.96666142,
+        "baseline_mcc_for_track": 0.93444061,
+        "tn": 106,
+        "fp": 1,
+        "fn": 4,
+        "tp": 715417,
+        "accuracy": 0.99999301,
+        "balanced_accuracy": 0.99532431,
+        "precision_attack": 0.9999986,
+        "recall_attack": 0.99999441,
+        "f1_attack": 0.99999651,
+        "precision_normal": 0.96363636,
+        "recall_normal": 0.99065421,
+        "f1_normal": 0.97695853,
+        "macro_f1": 0.98847752,
+        "weighted_f1": 0.99999306,
+        "mcc": 0.97704843,
+        "false_positive_rate": 0.00934579,
+        "false_negative_rate": 5.59e-06,
+        "delta_macro_f1_vs_baseline": 0.0218161,
+        "delta_mcc_vs_baseline": 0.04260782
+      }
+    },
+    "best_overall_by_macro_f1_mcc": {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "xgboost",
+      "model_display_name": "XGBoost Histogram Boosting",
+      "model_family": "advanced_gradient_boosting",
+      "train_rows": 1110,
+      "train_normal_rows": 370,
+      "train_dos_or_ddos_rows": 740,
+      "test_rows": 321,
+      "test_normal_rows": 107,
+      "test_dos_or_ddos_rows": 214,
+      "fit_seconds": 0.1356,
+      "predict_seconds": 0.0028,
+      "n_estimators": 300,
+      "learning_rate": 0.05,
+      "random_state": 42,
+      "sample_limited": false,
+      "baseline_best_model_for_track": "random_forest",
+      "baseline_macro_f1_for_track": 1.0,
+      "baseline_mcc_for_track": 1.0,
+      "tn": 107,
+      "fp": 0,
+      "fn": 1,
+      "tp": 213,
+      "accuracy": 0.99688474,
+      "balanced_accuracy": 0.99766355,
+      "precision_attack": 1.0,
+      "recall_attack": 0.9953271,
+      "f1_attack": 0.99765808,
+      "precision_normal": 0.99074074,
+      "recall_normal": 1.0,
+      "f1_normal": 0.99534884,
+      "macro_f1": 0.99650346,
+      "weighted_f1": 0.99688833,
+      "mcc": 0.99303127,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0046729,
+      "delta_macro_f1_vs_baseline": -0.00349654,
+      "delta_mcc_vs_baseline": -0.00696873
+    },
+    "top_native_feature_groups": [
+      {
+        "rank": 1,
+        "feature_group": "N_IN_Conn_P_DstIP",
+        "sum_normalized_importance": 3.1920237298,
+        "normalized": 0.45600339,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+      },
+      {
+        "rank": 2,
+        "feature_group": "N_IN_Conn_P_SrcIP",
+        "sum_normalized_importance": 0.8772336008,
+        "normalized": 0.1253190858,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+      },
+      {
+        "rank": 3,
+        "feature_group": "srate",
+        "sum_normalized_importance": 0.6504135793,
+        "normalized": 0.0929162256,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+      },
+      {
+        "rank": 4,
+        "feature_group": "stddev",
+        "sum_normalized_importance": 0.5278335243,
+        "normalized": 0.0754047892,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+      },
+      {
+        "rank": 5,
+        "feature_group": "min",
+        "sum_normalized_importance": 0.4365290442,
+        "normalized": 0.062361292,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "nilai minimum statistik flow; mendukung pembacaan rentang trafik"
+      },
+      {
+        "rank": 6,
+        "feature_group": "mean",
+        "sum_normalized_importance": 0.2912487809,
+        "normalized": 0.0416069687,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "rata-rata statistik flow; merepresentasikan intensitas umum trafik"
+      },
+      {
+        "rank": 7,
+        "feature_group": "max",
+        "sum_normalized_importance": 0.2833191318,
+        "normalized": 0.0404741617,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "nilai maksimum statistik flow; menangkap spike intensitas trafik"
+      },
+      {
+        "rank": 8,
+        "feature_group": "proto",
+        "sum_normalized_importance": 0.2715698175,
+        "normalized": 0.0387956882,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT"
+      }
+    ],
+    "top_shap_feature_groups": [
+      {
+        "rank": 1,
+        "feature_group": "N_IN_Conn_P_DstIP",
+        "sum_normalized_mean_abs_shap": 3.3333683523,
+        "normalized": 0.4761954813,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+      },
+      {
+        "rank": 2,
+        "feature_group": "stddev",
+        "sum_normalized_mean_abs_shap": 0.7345701269,
+        "normalized": 0.1049385901,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+      },
+      {
+        "rank": 3,
+        "feature_group": "N_IN_Conn_P_SrcIP",
+        "sum_normalized_mean_abs_shap": 0.713864966,
+        "normalized": 0.1019807099,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu"
+      },
+      {
+        "rank": 4,
+        "feature_group": "mean",
+        "sum_normalized_mean_abs_shap": 0.5180634736,
+        "normalized": 0.074009068,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "rata-rata statistik flow; merepresentasikan intensitas umum trafik"
+      },
+      {
+        "rank": 5,
+        "feature_group": "max",
+        "sum_normalized_mean_abs_shap": 0.4821009198,
+        "normalized": 0.0688715603,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "nilai maksimum statistik flow; menangkap spike intensitas trafik"
+      },
+      {
+        "rank": 6,
+        "feature_group": "state_number",
+        "sum_normalized_mean_abs_shap": 0.4181046219,
+        "normalized": 0.059729232,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "kode status koneksi; membantu membaca pola koneksi gagal/abnormal"
+      },
+      {
+        "rank": 7,
+        "feature_group": "proto",
+        "sum_normalized_mean_abs_shap": 0.4005278795,
+        "normalized": 0.0572182688,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT"
+      },
+      {
+        "rank": 8,
+        "feature_group": "srate",
+        "sum_normalized_mean_abs_shap": 0.2504521944,
+        "normalized": 0.0357788851,
+        "models": [
+          "catboost",
+          "lightgbm",
+          "xgboost"
+        ],
+        "tracks": [
+          "A_realistic_imbalanced",
+          "B_balanced_controlled_1_to_1",
+          "C_balanced_controlled_1_to_2"
+        ],
+        "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+      }
+    ],
+    "total_completed_runs": 7,
+    "skipped_runs": [
+      {
+        "track": "A_realistic_imbalanced",
+        "model": "xgboost",
+        "reason": "Skipped by default to keep Track A memory/runtime controlled; rerun with --include-heavy-track-a if needed."
+      },
+      {
+        "track": "A_realistic_imbalanced",
+        "model": "catboost",
+        "reason": "Skipped by default to keep Track A memory/runtime controlled; rerun with --include-heavy-track-a if needed."
+      }
+    ],
+    "limitations": [
+      "Normal class remains tiny: advanced model scores must not be read as proof of perfect real-world detection.",
+      "XGBoost and CatBoost skip full Track A by default unless --include-heavy-track-a is used, to keep local/WSL memory usage controlled.",
+      "SHAP is computed on a bounded sample, so it supports forensic interpretation but is not a full-dataset explanation.",
+      "Network identifiers and label columns remain excluded; interpretation focuses on aggregate traffic behavior, not host attribution."
+    ],
+    "outputs": {
+      "tables": [
+        "results/tables/advanced_model_metrics.csv",
+        "results/tables/advanced_confusion_matrices.csv",
+        "results/tables/advanced_feature_importance.csv",
+        "results/tables/advanced_shap_summary.csv",
+        "results/tables/advanced_skipped_runs.csv"
+      ],
+      "figures": [
+        "results/figures/advanced_macro_f1_vs_baseline.png",
+        "results/figures/advanced_mcc_vs_baseline.png",
+        "results/figures/advanced_confusion_matrix_grid.png",
+        "results/figures/advanced_shap_summary.png"
       ]
     }
   },

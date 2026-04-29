@@ -49,7 +49,7 @@ prompts/     Prompt template untuk Codex/Hermes workflow
 
 GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
 
-Dashboard saat ini menampilkan ringkasan audit dataset Fase 2, EDA/preprocessing Fase 3, baseline modeling Fase 4, dan feature/error analysis Fase 5 dari artifact repo.
+Dashboard saat ini menampilkan ringkasan audit dataset Fase 2, EDA/preprocessing Fase 3, baseline modeling Fase 4, forensic analysis Fase 5, dan advanced/SOTA modeling Fase 6A dari artifact repo.
 
 ## Definition of Done
 
@@ -147,6 +147,27 @@ Fase 5 menambahkan interpretasi forensik dari baseline Fase 4:
 
 Top feature group Fase 5: `N_IN_Conn_P_DstIP`, disusul `N_IN_Conn_P_SrcIP`, `stddev`, dan `srate`. Interpretasi tetap hati-hati karena normal class kecil dan ada risiko split-similarity.
 
+## Advanced/SOTA Modeling Extension
+
+Fase 6A menambahkan eksperimen advanced/SOTA tabular modeling untuk memperkuat baseline dan interpretasi forensik:
+
+- `scripts/run_advanced_modeling.py`: runner LightGBM, XGBoost, CatBoost, dan sampled SHAP.
+- `notebooks/04_advanced_modeling.ipynb`: notebook wrapper Fase 6A.
+- `docs/phase6a-advanced-modeling-plan.md`: rencana eksperimen.
+- `docs/phase6a-local-run-guide.md`: panduan run di WSL lokal.
+
+Output Fase 6A sudah tersedia:
+
+- `results/tables/advanced_model_metrics.csv`: metrik LightGBM/XGBoost/CatBoost.
+- `results/tables/advanced_confusion_matrices.csv`: confusion matrix advanced models.
+- `results/tables/advanced_feature_importance.csv`: native feature importance.
+- `results/tables/advanced_shap_summary.csv`: sampled SHAP explainability.
+- `results/metrics/advanced_summary.json`: ringkasan machine-readable.
+- `results/figures/advanced_*.png`: visualisasi advanced vs baseline, confusion matrix, dan SHAP.
+- `reports/progress-6a-advanced-modeling.md`: laporan progres Fase 6A.
+
+Best overall advanced run: `xgboost` pada `C_balanced_controlled_1_to_2` dengan macro F1 0.9965. Pada Track A realistis, LightGBM meningkatkan macro F1 dibanding baseline track yang sama.
+
 ## Status
 
 Current phase: **Fase 6A — Advanced/SOTA Modeling Extension**
@@ -164,6 +185,7 @@ Current phase: **Fase 6A — Advanced/SOTA Modeling Extension**
 | Fase 3 Final Verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
 | Fase 4 Baseline Modeling | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
 | Fase 5 Forensic Analysis | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase5_forensic_analysis.md` |
+| Fase 6A Advanced/SOTA Modeling | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase6a_advanced_modeling.md` |
 
 Lihat:
 
@@ -179,3 +201,4 @@ Lihat:
 - `docs/REVIEW_phase3_final_verification.md`
 - `docs/REVIEW_phase4_baseline_modeling.md`
 - `docs/REVIEW_phase5_forensic_analysis.md`
+- `docs/REVIEW_phase6a_advanced_modeling.md`
