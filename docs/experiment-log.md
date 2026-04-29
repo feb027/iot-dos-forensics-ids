@@ -66,3 +66,12 @@
 - Current phase updated to Fase 5 Forensic Analysis.
 - Carry-forward constraints: interpret high baseline scores carefully, keep feature importance artifact-backed, discuss FP/FN, and disclose normal-class/split-similarity limitations.
 
+## 2026-04-29 — Fase 5 Forensic Analysis artifacts generated
+
+- Ran `scripts/run_forensic_analysis.py` using selected baseline runs from Track A/B/C.
+- Generated feature importance, permutation importance, FP/FN summaries, and example rows under `results/`.
+- Top feature groups: N_IN_Conn_P_DstIP, N_IN_Conn_P_SrcIP, stddev, srate, mean.
+- Selected-runs errors: FP=2, FN=17.
+- Updated dashboard data to include forensic feature importance and error analysis.
+- Codex review Fase 5 approved: `docs/REVIEW_phase5_forensic_analysis.md`, score 90/100. Follow-up fixes applied: README wording, review status sync, and stronger regression tests for leakage, permutation importance, and FP/FN consistency.
+
