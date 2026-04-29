@@ -66,15 +66,16 @@ Done jika:
 
 Done jika:
 
-- [ ] Notebook/script EDA ada.
-- [ ] Class distribution figure tersimpan.
-- [ ] Key feature plots tersimpan.
-- [ ] Preprocessing pipeline terdokumentasi.
-- [ ] Train/test split strategy jelas.
-- [ ] Filtered binary dataset logic jelas: `normal` vs `dos_or_ddos`, `other_attack` tidak diam-diam dianggap normal.
-- [ ] Leakage columns tetap dikeluarkan: `attack`, `category`, `subcategory`, `pkSeqID`, `seq`, `saddr`, `sport`, `daddr`, `dport`.
-- [ ] Balanced controlled subset plan dibuat untuk mitigasi normal class kecil.
-- [ ] EDA menyimpan artifact ke `results/tables/` dan `results/figures/`.
+- [x] Notebook/script EDA ada.
+- [x] Class distribution figure tersimpan.
+- [x] Key feature plots tersimpan.
+- [x] Preprocessing pipeline terdokumentasi.
+- [x] Train/test split strategy jelas.
+- [x] Filtered binary dataset logic jelas: `normal` vs `dos_or_ddos`, `other_attack` tidak diam-diam dianggap normal.
+- [x] Leakage columns tetap dikeluarkan: `attack`, `category`, `subcategory`, `pkSeqID`, `seq`, `saddr`, `sport`, `daddr`, `dport`.
+- [x] Balanced controlled subset plan dibuat untuk mitigasi normal class kecil.
+- [x] EDA menyimpan artifact ke `results/tables/` dan `results/figures/`.
+- [x] Codex review Fase 3 approved.
 
 ## Fase 4 — Baseline Modeling
 
