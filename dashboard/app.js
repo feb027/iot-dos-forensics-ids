@@ -298,6 +298,7 @@ function renderDataset(data) {
   setChartFallback(fallback, trainRows, 'count', 'label', {
     subLabel: (row) => formatPercent(row.rate || 0),
   });
+  if (chartState.classDistribution) fallback.hidden = true;
 
   const snapshot = [
     ['Source', dataset.source || '-'],
