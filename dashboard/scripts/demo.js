@@ -42,7 +42,7 @@ async function checkApi() {
 function renderScenarios() {
   const scenarios = state.bundle.scenarios.scenarios || [];
   setHtml('#scenario-list', scenarios.map((scenario) => `
-    <button class="scenario-card ${state.scenario?.id === scenario.id ? 'is-active' : ''}" type="button" data-scenario-id="${escapeHtml(scenario.id)}">
+    <button class="scenario-card ${state.scenario?.id === scenario.id ? 'is-active' : ''}" type="button" data-scenario-id="${escapeHtml(scenario.id)}" aria-pressed="${state.scenario?.id === scenario.id ? 'true' : 'false'}">
       <strong>${escapeHtml(scenario.name)}</strong>
       <small>${escapeHtml(scenario.description)}</small>
     </button>
@@ -63,8 +63,9 @@ function renderForm(features) {
     const value = Number(features[feature] ?? range.default ?? 0);
     return `<label class="field"><header><span>${escapeHtml(feature)}</span><strong data-value-for="${escapeHtml(feature)}">${formatMetric(value, 3)}</strong></header><input type="range" name="${escapeHtml(feature)}" min="${range.min}" max="${range.max}" step="${range.step || 0.001}" value="${value}"></label>`;
   }).join('');
-  qs('#whatif-form').innerHTML = html;
-  qs('#whatif-form').addEventListener('input', () => runLocalPrediction());
+  const form = qs('#whatif-form');
+  form.innerHTML = html;
+  form.oninput = () => runLocalPrediction();
 }
 
 function currentFeatures() {
