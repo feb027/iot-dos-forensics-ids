@@ -81,17 +81,17 @@ Done jika:
 
 Done jika:
 
-- [ ] Branch `phase-4-baseline-modeling` dibuat dari `main` setelah PR #3 merge.
-- [ ] Minimal 3 model baseline dilatih.
-- [ ] Track A realistic imbalanced baseline dijalankan.
-- [ ] Track B balanced controlled 1:1 dijalankan.
-- [ ] Track C 1:2 sensitivity check dijalankan atau alasan skip didokumentasikan.
-- [ ] Metrics tersimpan ke CSV/JSON.
-- [ ] Confusion matrix tersimpan.
-- [ ] Model comparison figure tersimpan.
-- [ ] Accuracy tidak menjadi klaim utama; precision, recall, F1, dan FP/FN dibahas.
-- [ ] Tidak ada leakage obvious.
-- [ ] Technical review approved.
+- [x] Branch `phase-4-baseline-modeling` dibuat dari `main` setelah PR #3 merge.
+- [x] Minimal 3 model baseline dilatih.
+- [x] Track A realistic imbalanced baseline dijalankan.
+- [x] Track B balanced controlled 1:1 dijalankan.
+- [x] Track C 1:2 sensitivity check dijalankan atau alasan skip didokumentasikan.
+- [x] Metrics tersimpan ke CSV/JSON.
+- [x] Confusion matrix tersimpan.
+- [x] Model comparison figure tersimpan.
+- [x] Accuracy tidak menjadi klaim utama; precision, recall, F1, dan FP/FN dibahas.
+- [x] Tidak ada leakage obvious.
+- [x] Technical review approved.
 
 ## Fase 5 — Forensic Analysis
 
