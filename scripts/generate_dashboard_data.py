@@ -257,7 +257,7 @@ def main() -> None:
     feature_importance, forensic_error_analysis, forensic_summary = load_forensic_results()
     advanced_models, advanced_confusion, advanced_shap, advanced_summary = load_advanced_results()
     if advanced_summary:
-        status = "Fase 6A merged; Fase 6 dashboard polish current"
+        status = "Fase 6 dashboard merged; Fase 7 manuscript current"
     elif forensic_summary:
         status = "Fase 6A Advanced/SOTA Modeling current; Fase 5 merged"
     elif model_comparison:

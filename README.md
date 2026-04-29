@@ -168,9 +168,22 @@ Output Fase 6A sudah tersedia:
 
 Best overall advanced run: `xgboost` pada `C_balanced_controlled_1_to_2` dengan macro F1 0.9965. Pada Track A realistis, LightGBM meningkatkan macro F1 dibanding baseline track yang sama.
 
+
+## Dashboard Polish Snapshot
+
+Fase 6 Dashboard Polish sudah selesai dan di-*merge* ke `main` melalui PR #7. Dashboard sekarang memakai static dark SOC/cybersecurity command-center style, tetap artifact-driven, dan sudah melewati Codex final verification.
+
+Artifact Fase 6:
+
+- `dashboard/index.html`, `dashboard/styles.css`, `dashboard/app.js`: dashboard static final untuk GitHub Pages.
+- `docs/phase6-dashboard-design-brief.md`: arah desain dashboard.
+- `docs/dashboard-spec.md`: spesifikasi dashboard/data contract terbaru.
+- `docs/REVIEW_phase6_dashboard.md`: review awal 86/100 NEEDS REVISION.
+- `docs/REVIEW_phase6_dashboard_final.md`: final verification 94/100 APPROVED / MERGE.
+
 ## Status
 
-Current phase: **Fase 6 — Dashboard Polish & Manuscript Preparation**
+Current phase: **Fase 7 — Scientific Manuscript**
 
 ## Review History
 
@@ -186,6 +199,8 @@ Current phase: **Fase 6 — Dashboard Polish & Manuscript Preparation**
 | Fase 4 Baseline Modeling | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
 | Fase 5 Forensic Analysis | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase5_forensic_analysis.md` |
 | Fase 6A Advanced/SOTA Modeling | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase6a_advanced_modeling.md` |
+| Fase 6 Dashboard Review | Codex gpt-5.5 + high reasoning | 86 | NEEDS REVISION | `docs/REVIEW_phase6_dashboard.md` |
+| Fase 6 Dashboard Final Verification | Codex gpt-5.5 + high reasoning | 94 | APPROVED / MERGE | `docs/REVIEW_phase6_dashboard_final.md` |
 
 Lihat:
 
@@ -202,3 +217,5 @@ Lihat:
 - `docs/REVIEW_phase4_baseline_modeling.md`
 - `docs/REVIEW_phase5_forensic_analysis.md`
 - `docs/REVIEW_phase6a_advanced_modeling.md`
+- `docs/REVIEW_phase6_dashboard.md`
+- `docs/REVIEW_phase6_dashboard_final.md`

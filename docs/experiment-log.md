@@ -111,3 +111,10 @@
 - Updated `docs/dashboard-spec.md` to match the approved dark SOC/cybersecurity dashboard direction and current data contract.
 - Codex final verification wrote `docs/REVIEW_phase6_dashboard_final.md` with score 94/100 APPROVED / MERGE.
 
+## 2026-04-29 — PR #7 dashboard polish merged
+
+- PR #7 merged into `main` with merge commit `193e9ca3125070f056e43457e137984261bbb417`.
+- Current phase updated to Fase 7 Scientific Manuscript.
+- Dashboard generator status updated to `Fase 6 dashboard merged; Fase 7 manuscript current`.
+- Added `docs/phase7-manuscript-plan.md` for the next phase.
+
