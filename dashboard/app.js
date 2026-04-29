@@ -125,6 +125,7 @@ async function main() {
 
     if (advancedModels.length) {
       const bestAdvanced = advancedModels[0];
+      const trackAHighlight = advancedModels.find((row) => row.track === 'A_realistic_imbalanced') || null;
       const topShapGroups = advancedSummary.top_shap_feature_groups || [];
       const advancedItems = [
         ['Completed runs', advancedModels.length],
@@ -132,7 +133,8 @@ async function main() {
         ['Best track', bestAdvanced.track],
         ['Macro F1', Number(bestAdvanced.macro_f1).toFixed(4)],
         ['Δ Macro F1 vs baseline', Number(bestAdvanced.delta_macro_f1_vs_baseline || 0).toFixed(4)],
-        ['Top SHAP group', topShapGroups[0]?.feature_group || advancedShap[0]?.feature_group || '-']
+        ['Top SHAP group', topShapGroups[0]?.feature_group || advancedShap[0]?.feature_group || '-'],
+        ['Track A highlight', trackAHighlight ? `${trackAHighlight.model} ΔF1 ${Number(trackAHighlight.delta_macro_f1_vs_baseline || 0).toFixed(4)}` : '-']
       ];
       const shapRows = advancedShap.slice(0, 6);
       advancedSummaryEl.innerHTML = `
@@ -149,7 +151,7 @@ async function main() {
             </div>
           `).join('')}
         </div>
-        <p class="note">Advanced/SOTA models dibandingkan terhadap baseline track yang sama; SHAP memakai sample terbatas untuk menjaga memori.</p>
+        <p class="note">Advanced/SOTA models dibandingkan terhadap baseline track yang sama; Track A realistis ditampilkan sebagai highlight utama, sedangkan SHAP memakai sample terbatas untuk menjaga memori.</p>
       `;
     } else if (advancedSummaryEl) {
       advancedSummaryEl.textContent = 'Advanced/SOTA modeling akan muncul setelah Fase 6A dijalankan.';

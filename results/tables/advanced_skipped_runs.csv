@@ -1,0 +1,3 @@
+track,model,reason
+A_realistic_imbalanced,xgboost,Skipped by default to keep Track A memory/runtime controlled; rerun with --include-heavy-track-a if needed.
+A_realistic_imbalanced,catboost,Skipped by default to keep Track A memory/runtime controlled; rerun with --include-heavy-track-a if needed.

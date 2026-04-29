@@ -1,0 +1,9 @@
+split,check,violations,expected,status
+train,attack_0_not_normal_category,0,0,ok
+train,normal_category_not_attack_0,0,0,ok
+train,dos_ddos_category_not_attack_1,0,0,ok
+train,other_attack_category_wrong_scope,0,0,ok
+test,attack_0_not_normal_category,0,0,ok
+test,normal_category_not_attack_0,0,0,ok
+test,dos_ddos_category_not_attack_1,0,0,ok
+test,other_attack_category_wrong_scope,0,0,ok
