@@ -1,0 +1,93 @@
+track,model,method,rank,feature,feature_group,importance,normalized_importance,sample_rows,interpretation_hint
+A_realistic_imbalanced,lightgbm,native_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,1309.0,0.1455414721,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+A_realistic_imbalanced,lightgbm,native_feature_importance,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,1241.0,0.1379808761,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+A_realistic_imbalanced,lightgbm,native_feature_importance,3,stddev,stddev,1022.0,0.1136313098,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+A_realistic_imbalanced,lightgbm,native_feature_importance,4,min,min,1018.0,0.1131865688,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+A_realistic_imbalanced,lightgbm,native_feature_importance,5,drate,drate,885.0,0.0983989326,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+A_realistic_imbalanced,lightgbm,native_feature_importance,6,srate,srate,795.0,0.0883922615,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+A_realistic_imbalanced,lightgbm,native_feature_importance,7,state_number,state_number,649.0,0.0721592173,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+A_realistic_imbalanced,lightgbm,native_feature_importance,8,mean,mean,600.0,0.0667111408,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+A_realistic_imbalanced,lightgbm,native_feature_importance,9,proto=arp,proto,581.0,0.0645986213,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+A_realistic_imbalanced,lightgbm,native_feature_importance,10,max,max,376.0,0.0418056482,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+A_realistic_imbalanced,lightgbm,native_feature_importance,11,proto=tcp,proto,248.0,0.0275739382,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+A_realistic_imbalanced,lightgbm,native_feature_importance,12,proto=udp,proto,207.0,0.0230153436,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+A_realistic_imbalanced,lightgbm,native_feature_importance,13,proto=icmp,proto,63.0,0.0070046698,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+A_realistic_imbalanced,lightgbm,native_feature_importance,14,proto=ipv6-icmp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,1,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,1311.0,0.215412422,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,2,srate,srate,970.0,0.1593821886,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,3,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,808.0,0.13276372,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,4,stddev,stddev,716.0,0.1176470588,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,5,mean,mean,641.0,0.1053236937,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,6,max,max,569.0,0.0934932632,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,7,min,min,476.0,0.0782122905,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,8,state_number,state_number,206.0,0.0338481761,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,9,drate,drate,200.0,0.0328623069,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,10,proto=udp,proto,104.0,0.0170883996,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,11,proto=arp,proto,43.0,0.007065396,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,12,proto=tcp,proto,42.0,0.0069010845,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,lightgbm,native_feature_importance,13,proto=ipv6-icmp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.6571307182,0.6571307164,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.1301849037,0.1301849034,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,3,min,min,0.0642317012,0.064231701,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,4,srate,srate,0.0575507469,0.0575507468,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,5,state_number,state_number,0.0225643143,0.0225643142,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,6,stddev,stddev,0.019983761,0.019983761,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,7,max,max,0.0144769,0.0144768999,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,8,proto=tcp,proto,0.01366843,0.01366843,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,9,mean,mean,0.0112790214,0.0112790214,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,10,drate,drate,0.0089295059,0.0089295059,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,11,proto=arp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,12,proto=ipv6-icmp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,xgboost,native_feature_importance,13,proto=udp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,73.5005423433,0.7350054234,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,2,stddev,stddev,6.5037087991,0.065037088,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,3,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,3.9118713402,0.0391187134,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,4,max,max,3.818106867,0.0381810687,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,5,srate,srate,2.831650139,0.0283165014,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,6,drate,drate,1.8557647789,0.0185576478,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,7,state_number,state_number,1.7411595499,0.0174115955,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,8,mean,mean,1.6592228049,0.016592228,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,9,min,min,1.3981754014,0.013981754,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,10,proto=tcp,proto,1.0790160133,0.0107901601,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,11,proto=udp,proto,0.9136528666,0.0091365287,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,12,proto=arp,proto,0.7769556505,0.0077695565,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+B_balanced_controlled_1_to_1,catboost,native_feature_importance,13,proto=ipv6-icmp,proto,0.010173446,0.0001017345,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,1,srate,srate,1268.0,0.1963152191,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,1026.0,0.1588481189,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,3,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,955.0,0.1478557052,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,4,stddev,stddev,931.0,0.1441399597,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,5,min,min,479.0,0.0741600867,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,6,max,max,467.0,0.072302214,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,7,mean,mean,456.0,0.070599164,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,8,drate,drate,353.0,0.054652423,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,9,state_number,state_number,240.0,0.0371574547,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,10,proto=tcp,proto,157.0,0.0243071683,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,11,proto=udp,proto,120.0,0.0185787274,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,12,proto=arp,proto,7.0,0.0010837591,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,lightgbm,native_feature_importance,13,proto=ipv6-icmp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.6054190993,0.6054191154,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.1580861211,0.1580861253,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,3,srate,srate,0.0816375166,0.0816375188,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,4,min,min,0.0803774372,0.0803774393,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,5,drate,drate,0.0285682268,0.0285682276,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,6,stddev,stddev,0.017718371,0.0177183715,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,7,state_number,state_number,0.0116726374,0.0116726377,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,8,max,max,0.0077138133,0.0077138135,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,9,mean,mean,0.0076380069,0.0076380071,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,10,proto=tcp,proto,0.0011687437,0.0011687437,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,11,proto=arp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,12,proto=ipv6-icmp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,xgboost,native_feature_importance,13,proto=udp,proto,0.0,0.0,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,76.8307577331,0.7683075773,,jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,2,stddev,stddev,4.9675975529,0.0496759755,,deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,3,srate,srate,3.8819143143,0.0388191431,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,4,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,3.7602441694,0.0376024417,,jumlah koneksi masuk per source IP; membantu membaca pola flood dari sumber tertentu
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,5,drate,drate,2.0607321152,0.0206073212,,destination packet rate; membantu membaca ketidakseimbangan aliran request-response
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,6,max,max,1.5346224254,0.0153462243,,nilai maksimum statistik flow; menangkap spike intensitas trafik
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,7,proto=arp,proto,1.4019515377,0.0140195154,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,8,mean,mean,1.3105525908,0.0131055259,,rata-rata statistik flow; merepresentasikan intensitas umum trafik
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,9,state_number,state_number,1.2439030902,0.0124390309,,kode status koneksi; membantu membaca pola koneksi gagal/abnormal
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,10,min,min,1.2379203907,0.0123792039,,nilai minimum statistik flow; mendukung pembacaan rentang trafik
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,11,proto=udp,proto,0.9071532572,0.0090715326,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,12,proto=tcp,proto,0.8606659435,0.0086066594,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT
+C_balanced_controlled_1_to_2,catboost,native_feature_importance,13,proto=ipv6-icmp,proto,0.0019848797,1.98488e-05,,protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT

@@ -107,12 +107,12 @@ Done jika:
 
 Done jika:
 
-- [ ] Advanced model metrics tersimpan dan dibandingkan dengan baseline Fase 4.
-- [ ] Confusion matrix advanced models tersedia.
-- [ ] Explainability/SHAP sample tersedia tanpa membebani memori.
-- [ ] Klaim improvement memakai macro F1/MCC/recall/FP-FN, bukan accuracy saja.
-- [ ] Raw dataset, processed data besar, dan model binary tetap tidak ter-track.
-- [ ] Codex review Fase 6A approved.
+- [x] Advanced model metrics tersimpan dan dibandingkan dengan baseline Fase 4.
+- [x] Confusion matrix advanced models tersedia.
+- [x] Explainability/SHAP sample tersedia tanpa membebani memori.
+- [x] Klaim improvement memakai macro F1/MCC/recall/FP-FN, bukan accuracy saja.
+- [x] Raw dataset, processed data besar, dan model binary tetap tidak ter-track.
+- [x] Codex review Fase 6A approved.
 
 ## Fase 6 — Dashboard
 

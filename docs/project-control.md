@@ -6,7 +6,7 @@ Fase 6A — Advanced/SOTA Modeling Extension
 
 ## Status
 
-Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Fase 5 Forensic Analysis has been merged to `main` via PR #5 and approved by Codex reviewer with score 90/100. Current work is Fase 6A Advanced/SOTA Modeling Extension: compare stronger tabular IDS models such as LightGBM/XGBoost/CatBoost against Fase 4 baselines and add sampled SHAP-style explainability for forensic interpretation. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
+Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Fase 5 Forensic Analysis has been merged to `main` via PR #5 and approved by Codex reviewer with score 90/100. Fase 6A Advanced/SOTA Modeling Extension artifacts have been generated on local WSL PC and approved by Codex reviewer with score 90/100: LightGBM/XGBoost/CatBoost metrics, confusion matrices, native feature importance, sampled SHAP summary, figures, dashboard data, and progress report are available. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -66,7 +66,11 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 | Fase 5 forensic figures | `results/figures/forensic_*.png` | generated |
 | Fase 6A advanced plan | `docs/phase6a-advanced-modeling-plan.md` | drafted |
 | Fase 6A local run guide | `docs/phase6a-local-run-guide.md` | drafted |
-| Fase 6A advanced runner | `scripts/run_advanced_modeling.py`, `notebooks/04_advanced_modeling.ipynb` | implemented; run pending |
+| Fase 6A advanced runner | `scripts/run_advanced_modeling.py`, `notebooks/04_advanced_modeling.ipynb` | generated |
+| Fase 6A advanced summary | `results/metrics/advanced_summary.json` | generated |
+| Fase 6A advanced tables | `results/tables/advanced_*.csv` | generated |
+| Fase 6A advanced figures | `results/figures/advanced_*.png` | generated |
+| Fase 6A progress report | `reports/progress-6a-advanced-modeling.md` | drafted |
 
 ## Review Status
 
@@ -82,14 +86,15 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 | 3 final verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
 | 4 | Codex Technical Reviewer | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
 | 5 | Codex Technical/Lecturer Reviewer | 90 | APPROVED | `docs/REVIEW_phase5_forensic_analysis.md` |
+| 6A | Codex Technical/Lecturer Reviewer | 90 | APPROVED | `docs/REVIEW_phase6a_advanced_modeling.md` |
 
 ## Blockers
 
-No blockers after PR #5 merge. Watch items for Fase 6A: keep advanced models reproducible on local WSL, avoid committing model binaries/raw data, use sampled explainability to control memory, and compare against baseline artifacts rather than making isolated claims.
+No Fase 6A blockers remain before PR. Watch items for next phase: dashboard should emphasize Track A realistic highlight and manuscript should separate global SHAP aggregation from Track A SHAP details.
 
 ## Next Action
 
-1. Create branch `phase-6a-advanced-modeling` from updated `main`.
-2. Implement advanced tabular modeling runner and SHAP/explainability artifacts.
-3. Run full experiment on local WSL PC via reverse SSH tunnel.
-4. Review, commit, push, and open PR before dashboard/manuscript polish.
+1. Commit Fase 6A Advanced/SOTA Modeling artifacts and review.
+2. Push branch `phase-6a-advanced-modeling`.
+3. Open PR to `main`.
+4. After merge, proceed to dashboard polish and manuscript preparation.

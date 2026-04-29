@@ -34,6 +34,16 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Jika `python3 -m venv` gagal karena `ensurepip`/`python3.12-venv` belum tersedia dan tidak ingin memakai sudo, gunakan `uv`:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+uv venv .venv --python python3
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
+
 ## 3. Dataset
 
 Runner membutuhkan cached CSV:
@@ -133,6 +143,16 @@ Upgrade pip lalu install ulang:
 python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
+
+Jika LightGBM gagal dengan `libgomp.so.1`, WSL belum punya OpenMP runtime. Tanpa sudo, gunakan library dari wheel XGBoost/scikit-learn:
+
+```bash
+GOMP=$(find .venv/lib/python*/site-packages/xgboost.libs .venv/lib/python*/site-packages/scikit_learn.libs -name 'libgomp*.so*' | head -1)
+ln -sf "$PWD/$GOMP" .venv/lib/libgomp.so.1
+export LD_LIBRARY_PATH="$PWD/.venv/lib:${LD_LIBRARY_PATH:-}"
+```
+
+Tambahkan `export LD_LIBRARY_PATH="$PWD/.venv/lib:${LD_LIBRARY_PATH:-}"` sebelum menjalankan runner jika memakai workaround ini.
 
 ### Track A berat
 
