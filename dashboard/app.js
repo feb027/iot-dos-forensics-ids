@@ -4,6 +4,7 @@ async function main() {
   const datasetSummaryEl = document.querySelector('#dataset-summary');
   const edaSummaryEl = document.querySelector('#eda-summary');
   const baselineSummaryEl = document.querySelector('#baseline-summary');
+  const forensicSummaryEl = document.querySelector('#forensic-summary');
   try {
     const res = await fetch('data/dashboard-data.json');
     const data = await res.json();
@@ -11,6 +12,8 @@ async function main() {
     const dataset = data.dataset_summary || {};
     const eda = data.eda_summary || {};
     const baseline = data.model_comparison || [];
+    const featureImportance = data.feature_importance || [];
+    const forensicSummary = data.forensic_summary || {};
     statusEl.textContent = project.status || 'Experiment results pending.';
     const items = [
       ['Dataset utama', project.primary_dataset || '-'],
@@ -85,11 +88,42 @@ async function main() {
     } else {
       baselineSummaryEl.textContent = 'Baseline model belum dijalankan. Metrik akan muncul setelah Fase 4 selesai.';
     }
+
+    if (featureImportance.length) {
+      const topFeatures = featureImportance.slice(0, 6);
+      const topSummary = forensicSummary.top_feature_groups || [];
+      const errorTotals = forensicSummary.error_totals_selected_runs || {};
+      const forensicItems = [
+        ['Top feature group', topSummary[0]?.feature_group || topFeatures[0]?.feature_group || '-'],
+        ['Feature rows shown', featureImportance.length],
+        ['FP selected runs', Number(errorTotals.false_positive_normal_as_attack || 0).toLocaleString('id-ID')],
+        ['FN selected runs', Number(errorTotals.false_negative_attack_as_normal || 0).toLocaleString('id-ID')]
+      ];
+      forensicSummaryEl.innerHTML = `
+        <div class="grid compact">
+          ${forensicItems.map(([label, value]) => `
+            <article class="metric"><span>${label}</span><strong>${value}</strong></article>
+          `).join('')}
+        </div>
+        <div class="feature-list">
+          ${topFeatures.map((row) => `
+            <div class="feature-row">
+              <strong>${row.feature_group}</strong>
+              <span>${Number(row.normalized_importance || row.importance).toFixed(4)} · ${row.model} · ${row.track}</span>
+            </div>
+          `).join('')}
+        </div>
+        <p class="note">Interpretasi forensik dibaca hati-hati karena normal class kecil dan ada risiko split-similarity.</p>
+      `;
+    } else {
+      forensicSummaryEl.textContent = 'Feature importance dan error analysis akan muncul setelah Fase 5 dijalankan.';
+    }
   } catch (error) {
     statusEl.textContent = 'Gagal memuat dashboard-data.json. Jalankan scripts/generate_dashboard_data.py terlebih dahulu.';
     if (datasetSummaryEl) datasetSummaryEl.textContent = 'Gagal memuat ringkasan dataset.';
     if (edaSummaryEl) edaSummaryEl.textContent = 'Gagal memuat ringkasan EDA.';
     if (baselineSummaryEl) baselineSummaryEl.textContent = 'Gagal memuat ringkasan baseline.';
+    if (forensicSummaryEl) forensicSummaryEl.textContent = 'Gagal memuat ringkasan forensik.';
     console.error(error);
   }
 }

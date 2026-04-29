@@ -4,7 +4,7 @@
     "theme": "IoT + Cyber Security + Digital Forensics",
     "primary_dataset": "BoT-IoT (UNSW)",
     "alternative_dataset": "RT-IoT2022 (UCI)",
-    "status": "Fase 5 Forensic Analysis current; baseline modeling completed"
+    "status": "Fase 5 Forensic Analysis completed; PR pending"
   },
   "dataset_summary": {
     "source": "Mireu-Lab/UNSW-IoT Hugging Face mirror",
@@ -583,7 +583,338 @@
       "tp_attack_correct": 214
     }
   ],
-  "feature_importance": [],
+  "feature_importance": [
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "importance": 0.9880760352,
+      "normalized_importance": 0.9880760352,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "importance": 0.9721475416,
+      "normalized_importance": 0.9721475416,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "importance": 0.9688684734,
+      "normalized_importance": 0.9688684734,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "importance": 0.3879406602,
+      "normalized_importance": 0.3879406602,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 1,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "importance": 0.3862081084,
+      "normalized_importance": 0.3862081084,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 2,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "importance": 0.1923972808,
+      "normalized_importance": 0.1923972808,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 2,
+      "feature": "N_IN_Conn_P_SrcIP",
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "importance": 0.1849437601,
+      "normalized_importance": 0.1849437601,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 3,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "importance": 0.1162363199,
+      "normalized_importance": 0.1162363199,
+      "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 3,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "importance": 0.1135440889,
+      "normalized_importance": 0.1135440889,
+      "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 4,
+      "feature": "srate",
+      "feature_group": "srate",
+      "importance": 0.1032635649,
+      "normalized_importance": 0.1032635649,
+      "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 4,
+      "feature": "srate",
+      "feature_group": "srate",
+      "importance": 0.1023810516,
+      "normalized_importance": 0.1023810516,
+      "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 5,
+      "feature": "mean",
+      "feature_group": "mean",
+      "importance": 0.0599040072,
+      "normalized_importance": 0.0599040072,
+      "interpretation_hint": "rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 6,
+      "feature": "max",
+      "feature_group": "max",
+      "importance": 0.0508155953,
+      "normalized_importance": 0.0508155953,
+      "interpretation_hint": "nilai maksimum statistik flow; membantu menangkap spike intensitas trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 5,
+      "feature": "mean",
+      "feature_group": "mean",
+      "importance": 0.0490587777,
+      "normalized_importance": 0.0490587777,
+      "interpretation_hint": "rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 6,
+      "feature": "max",
+      "feature_group": "max",
+      "importance": 0.0453223962,
+      "normalized_importance": 0.0453223962,
+      "interpretation_hint": "nilai maksimum statistik flow; membantu menangkap spike intensitas trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 7,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "importance": 0.0432122042,
+      "normalized_importance": 0.0432122042,
+      "interpretation_hint": "kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 7,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "importance": 0.0314927941,
+      "normalized_importance": 0.0314927941,
+      "interpretation_hint": "kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 8,
+      "feature": "proto=tcp",
+      "feature_group": "proto",
+      "importance": 0.0270620827,
+      "normalized_importance": 0.0270620827,
+      "interpretation_hint": "protokol trafik; membantu membaca kanal serangan yang dominan"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 8,
+      "feature": "proto=tcp",
+      "feature_group": "proto",
+      "importance": 0.0252296354,
+      "normalized_importance": 0.0252296354,
+      "interpretation_hint": "protokol trafik; membantu membaca kanal serangan yang dominan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 2,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "importance": 0.0158342381,
+      "normalized_importance": 0.0158342381,
+      "interpretation_hint": "kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 9,
+      "feature": "min",
+      "feature_group": "min",
+      "importance": 0.0153943788,
+      "normalized_importance": 0.0153943788,
+      "interpretation_hint": "nilai minimum statistik flow; membantu menangkap batas bawah pola trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 9,
+      "feature": "proto=udp",
+      "feature_group": "proto",
+      "importance": 0.0152088331,
+      "normalized_importance": 0.0152088331,
+      "interpretation_hint": "protokol trafik; membantu membaca kanal serangan yang dominan"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 10,
+      "feature": "min",
+      "feature_group": "min",
+      "importance": 0.0128832032,
+      "normalized_importance": 0.0128832032,
+      "interpretation_hint": "nilai minimum statistik flow; membantu menangkap batas bawah pola trafik"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 11,
+      "feature": "drate",
+      "feature_group": "drate",
+      "importance": 0.0121984588,
+      "normalized_importance": 0.0121984588,
+      "interpretation_hint": "destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 10,
+      "feature": "proto=udp",
+      "feature_group": "proto",
+      "importance": 0.0121456446,
+      "normalized_importance": 0.0121456446,
+      "interpretation_hint": "protokol trafik; membantu membaca kanal serangan yang dominan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 3,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "importance": 0.0109472769,
+      "normalized_importance": 0.0109472769,
+      "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "method": "tree_feature_importance",
+      "rank": 11,
+      "feature": "drate",
+      "feature_group": "drate",
+      "importance": 0.0108009343,
+      "normalized_importance": 0.0108009343,
+      "interpretation_hint": "destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 2,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "importance": 0.0103751358,
+      "normalized_importance": 0.0103751358,
+      "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 2,
+      "feature": "drate",
+      "feature_group": "drate",
+      "importance": 0.0096058094,
+      "normalized_importance": 0.0096058094,
+      "interpretation_hint": "destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "method": "tree_feature_importance",
+      "rank": 3,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "importance": 0.0073630058,
+      "normalized_importance": 0.0073630058,
+      "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+    }
+  ],
   "baseline_summary": {
     "generated_at_utc": "2026-04-29T04:23:53.377249+00:00",
     "phase": "Fase 4 — Baseline Modeling",
@@ -782,8 +1113,236 @@
       ]
     }
   },
+  "forensic_error_analysis": [
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "error_type": "FN_attack_as_normal",
+      "count": 13,
+      "rate_of_track_test": 1.81684e-05,
+      "top_proto": "arp:12; tcp:1",
+      "top_category": "DDoS:8; DoS:5"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "error_type": "FP_normal_as_attack",
+      "count": 2,
+      "rate_of_track_test": 2.7951e-06,
+      "top_proto": "tcp:1; udp:1",
+      "top_category": "Normal:2"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "error_type": "TN_normal_correct",
+      "count": 105,
+      "rate_of_track_test": 0.0001467448,
+      "top_proto": "udp:85; tcp:9; arp:9",
+      "top_category": "Normal:105"
+    },
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "error_type": "TP_attack_correct",
+      "count": 715408,
+      "rate_of_track_test": 0.9998322917,
+      "top_proto": "udp:396560; tcp:318833; icmp:8",
+      "top_category": "DDoS:385301; DoS:330107"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree",
+      "error_type": "FN_attack_as_normal",
+      "count": 1,
+      "rate_of_track_test": 0.0046728972,
+      "top_proto": "udp:1",
+      "top_category": "DoS:1"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree",
+      "error_type": "TN_normal_correct",
+      "count": 107,
+      "rate_of_track_test": 0.5,
+      "top_proto": "udp:86; tcp:10; arp:9",
+      "top_category": "Normal:107"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree",
+      "error_type": "TP_attack_correct",
+      "count": 106,
+      "rate_of_track_test": 0.4953271028,
+      "top_proto": "udp:65; tcp:41",
+      "top_category": "DDoS:57; DoS:49"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "error_type": "TN_normal_correct",
+      "count": 107,
+      "rate_of_track_test": 0.5,
+      "top_proto": "udp:86; tcp:10; arp:9",
+      "top_category": "Normal:107"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest",
+      "error_type": "TP_attack_correct",
+      "count": 107,
+      "rate_of_track_test": 0.5,
+      "top_proto": "udp:66; tcp:41",
+      "top_category": "DDoS:57; DoS:50"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "decision_tree",
+      "error_type": "FN_attack_as_normal",
+      "count": 3,
+      "rate_of_track_test": 0.0093457944,
+      "top_proto": "udp:3",
+      "top_category": "DoS:3"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "decision_tree",
+      "error_type": "TN_normal_correct",
+      "count": 107,
+      "rate_of_track_test": 0.3333333333,
+      "top_proto": "udp:86; tcp:10; arp:9",
+      "top_category": "Normal:107"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "decision_tree",
+      "error_type": "TP_attack_correct",
+      "count": 211,
+      "rate_of_track_test": 0.6573208723,
+      "top_proto": "udp:119; tcp:92",
+      "top_category": "DDoS:117; DoS:94"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "error_type": "TN_normal_correct",
+      "count": 107,
+      "rate_of_track_test": 0.3333333333,
+      "top_proto": "udp:86; tcp:10; arp:9",
+      "top_category": "Normal:107"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest",
+      "error_type": "TP_attack_correct",
+      "count": 214,
+      "rate_of_track_test": 0.6666666667,
+      "top_proto": "udp:122; tcp:92",
+      "top_category": "DDoS:117; DoS:97"
+    }
+  ],
+  "forensic_summary": {
+    "generated_at_utc": "2026-04-29T05:07:11.648744+00:00",
+    "phase": "Fase 5 — Forensic Analysis",
+    "selected_runs": [
+      {
+        "track": "A_realistic_imbalanced",
+        "model": "decision_tree"
+      },
+      {
+        "track": "B_balanced_controlled_1_to_1",
+        "model": "decision_tree"
+      },
+      {
+        "track": "B_balanced_controlled_1_to_1",
+        "model": "random_forest"
+      },
+      {
+        "track": "C_balanced_controlled_1_to_2",
+        "model": "decision_tree"
+      },
+      {
+        "track": "C_balanced_controlled_1_to_2",
+        "model": "random_forest"
+      }
+    ],
+    "top_feature_groups": [
+      {
+        "rank": 1,
+        "feature_group": "N_IN_Conn_P_DstIP",
+        "mean_normalized_importance": 0.7406481638,
+        "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+      },
+      {
+        "rank": 2,
+        "feature_group": "N_IN_Conn_P_SrcIP",
+        "mean_normalized_importance": 0.0759921633,
+        "interpretation_hint": "jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu"
+      },
+      {
+        "rank": 3,
+        "feature_group": "stddev",
+        "mean_normalized_importance": 0.0516931655,
+        "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+      },
+      {
+        "rank": 4,
+        "feature_group": "srate",
+        "mean_normalized_importance": 0.0411289233,
+        "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+      },
+      {
+        "rank": 5,
+        "feature_group": "mean",
+        "mean_normalized_importance": 0.0217956205,
+        "interpretation_hint": "rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik"
+      },
+      {
+        "rank": 6,
+        "feature_group": "max",
+        "mean_normalized_importance": 0.0198405512,
+        "interpretation_hint": "nilai maksimum statistik flow; membantu menangkap spike intensitas trafik"
+      },
+      {
+        "rank": 7,
+        "feature_group": "state_number",
+        "mean_normalized_importance": 0.0184494638,
+        "interpretation_hint": "kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal"
+      },
+      {
+        "rank": 8,
+        "feature_group": "drate",
+        "mean_normalized_importance": 0.0065210405,
+        "interpretation_hint": "destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response"
+      }
+    ],
+    "error_totals_selected_runs": {
+      "false_positive_normal_as_attack": 2,
+      "false_negative_attack_as_normal": 17,
+      "error_examples_saved": 16
+    },
+    "interpretation_policy": "Feature importance and FP/FN are interpreted as dataset-backed forensic evidence, not as proof of real-world perfect detection. Normal class is very small and split-similarity risk remains a limitation.",
+    "limitations": [
+      "Normal class is tiny: 370 train rows and 107 test rows in the audited split.",
+      "Controlled Track B/C metrics can be high because attack rows are sampled around all available normal rows.",
+      "Network identifiers and label columns remain excluded, so interpretation focuses on aggregate traffic features rather than attribution to specific IP/port evidence.",
+      "Feature importance is model-dependent and should be read together with permutation importance and error analysis."
+    ],
+    "sample_limited": false,
+    "outputs": {
+      "tables": [
+        "results/tables/forensic_feature_importance.csv",
+        "results/tables/forensic_error_analysis.csv",
+        "results/tables/forensic_error_examples.csv"
+      ],
+      "figures": [
+        "results/figures/forensic_feature_importance.png",
+        "results/figures/forensic_confusion_error_summary.png"
+      ]
+    }
+  },
   "forensic_notes": [
-    "Fase 4 telah menghasilkan baseline metrics dan confusion matrix untuk Track A/B/C.",
-    "Fase 5 berjalan: feature importance dan error analysis akan dipakai untuk interpretasi forensik DoS/DDoS."
+    "Fase 5 telah menghasilkan feature importance dan error analysis dari selected baseline runs.",
+    "Interpretasi forensik tetap dibatasi oleh normal class kecil dan split-similarity risk."
   ]
 }

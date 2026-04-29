@@ -1,0 +1,117 @@
+track,model,method,rank,feature,feature_group,importance,normalized_importance,interpretation_hint,importance_std,sample_rows
+A_realistic_imbalanced,decision_tree,tree_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.9688684734,0.9688684734,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,2,drate,drate,0.0096058094,0.0096058094,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,3,stddev,stddev,0.0073630058,0.0073630058,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,4,proto=arp,proto,0.0053727492,0.0053727492,protokol trafik; membantu membaca kanal serangan yang dominan,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,5,min,min,0.0038581812,0.0038581812,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,6,max,max,0.0030647646,0.0030647646,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,7,state_number,state_number,0.0017080826,0.0017080826,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,8,proto=tcp,proto,0.0001436127,0.0001436127,protokol trafik; membantu membaca kanal serangan yang dominan,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,9,mean,mean,1.53178e-05,1.53178e-05,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,10,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,3.3e-09,3.3e-09,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,11,srate,srate,0.0,0.0,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,12,proto=icmp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,13,proto=ipv6-icmp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+A_realistic_imbalanced,decision_tree,tree_feature_importance,14,proto=udp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.4009136726,,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,0.0091756577,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,2,stddev,stddev,0.2260936003,,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,0.0305591765,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,3,min,min,0.1065055604,,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,0.0074959485,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,4,state_number,state_number,0.0685419216,,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,0.0138654217,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,5,proto,proto,0.0554546322,,protokol trafik; membantu membaca kanal serangan yang dominan,0.004188796,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,6,max,max,0.0152447959,,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,0.0027785438,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,7,drate,drate,0.0024430909,,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,0.0,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,8,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0,,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,0.0,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,9,mean,mean,0.0,,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,0.0,5000
+A_realistic_imbalanced,decision_tree,permutation_macro_f1_drop,10,srate,srate,0.0,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0,5000
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.9721475416,0.9721475416,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,2,state_number,state_number,0.0158342381,0.0158342381,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,3,stddev,stddev,0.0109472769,0.0109472769,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,4,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0010709433,0.0010709433,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,5,min,min,0.0,0.0,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,6,mean,mean,0.0,0.0,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,7,drate,drate,0.0,0.0,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,8,srate,srate,0.0,0.0,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,9,max,max,0.0,0.0,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,10,proto=arp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,11,proto=ipv6-icmp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,12,proto=tcp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,decision_tree,tree_feature_importance,13,proto=udp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.3650557612,,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,0.0101712903,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,2,stddev,stddev,0.0713533776,,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,0.0183471782,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,3,state_number,state_number,0.0102803942,,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,0.0034968433,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,4,proto,proto,0.0,,protokol trafik; membantu membaca kanal serangan yang dominan,0.0,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,5,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0,,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,0.0,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,6,min,min,0.0,,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,0.0,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,7,mean,mean,0.0,,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,0.0,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,8,drate,drate,0.0,,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,0.0,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,9,srate,srate,0.0,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0,214
+B_balanced_controlled_1_to_1,decision_tree,permutation_macro_f1_drop,10,max,max,0.0,,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,0.0,214
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.3879406602,0.3879406602,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.1849437601,0.1849437601,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,3,stddev,stddev,0.1162363199,0.1162363199,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,4,srate,srate,0.1023810516,0.1023810516,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,5,mean,mean,0.0599040072,0.0599040072,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,6,max,max,0.0508155953,0.0508155953,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,7,state_number,state_number,0.0314927941,0.0314927941,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,8,proto=tcp,proto,0.0270620827,0.0270620827,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,9,min,min,0.0153943788,0.0153943788,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,10,proto=udp,proto,0.0121456446,0.0121456446,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,11,drate,drate,0.0108009343,0.0108009343,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,12,proto=arp,proto,0.000880296,0.000880296,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,random_forest,tree_feature_importance,13,proto=ipv6-icmp,proto,2.4753e-06,2.4753e-06,protokol trafik; membantu membaca kanal serangan yang dominan,,
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.1582649717,,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,0.018241552,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,2,stddev,stddev,0.0084118885,,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,0.0018694446,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,3,mean,mean,0.0046729992,,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,0.0,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,4,srate,srate,0.0037383994,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0018691997,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,5,max,max,0.0037383994,,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,0.0018691997,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,6,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0018691997,,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,0.0022892927,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,7,proto,proto,0.0,,protokol trafik; membantu membaca kanal serangan yang dominan,0.0,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,8,min,min,0.0,,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,0.0,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,9,state_number,state_number,0.0,,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,0.0,214
+B_balanced_controlled_1_to_1,random_forest,permutation_macro_f1_drop,10,drate,drate,0.0,,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,0.0,214
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.9880760352,0.9880760352,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,2,stddev,stddev,0.0103751358,0.0103751358,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,3,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0015488291,0.0015488291,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,4,min,min,0.0,0.0,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,5,state_number,state_number,0.0,0.0,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,6,mean,mean,0.0,0.0,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,7,drate,drate,0.0,0.0,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,8,srate,srate,0.0,0.0,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,9,max,max,0.0,0.0,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,10,proto=arp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,11,proto=ipv6-icmp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,12,proto=tcp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,decision_tree,tree_feature_importance,13,proto=udp,proto,0.0,0.0,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.4201138744,,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,0.022534054,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,2,stddev,stddev,0.1038187001,,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,0.0085414217,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,3,proto,proto,0.0,,protokol trafik; membantu membaca kanal serangan yang dominan,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,4,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0,,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,5,min,min,0.0,,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,6,state_number,state_number,0.0,,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,7,mean,mean,0.0,,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,8,drate,drate,0.0,,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,9,srate,srate,0.0,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0,321
+C_balanced_controlled_1_to_2,decision_tree,permutation_macro_f1_drop,10,max,max,0.0,,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,0.0,321
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.3862081084,0.3862081084,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,2,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.1923972808,0.1923972808,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,3,stddev,stddev,0.1135440889,0.1135440889,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,4,srate,srate,0.1032635649,0.1032635649,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,5,mean,mean,0.0490587777,0.0490587777,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,6,max,max,0.0453223962,0.0453223962,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,7,state_number,state_number,0.0432122042,0.0432122042,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,8,proto=tcp,proto,0.0252296354,0.0252296354,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,9,proto=udp,proto,0.0152088331,0.0152088331,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,10,min,min,0.0128832032,0.0128832032,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,11,drate,drate,0.0121984588,0.0121984588,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,12,proto=arp,proto,0.00145888,0.00145888,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,random_forest,tree_feature_importance,13,proto=ipv6-icmp,proto,1.45683e-05,1.45683e-05,protokol trafik; membantu membaca kanal serangan yang dominan,,
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,1,N_IN_Conn_P_DstIP,N_IN_Conn_P_DstIP,0.2428045215,,jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT,0.0251969923,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,2,mean,mean,0.0027940261,,rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik,0.0026114321,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,3,max,max,0.0027940261,,nilai maksimum statistik flow; membantu menangkap spike intensitas trafik,0.0026114321,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,4,state_number,state_number,0.0006993083,,kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal,0.0013986166,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,5,srate,srate,0.0006993083,,source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan,0.0013986166,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,6,proto,proto,0.0,,protokol trafik; membantu membaca kanal serangan yang dominan,0.0,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,7,stddev,stddev,0.0,,deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan,0.0,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,8,N_IN_Conn_P_SrcIP,N_IN_Conn_P_SrcIP,0.0,,jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu,0.0,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,9,min,min,0.0,,nilai minimum statistik flow; membantu menangkap batas bawah pola trafik,0.0,321
+C_balanced_controlled_1_to_2,random_forest,permutation_macro_f1_drop,10,drate,drate,0.0,,destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response,0.0,321
