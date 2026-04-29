@@ -6,7 +6,7 @@ Fase 4 — Baseline Modeling
 
 ## Status
 
-Fase 3 EDA & Preprocessing has been merged to `main` via PR #3 and final-verified by Codex with score 92/100. Current work is Fase 4 Baseline Modeling: train leakage-safe baseline models using the Fase 3 track plan, save metrics/figures, and keep dashboard model outputs empty until real artifacts exist. Main carried-forward risks: normal class is extremely underrepresented, network identifiers must remain excluded, duplicate feature signatures are high, and split-similarity risk must be disclosed.
+Fase 4 Baseline Modeling artifacts have been generated and approved by Codex Technical Reviewer with score 90/100. The phase trains leakage-safe baseline models using the Fase 3 track plan, saves metrics/confusion matrices/figures, and updates dashboard model outputs from real artifacts. Main carried-forward risks for Fase 5: normal class is extremely underrepresented, network identifiers must remain excluded, duplicate feature signatures are high, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -50,6 +50,13 @@ Fase 3 EDA & Preprocessing has been merged to `main` via PR #3 and final-verifie
 | Fase 3 EDA tables | `results/tables/eda_*.csv`, `results/tables/preprocessing_*_plan.csv` | generated |
 | Fase 3 label consistency checks | `results/tables/eda_label_consistency_checks.csv` | 0 violations |
 | Fase 3 EDA figures | `results/figures/eda_*.png` | generated |
+| Fase 4 baseline runner | `scripts/run_baseline_modeling.py`, `notebooks/02_baseline_modeling.ipynb` | generated |
+| Fase 4 method notes | `docs/phase4-method-notes.md` | completed |
+| Fase 4 local run guide | `docs/phase4-local-run-guide.md` | completed |
+| Fase 4 progress report | `reports/progress-4-baseline-modeling.md` | drafted |
+| Fase 4 baseline summary | `results/metrics/baseline_summary.json` | generated |
+| Fase 4 baseline tables | `results/tables/baseline_*.csv` | generated |
+| Fase 4 baseline figures | `results/figures/baseline_*.png` | generated |
 
 ## Review Status
 
@@ -63,14 +70,15 @@ Fase 3 EDA & Preprocessing has been merged to `main` via PR #3 and final-verifie
 | 2 | Codex gpt-5.5 + high reasoning | 89 | APPROVED | `docs/REVIEW_phase2_dataset_audit.md` |
 | 3 | Codex gpt-5.5 + high reasoning | 88 | APPROVED | `docs/REVIEW_phase3_eda_preprocessing.md` |
 | 3 final verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
+| 4 | Codex Technical Reviewer | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
 
 ## Blockers
 
-No blockers after PR #3 merge. Watch items for Fase 4: normal class is extremely small, network identifiers must remain excluded, duplicate model-feature signatures are high, train/test feature-signature overlap must be disclosed as split-similarity risk, and accuracy must not be the primary claim.
+No Fase 4 blockers remain before PR. Watch items for Fase 5: very high baseline scores must be interpreted carefully due to tiny normal class and split-similarity risk; feature importance and FP/FN analysis are needed before making forensic claims.
 
 ## Next Action
 
-1. Create branch `phase-4-baseline-modeling`.
-2. Implement leakage-safe baseline modeling using Fase 3 feature and dataset plans.
-3. Save metrics to `results/metrics/` and `results/tables/`, confusion matrices/model comparison to `results/figures/`.
-4. Run Codex technical review before entering Fase 5 Forensic Analysis.
+1. Commit Fase 4 Baseline Modeling artifacts.
+2. Push branch `phase-4-baseline-modeling`.
+3. Open PR to `main`.
+4. After PR merge, sync `main` and proceed to Fase 5 Forensic Analysis.

@@ -1,0 +1,7 @@
+track,split,normal_rows,dos_or_ddos_rows,sampled_dos_or_ddos_rows,other_attack_rows_excluded,total_rows,description
+A_realistic_imbalanced,train,370,2861463,2861463,72984,2861833,Realistic imbalanced split after excluding other_attack.
+A_realistic_imbalanced,test,107,715421,715421,18177,715528,Realistic imbalanced split after excluding other_attack.
+B_balanced_controlled_1_to_1,train,370,370,370,72984,740,Balanced controlled subset using all normal rows and equal sampled DoS/DDoS rows.
+B_balanced_controlled_1_to_1,test,107,107,107,18177,214,Balanced controlled subset using all normal rows and equal sampled DoS/DDoS rows.
+C_balanced_controlled_1_to_2,train,370,740,740,72984,1110,Moderately imbalanced controlled subset using all normal rows and twice as many sampled DoS/DDoS rows.
+C_balanced_controlled_1_to_2,test,107,214,214,18177,321,Moderately imbalanced controlled subset using all normal rows and twice as many sampled DoS/DDoS rows.

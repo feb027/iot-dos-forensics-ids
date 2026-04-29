@@ -50,3 +50,12 @@
 - Current phase updated to Fase 4 Baseline Modeling.
 - Carry-forward constraints: exclude leakage/network identifier columns, keep `other_attack` out of primary binary baseline, use imbalanced and balanced controlled tracks, and avoid accuracy-only claims.
 
+## 2026-04-29 — Fase 4 Baseline Modeling artifacts generated
+
+- Ran `scripts/run_baseline_modeling.py` using Track A realistic imbalanced, Track B balanced 1:1, and Track C controlled 1:2.
+- Completed 14 model runs across Dummy Majority, Gaussian Naive Bayes, SGD Logistic Regression, Decision Tree, and Random Forest.
+- Generated baseline metrics, confusion matrices, dataset-track tables, and figures under `results/`.
+- Updated dashboard data from real baseline artifacts; feature importance remains empty until Fase 5 forensic analysis.
+- Key interpretation rule: accuracy is not the primary claim; use macro F1, MCC, balanced accuracy, recall normal/attack, and FP/FN discussion.
+- Codex technical review Fase 4 approved: `docs/REVIEW_phase4_baseline_modeling.md`, score 90/100. Post-review sync fixes applied to README and dashboard hero text.
+
