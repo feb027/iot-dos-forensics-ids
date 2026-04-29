@@ -26,3 +26,11 @@
 - Key finding: DoS/DDoS rows are available, but normal class is extremely small and must be handled carefully in Fase 3.
 - No model training was performed in this phase.
 - Codex review Fase 2 approved: `docs/REVIEW_phase2_dataset_audit.md`, score 89/100. Required sync fixes applied before PR.
+
+## 2026-04-29 — PR #2 merged and Fase 3 prepared
+
+- Merged PR #2 (`phase-2-dataset-audit`) into `main`.
+- Merge commit: `6cf268254651d76167ae6095a859f103c1adcc29`.
+- Current phase updated to Fase 3 EDA & Preprocessing.
+- Carry-forward constraints: exclude leakage/identifier columns, handle extreme normal-class imbalance, and document split-similarity risk.
+

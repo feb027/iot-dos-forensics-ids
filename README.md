@@ -49,7 +49,7 @@ prompts/     Prompt template untuk Codex/Hermes workflow
 
 GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
 
-Saat ini dashboard masih placeholder scaffold. Isi metrik akan diperbarui setelah eksperimen berjalan.
+Dashboard saat ini menampilkan ringkasan audit dataset Fase 2. Isi metrik model, confusion matrix, feature importance, dan interpretasi forensik akan diperbarui setelah eksperimen berjalan.
 
 ## Definition of Done
 
@@ -75,11 +75,11 @@ Fase 1 sudah selesai dan sudah di-*merge* ke `main` melalui PR #1. Ringkasan art
 - `reports/progress-1-literature-review.md`: laporan progres Fase 1.
 - Final review: `docs/REVIEW_phase1_literature_final_approved.md` — **92/100 APPROVED**.
 
-Fase berikutnya adalah audit dataset BoT-IoT sebelum EDA atau training model.
+Fase 1 sudah selesai; Fase 2 Dataset Audit juga sudah selesai dan di-*merge* ke `main` melalui PR #2.
 
 ## Dataset Audit Snapshot
 
-Fase 2 Dataset Audit sudah menghasilkan artifact awal dari BoT-IoT/UNSW-IoT CSV mirror:
+Fase 2 Dataset Audit sudah selesai dan di-*merge* ke `main` melalui PR #2. Artifact awal dari BoT-IoT/UNSW-IoT CSV mirror:
 
 - `scripts/audit_botiot_dataset.py`: script audit reproducible tanpa pandas.
 - `results/metrics/dataset_audit.json`: ringkasan audit machine-readable.
@@ -93,7 +93,7 @@ Temuan utama: DoS/DDoS tersedia, tetapi normal class sangat kecil dan ada risiko
 
 ## Status
 
-Current phase: **Fase 2 — Dataset Audit**
+Current phase: **Fase 3 — EDA & Preprocessing**
 
 ## Review History
 
@@ -103,6 +103,7 @@ Current phase: **Fase 2 — Dataset Audit**
 | Final Fase 0B | Codex lecturer | 91 | APPROVED | `docs/REVIEW_phase0b_final.md` |
 | Strict Re-review Fase 0 | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase0_gpt55_high.md` |
 | Fase 1 Literature Review | Codex gpt-5.5 + high reasoning | 92 | APPROVED | `docs/REVIEW_phase1_literature_final_approved.md` |
+| Fase 2 Dataset Audit | Codex gpt-5.5 + high reasoning | 89 | APPROVED | `docs/REVIEW_phase2_dataset_audit.md` |
 
 Lihat:
 
@@ -113,3 +114,4 @@ Lihat:
 - `docs/REVIEW_phase0b_final.md`
 - `docs/REVIEW_phase0_gpt55_high.md`
 - `docs/REVIEW_phase1_literature_final_approved.md`
+- `docs/REVIEW_phase2_dataset_audit.md`

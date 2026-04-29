@@ -49,7 +49,7 @@ def load_dataset_audit() -> tuple[dict, list[dict]]:
 
 def main() -> None:
     dataset_summary, class_distribution = load_dataset_audit()
-    status = "Fase 2 dataset audit completed; modeling not started" if dataset_summary else "Fase 1 literature review approved; Fase 2 dataset audit pending"
+    status = "Fase 3 EDA & Preprocessing ready; modeling not started" if dataset_summary else "Fase 1 literature review approved; Fase 2 dataset audit pending"
     data = {
         "project": {
             "title": "Sistem Analisis Serangan DoS pada Arsitektur IoT",

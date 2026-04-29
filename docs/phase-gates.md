@@ -51,11 +51,11 @@ Done jika:
 
 Done jika:
 
-- [ ] Source BoT-IoT diverifikasi.
-- [ ] Akses/download method jelas.
-- [ ] Label mapping terdokumentasi.
-- [ ] Kelas DoS/DDoS dikonfirmasi.
-- [ ] Ukuran data, fitur, dan missing values dicatat.
+- [x] Source BoT-IoT diverifikasi.
+- [x] Akses/download method jelas.
+- [x] Label mapping terdokumentasi.
+- [x] Kelas DoS/DDoS dikonfirmasi.
+- [x] Ukuran data, fitur, dan missing values dicatat.
 - [x] Risiko class imbalance dan leakage dicatat.
 - [x] Kolom label atau fitur label-like yang harus dikeluarkan dicatat.
 - [x] Duplikasi flow/baris diperiksa.
@@ -71,6 +71,10 @@ Done jika:
 - [ ] Key feature plots tersimpan.
 - [ ] Preprocessing pipeline terdokumentasi.
 - [ ] Train/test split strategy jelas.
+- [ ] Filtered binary dataset logic jelas: `normal` vs `dos_or_ddos`, `other_attack` tidak diam-diam dianggap normal.
+- [ ] Leakage columns tetap dikeluarkan: `attack`, `category`, `subcategory`, `pkSeqID`, `seq`, `saddr`, `sport`, `daddr`, `dport`.
+- [ ] Balanced controlled subset plan dibuat untuk mitigasi normal class kecil.
+- [ ] EDA menyimpan artifact ke `results/tables/` dan `results/figures/`.
 
 ## Fase 4 — Baseline Modeling
 
