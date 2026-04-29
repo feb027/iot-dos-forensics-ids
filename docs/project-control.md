@@ -72,6 +72,7 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic An
 | Fase 6A advanced figures | `results/figures/advanced_*.png` | generated |
 | Fase 6A progress report | `reports/progress-6a-advanced-modeling.md` | completed |
 | Fase 6 dashboard polish plan | `docs/phase6-dashboard-polish-plan.md` | drafted |
+| Fase 6 dashboard design brief | `docs/phase6-dashboard-design-brief.md` | drafted |
 
 ## Review Status
 
@@ -95,7 +96,7 @@ No active blockers. Watch items for Fase 6/7: verify GitHub Pages after status s
 
 ## Next Action
 
-1. Verify GitHub Pages dashboard after post-merge status sync.
-2. Polish dashboard copy/layout around Fase 6A results, especially Track A realistic highlight.
-3. Draft manuscript sections from committed artifact tables/figures only.
-4. Run dashboard/manuscript review gates before final audit.
+1. Review redesigned dashboard visuals on branch `phase-6-dashboard-polish`.
+2. Run Codex dashboard review gate after user approves the visual direction.
+3. Open/merge Fase 6 dashboard polish PR after review fixes.
+4. Draft manuscript sections from committed artifact tables/figures only.
