@@ -49,7 +49,7 @@ prompts/     Prompt template untuk Codex/Hermes workflow
 
 GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
 
-Dashboard saat ini menampilkan ringkasan audit dataset Fase 2, EDA/preprocessing Fase 3, dan hasil baseline modeling Fase 4. Feature importance dan interpretasi forensik detail akan diperbarui setelah Fase 5 berjalan.
+Dashboard saat ini menampilkan ringkasan audit dataset Fase 2, EDA/preprocessing Fase 3, baseline modeling Fase 4, dan feature/error analysis Fase 5 dari artifact repo.
 
 ## Definition of Done
 
@@ -122,15 +122,30 @@ Fase 4 sudah menjalankan baseline modeling untuk target `normal` vs `dos_or_ddos
 
 Keputusan utama: accuracy disimpan tetapi bukan klaim utama; interpretasi memakai macro F1, MCC, balanced accuracy, recall normal/attack, dan FP/FN.
 
-## Next Phase — Forensic Analysis
+## Fase 5 Scope — Forensic Analysis
 
-Setelah Fase 4 di-*merge*, Fase 5 berfokus pada interpretasi forensik dari hasil baseline:
+Fase 5 berfokus pada interpretasi forensik dari hasil baseline:
 
 - feature importance dan/atau permutation importance,
 - analisis false positive dan false negative,
 - interpretasi pola trafik DoS/DDoS dari fitur dominan,
 - pembahasan risiko normal class kecil dan split-similarity,
 - rekomendasi mitigasi IDS IoT berbasis temuan eksperimen.
+
+## Forensic Analysis Snapshot
+
+Fase 5 menambahkan interpretasi forensik dari baseline Fase 4:
+
+- `scripts/run_forensic_analysis.py`: runner feature importance, permutation importance, dan error analysis.
+- `notebooks/03_forensic_analysis.ipynb`: notebook wrapper untuk menjalankan Fase 5.
+- `results/metrics/forensic_summary.json`: ringkasan forensik machine-readable.
+- `results/tables/forensic_feature_importance.csv`: feature importance dan permutation importance.
+- `results/tables/forensic_error_analysis.csv`: ringkasan TN/FP/FN/TP selected runs.
+- `results/tables/forensic_error_examples.csv`: contoh FP/FN terbatas untuk diskusi.
+- `results/figures/forensic_*.png`: visualisasi feature importance dan error summary.
+- `reports/progress-5-forensic-analysis.md`: laporan progres Fase 5.
+
+Top feature group sementara: `N_IN_Conn_P_DstIP`, disusul `N_IN_Conn_P_SrcIP`, `stddev`, dan `srate`. Interpretasi tetap hati-hati karena normal class kecil dan ada risiko split-similarity.
 
 ## Status
 
@@ -148,6 +163,7 @@ Current phase: **Fase 5 — Forensic Analysis**
 | Fase 3 EDA & Preprocessing | Codex gpt-5.5 + high reasoning | 88 | APPROVED | `docs/REVIEW_phase3_eda_preprocessing.md` |
 | Fase 3 Final Verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
 | Fase 4 Baseline Modeling | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
+| Fase 5 Forensic Analysis | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase5_forensic_analysis.md` |
 
 Lihat:
 
@@ -162,3 +178,4 @@ Lihat:
 - `docs/REVIEW_phase3_eda_preprocessing.md`
 - `docs/REVIEW_phase3_final_verification.md`
 - `docs/REVIEW_phase4_baseline_modeling.md`
+- `docs/REVIEW_phase5_forensic_analysis.md`

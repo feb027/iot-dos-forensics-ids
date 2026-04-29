@@ -47,7 +47,7 @@ Status: completed — Codex technical review 90/100 APPROVED; merged via PR #4.
 
 Tujuan: menganalisis fitur penting, confusion matrix, dan interpretasi pola DoS/DDoS.
 
-Status: current phase after PR #4 merge.
+Status: completed on branch — Codex review 90/100 APPROVED; PR pending.
 
 ## Fase 6 — Dashboard
 

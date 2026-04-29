@@ -1,0 +1,100 @@
+{
+  "generated_at_utc": "2026-04-29T05:07:11.648744+00:00",
+  "phase": "Fase 5 — Forensic Analysis",
+  "selected_runs": [
+    {
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "decision_tree"
+    },
+    {
+      "track": "B_balanced_controlled_1_to_1",
+      "model": "random_forest"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "decision_tree"
+    },
+    {
+      "track": "C_balanced_controlled_1_to_2",
+      "model": "random_forest"
+    }
+  ],
+  "top_feature_groups": [
+    {
+      "rank": 1,
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "mean_normalized_importance": 0.7406481638,
+      "interpretation_hint": "jumlah koneksi masuk per destination IP; nilai tinggi relevan untuk konsentrasi serangan ke target IoT"
+    },
+    {
+      "rank": 2,
+      "feature_group": "N_IN_Conn_P_SrcIP",
+      "mean_normalized_importance": 0.0759921633,
+      "interpretation_hint": "jumlah koneksi masuk per source IP; nilai tinggi relevan untuk pola flood dari sumber tertentu"
+    },
+    {
+      "rank": 3,
+      "feature_group": "stddev",
+      "mean_normalized_importance": 0.0516931655,
+      "interpretation_hint": "deviasi statistik flow; membantu membedakan kestabilan trafik normal dan variasi trafik serangan"
+    },
+    {
+      "rank": 4,
+      "feature_group": "srate",
+      "mean_normalized_importance": 0.0411289233,
+      "interpretation_hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+    },
+    {
+      "rank": 5,
+      "feature_group": "mean",
+      "mean_normalized_importance": 0.0217956205,
+      "interpretation_hint": "rata-rata statistik flow; dapat merepresentasikan intensitas umum trafik"
+    },
+    {
+      "rank": 6,
+      "feature_group": "max",
+      "mean_normalized_importance": 0.0198405512,
+      "interpretation_hint": "nilai maksimum statistik flow; membantu menangkap spike intensitas trafik"
+    },
+    {
+      "rank": 7,
+      "feature_group": "state_number",
+      "mean_normalized_importance": 0.0184494638,
+      "interpretation_hint": "kode status koneksi; perubahan distribusi state membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "rank": 8,
+      "feature_group": "drate",
+      "mean_normalized_importance": 0.0065210405,
+      "interpretation_hint": "destination packet rate; perubahan tajam dapat menandai ketidakseimbangan aliran request-response"
+    }
+  ],
+  "error_totals_selected_runs": {
+    "false_positive_normal_as_attack": 2,
+    "false_negative_attack_as_normal": 17,
+    "error_examples_saved": 16
+  },
+  "interpretation_policy": "Feature importance and FP/FN are interpreted as dataset-backed forensic evidence, not as proof of real-world perfect detection. Normal class is very small and split-similarity risk remains a limitation.",
+  "limitations": [
+    "Normal class is tiny: 370 train rows and 107 test rows in the audited split.",
+    "Controlled Track B/C metrics can be high because attack rows are sampled around all available normal rows.",
+    "Network identifiers and label columns remain excluded, so interpretation focuses on aggregate traffic features rather than attribution to specific IP/port evidence.",
+    "Feature importance is model-dependent and should be read together with permutation importance and error analysis."
+  ],
+  "sample_limited": false,
+  "outputs": {
+    "tables": [
+      "results/tables/forensic_feature_importance.csv",
+      "results/tables/forensic_error_analysis.csv",
+      "results/tables/forensic_error_examples.csv"
+    ],
+    "figures": [
+      "results/figures/forensic_feature_importance.png",
+      "results/figures/forensic_confusion_error_summary.png"
+    ]
+  }
+}

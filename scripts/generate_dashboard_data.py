@@ -14,6 +14,9 @@ PREPROCESSING_DATASET_PLAN = ROOT / "results" / "tables" / "preprocessing_datase
 BASELINE_METRICS = ROOT / "results" / "tables" / "baseline_model_metrics.csv"
 BASELINE_CONFUSION = ROOT / "results" / "tables" / "baseline_confusion_matrices.csv"
 BASELINE_SUMMARY = ROOT / "results" / "metrics" / "baseline_summary.json"
+FORENSIC_FEATURE_IMPORTANCE = ROOT / "results" / "tables" / "forensic_feature_importance.csv"
+FORENSIC_ERROR_ANALYSIS = ROOT / "results" / "tables" / "forensic_error_analysis.csv"
+FORENSIC_SUMMARY = ROOT / "results" / "metrics" / "forensic_summary.json"
 
 
 def load_dataset_audit() -> tuple[dict, list[dict]]:
@@ -128,11 +131,59 @@ def load_baseline_results() -> tuple[list[dict], list[dict], dict]:
     return model_comparison, confusion_matrix, baseline_summary
 
 
+def load_forensic_results() -> tuple[list[dict], list[dict], dict]:
+    feature_importance: list[dict] = []
+    error_analysis: list[dict] = []
+    forensic_summary: dict = {}
+
+    if FORENSIC_FEATURE_IMPORTANCE.exists() and FORENSIC_FEATURE_IMPORTANCE.read_text(encoding="utf-8").strip():
+        with FORENSIC_FEATURE_IMPORTANCE.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                if row.get("method") == "tree_feature_importance":
+                    feature_importance.append(
+                        {
+                            "track": row["track"],
+                            "model": row["model"],
+                            "method": row["method"],
+                            "rank": int(row["rank"]),
+                            "feature": row["feature"],
+                            "feature_group": row["feature_group"],
+                            "importance": float(row["importance"]),
+                            "normalized_importance": float(row.get("normalized_importance") or 0),
+                            "interpretation_hint": row.get("interpretation_hint", ""),
+                        }
+                    )
+        feature_importance.sort(key=lambda r: (r["normalized_importance"], r["importance"]), reverse=True)
+
+    if FORENSIC_ERROR_ANALYSIS.exists() and FORENSIC_ERROR_ANALYSIS.read_text(encoding="utf-8").strip():
+        with FORENSIC_ERROR_ANALYSIS.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                error_analysis.append(
+                    {
+                        "track": row["track"],
+                        "model": row["model"],
+                        "error_type": row["error_type"],
+                        "count": int(row["count"]),
+                        "rate_of_track_test": float(row["rate_of_track_test"]),
+                        "top_proto": row.get("top_proto", ""),
+                        "top_category": row.get("top_category", ""),
+                    }
+                )
+
+    if FORENSIC_SUMMARY.exists():
+        forensic_summary = json.loads(FORENSIC_SUMMARY.read_text(encoding="utf-8"))
+
+    return feature_importance, error_analysis, forensic_summary
+
+
 def main() -> None:
     dataset_summary, class_distribution = load_dataset_audit()
     eda_summary = load_eda_summary()
     model_comparison, confusion_matrix, baseline_summary = load_baseline_results()
-    if model_comparison:
+    feature_importance, forensic_error_analysis, forensic_summary = load_forensic_results()
+    if forensic_summary:
+        status = "Fase 5 Forensic Analysis completed; PR pending"
+    elif model_comparison:
         status = "Fase 5 Forensic Analysis current; baseline modeling completed"
     elif eda_summary:
         status = "Fase 4 Baseline Modeling current; no model results yet"
@@ -153,12 +204,19 @@ def main() -> None:
         "eda_summary": eda_summary,
         "model_comparison": model_comparison,
         "confusion_matrix": confusion_matrix,
-        "feature_importance": [],
+        "feature_importance": feature_importance[:30],
         "baseline_summary": baseline_summary,
-        "forensic_notes": [
-            "Fase 4 telah menghasilkan baseline metrics dan confusion matrix untuk Track A/B/C.",
-            "Fase 5 berjalan: feature importance dan error analysis akan dipakai untuk interpretasi forensik DoS/DDoS.",
-        ] if eda_summary else ([
+        "forensic_error_analysis": forensic_error_analysis,
+        "forensic_summary": forensic_summary,
+        "forensic_notes": (
+            [
+                "Fase 5 telah menghasilkan feature importance dan error analysis dari selected baseline runs.",
+                "Interpretasi forensik tetap dibatasi oleh normal class kecil dan split-similarity risk.",
+            ] if forensic_summary else [
+                "Fase 4 telah menghasilkan baseline metrics dan confusion matrix untuk Track A/B/C.",
+                "Fase 5 berjalan: feature importance dan error analysis akan dipakai untuk interpretasi forensik DoS/DDoS.",
+            ]
+        ) if eda_summary else ([
             "Fase 2 menemukan risiko utama: class imbalance ekstrem dan kemiripan fitur agregat antar split; mitigasi harus diterapkan sebelum modeling.",
             "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia.",
         ] if dataset_summary else [

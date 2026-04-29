@@ -6,7 +6,7 @@ Fase 5 — Forensic Analysis
 
 ## Status
 
-Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Current work is Fase 5 Forensic Analysis: interpret feature importance, confusion matrix behavior, false positives/false negatives, and traffic-pattern evidence from the baseline artifacts. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
+Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Fase 5 Forensic Analysis artifacts have been generated and approved by Codex reviewer with score 90/100: feature importance, permutation importance, FP/FN analysis, traffic-pattern interpretation, and dashboard integration are available. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -58,6 +58,12 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 | Fase 4 baseline tables | `results/tables/baseline_*.csv` | generated |
 | Fase 4 baseline figures | `results/figures/baseline_*.png` | generated |
 | Fase 5 plan | `docs/phase5-plan.md` | drafted |
+| Fase 5 forensic runner | `scripts/run_forensic_analysis.py`, `notebooks/03_forensic_analysis.ipynb` | generated |
+| Fase 5 method notes | `docs/phase5-method-notes.md` | completed |
+| Fase 5 progress report | `reports/progress-5-forensic-analysis.md` | drafted |
+| Fase 5 forensic summary | `results/metrics/forensic_summary.json` | generated |
+| Fase 5 forensic tables | `results/tables/forensic_*.csv` | generated |
+| Fase 5 forensic figures | `results/figures/forensic_*.png` | generated |
 
 ## Review Status
 
@@ -72,14 +78,15 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 | 3 | Codex gpt-5.5 + high reasoning | 88 | APPROVED | `docs/REVIEW_phase3_eda_preprocessing.md` |
 | 3 final verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
 | 4 | Codex Technical Reviewer | 90 | APPROVED | `docs/REVIEW_phase4_baseline_modeling.md` |
+| 5 | Codex Technical/Lecturer Reviewer | 90 | APPROVED | `docs/REVIEW_phase5_forensic_analysis.md` |
 
 ## Blockers
 
-No blockers after PR #4 merge. Watch items for Fase 5: do not overclaim perfect controlled-subset metrics, keep raw/model files ignored, use artifact-backed feature importance, and explicitly discuss FP/FN plus normal-class limitations.
+No Fase 5 blockers remain before PR. Watch items: commit all Fase 5 artifacts, keep raw/model files ignored, and decide next whether to add advanced modeling or proceed to Fase 6 dashboard polish.
 
 ## Next Action
 
-1. Create branch `phase-5-forensic-analysis` from updated `main`.
-2. Implement feature importance/permutation importance and FP/FN analysis from Fase 4 outputs.
-3. Save forensic tables/figures under `results/` and write `reports/progress-5-forensic-analysis.md`.
-4. Run Codex review before entering dashboard/manuscript polishing.
+1. Commit Fase 5 Forensic Analysis artifacts.
+2. Push branch `phase-5-forensic-analysis`.
+3. Open PR to `main`.
+4. After merge, choose between advanced modeling extension and Fase 6 dashboard/manuscript polish.
