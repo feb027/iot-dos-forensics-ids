@@ -64,6 +64,9 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 | Fase 5 forensic summary | `results/metrics/forensic_summary.json` | generated |
 | Fase 5 forensic tables | `results/tables/forensic_*.csv` | generated |
 | Fase 5 forensic figures | `results/figures/forensic_*.png` | generated |
+| Fase 6A advanced plan | `docs/phase6a-advanced-modeling-plan.md` | drafted |
+| Fase 6A local run guide | `docs/phase6a-local-run-guide.md` | drafted |
+| Fase 6A advanced runner | `scripts/run_advanced_modeling.py`, `notebooks/04_advanced_modeling.ipynb` | implemented; run pending |
 
 ## Review Status
 

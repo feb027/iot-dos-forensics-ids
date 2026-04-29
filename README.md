@@ -147,6 +147,17 @@ Fase 5 menambahkan interpretasi forensik dari baseline Fase 4:
 
 Top feature group Fase 5: `N_IN_Conn_P_DstIP`, disusul `N_IN_Conn_P_SrcIP`, `stddev`, dan `srate`. Interpretasi tetap hati-hati karena normal class kecil dan ada risiko split-similarity.
 
+## Advanced/SOTA Modeling Extension
+
+Fase 6A menambahkan eksperimen advanced/SOTA tabular modeling untuk memperkuat baseline dan interpretasi forensik:
+
+- `scripts/run_advanced_modeling.py`: runner LightGBM, XGBoost, CatBoost, dan sampled SHAP.
+- `notebooks/04_advanced_modeling.ipynb`: notebook wrapper Fase 6A.
+- `docs/phase6a-advanced-modeling-plan.md`: rencana eksperimen.
+- `docs/phase6a-local-run-guide.md`: panduan run di WSL lokal.
+
+Output final Fase 6A akan ditulis ke `results/tables/advanced_*.csv`, `results/metrics/advanced_summary.json`, dan `results/figures/advanced_*.png` setelah full run selesai.
+
 ## Status
 
 Current phase: **Fase 6A — Advanced/SOTA Modeling Extension**
