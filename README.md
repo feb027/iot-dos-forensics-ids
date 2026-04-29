@@ -49,7 +49,7 @@ prompts/     Prompt template untuk Codex/Hermes workflow
 
 GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
 
-Dashboard saat ini menampilkan ringkasan audit dataset Fase 2. Isi metrik model, confusion matrix, feature importance, dan interpretasi forensik akan diperbarui setelah eksperimen berjalan.
+Dashboard saat ini menampilkan ringkasan audit dataset Fase 2 serta EDA/preprocessing Fase 3. Isi metrik model, confusion matrix, feature importance, dan interpretasi forensik akan diperbarui setelah eksperimen berjalan.
 
 ## Definition of Done
 
@@ -120,6 +120,8 @@ Current phase: **Fase 3 — EDA & Preprocessing**
 | Strict Re-review Fase 0 | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase0_gpt55_high.md` |
 | Fase 1 Literature Review | Codex gpt-5.5 + high reasoning | 92 | APPROVED | `docs/REVIEW_phase1_literature_final_approved.md` |
 | Fase 2 Dataset Audit | Codex gpt-5.5 + high reasoning | 89 | APPROVED | `docs/REVIEW_phase2_dataset_audit.md` |
+| Fase 3 EDA & Preprocessing | Codex gpt-5.5 + high reasoning | 88 | APPROVED | `docs/REVIEW_phase3_eda_preprocessing.md` |
+| Fase 3 Final Verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
 
 Lihat:
 
@@ -131,3 +133,5 @@ Lihat:
 - `docs/REVIEW_phase0_gpt55_high.md`
 - `docs/REVIEW_phase1_literature_final_approved.md`
 - `docs/REVIEW_phase2_dataset_audit.md`
+- `docs/REVIEW_phase3_eda_preprocessing.md`
+- `docs/REVIEW_phase3_final_verification.md`
