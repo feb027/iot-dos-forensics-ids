@@ -182,7 +182,7 @@ def main() -> None:
     model_comparison, confusion_matrix, baseline_summary = load_baseline_results()
     feature_importance, forensic_error_analysis, forensic_summary = load_forensic_results()
     if forensic_summary:
-        status = "Fase 5 Forensic Analysis completed; PR pending"
+        status = "Fase 6A Advanced/SOTA Modeling current; Fase 5 merged"
     elif model_comparison:
         status = "Fase 5 Forensic Analysis current; baseline modeling completed"
     elif eda_summary:

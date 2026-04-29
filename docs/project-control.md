@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 5 — Forensic Analysis
+Fase 6A — Advanced/SOTA Modeling Extension
 
 ## Status
 
-Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Fase 5 Forensic Analysis artifacts have been generated and approved by Codex reviewer with score 90/100: feature importance, permutation importance, FP/FN analysis, traffic-pattern interpretation, and dashboard integration are available. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
+Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Fase 5 Forensic Analysis has been merged to `main` via PR #5 and approved by Codex reviewer with score 90/100. Current work is Fase 6A Advanced/SOTA Modeling Extension: compare stronger tabular IDS models such as LightGBM/XGBoost/CatBoost against Fase 4 baselines and add sampled SHAP-style explainability for forensic interpretation. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
 
 ## Fixed Decisions
 
@@ -82,11 +82,11 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 
 ## Blockers
 
-No Fase 5 blockers remain before PR. Watch items: commit all Fase 5 artifacts, keep raw/model files ignored, and decide next whether to add advanced modeling or proceed to Fase 6 dashboard polish.
+No blockers after PR #5 merge. Watch items for Fase 6A: keep advanced models reproducible on local WSL, avoid committing model binaries/raw data, use sampled explainability to control memory, and compare against baseline artifacts rather than making isolated claims.
 
 ## Next Action
 
-1. Commit Fase 5 Forensic Analysis artifacts.
-2. Push branch `phase-5-forensic-analysis`.
-3. Open PR to `main`.
-4. After merge, choose between advanced modeling extension and Fase 6 dashboard/manuscript polish.
+1. Create branch `phase-6a-advanced-modeling` from updated `main`.
+2. Implement advanced tabular modeling runner and SHAP/explainability artifacts.
+3. Run full experiment on local WSL PC via reverse SSH tunnel.
+4. Review, commit, push, and open PR before dashboard/manuscript polish.

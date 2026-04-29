@@ -47,7 +47,13 @@ Status: completed — Codex technical review 90/100 APPROVED; merged via PR #4.
 
 Tujuan: menganalisis fitur penting, confusion matrix, dan interpretasi pola DoS/DDoS.
 
-Status: completed on branch — Codex review 90/100 APPROVED; PR pending.
+Status: completed and merged via PR #5 — Codex review 90/100 APPROVED.
+
+## Fase 6A — Advanced/SOTA Modeling Extension
+
+Tujuan: membandingkan model tabular modern seperti LightGBM/XGBoost/CatBoost terhadap baseline Fase 4 dan menambahkan explainability sampel untuk memperkuat interpretasi forensik.
+
+Status: current phase after PR #5 merge.
 
 ## Fase 6 — Dashboard
 

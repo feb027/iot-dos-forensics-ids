@@ -145,11 +145,11 @@ Fase 5 menambahkan interpretasi forensik dari baseline Fase 4:
 - `results/figures/forensic_*.png`: visualisasi feature importance dan error summary.
 - `reports/progress-5-forensic-analysis.md`: laporan progres Fase 5.
 
-Top feature group sementara: `N_IN_Conn_P_DstIP`, disusul `N_IN_Conn_P_SrcIP`, `stddev`, dan `srate`. Interpretasi tetap hati-hati karena normal class kecil dan ada risiko split-similarity.
+Top feature group Fase 5: `N_IN_Conn_P_DstIP`, disusul `N_IN_Conn_P_SrcIP`, `stddev`, dan `srate`. Interpretasi tetap hati-hati karena normal class kecil dan ada risiko split-similarity.
 
 ## Status
 
-Current phase: **Fase 5 — Forensic Analysis**
+Current phase: **Fase 6A — Advanced/SOTA Modeling Extension**
 
 ## Review History
 
