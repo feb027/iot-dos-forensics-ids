@@ -35,7 +35,7 @@ Status: completed — Codex review 89/100 APPROVED.
 
 Tujuan: eksplorasi dataset, cleaning, encoding, split strategy, dan visualisasi awal.
 
-Status: current phase after PR #2 merge.
+Status: completed — Codex review 88/100 APPROVED.
 
 ## Fase 4 — Baseline Modeling
 

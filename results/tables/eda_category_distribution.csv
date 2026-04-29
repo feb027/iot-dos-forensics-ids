@@ -1,0 +1,11 @@
+split,category,count,rate
+test,DDoS,385309,0.52515521
+test,DoS,330112,0.4499247
+test,Normal,107,0.00014584
+test,Reconnaissance,18163,0.02475518
+test,Theft,14,1.908e-05
+train,DDoS,1541315,0.52518266
+train,DoS,1320148,0.44982294
+train,Normal,370,0.00012607
+train,Reconnaissance,72919,0.02484618
+train,Theft,65,2.215e-05

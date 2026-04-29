@@ -91,6 +91,22 @@ Fase 2 Dataset Audit sudah selesai dan di-*merge* ke `main` melalui PR #2. Artif
 
 Temuan utama: DoS/DDoS tersedia, tetapi normal class sangat kecil dan ada risiko kemiripan fitur agregat antar split. Fase 3 harus memakai evaluasi yang tidak bergantung pada accuracy saja.
 
+## EDA & Preprocessing Snapshot
+
+Fase 3 menambahkan EDA dan preprocessing plan sebelum modeling:
+
+- `scripts/run_eda_preprocessing.py`: script EDA/preprocessing streaming untuk BoT-IoT/UNSW-IoT CSV split.
+- `notebooks/01_eda_preprocessing.ipynb`: notebook wrapper untuk menjalankan script.
+- `results/metrics/preprocessing_summary.json`: ringkasan machine-readable.
+- `results/tables/eda_*.csv`: distribusi scope, kategori, protokol, dan ringkasan fitur numerik.
+- `results/tables/eda_label_consistency_checks.csv`: validasi konsistensi label/scope.
+- `results/tables/preprocessing_feature_plan.csv`: kolom fitur, label, identifier, dan aksi preprocessing.
+- `results/tables/preprocessing_dataset_plan.csv`: rencana track imbalanced dan balanced controlled subset untuk Fase 4.
+- `results/figures/eda_*.png`: visualisasi EDA awal.
+- `reports/progress-3-eda-preprocessing.md`: laporan progres Fase 3.
+
+Keputusan utama: `other_attack` tidak dianggap normal; baseline utama adalah `normal` vs `dos_or_ddos`, dengan jalur imbalanced dan balanced controlled subset.
+
 ## Status
 
 Current phase: **Fase 3 — EDA & Preprocessing**

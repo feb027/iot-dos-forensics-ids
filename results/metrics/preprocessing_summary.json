@@ -1,0 +1,144 @@
+{
+  "generated_at_utc": "2026-04-29T03:44:34.069985+00:00",
+  "source_data_dir": "data/raw/bot-iot-hf",
+  "files": [
+    "train.csv",
+    "test.csv"
+  ],
+  "total_rows": 3668522,
+  "split_rows": {
+    "train": 2934817,
+    "test": 733705
+  },
+  "candidate_features": [
+    "proto",
+    "stddev",
+    "N_IN_Conn_P_SrcIP",
+    "min",
+    "state_number",
+    "mean",
+    "N_IN_Conn_P_DstIP",
+    "drate",
+    "srate",
+    "max"
+  ],
+  "categorical_features": [
+    "proto"
+  ],
+  "numeric_features": [
+    "stddev",
+    "N_IN_Conn_P_SrcIP",
+    "min",
+    "state_number",
+    "mean",
+    "N_IN_Conn_P_DstIP",
+    "drate",
+    "srate",
+    "max"
+  ],
+  "excluded_columns": [
+    "attack",
+    "category",
+    "daddr",
+    "dport",
+    "pkSeqID",
+    "saddr",
+    "seq",
+    "sport",
+    "subcategory"
+  ],
+  "binary_target_definition": {
+    "normal": "attack == 0 or category == Normal",
+    "dos_or_ddos": "category in {DoS, DDoS}",
+    "other_attack": "excluded from primary binary baseline, optional separate analysis"
+  },
+  "label_consistency_ok": true,
+  "label_consistency_checks": [
+    {
+      "split": "test",
+      "check": "attack_0_not_normal_category",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "test",
+      "check": "normal_category_not_attack_0",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "test",
+      "check": "dos_ddos_category_not_attack_1",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "test",
+      "check": "other_attack_category_wrong_scope",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "train",
+      "check": "attack_0_not_normal_category",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "train",
+      "check": "normal_category_not_attack_0",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "train",
+      "check": "dos_ddos_category_not_attack_1",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    },
+    {
+      "split": "train",
+      "check": "other_attack_category_wrong_scope",
+      "violations": 0,
+      "expected": 0,
+      "status": "ok"
+    }
+  ],
+  "recommended_phase4_tracks": [
+    "A_realistic_imbalanced",
+    "B_balanced_controlled_1_to_1",
+    "C_balanced_controlled_1_to_2",
+    "optional_DoS_vs_DDoS_or_protocol_subtype_forensic_analysis"
+  ],
+  "warnings": [
+    "Normal class is extremely small; accuracy alone is not acceptable.",
+    "Network identifiers and label columns must remain excluded from model features.",
+    "Other attacks must not be silently mapped to normal in the primary binary task.",
+    "Feature-signature similarity from Fase 2 should be disclosed when interpreting future model performance."
+  ],
+  "outputs": {
+    "tables": [
+      "results/tables/eda_category_distribution.csv",
+      "results/tables/eda_subcategory_distribution.csv",
+      "results/tables/eda_binary_scope_distribution.csv",
+      "results/tables/eda_protocol_distribution.csv",
+      "results/tables/eda_numeric_feature_summary.csv",
+      "results/tables/eda_label_consistency_checks.csv",
+      "results/tables/preprocessing_feature_plan.csv",
+      "results/tables/preprocessing_dataset_plan.csv"
+    ],
+    "figures": [
+      "results/figures/eda_category_distribution_log.png",
+      "results/figures/eda_binary_scope_distribution_log.png",
+      "results/figures/eda_protocol_by_scope_log.png",
+      "results/figures/eda_numeric_feature_means_log.png"
+    ]
+  }
+}

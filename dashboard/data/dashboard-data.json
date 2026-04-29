@@ -4,7 +4,7 @@
     "theme": "IoT + Cyber Security + Digital Forensics",
     "primary_dataset": "BoT-IoT (UNSW)",
     "alternative_dataset": "RT-IoT2022 (UCI)",
-    "status": "Fase 3 EDA & Preprocessing ready; modeling not started"
+    "status": "Fase 3 EDA & Preprocessing completed; modeling not started"
   },
   "dataset_summary": {
     "source": "Mireu-Lab/UNSW-IoT Hugging Face mirror",
@@ -141,11 +141,141 @@
       "rate": 0.02477426
     }
   ],
+  "eda_summary": {
+    "total_rows": 3668522,
+    "candidate_features": [
+      "proto",
+      "stddev",
+      "N_IN_Conn_P_SrcIP",
+      "min",
+      "state_number",
+      "mean",
+      "N_IN_Conn_P_DstIP",
+      "drate",
+      "srate",
+      "max"
+    ],
+    "excluded_columns": [
+      "attack",
+      "category",
+      "daddr",
+      "dport",
+      "pkSeqID",
+      "saddr",
+      "seq",
+      "sport",
+      "subcategory"
+    ],
+    "recommended_phase4_tracks": [
+      "A_realistic_imbalanced",
+      "B_balanced_controlled_1_to_1",
+      "C_balanced_controlled_1_to_2",
+      "optional_DoS_vs_DDoS_or_protocol_subtype_forensic_analysis"
+    ],
+    "warnings": [
+      "Normal class is extremely small; accuracy alone is not acceptable.",
+      "Network identifiers and label columns must remain excluded from model features.",
+      "Other attacks must not be silently mapped to normal in the primary binary task.",
+      "Feature-signature similarity from Fase 2 should be disclosed when interpreting future model performance."
+    ],
+    "scope_counts": {
+      "test": {
+        "dos_or_ddos": 715421,
+        "normal": 107,
+        "other_attack": 18177
+      },
+      "train": {
+        "dos_or_ddos": 2861463,
+        "normal": 370,
+        "other_attack": 72984
+      }
+    },
+    "dataset_plan": [
+      {
+        "track": "A_realistic_imbalanced",
+        "split": "test",
+        "normal_rows": "107",
+        "dos_or_ddos_rows": "715421",
+        "other_attack_rows": "18177",
+        "other_attack_policy": "exclude_from_binary_baseline",
+        "dos_sample_rows": "715421",
+        "target_ratio_normal_to_dos": "1:6686.18",
+        "random_state": "none",
+        "purpose": "Reflect audited distribution; evaluate with precision, recall, F1, confusion matrix, not accuracy alone."
+      },
+      {
+        "track": "B_balanced_controlled_1_to_1",
+        "split": "test",
+        "normal_rows": "107",
+        "dos_or_ddos_rows": "715421",
+        "other_attack_rows": "18177",
+        "other_attack_policy": "exclude_from_binary_baseline",
+        "dos_sample_rows": "107",
+        "target_ratio_normal_to_dos": "1:1",
+        "random_state": "42",
+        "purpose": "Control imbalance so Fase 4 can test feature separability without majority-class dominance."
+      },
+      {
+        "track": "C_balanced_controlled_1_to_2",
+        "split": "test",
+        "normal_rows": "107",
+        "dos_or_ddos_rows": "715421",
+        "other_attack_rows": "18177",
+        "other_attack_policy": "exclude_from_binary_baseline",
+        "dos_sample_rows": "214",
+        "target_ratio_normal_to_dos": "1:2",
+        "random_state": "42",
+        "purpose": "Moderately imbalanced sensitivity check; still prevents millions of attacks from dominating."
+      },
+      {
+        "track": "A_realistic_imbalanced",
+        "split": "train",
+        "normal_rows": "370",
+        "dos_or_ddos_rows": "2861463",
+        "other_attack_rows": "72984",
+        "other_attack_policy": "exclude_from_binary_baseline",
+        "dos_sample_rows": "2861463",
+        "target_ratio_normal_to_dos": "1:7733.68",
+        "random_state": "none",
+        "purpose": "Reflect audited distribution; evaluate with precision, recall, F1, confusion matrix, not accuracy alone."
+      },
+      {
+        "track": "B_balanced_controlled_1_to_1",
+        "split": "train",
+        "normal_rows": "370",
+        "dos_or_ddos_rows": "2861463",
+        "other_attack_rows": "72984",
+        "other_attack_policy": "exclude_from_binary_baseline",
+        "dos_sample_rows": "370",
+        "target_ratio_normal_to_dos": "1:1",
+        "random_state": "42",
+        "purpose": "Control imbalance so Fase 4 can test feature separability without majority-class dominance."
+      },
+      {
+        "track": "C_balanced_controlled_1_to_2",
+        "split": "train",
+        "normal_rows": "370",
+        "dos_or_ddos_rows": "2861463",
+        "other_attack_rows": "72984",
+        "other_attack_policy": "exclude_from_binary_baseline",
+        "dos_sample_rows": "740",
+        "target_ratio_normal_to_dos": "1:2",
+        "random_state": "42",
+        "purpose": "Moderately imbalanced sensitivity check; still prevents millions of attacks from dominating."
+      }
+    ],
+    "figures": [
+      "results/figures/eda_category_distribution_log.png",
+      "results/figures/eda_binary_scope_distribution_log.png",
+      "results/figures/eda_protocol_by_scope_log.png",
+      "results/figures/eda_numeric_feature_means_log.png"
+    ]
+  },
   "model_comparison": [],
   "confusion_matrix": {},
   "feature_importance": [],
   "forensic_notes": [
-    "Fase 2 menemukan risiko utama: class imbalance ekstrem dan kemiripan fitur agregat antar split; mitigasi harus diterapkan sebelum modeling.",
+    "Fase 3 menyiapkan dua jalur eksperimen: distribusi asli yang sangat imbalanced dan controlled balanced subset untuk mitigasi normal class kecil.",
     "Hasil forensik detail akan diisi setelah feature importance dan error analysis tersedia."
   ]
 }
