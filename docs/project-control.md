@@ -96,11 +96,11 @@ Fase 4 Baseline Modeling, Fase 5 Forensic Analysis, Fase 6A Advanced/SOTA Modeli
 
 ## Blockers
 
-No active blockers. Watch items for Fase 7: verify GitHub Pages after status sync and keep manuscript language cautious around controlled-subset scores.
+No active blockers. GitHub Pages verified after Fase 6 dashboard status sync. Watch item for Fase 7: keep manuscript language cautious around controlled-subset scores.
 
 ## Next Action
 
-1. Verify GitHub Pages live dashboard and JSON after status sync.
-2. Create Fase 7 manuscript branch from updated `main`.
-3. Draft `reports/manuscript-draft.md` from committed artifact tables/figures only.
-4. Run Codex lecturer/technical review for the manuscript draft.
+1. Create Fase 7 manuscript branch from updated `main`.
+2. Draft `reports/manuscript-draft.md` from committed artifact tables/figures only.
+3. Run Codex lecturer/technical review for the manuscript draft.
+4. Fix manuscript review issues and prepare final UAS release audit.

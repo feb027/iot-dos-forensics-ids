@@ -118,3 +118,9 @@
 - Dashboard generator status updated to `Fase 6 dashboard merged; Fase 7 manuscript current`.
 - Added `docs/phase7-manuscript-plan.md` for the next phase.
 
+## 2026-04-29 — GitHub Pages verified after Fase 6 merge
+
+- GitHub Pages source remains `main` `/` and status is `built`.
+- Live dashboard JSON returned HTTP 200 with status `Fase 6 dashboard merged; Fase 7 manuscript current`.
+- Live dashboard page returned HTTP 200 at `https://feb027.github.io/iot-dos-forensics-ids/dashboard/`.
+
