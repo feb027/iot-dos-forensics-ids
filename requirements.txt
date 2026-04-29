@@ -7,3 +7,7 @@ jupyter
 notebook
 pytest
 joblib
+lightgbm
+xgboost
+catboost
+shap
