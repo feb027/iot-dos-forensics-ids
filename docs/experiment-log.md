@@ -124,3 +124,11 @@
 - Live dashboard JSON returned HTTP 200 with status `Fase 6 dashboard merged; Fase 7 manuscript current`.
 - Live dashboard page returned HTTP 200 at `https://feb027.github.io/iot-dos-forensics-ids/dashboard/`.
 
+## 2026-04-29 — Fase 6B Interactive AI SOC Demo implemented
+
+- Added modular demo frontend under `dashboard/demo.html`, `dashboard/styles/`, and `dashboard/scripts/`.
+- Added generated demo artifacts: `demo-scenarios.json`, `demo-feature-ranges.json`, `demo-narrative-templates.json`.
+- Added FastAPI backend under `backend/iot_soc_api/` with health, scenario, predict, SOC analyze, flow analyze, and constrained chat endpoints.
+- Deployed prototype to `https://iot.aquarise.my.id/soc-demo/demo.html` with PM2 process `iot-dos-soc-demo-api`.
+- Caddy route applied at runtime via `/tmp/Caddyfile.iot-soc-demo`; persistent `/etc/caddy/Caddyfile` update needs sudo if service restarts.
+

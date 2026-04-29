@@ -11,3 +11,6 @@ lightgbm
 xgboost
 catboost
 shap
+fastapi
+uvicorn
+httpx

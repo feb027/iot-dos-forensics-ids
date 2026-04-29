@@ -1,0 +1,252 @@
+{
+  "generated_at_utc": "2026-04-29T09:29:25.500109+00:00",
+  "phase": "Fase 6B — Interactive AI SOC Demo",
+  "status": "vps_backed_demo_primary_static_fallback",
+  "metric_context": {
+    "track_a_lightgbm_macro_f1": 0.98847752,
+    "track_a_lightgbm_mcc": 0.97704843,
+    "track_a_lightgbm_fp": 1,
+    "track_a_lightgbm_fn": 4
+  },
+  "top_evidence": [
+    {
+      "rank": 1,
+      "feature": "mean",
+      "feature_group": "mean",
+      "weight": 0.3218430459,
+      "hint": "rata-rata statistik flow; merepresentasikan intensitas umum trafik"
+    },
+    {
+      "rank": 2,
+      "feature": "proto=udp",
+      "feature_group": "proto",
+      "weight": 0.1933551678,
+      "hint": "protokol trafik; konteks transport/application layer untuk pola DoS/DDoS IoT"
+    },
+    {
+      "rank": 3,
+      "feature": "state_number",
+      "feature_group": "state_number",
+      "weight": 0.1908545082,
+      "hint": "kode status koneksi; membantu membaca pola koneksi gagal/abnormal"
+    },
+    {
+      "rank": 4,
+      "feature": "N_IN_Conn_P_DstIP",
+      "feature_group": "N_IN_Conn_P_DstIP",
+      "weight": 0.0553344984,
+      "hint": "jumlah koneksi masuk per destination IP; relevan untuk konsentrasi serangan ke target/gateway IoT"
+    },
+    {
+      "rank": 5,
+      "feature": "stddev",
+      "feature_group": "stddev",
+      "weight": 0.051865525,
+      "hint": "deviasi statistik flow; membedakan stabilitas trafik normal dan variasi trafik serangan"
+    },
+    {
+      "rank": 6,
+      "feature": "srate",
+      "feature_group": "srate",
+      "weight": 0.0489931299,
+      "hint": "source packet rate; nilai tinggi dapat menunjukkan pengiriman paket agresif dari sumber serangan"
+    },
+    {
+      "rank": 7,
+      "feature": "min",
+      "feature_group": "min",
+      "weight": 0.0473761345,
+      "hint": "nilai minimum statistik flow; mendukung pembacaan rentang trafik"
+    },
+    {
+      "rank": 8,
+      "feature": "max",
+      "feature_group": "max",
+      "weight": 0.0396452093,
+      "hint": "nilai maksimum statistik flow; menangkap spike intensitas trafik"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "artifact-fn-attack-as-normal-1",
+      "name": "False Negative Attack Replay",
+      "description": "Contoh attack DoS/DDoS yang terbaca normal oleh baseline; cocok untuk membahas risiko serangan lolos.",
+      "scenario_type": "artifact_error_case",
+      "expected_outcome": "FN_attack_as_normal",
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "features": {
+        "proto": "arp",
+        "stddev": 1.418512,
+        "N_IN_Conn_P_SrcIP": 1.0,
+        "min": 0.019531,
+        "state_number": 2.0,
+        "mean": 3.493474,
+        "N_IN_Conn_P_DstIP": 1.0,
+        "drate": 0.857241,
+        "srate": 0.857794,
+        "max": 4.128143
+      },
+      "timeline": [
+        {
+          "title": "Flow captured",
+          "description": "Satu flow trafik IoT dipilih untuk skenario False Negative Attack Replay; label/outcome demo: FN_attack_as_normal."
+        },
+        {
+          "title": "Feature extraction",
+          "description": "Backend membaca fitur agregat seperti connection count, packet rate, proto, dan statistik flow."
+        },
+        {
+          "title": "IDS decision",
+          "description": "Model/surrogate menghitung risk score normal vs DoS/DDoS berdasarkan pola artifact."
+        },
+        {
+          "title": "SOC investigation",
+          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+        }
+      ],
+      "grounding": [
+        "results/tables/forensic_error_examples.csv",
+        "results/metrics/forensic_summary.json"
+      ]
+    },
+    {
+      "id": "artifact-fp-normal-as-attack-1",
+      "name": "False Positive Normal Replay",
+      "description": "Contoh normal traffic yang terbaca attack oleh baseline; cocok untuk membahas beban alert analyst.",
+      "scenario_type": "artifact_error_case",
+      "expected_outcome": "FP_normal_as_attack",
+      "track": "A_realistic_imbalanced",
+      "model": "decision_tree",
+      "features": {
+        "proto": "tcp",
+        "stddev": 0.350856,
+        "N_IN_Conn_P_SrcIP": 23.0,
+        "min": 0.155417,
+        "state_number": 6.0,
+        "mean": 0.301399,
+        "N_IN_Conn_P_DstIP": 1.0,
+        "drate": 0.211536,
+        "srate": 0.276624,
+        "max": 1.160759
+      },
+      "timeline": [
+        {
+          "title": "Flow captured",
+          "description": "Satu flow trafik IoT dipilih untuk skenario False Positive Normal Replay; label/outcome demo: FP_normal_as_attack."
+        },
+        {
+          "title": "Feature extraction",
+          "description": "Backend membaca fitur agregat seperti connection count, packet rate, proto, dan statistik flow."
+        },
+        {
+          "title": "IDS decision",
+          "description": "Model/surrogate menghitung risk score normal vs DoS/DDoS berdasarkan pola artifact."
+        },
+        {
+          "title": "SOC investigation",
+          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+        }
+      ],
+      "grounding": [
+        "results/tables/forensic_error_examples.csv",
+        "results/metrics/forensic_summary.json"
+      ]
+    },
+    {
+      "id": "simulated-high-confidence-dos",
+      "name": "Simulated High-risk DoS/DDoS Pattern",
+      "description": "Skenario edukatif yang dikonstruksi dari pola artifact: konsentrasi destination/source dan packet rate tinggi untuk menunjukkan alert yang mudah dijelaskan.",
+      "scenario_type": "constructed_from_artifact_patterns",
+      "expected_outcome": "educational_simulated_attack_pattern",
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm_surrogate",
+      "features": {
+        "proto": "udp",
+        "stddev": 1.35,
+        "N_IN_Conn_P_SrcIP": 22.0,
+        "min": 0.02,
+        "state_number": 4.0,
+        "mean": 3.7,
+        "N_IN_Conn_P_DstIP": 28.0,
+        "drate": 0.18,
+        "srate": 0.88,
+        "max": 4.9
+      },
+      "timeline": [
+        {
+          "title": "Flow captured",
+          "description": "Satu flow trafik IoT dipilih untuk skenario Simulated High-risk DoS/DDoS Pattern; label/outcome demo: educational_simulated_attack_pattern."
+        },
+        {
+          "title": "Feature extraction",
+          "description": "Backend membaca fitur agregat seperti connection count, packet rate, proto, dan statistik flow."
+        },
+        {
+          "title": "IDS decision",
+          "description": "Model/surrogate menghitung risk score normal vs DoS/DDoS berdasarkan pola artifact."
+        },
+        {
+          "title": "SOC investigation",
+          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+        }
+      ],
+      "grounding": [
+        "results/tables/advanced_shap_summary.csv",
+        "results/tables/forensic_feature_importance.csv",
+        "results/metrics/advanced_summary.json"
+      ]
+    },
+    {
+      "id": "simulated-low-risk-normal",
+      "name": "Simulated Low-risk Normal Pattern",
+      "description": "Skenario edukatif yang dikonstruksi dari pola artifact: trafik rendah risiko dengan concentration dan packet rate rendah sebagai pembanding baseline.",
+      "scenario_type": "constructed_from_artifact_patterns",
+      "expected_outcome": "educational_simulated_normal_pattern",
+      "track": "A_realistic_imbalanced",
+      "model": "lightgbm_surrogate",
+      "features": {
+        "proto": "tcp",
+        "stddev": 0.08,
+        "N_IN_Conn_P_SrcIP": 1.0,
+        "min": 0.1,
+        "state_number": 1.0,
+        "mean": 0.18,
+        "N_IN_Conn_P_DstIP": 1.0,
+        "drate": 0.02,
+        "srate": 0.03,
+        "max": 0.4
+      },
+      "timeline": [
+        {
+          "title": "Flow captured",
+          "description": "Satu flow trafik IoT dipilih untuk skenario Simulated Low-risk Normal Pattern; label/outcome demo: educational_simulated_normal_pattern."
+        },
+        {
+          "title": "Feature extraction",
+          "description": "Backend membaca fitur agregat seperti connection count, packet rate, proto, dan statistik flow."
+        },
+        {
+          "title": "IDS decision",
+          "description": "Model/surrogate menghitung risk score normal vs DoS/DDoS berdasarkan pola artifact."
+        },
+        {
+          "title": "SOC investigation",
+          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+        }
+      ],
+      "grounding": [
+        "results/tables/advanced_shap_summary.csv",
+        "results/tables/forensic_feature_importance.csv",
+        "results/metrics/advanced_summary.json"
+      ]
+    }
+  ],
+  "sources": [
+    "results/tables/forensic_error_examples.csv",
+    "results/tables/advanced_shap_summary.csv",
+    "results/tables/forensic_feature_importance.csv",
+    "results/metrics/advanced_summary.json"
+  ],
+  "claim_boundary": "Interactive prototype; artifact-grounded explanation; not production real-time IDS."
+}
