@@ -1,0 +1,24 @@
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.05rem; overflow: hidden; }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.status-pill, .mono-pill, .risk-badge { display: inline-flex; align-items:center; gap:.35rem; border: 1px solid var(--line-strong); border-radius: 999px; padding: .38rem .62rem; background: rgba(53,244,189,.08); color: var(--accent); font-weight: 800; }
+.status-pill.offline { color: var(--warn); background: rgba(255,209,102,.08); border-color: rgba(255,209,102,.36); }
+.status-pill.online { color: var(--ok); background: rgba(124,247,168,.08); border-color: rgba(124,247,168,.36); }
+.metric-list { display: grid; gap: .65rem; }
+.metric-row { display:flex; justify-content: space-between; gap: 1rem; padding: .72rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.03); }
+.metric-row span { color: var(--muted); }
+.metric-row strong { text-align:right; }
+.primary-button, .secondary-button { border: 1px solid var(--line-strong); border-radius: 999px; padding: .72rem 1rem; cursor: pointer; font-weight: 800; color: #00110d; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+.secondary-button { color: var(--text); background: rgba(255,255,255,.04); }
+.scenario-list { display:grid; gap:.7rem; }
+.scenario-card { width: 100%; text-align:left; color: var(--text); cursor: pointer; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.035); padding: .9rem; }
+.scenario-card.is-active { border-color: var(--accent); background: rgba(53,244,189,.10); }
+.scenario-card strong { display:block; margin-bottom: .25rem; }
+.scenario-card small { color: var(--muted); line-height:1.45; }
+.evidence-bars { display:grid; gap:.7rem; margin-top: 1rem; }
+.evidence-bar header { display:flex; justify-content:space-between; gap:.75rem; color: var(--muted); margin-bottom:.3rem; }
+.evidence-bar .track { height: .75rem; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.04); overflow:hidden; }
+.evidence-bar .track span { display:block; height:100%; width: var(--value); background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+.risk-meter { height: 1rem; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.04); overflow:hidden; margin-bottom:1rem; }
+.risk-meter span { display:block; height:100%; width: var(--value); background: linear-gradient(90deg, var(--ok), var(--warn), var(--danger)); }
+.evidence-grid { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 860px) { .evidence-grid { grid-template-columns: 1fr; } .metric-row { flex-direction: column; } .metric-row strong { text-align:left; } }

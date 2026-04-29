@@ -181,6 +181,20 @@ Artifact Fase 6:
 - `docs/REVIEW_phase6_dashboard.md`: review awal 86/100 NEEDS REVISION.
 - `docs/REVIEW_phase6_dashboard_final.md`: final verification 94/100 APPROVED / MERGE.
 
+
+## Interactive AI SOC Demo Snapshot
+
+Fase 6B menambahkan prototype demo interaktif berbasis VPS untuk membuat hasil modeling lebih hidup saat presentasi:
+
+- Live demo: https://iot.aquarise.my.id/soc-demo/demo.html
+- API health: https://iot.aquarise.my.id/soc-demo/api/health
+- Frontend modular: `dashboard/demo.html`, `dashboard/styles/`, `dashboard/scripts/`.
+- Backend FastAPI: `backend/iot_soc_api/`.
+- Demo data generated: `dashboard/data/demo-scenarios.json`, `demo-feature-ranges.json`, `demo-narrative-templates.json`.
+- Progress report: `reports/progress-6b-interactive-ai-soc-demo.md`.
+
+Framing akademik: interactive AI SOC prototype berbasis artifact eksperimen, bukan production real-time IDS.
+
 ## Status
 
 Current phase: **Fase 7 — Scientific Manuscript**

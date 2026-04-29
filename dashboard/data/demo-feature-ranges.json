@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-04-29T09:29:25.501116+00:00",
+  "features": {
+    "stddev": {
+      "min": 0,
+      "max": 1.915,
+      "step": 0.001,
+      "default": 0.7093
+    },
+    "N_IN_Conn_P_SrcIP": {
+      "min": 0,
+      "max": 31.05,
+      "step": 0.01,
+      "default": 12.0
+    },
+    "min": {
+      "min": 0,
+      "max": 5.5102,
+      "step": 0.01,
+      "default": 2.0409
+    },
+    "state_number": {
+      "min": 0,
+      "max": 8.1,
+      "step": 0.01,
+      "default": 3.5
+    },
+    "mean": {
+      "min": 0,
+      "max": 5.5379,
+      "step": 0.01,
+      "default": 2.0511
+    },
+    "N_IN_Conn_P_DstIP": {
+      "min": 0,
+      "max": 30,
+      "step": 0.01,
+      "default": 11.0
+    },
+    "drate": {
+      "min": 0,
+      "max": 1.1573,
+      "step": 0.001,
+      "default": 0.4286
+    },
+    "srate": {
+      "min": 0,
+      "max": 1.158,
+      "step": 0.001,
+      "default": 0.4289
+    },
+    "max": {
+      "min": 0,
+      "max": 6.6024,
+      "step": 0.01,
+      "default": 2.4454
+    }
+  }
+}

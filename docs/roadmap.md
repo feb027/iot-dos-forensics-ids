@@ -61,6 +61,12 @@ Tujuan: membangun static dashboard untuk menampilkan dataset summary, model perf
 
 Status: completed and merged via PR #7 — Codex final verification 94/100 APPROVED / MERGE. GitHub Pages verification follows post-merge status sync.
 
+## Fase 6B — Interactive AI SOC Demo
+
+Tujuan: membuat demo interaktif berbasis VPS untuk incident replay, what-if simulator, server-side prediction/explanation, dan AI SOC-style report yang grounded ke artifact eksperimen.
+
+Status: implemented on branch `phase-6b-interactive-soc-demo`; live prototype at `https://iot.aquarise.my.id/soc-demo/demo.html`.
+
 ## Fase 7 — Scientific Manuscript
 
 Tujuan: menulis naskah ilmiah final berbasis artifact proyek.
