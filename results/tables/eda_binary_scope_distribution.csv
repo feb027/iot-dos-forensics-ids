@@ -1,0 +1,7 @@
+split,scope,count,rate
+test,dos_or_ddos,715421,0.9750799
+test,normal,107,0.00014584
+test,other_attack,18177,0.02477426
+train,dos_or_ddos,2861463,0.9750056
+train,normal,370,0.00012607
+train,other_attack,72984,0.02486833

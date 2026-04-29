@@ -1,0 +1,7 @@
+track,split,normal_rows,dos_or_ddos_rows,other_attack_rows,other_attack_policy,dos_sample_rows,target_ratio_normal_to_dos,random_state,purpose
+A_realistic_imbalanced,test,107,715421,18177,exclude_from_binary_baseline,715421,1:6686.18,none,"Reflect audited distribution; evaluate with precision, recall, F1, confusion matrix, not accuracy alone."
+B_balanced_controlled_1_to_1,test,107,715421,18177,exclude_from_binary_baseline,107,1:1,42,Control imbalance so Fase 4 can test feature separability without majority-class dominance.
+C_balanced_controlled_1_to_2,test,107,715421,18177,exclude_from_binary_baseline,214,1:2,42,Moderately imbalanced sensitivity check; still prevents millions of attacks from dominating.
+A_realistic_imbalanced,train,370,2861463,72984,exclude_from_binary_baseline,2861463,1:7733.68,none,"Reflect audited distribution; evaluate with precision, recall, F1, confusion matrix, not accuracy alone."
+B_balanced_controlled_1_to_1,train,370,2861463,72984,exclude_from_binary_baseline,370,1:1,42,Control imbalance so Fase 4 can test feature separability without majority-class dominance.
+C_balanced_controlled_1_to_2,train,370,2861463,72984,exclude_from_binary_baseline,740,1:2,42,Moderately imbalanced sensitivity check; still prevents millions of attacks from dominating.

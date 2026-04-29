@@ -49,7 +49,7 @@ prompts/     Prompt template untuk Codex/Hermes workflow
 
 GitHub Pages: https://feb027.github.io/iot-dos-forensics-ids/
 
-Dashboard saat ini menampilkan ringkasan audit dataset Fase 2. Isi metrik model, confusion matrix, feature importance, dan interpretasi forensik akan diperbarui setelah eksperimen berjalan.
+Dashboard saat ini menampilkan ringkasan audit dataset Fase 2 serta EDA/preprocessing Fase 3. Isi metrik model, confusion matrix, feature importance, dan interpretasi forensik akan diperbarui setelah eksperimen berjalan.
 
 ## Definition of Done
 
@@ -91,6 +91,22 @@ Fase 2 Dataset Audit sudah selesai dan di-*merge* ke `main` melalui PR #2. Artif
 
 Temuan utama: DoS/DDoS tersedia, tetapi normal class sangat kecil dan ada risiko kemiripan fitur agregat antar split. Fase 3 harus memakai evaluasi yang tidak bergantung pada accuracy saja.
 
+## EDA & Preprocessing Snapshot
+
+Fase 3 menambahkan EDA dan preprocessing plan sebelum modeling:
+
+- `scripts/run_eda_preprocessing.py`: script EDA/preprocessing streaming untuk BoT-IoT/UNSW-IoT CSV split.
+- `notebooks/01_eda_preprocessing.ipynb`: notebook wrapper untuk menjalankan script.
+- `results/metrics/preprocessing_summary.json`: ringkasan machine-readable.
+- `results/tables/eda_*.csv`: distribusi scope, kategori, protokol, dan ringkasan fitur numerik.
+- `results/tables/eda_label_consistency_checks.csv`: validasi konsistensi label/scope.
+- `results/tables/preprocessing_feature_plan.csv`: kolom fitur, label, identifier, dan aksi preprocessing.
+- `results/tables/preprocessing_dataset_plan.csv`: rencana track imbalanced dan balanced controlled subset untuk Fase 4.
+- `results/figures/eda_*.png`: visualisasi EDA awal.
+- `reports/progress-3-eda-preprocessing.md`: laporan progres Fase 3.
+
+Keputusan utama: `other_attack` tidak dianggap normal; baseline utama adalah `normal` vs `dos_or_ddos`, dengan jalur imbalanced dan balanced controlled subset.
+
 ## Status
 
 Current phase: **Fase 3 — EDA & Preprocessing**
@@ -104,6 +120,8 @@ Current phase: **Fase 3 — EDA & Preprocessing**
 | Strict Re-review Fase 0 | Codex gpt-5.5 + high reasoning | 90 | APPROVED | `docs/REVIEW_phase0_gpt55_high.md` |
 | Fase 1 Literature Review | Codex gpt-5.5 + high reasoning | 92 | APPROVED | `docs/REVIEW_phase1_literature_final_approved.md` |
 | Fase 2 Dataset Audit | Codex gpt-5.5 + high reasoning | 89 | APPROVED | `docs/REVIEW_phase2_dataset_audit.md` |
+| Fase 3 EDA & Preprocessing | Codex gpt-5.5 + high reasoning | 88 | APPROVED | `docs/REVIEW_phase3_eda_preprocessing.md` |
+| Fase 3 Final Verification | Codex gpt-5.5 + high reasoning | 92 | APPROVED / MERGE | `docs/REVIEW_phase3_final_verification.md` |
 
 Lihat:
 
@@ -115,3 +133,5 @@ Lihat:
 - `docs/REVIEW_phase0_gpt55_high.md`
 - `docs/REVIEW_phase1_literature_final_approved.md`
 - `docs/REVIEW_phase2_dataset_audit.md`
+- `docs/REVIEW_phase3_eda_preprocessing.md`
+- `docs/REVIEW_phase3_final_verification.md`

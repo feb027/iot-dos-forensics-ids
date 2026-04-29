@@ -1,0 +1,16 @@
+split,subcategory,count,rate
+test,HTTP,504,0.00068692
+test,Keylogging,14,1.908e-05
+test,Normal,107,0.00014584
+test,OS_Fingerprint,3621,0.00493523
+test,Service_Scan,14542,0.01981995
+test,TCP,318337,0.43387601
+test,UDP,396580,0.54051697
+train,Data_Exfiltration,6,2.04e-06
+train,HTTP,1970,0.00067125
+train,Keylogging,59,2.01e-05
+train,Normal,370,0.00012607
+train,OS_Fingerprint,14293,0.00487015
+train,Service_Scan,58626,0.01997603
+train,TCP,1274843,0.43438586
+train,UDP,1584650,0.53994849

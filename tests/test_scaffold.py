@@ -24,6 +24,8 @@ def test_required_scaffold_files_exist() -> None:
         "dashboard/app.js",
         "dashboard/data/dashboard-data.json",
         "scripts/generate_dashboard_data.py",
+        "scripts/run_eda_preprocessing.py",
+        "notebooks/01_eda_preprocessing.ipynb",
     ]
     missing = [path for path in required if not (ROOT / path).exists()]
     assert not missing
@@ -36,6 +38,7 @@ def test_dashboard_data_contract_is_valid_json() -> None:
         "project",
         "dataset_summary",
         "class_distribution",
+        "eda_summary",
         "model_comparison",
         "confusion_matrix",
         "feature_importance",
@@ -53,5 +56,6 @@ def test_dashboard_data_generator_runs_and_preserves_contract() -> None:
     data = json.loads((ROOT / "dashboard" / "data" / "dashboard-data.json").read_text(encoding="utf-8"))
     assert data["project"]["title"] == "Sistem Analisis Serangan DoS pada Arsitektur IoT"
     assert isinstance(data["class_distribution"], list)
+    assert isinstance(data["eda_summary"], dict)
     assert isinstance(data["model_comparison"], list)
     assert isinstance(data["feature_importance"], list)
