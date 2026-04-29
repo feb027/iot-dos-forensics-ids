@@ -4,48 +4,239 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IoT DoS Forensics IDS</title>
+  <meta name="description" content="Dashboard evidence-first untuk analisis DoS/DDoS pada trafik IoT berbasis BoT-IoT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <main class="container">
-    <section class="hero">
-      <p class="eyebrow">UAS IoT • Cyber Security • Digital Forensics</p>
-      <h1>Sistem Analisis Serangan DoS pada Arsitektur IoT</h1>
-      <p class="lead">Dashboard ini menampilkan ringkasan audit dataset, EDA/preprocessing, baseline modeling, dan interpretasi forensik Fase 5 berbasis artifact.</p>
+  <a class="skip-link" href="#overview">Lewati ke konten utama</a>
+
+  <header class="topbar">
+    <nav class="nav-shell" aria-label="Navigasi dashboard">
+      <a class="brand" href="#overview" aria-label="IoT DoS Forensics IDS">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="radar"></i></span>
+        <span>
+          <strong>IoT DoS Forensics IDS</strong>
+          <small>BoT-IoT Evidence Dashboard</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#dataset">Dataset</a>
+        <a href="#modeling">Modeling</a>
+        <a href="#forensics">Forensics</a>
+        <a href="#advanced">Advanced</a>
+        <a href="#evidence">Evidence</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="overview" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            UAS IoT - Cyber Security - Digital Forensics
+          </div>
+          <h1 id="hero-title">Sistem Analisis Serangan DoS pada Arsitektur IoT</h1>
+          <p class="hero-lead">
+            Command center akademik untuk membaca audit dataset, performa model, confusion matrix,
+            dan bukti forensik fitur tanpa menjadikan accuracy sebagai klaim utama.
+          </p>
+          <div class="status-line">
+            <span class="status-pill" id="project-status">Memuat status...</span>
+          </div>
+          <div class="chip-row" aria-label="Konteks penelitian">
+            <span>BoT-IoT</span>
+            <span>DoS/DDoS</span>
+            <span>Digital Forensics</span>
+            <span>UNSIL Semester 6</span>
+          </div>
+        </div>
+
+        <aside class="telemetry-panel" aria-labelledby="telemetry-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Lab telemetry</p>
+              <h2 id="telemetry-title">Threat Monitor</h2>
+            </div>
+            <span class="mono-pill" id="telemetry-source">BoT-IoT</span>
+          </div>
+          <div class="telemetry-stack" id="telemetry-stack" aria-live="polite">
+            <p class="muted">Memuat telemetry dari artifact...</p>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section class="grid" id="summary"></section>
-
-    <section class="card">
-      <h2>Status</h2>
-      <p id="status">Memuat data...</p>
+    <section class="section kpi-section" aria-labelledby="kpi-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Executive view</p>
+          <h2 id="kpi-title">Ringkasan Bukti Utama</h2>
+        </div>
+        <p>Semua angka diambil dari <code>dashboard-data.json</code>.</p>
+      </div>
+      <div class="kpi-grid" id="kpi-grid" aria-live="polite"></div>
     </section>
 
-    <section class="card">
-      <h2>Ringkasan Audit Dataset</h2>
-      <div id="dataset-summary" class="dataset-summary">Memuat ringkasan dataset...</div>
+    <section class="section split-section" id="dataset" aria-labelledby="dataset-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Dataset</p>
+          <h2 id="dataset-title">Distribusi Trafik dan Scope Audit</h2>
+        </div>
+        <p>Normal class sangat kecil, sehingga interpretasi memakai Macro F1, MCC, recall, dan FP/FN.</p>
+      </div>
+      <div class="content-grid dataset-grid">
+        <article class="panel chart-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Train split</p>
+              <h3>Class Distribution</h3>
+            </div>
+            <i data-lucide="pie-chart" aria-hidden="true"></i>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="class-distribution-chart" aria-label="Distribusi kategori train" role="img"></canvas>
+            <div class="chart-fallback" id="class-distribution-fallback"></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Audit scope</p>
+              <h3>Dataset Snapshot</h3>
+            </div>
+            <i data-lucide="database" aria-hidden="true"></i>
+          </div>
+          <div class="metric-list" id="dataset-snapshot"></div>
+          <div class="callout warning">
+            <strong>Akurasi bukan klaim utama.</strong>
+            <span>Distribusi normal yang sangat kecil dapat membuat accuracy terlihat tinggi tanpa cukup menjelaskan kualitas deteksi.</span>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>EDA & Preprocessing</h2>
-      <div id="eda-summary" class="dataset-summary">Memuat ringkasan EDA...</div>
+    <section class="section" id="modeling" aria-labelledby="modeling-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Modeling</p>
+          <h2 id="modeling-title">Baseline vs Advanced Macro F1</h2>
+        </div>
+        <div class="tablist" role="tablist" aria-label="Filter tipe model">
+          <button class="tab-button is-active" type="button" data-filter="combined" role="tab" aria-selected="true">Combined</button>
+          <button class="tab-button" type="button" data-filter="baseline" role="tab" aria-selected="false">Baseline</button>
+          <button class="tab-button" type="button" data-filter="advanced" role="tab" aria-selected="false">Advanced</button>
+        </div>
+      </div>
+      <div class="content-grid modeling-grid">
+        <article class="panel chart-panel model-chart-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Macro F1</p>
+              <h3 id="model-chart-title">Perbandingan Model</h3>
+            </div>
+            <i data-lucide="bar-chart-3" aria-hidden="true"></i>
+          </div>
+          <div class="chart-wrap tall">
+            <canvas id="model-comparison-chart" aria-label="Grafik macro F1 baseline dan advanced" role="img"></canvas>
+            <div class="chart-fallback" id="model-comparison-fallback"></div>
+          </div>
+          <div class="model-table" id="model-table"></div>
+        </article>
+
+        <article class="panel" aria-labelledby="confusion-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Error view</p>
+              <h3 id="confusion-title">Confusion Matrix</h3>
+            </div>
+            <i data-lucide="scan-line" aria-hidden="true"></i>
+          </div>
+          <label class="field-label" for="confusion-select">Pilih track dan model</label>
+          <select id="confusion-select"></select>
+          <div class="matrix-meta" id="confusion-meta"></div>
+          <div class="confusion-grid" id="confusion-grid" aria-live="polite"></div>
+          <p class="note">
+            FP berarti baris normal terbaca sebagai attack. FN berarti attack terbaca sebagai normal.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Baseline Modeling</h2>
-      <div id="baseline-summary" class="dataset-summary">Memuat ringkasan baseline...</div>
+    <section class="section" id="forensics" aria-labelledby="forensics-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Forensics</p>
+          <h2 id="forensics-title">Feature Evidence dan SHAP</h2>
+        </div>
+        <p>Interpretasi fitur dibaca sebagai bukti dataset-backed, bukan bukti deteksi sempurna di dunia nyata.</p>
+      </div>
+      <div class="content-grid forensic-grid">
+        <article class="panel chart-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Global SHAP</p>
+              <h3>Top Feature Groups</h3>
+            </div>
+            <i data-lucide="fingerprint" aria-hidden="true"></i>
+          </div>
+          <div class="chart-wrap tall">
+            <canvas id="feature-chart" aria-label="Top SHAP atau feature importance" role="img"></canvas>
+            <div class="chart-fallback" id="feature-fallback"></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Network forensics</p>
+              <h3>Interpretasi Fitur</h3>
+            </div>
+            <i data-lucide="network" aria-hidden="true"></i>
+          </div>
+          <div class="feature-list" id="feature-list"></div>
+          <div class="callout">
+            <strong>Catatan SHAP.</strong>
+            <span>Agregasi SHAP global dapat berbeda dari interpretasi khusus Track A, sehingga Track A tetap perlu dibaca terpisah.</span>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Forensic Analysis</h2>
-      <div id="forensic-summary" class="dataset-summary">Memuat ringkasan forensik...</div>
+    <section class="section" id="advanced" aria-labelledby="advanced-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Advanced</p>
+          <h2 id="advanced-title">Track A Realistis dan SOTA Tabular</h2>
+        </div>
+        <p>Highlight diarahkan ke Track A karena paling dekat dengan distribusi audit asli.</p>
+      </div>
+      <div class="advanced-grid" id="advanced-grid"></div>
     </section>
 
-    <section class="card">
-      <h2>Advanced/SOTA Modeling</h2>
-      <div id="advanced-summary" class="dataset-summary">Memuat ringkasan advanced modeling...</div>
+    <section class="section" id="evidence" aria-labelledby="evidence-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Evidence</p>
+          <h2 id="evidence-title">Artifact, Batasan, dan Kebijakan Klaim</h2>
+        </div>
+        <p>Bagian ini menjaga dashboard tetap akademik dan evidence-first.</p>
+      </div>
+      <div class="evidence-grid" id="evidence-grid"></div>
     </section>
   </main>
-  <script src="app.js"></script>
+
+  <footer class="footer">
+    <span>IoT DoS Forensics IDS</span>
+    <span>Static dashboard - data generated by <code>scripts/generate_dashboard_data.py</code></span>
+  </footer>
 </body>
 </html>
