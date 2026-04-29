@@ -1,6 +1,6 @@
 .api-panel { min-height: 100%; }
 .timeline { display:grid; gap:.8rem; }
-.timeline-step { display:grid; grid-template-columns: 44px minmax(0,1fr); gap:.8rem; align-items:start; opacity:.72; transform: translateY(4px); transition: all .28s ease; }
+.timeline-step { display:grid; grid-template-columns: 44px minmax(0,1fr); gap:.8rem; align-items:start; opacity:.72; transform: translateY(4px); transition: opacity .18s ease-out, transform .18s ease-out; }
 .timeline-step.is-active { opacity:1; transform: translateY(0); }
 .timeline-dot { width: 36px; height: 36px; border-radius: 14px; display:grid; place-items:center; background:rgba(53,244,189,.12); border:1px solid var(--line-strong); color:var(--accent); font-weight:900; }
 .timeline-card { padding:.85rem; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.035); }
@@ -22,3 +22,92 @@
 .risk-badge.medium { color:var(--warn); border-color:rgba(255,209,102,.45); }
 .risk-badge.high { color:var(--danger); border-color:rgba(255,107,122,.45); }
 @media (max-width: 860px) { .report-grid { grid-template-columns: 1fr; } }
+
+/* Fase 6C — SOC Replay Visual Overhaul */
+.replay-actions { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; }
+.speed-control { display:inline-flex; align-items:center; gap:.5rem; color:var(--muted); font-weight:700; }
+.speed-control select { color:var(--text); background:rgba(255,255,255,.055); border:1px solid var(--line); border-radius:999px; padding:.55rem .75rem; cursor:pointer; }
+.replay-grid { grid-template-columns: minmax(260px, .72fr) minmax(0, 1.8fr); }
+.soc-war-room { position:relative; background:linear-gradient(180deg, rgba(9,24,29,.96), rgba(2,7,10,.92)); }
+.soc-war-room::before { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(90deg, rgba(53,244,189,.08) 1px, transparent 1px), linear-gradient(0deg, rgba(91,184,255,.06) 1px, transparent 1px); background-size:38px 38px; mask-image:linear-gradient(to bottom, black, transparent 74%); opacity:.36; }
+.network-replay { position:relative; z-index:1; display:grid; gap:1rem; }
+.replay-hud { display:flex; justify-content:space-between; align-items:center; gap:.75rem; padding:.75rem .85rem; border:1px solid var(--line); border-radius:18px; background:rgba(0,0,0,.24); }
+.replay-hud strong { color:var(--text); }
+.network-canvas { position:relative; min-height:330px; border:1px solid rgba(135,255,225,.22); border-radius:26px; overflow:hidden; background:radial-gradient(circle at 18% 42%, rgba(255,107,122,.10), transparent 14rem), radial-gradient(circle at 52% 35%, rgba(53,244,189,.12), transparent 16rem), radial-gradient(circle at 85% 55%, rgba(91,184,255,.12), transparent 14rem), #020609; }
+.grid-plane { position:absolute; inset:0; background:linear-gradient(90deg, rgba(135,255,225,.10) 1px, transparent 1px), linear-gradient(0deg, rgba(135,255,225,.07) 1px, transparent 1px); background-size:44px 44px; transform:perspective(520px) rotateX(58deg) translateY(56px) scale(1.25); transform-origin:50% 100%; opacity:.38; }
+.node { position:absolute; width:150px; min-height:106px; display:grid; place-items:center; gap:.12rem; text-align:center; border:1px solid var(--line-strong); border-radius:24px; padding:1rem .8rem; background:rgba(3,12,15,.80); box-shadow:0 0 0 1px rgba(255,255,255,.035), 0 18px 40px rgba(0,0,0,.35); }
+.node strong { font-size:.95rem; }
+.node small { color:var(--muted); font-family:'Fira Code', monospace; font-size:.72rem; }
+.node-ring { width:42px; height:42px; border-radius:50%; border:2px solid currentColor; background:radial-gradient(circle, currentColor 0 18%, transparent 20%); opacity:.86; }
+.node-attacker { left:5%; top:35%; color:var(--danger); }
+.node-gateway { left:50%; top:21%; transform:translateX(-50%); color:var(--accent); }
+.node-target { right:5%; top:35%; color:var(--accent-2); }
+.attack-paths { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.path-base, .path-hot { fill:none; stroke-linecap:round; stroke-width:3; }
+.path-base { stroke:rgba(135,255,225,.22); stroke-dasharray:8 14; }
+.path-hot { stroke:var(--danger); stroke-dasharray:var(--risk) 320; filter:drop-shadow(0 0 7px rgba(255,107,122,.5)); opacity:.82; }
+.packet-layer { position:absolute; inset:0; pointer-events:none; }
+.packet { position:absolute; left:9%; top:50%; width:var(--size); height:var(--size); border-radius:999px; background:var(--danger); box-shadow:0 0 14px currentColor; color:var(--danger); opacity:0; animation: packet-flight 1.9s var(--delay) ease-out infinite; }
+.packet-1 { top:43%; background:var(--accent); color:var(--accent); animation-duration:2.15s; }
+.packet-2 { top:58%; background:var(--warn); color:var(--warn); animation-duration:2.35s; }
+.packet-3 { top:48%; animation-duration:1.75s; }
+.packet-4 { top:54%; background:var(--accent-2); color:var(--accent-2); animation-duration:2.05s; }
+.mode-normal .packet, .mode-false-positive .packet { animation-duration:3.2s; background:var(--accent-2); color:var(--accent-2); }
+.mode-missed .packet { background:var(--danger); color:var(--danger); opacity:.75; }
+.alert-beacon { position:absolute; left:50%; top:58%; transform:translateX(-50%); padding:.45rem .75rem; border:1px solid rgba(255,209,102,.45); border-radius:999px; color:var(--warn); background:rgba(255,209,102,.08); font-family:'Fira Code', monospace; font-weight:900; opacity:.35; }
+.alert-beacon.is-hot { opacity:1; color:var(--danger); border-color:rgba(255,107,122,.55); background:rgba(255,107,122,.12); }
+.traffic-spark { position:absolute; left:5%; right:5%; bottom:0; height:86px; display:flex; align-items:end; gap:.35rem; opacity:.85; }
+.traffic-spark span { flex:1; height:var(--h); max-width:9px; border-radius:999px 999px 0 0; background:linear-gradient(180deg, var(--danger), rgba(53,244,189,.16)); transform-origin:bottom; animation: spark-rise 950ms var(--d) ease-out infinite alternate; }
+.replay-scrubber { display:grid; grid-template-columns:auto 1fr auto; gap:.75rem; align-items:center; margin:1rem 0; color:var(--muted); font-family:'Fira Code', monospace; }
+.replay-scrubber input { width:100%; accent-color:var(--accent); cursor:pointer; }
+.threat-meter-panel { display:grid; grid-template-columns:116px 1fr; gap:1rem; align-items:center; padding:1rem; border:1px solid var(--line); border-radius:22px; background:rgba(255,255,255,.035); }
+.threat-orb { width:104px; height:104px; border-radius:50%; display:grid; place-items:center; align-content:center; background:conic-gradient(var(--danger) var(--risk), rgba(255,255,255,.08) 0); box-shadow:inset 0 0 0 12px rgba(2,7,10,.95), 0 0 26px rgba(255,107,122,.20); }
+.threat-orb span { font-family:'Fira Code', monospace; font-size:1.45rem; font-weight:900; }
+.threat-orb small, .threat-copy small { color:var(--muted); }
+.threat-copy h4 { margin:.15rem 0 .25rem; }
+.threat-copy p { margin:0 0 .4rem; color:var(--muted); line-height:1.48; }
+.replay-bottom-grid { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:1rem; margin-top:1rem; }
+.compact-timeline .timeline-step { grid-template-columns:34px minmax(0,1fr); gap:.55rem; }
+.compact-timeline .timeline-dot { width:30px; height:30px; border-radius:12px; font-size:.8rem; }
+.compact-timeline .timeline-card { padding:.65rem; border-radius:14px; }
+.compact-timeline .timeline-card p { font-size:.88rem; }
+.event-stream { border:1px solid var(--line); border-radius:18px; overflow:hidden; background:rgba(0,0,0,.20); }
+.event-stream-head { display:flex; justify-content:space-between; gap:.75rem; padding:.75rem .85rem; border-bottom:1px solid var(--line); color:var(--muted); }
+.event-stream-head strong { color:var(--accent); font-family:'Fira Code', monospace; font-size:.78rem; text-align:right; }
+.event-stream-list { list-style:none; margin:0; padding:.7rem; display:grid; gap:.55rem; }
+.event-row { display:grid; grid-template-columns:52px 1fr; gap:.65rem; opacity:.45; transform:translateY(3px); transition:opacity .18s ease-out, transform .18s ease-out; }
+.event-row.is-active { opacity:.88; transform:translateY(0); }
+.event-row.is-current { opacity:1; }
+.event-row time { color:var(--accent); font-family:'Fira Code', monospace; font-size:.78rem; }
+.event-row strong { display:block; font-size:.9rem; }
+.event-row p { margin:.18rem 0 0; color:var(--muted); line-height:1.38; font-size:.86rem; }
+@keyframes packet-flight {
+  0% { transform:translate3d(0, 0, 0) scale(.55); opacity:0; }
+  12% { opacity:1; }
+  48% { transform:translate3d(390px, -84px, 0) scale(1); opacity:1; }
+  78% { opacity:1; }
+  100% { transform:translate3d(760px, 4px, 0) scale(.74); opacity:0; }
+}
+@keyframes spark-rise {
+  from { transform:scaleY(.35); opacity:.45; }
+  to { transform:scaleY(1); opacity:.95; }
+}
+@media (max-width: 980px) {
+  .replay-grid, .replay-bottom-grid { grid-template-columns:1fr; }
+  .network-canvas { min-height:430px; }
+  .node-attacker { left:50%; top:5%; transform:translateX(-50%); }
+  .node-gateway { left:50%; top:38%; }
+  .node-target { left:50%; right:auto; top:70%; transform:translateX(-50%); }
+  .attack-paths, .packet-layer { transform:rotate(90deg) scale(.8); }
+  .traffic-spark { display:none; }
+}
+@media (max-width: 640px) {
+  .replay-actions, .replay-hud { align-items:stretch; flex-direction:column; }
+  .network-canvas { min-height:470px; }
+  .threat-meter-panel { grid-template-columns:1fr; text-align:center; justify-items:center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .packet, .traffic-spark span { animation:none; opacity:.85; }
+  .timeline-step, .event-row { transition:none; }
+}
+

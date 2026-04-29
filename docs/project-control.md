@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Fase 6B — Interactive AI SOC Demo / Fase 7 Manuscript Preparation
+Fase 6C — SOC Replay Visual Overhaul / Fase 7 Manuscript Preparation
 
 ## Status
 
@@ -76,6 +76,7 @@ Fase 4 Baseline Modeling, Fase 5 Forensic Analysis, Fase 6A Advanced/SOTA Modeli
 | Fase 6 dashboard review | `docs/REVIEW_phase6_dashboard.md`, `docs/REVIEW_phase6_dashboard_final.md` | final approved |
 | Fase 7 manuscript plan | `docs/phase7-manuscript-plan.md` | drafted |
 | Fase 6B interactive AI SOC demo | `dashboard/demo.html`, `backend/iot_soc_api/`, `reports/progress-6b-interactive-ai-soc-demo.md` | implemented + VPS deployed |
+| Fase 6C SOC replay visual overhaul | `dashboard/demo.html`, `dashboard/scripts/components/network-replay.js`, `reports/progress-6c-soc-replay-visual-overhaul.md` | implemented |
 
 ## Review Status
 
@@ -101,7 +102,6 @@ No active blockers for code. Fase 6B demo is live under `https://iot.aquarise.my
 
 ## Next Action
 
-1. Run Codex review for Fase 6B interactive AI SOC demo.
-2. Fix any demo review issues, then PR/merge Fase 6B.
-3. Continue Fase 7 manuscript draft using Fase 6B demo as prototype contribution.
-4. Prepare final UAS release audit.
+1. Review and merge Fase 6C SOC replay visual overhaul.
+2. Continue Fase 7 manuscript draft using Fase 6B/6C demo as prototype contribution.
+3. Prepare final UAS release audit.

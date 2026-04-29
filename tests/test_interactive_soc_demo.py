@@ -94,3 +94,31 @@ def test_fastapi_health_and_soc_report():
     assert tampered.status_code == 200
     assert "DoS/DDoS" in tampered.json()["summary"]
     assert "ignored" in tampered.json()["client_prediction_note"]
+
+
+def test_demo_visual_overhaul_assets_are_modular():
+    demo_html = (ROOT / "dashboard/demo.html").read_text()
+    assert "network-replay" in demo_html
+    assert "event-stream" in demo_html
+    assert "replay-scrub" in demo_html
+
+    required_files = [
+        "dashboard/scripts/components/network-replay.js",
+        "dashboard/scripts/components/event-stream.js",
+        "dashboard/scripts/components/threat-meter.js",
+        "dashboard/scripts/demo/replay-engine.js",
+    ]
+    for rel in required_files:
+        assert (ROOT / rel).exists(), rel
+
+    demo_js = (ROOT / "dashboard/scripts/demo.js").read_text()
+    assert "renderNetworkReplay" in demo_js
+    assert "startReplay" in demo_js
+
+
+def test_demo_visual_overhaul_css_respects_reduced_motion():
+    css = (ROOT / "dashboard/styles/demo.css").read_text()
+    assert "network-canvas" in css
+    assert "@media (prefers-reduced-motion: reduce)" in css
+    assert "transform:" in css
+

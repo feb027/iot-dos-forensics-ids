@@ -67,6 +67,12 @@ Tujuan: membuat demo interaktif berbasis VPS untuk incident replay, what-if simu
 
 Status: implemented on branch `phase-6b-interactive-soc-demo`; live prototype at `https://iot.aquarise.my.id/soc-demo/demo.html`.
 
+## Fase 6C — SOC Replay Visual Overhaul
+
+Tujuan: meningkatkan demo interaktif dengan packet replay map, live SOC event stream, threat meter, speed/scrub controls, dan evidence reveal agar presentasi UAS lebih menarik tanpa menambah klaim eksperimen baru.
+
+Status: implemented on branch `phase-6c-soc-replay-visual-overhaul`.
+
 ## Fase 7 — Scientific Manuscript
 
 Tujuan: menulis naskah ilmiah final berbasis artifact proyek.
