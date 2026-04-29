@@ -41,11 +41,13 @@ Status: completed — final verification 92/100 APPROVED; merged via PR #3.
 
 Tujuan: melatih minimal 3 model baseline dan menyimpan metrik evaluasi.
 
-Status: completed on branch — Codex technical review 90/100 APPROVED; PR pending.
+Status: completed — Codex technical review 90/100 APPROVED; merged via PR #4.
 
 ## Fase 5 — Forensic Analysis
 
 Tujuan: menganalisis fitur penting, confusion matrix, dan interpretasi pola DoS/DDoS.
+
+Status: current phase after PR #4 merge.
 
 ## Fase 6 — Dashboard
 
