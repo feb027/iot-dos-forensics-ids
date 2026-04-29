@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 6A — Advanced/SOTA Modeling Extension
+Fase 6 — Dashboard Polish & Manuscript Preparation
 
 ## Status
 
-Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Codex Technical Reviewer with score 90/100. Fase 5 Forensic Analysis has been merged to `main` via PR #5 and approved by Codex reviewer with score 90/100. Fase 6A Advanced/SOTA Modeling Extension artifacts have been generated on local WSL PC and approved by Codex reviewer with score 90/100: LightGBM/XGBoost/CatBoost metrics, confusion matrices, native feature importance, sampled SHAP summary, figures, dashboard data, and progress report are available. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, and split-similarity risk must be disclosed.
+Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic Analysis has been merged via PR #5, and Fase 6A Advanced/SOTA Modeling Extension has been merged via PR #6. Advanced artifacts are available and approved by Codex reviewer with score 90/100. Current work moves to Fase 6 Dashboard Polish and manuscript preparation. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, split-similarity risk must be disclosed, and global SHAP aggregation must be distinguished from Track A-specific SHAP interpretation.
 
 ## Fixed Decisions
 
@@ -70,7 +70,8 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 | Fase 6A advanced summary | `results/metrics/advanced_summary.json` | generated |
 | Fase 6A advanced tables | `results/tables/advanced_*.csv` | generated |
 | Fase 6A advanced figures | `results/figures/advanced_*.png` | generated |
-| Fase 6A progress report | `reports/progress-6a-advanced-modeling.md` | drafted |
+| Fase 6A progress report | `reports/progress-6a-advanced-modeling.md` | completed |
+| Fase 6 dashboard polish plan | `docs/phase6-dashboard-polish-plan.md` | drafted |
 
 ## Review Status
 
@@ -90,11 +91,11 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4 and approved by Cod
 
 ## Blockers
 
-No Fase 6A blockers remain before PR. Watch items for next phase: dashboard should emphasize Track A realistic highlight and manuscript should separate global SHAP aggregation from Track A SHAP details.
+No active blockers. Watch items for Fase 6/7: verify GitHub Pages after status sync, keep dashboard claims tied to artifact JSON/CSV, emphasize Track A realistic highlight, and keep manuscript language cautious around controlled-subset scores.
 
 ## Next Action
 
-1. Commit Fase 6A Advanced/SOTA Modeling artifacts and review.
-2. Push branch `phase-6a-advanced-modeling`.
-3. Open PR to `main`.
-4. After merge, proceed to dashboard polish and manuscript preparation.
+1. Verify GitHub Pages dashboard after post-merge status sync.
+2. Polish dashboard copy/layout around Fase 6A results, especially Track A realistic highlight.
+3. Draft manuscript sections from committed artifact tables/figures only.
+4. Run dashboard/manuscript review gates before final audit.

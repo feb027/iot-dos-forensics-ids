@@ -170,7 +170,7 @@ Best overall advanced run: `xgboost` pada `C_balanced_controlled_1_to_2` dengan 
 
 ## Status
 
-Current phase: **Fase 6A — Advanced/SOTA Modeling Extension**
+Current phase: **Fase 6 — Dashboard Polish & Manuscript Preparation**
 
 ## Review History
 
