@@ -59,11 +59,13 @@ Status: completed and merged via PR #6 — Codex review 90/100 APPROVED.
 
 Tujuan: membangun static dashboard untuk menampilkan dataset summary, model performance, confusion matrix, feature importance, forensic interpretation, dan advanced modeling highlight.
 
-Status: current phase after PR #6 merge; dashboard exists and needs final polish/Pages verification.
+Status: completed and merged via PR #7 — Codex final verification 94/100 APPROVED / MERGE. GitHub Pages verification follows post-merge status sync.
 
 ## Fase 7 — Scientific Manuscript
 
 Tujuan: menulis naskah ilmiah final berbasis artifact proyek.
+
+Status: current phase after PR #7 merge.
 
 ## Fase 8 — Final Audit & Release
 

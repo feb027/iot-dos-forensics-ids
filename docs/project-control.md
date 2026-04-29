@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Fase 6 — Dashboard Polish & Manuscript Preparation
+Fase 7 — Scientific Manuscript
 
 ## Status
 
-Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic Analysis has been merged via PR #5, and Fase 6A Advanced/SOTA Modeling Extension has been merged via PR #6. Advanced artifacts are available and approved by Codex reviewer with score 90/100. Current work moves to Fase 6 Dashboard Polish and manuscript preparation. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, split-similarity risk must be disclosed, and global SHAP aggregation must be distinguished from Track A-specific SHAP interpretation.
+Fase 4 Baseline Modeling, Fase 5 Forensic Analysis, Fase 6A Advanced/SOTA Modeling Extension, and Fase 6 Dashboard Polish have been merged to `main` via PR #4, #5, #6, and #7. Dashboard polish is approved by Codex final verification with score 94/100. Current work moves to Fase 7 Scientific Manuscript. Main carried-forward risks: very high model scores must be explained cautiously because normal class is tiny, network identifiers remain excluded, split-similarity risk must be disclosed, and global SHAP aggregation must be distinguished from Track A-specific SHAP interpretation.
 
 ## Fixed Decisions
 
@@ -74,6 +74,7 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic An
 | Fase 6 dashboard polish plan | `docs/phase6-dashboard-polish-plan.md` | drafted |
 | Fase 6 dashboard design brief | `docs/phase6-dashboard-design-brief.md` | drafted |
 | Fase 6 dashboard review | `docs/REVIEW_phase6_dashboard.md`, `docs/REVIEW_phase6_dashboard_final.md` | final approved |
+| Fase 7 manuscript plan | `docs/phase7-manuscript-plan.md` | drafted |
 
 ## Review Status
 
@@ -95,11 +96,11 @@ Fase 4 Baseline Modeling has been merged to `main` via PR #4, Fase 5 Forensic An
 
 ## Blockers
 
-No active blockers. Fase 6 dashboard polish is Codex-approved for merge. Watch items for Fase 7: verify GitHub Pages after merge/status sync and keep manuscript language cautious around controlled-subset scores.
+No active blockers. Watch items for Fase 7: verify GitHub Pages after status sync and keep manuscript language cautious around controlled-subset scores.
 
 ## Next Action
 
-1. Merge PR #7 after committing final review fixes.
-2. Sync `main` status docs and dashboard JSON after merge.
-3. Verify GitHub Pages live dashboard and JSON.
-4. Start Fase 7 manuscript drafting from committed artifact tables/figures only.
+1. Verify GitHub Pages live dashboard and JSON after status sync.
+2. Create Fase 7 manuscript branch from updated `main`.
+3. Draft `reports/manuscript-draft.md` from committed artifact tables/figures only.
+4. Run Codex lecturer/technical review for the manuscript draft.
