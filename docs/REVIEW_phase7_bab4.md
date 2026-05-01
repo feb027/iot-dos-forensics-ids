@@ -95,7 +95,7 @@ Belum sepenuhnya siap Word, tetapi mudah diperbaiki.
 
 - Struktur 4.1-4.7 lengkap.
 - Tabel 4.1, 4.2, 4.3 ada dan angka inti benar.
-- Gambar 4.1-4.4 ada, urut, dan caption sesuai isi, tetapi masih placeholder.
+- Gambar 4.1-4.3 sudah merujuk file artifact repo, dan Gambar 4.4 masih berupa placeholder screenshot dashboard karena file PNG screenshot dashboard belum tersedia di repo.
 - Format angka Indonesia konsisten memakai koma desimal dan titik ribuan.
 - Istilah asing perlu dirapikan italic.
 - Tabel 4.1 dan 4.3 perlu sedikit diperkuat agar tidak terlalu ringkas.

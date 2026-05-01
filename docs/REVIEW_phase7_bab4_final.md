@@ -66,7 +66,8 @@ Lulus.
 
 ## Sisa Catatan Minor
 
-- Placeholder gambar masih perlu diganti dengan gambar/screenshot saat proses layout Word final, tetapi untuk draft Markdown yang diminta diverifikasi, urutan dan caption sudah siap.
+- Gambar 4.1, 4.2, dan 4.3 sudah memakai file artifact repo: `results/figures/advanced_macro_f1_vs_baseline.png`, `results/figures/advanced_confusion_matrix_grid.png`, dan `results/figures/advanced_shap_summary.png`.
+- Gambar 4.4 masih berupa placeholder screenshot karena screenshot dashboard belum tersedia sebagai file gambar di repo; sumbernya adalah `dashboard/demo.html` atau live URL `https://iot.aquarise.my.id/soc-demo/demo.html`.
 - Beberapa istilah seperti Track A/B/C, Decision Tree, Random Forest, LightGBM, dan XGBoost wajar tidak dimiringkan karena dipakai sebagai nama skenario/model. Konsistensi istilah asing utama sudah cukup.
 
 ## Final Recommendation
