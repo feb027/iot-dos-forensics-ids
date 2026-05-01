@@ -17,8 +17,8 @@ Review sebelumnya: `docs/REVIEW_phase7_bab3.md`
 
 | No. | Item verifikasi | Status | Catatan |
 |---:|---|---|---|
-| 1 | Placeholder eksplisit Gambar 3.1 dan Gambar 3.2 sudah ada | PASS | Draft memuat `[PLACEHOLDER GAMBAR 3.1: ...]` dan `[PLACEHOLDER GAMBAR 3.2: ...]`, sehingga aman untuk pemindahan ke Word. |
-| 2 | Rujukan Gambar 3.2 lebih natural | PASS | Kalimat sudah menjadi "Urutan kerja penelitian ditunjukkan secara konseptual pada Gambar 3.2." |
+| 1 | Placeholder eksplisit Gambar 3.1 dan Gambar 3.2 sudah ada | PASS | Draft memuat `[PLACEHOLDER GAMBAR 3.1: Alur Tahapan Penelitian]` dan `[PLACEHOLDER GAMBAR 3.2: Arsitektur Sistem Analisis Serangan DoS pada Arsitektur IoT]`, sehingga aman untuk pemindahan ke Word. |
+| 2 | Rujukan gambar lebih natural dan urut | PASS | Gambar 3.1 muncul lebih dulu pada subbab 3.2, lalu Gambar 3.2 muncul pada subbab 3.5. |
 | 3 | Istilah asing dirapikan | PASS dengan catatan minor | Istilah utama seperti *working mirror*, *track*, *identifier bias*, *gradient boosting*, *pipeline*, dan *dashboard* sudah dominan rapi. Masih ada "model baseline" dan "dashboard statis" pada Tabel 3.2 yang bisa di-*italic* saat polish Word, tetapi tidak mengganggu kelayakan substansi. |
 | 4 | Tabel 3.2 spesifik untuk kebutuhan perangkat lunak/dashboard statis | PASS | Tabel sudah menyebut Python, pandas, scikit-learn, LightGBM/XGBoost, HTML/CSS/JavaScript dashboard statis, JSON/CSV, dan Git/GitHub. Tidak ada klaim sensor, mikrokontroler, gateway fisik, atau hardware IoT. |
 | 5 | Angka dataset, track, dan fitur tetap benar | PASS | Total 3.668.522 baris, split 2.934.817 train dan 733.705 test, Track A/B/C, 10 fitur kandidat, 1 fitur kategorikal, 9 fitur numerik, dan 9 kolom excluded tetap sesuai artefak. |
@@ -28,7 +28,7 @@ Review sebelumnya: `docs/REVIEW_phase7_bab3.md`
 
 ## Sisa Catatan
 
-Tidak ada critical issue atau major blocker. Sisa catatan hanya format kecil: saat masuk Word, italic pada istilah asing di dalam tabel dapat diseragamkan lagi, terutama "baseline" dan "dashboard" pada Tabel 3.2. Catatan ini tidak perlu membuka revisi substansi.
+Tidak ada critical issue atau major blocker. Sisa catatan hanya format kecil: saat masuk Word, italic pada istilah asing di dalam tabel dapat diseragamkan lagi, terutama "baseline" dan "dashboard" pada Tabel 3.2. Penomoran gambar sudah disesuaikan mengikuti urutan kemunculan di naskah. Catatan ini tidak perlu membuka revisi substansi.
 
 ## Final Recommendation
 
