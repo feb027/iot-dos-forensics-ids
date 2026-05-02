@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this repository or its artifacts, please cite it using the metadata below."
+title: "IoT DoS Forensics IDS: Sistem Analisis Serangan DoS pada Arsitektur IoT"
+type: software
+authors:
+  - family-names: "Rochman"
+    given-names: "Febnawan Fatur"
+repository-code: "https://github.com/feb027/iot-dos-forensics-ids"
+url: "https://feb027.github.io/iot-dos-forensics-ids/"
+version: "v1.0-uas-final"
+date-released: "2026-05-02"
+license: "MIT"
+abstract: >-
+  Academic IoT security project for analyzing DoS/DDoS traffic patterns in the
+  BoT-IoT dataset using leakage-aware preprocessing, machine-learning baselines,
+  advanced tabular models, network-forensics interpretation, and dashboard/SOC
+  replay visualizations.
+keywords:
+  - Internet of Things
+  - IoT security
+  - denial of service
+  - intrusion detection
+  - network forensics
+  - BoT-IoT
+  - machine learning
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: "Rochman"
+      given-names: "Febnawan Fatur"
+  title: "Sistem Analisis Serangan DoS pada Arsitektur IoT Berbasis Machine Learning dan Network Forensics Menggunakan Dataset BoT-IoT"
+  year: 2026
+  publisher: "GitHub"
+  url: "https://github.com/feb027/iot-dos-forensics-ids"

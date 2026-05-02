@@ -10,6 +10,8 @@ Machine Learning · Network Forensics · BoT-IoT · SOC Replay Edukatif
 [![Dataset](https://img.shields.io/badge/dataset-BoT--IoT%20UNSW-orange)](https://research.unsw.edu.au/projects/bot-iot-dataset)
 [![Dashboard](https://img.shields.io/badge/dashboard-live-00A67E)](https://feb027.github.io/iot-dos-forensics-ids/)
 [![Scope](https://img.shields.io/badge/scope-academic%20prototype-blueviolet)](#batasan-akademik)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/badge/release-v1.0--uas--final-6f42c1)](https://github.com/feb027/iot-dos-forensics-ids/releases/tag/v1.0-uas-final)
 
 [Dashboard Utama](https://feb027.github.io/iot-dos-forensics-ids/) ·
 [SOC Replay Edukatif](https://iot.aquarise.my.id/soc-demo/demo.html) ·
@@ -195,6 +197,14 @@ Draft laporan tersedia di folder `reports/`:
   https://archive.ics.uci.edu/dataset/942/rt-iot2022
 
 Dataset mentah tidak disimpan di repositori karena ukurannya besar. Repo hanya menyimpan kode, ringkasan hasil, tabel, figure, dan JSON dashboard yang aman dibagikan.
+
+## Sitasi dan Lisensi
+
+Jika repositori atau artefaknya digunakan sebagai rujukan, gunakan metadata pada [`CITATION.cff`](CITATION.cff). Kode dan dokumentasi proyek ini dirilis dengan lisensi [`MIT`](LICENSE).
+
+```text
+Febnawan Fatur Rochman. (2026). IoT DoS Forensics IDS: Sistem Analisis Serangan DoS pada Arsitektur IoT. GitHub. https://github.com/feb027/iot-dos-forensics-ids
+```
 
 ## Batasan Akademik
 
