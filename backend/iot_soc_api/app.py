@@ -33,7 +33,7 @@ class ChatRequest(BaseModel):
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="IoT DoS AI SOC Demo API", version="0.1.0")
+    app = FastAPI(title="IoT DoS SOC Replay API", version="0.1.0")
     app.add_middleware(
         CORSMiddleware,
         allow_origins=["*"],
@@ -46,7 +46,7 @@ def create_app() -> FastAPI:
     def health() -> dict[str, Any]:
         bundle = load_demo_bundle()
         return {
-            "service": "iot-dos-ai-soc-demo",
+            "service": "iot-dos-soc-replay-demo",
             "mode": "vps-backed deterministic artifact-grounded",
             "scenarios": len(bundle.get("scenarios", [])),
             "claim_boundary": bundle.get("claim_boundary"),

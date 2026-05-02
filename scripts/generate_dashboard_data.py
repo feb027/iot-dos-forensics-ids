@@ -267,7 +267,7 @@ def main() -> None:
     elif dataset_summary:
         status = "Fase 3 EDA & Preprocessing ready; modeling not started"
     else:
-        status = "Fase 1 literature review approved; Fase 2 dataset audit pending"
+        status = "Literatur dan audit dataset tersedia"
     data = {
         "project": {
             "title": "Sistem Analisis Serangan DoS pada Arsitektur IoT",

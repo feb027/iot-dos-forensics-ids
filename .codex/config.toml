@@ -1,9 +1,0 @@
-# Project-level Codex config for IoT UAS DoS Forensics IDS.
-# Codex with ChatGPT auth supports `gpt-5.5`; the `gpt-5.5-high` model-id suffix is not supported in this account mode.
-# Use `model_reasoning_effort = "high"` to get the intended high-review behavior.
-model = "gpt-5.5"
-model_reasoning_effort = "high"
-sandbox_mode = "danger-full-access"
-approval_policy = "never"
-project_doc_max_bytes = 65536
-save_sessions = true

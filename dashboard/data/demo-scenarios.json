@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-04-29T14:01:35.952019+00:00",
-  "phase": "Fase 6B — Interactive AI SOC Demo",
+  "generated_at_utc": "2026-05-02T06:56:57.297061+00:00",
+  "phase": "SOC Replay Edukatif",
   "status": "vps_backed_demo_primary_static_fallback",
   "metric_context": {
     "track_a_lightgbm_macro_f1": 0.98847752,
@@ -102,7 +102,7 @@
         },
         {
           "title": "SOC investigation",
-          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+          "description": "Analis SOC menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
         }
       ],
       "grounding": [
@@ -145,7 +145,7 @@
         },
         {
           "title": "SOC investigation",
-          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+          "description": "Analis SOC menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
         }
       ],
       "grounding": [
@@ -188,7 +188,7 @@
         },
         {
           "title": "SOC investigation",
-          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+          "description": "Analis SOC menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
         }
       ],
       "grounding": [
@@ -232,7 +232,7 @@
         },
         {
           "title": "SOC investigation",
-          "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
+          "description": "Analis SOC menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded."
         }
       ],
       "grounding": [

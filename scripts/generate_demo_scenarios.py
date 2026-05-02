@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Interactive AI SOC demo data from committed artifacts.
+"""Generate Interactive SOC Replay demo data from committed artifacts.
 
 This script intentionally creates small, sanitized JSON files for the dashboard.
 It does not export raw datasets or model binaries.
@@ -78,7 +78,7 @@ def timeline(kind: str, outcome: str) -> list[dict[str, str]]:
         },
         {
             "title": "SOC investigation",
-            "description": "AI SOC analyst menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded.",
+            "description": "Analis SOC menyusun evidence chain, risiko FP/FN, dan rekomendasi mitigasi secara artifact-grounded.",
         },
     ]
 
@@ -214,7 +214,7 @@ def main() -> None:
     ])
     bundle = {
         "generated_at_utc": now(),
-        "phase": "Fase 6B — Interactive AI SOC Demo",
+        "phase": "SOC Replay Edukatif",
         "status": "vps_backed_demo_primary_static_fallback",
         "metric_context": {
             "track_a_lightgbm_macro_f1": advanced.get("best_by_track", {}).get("A_realistic_imbalanced", {}).get("macro_f1"),

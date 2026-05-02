@@ -17,7 +17,7 @@ def test_generate_demo_scenarios_outputs_valid_json():
     assert "scenarios=" in result.stdout
     scenarios = json.loads((ROOT / "dashboard/data/demo-scenarios.json").read_text())
     ranges = json.loads((ROOT / "dashboard/data/demo-feature-ranges.json").read_text())
-    assert scenarios["phase"] == "Fase 6B — Interactive AI SOC Demo"
+    assert scenarios["phase"] == "SOC Replay Edukatif"
     assert len(scenarios["scenarios"]) >= 4
     assert "N_IN_Conn_P_DstIP" in ranges["features"]
     assert scenarios["claim_boundary"].startswith("Interactive prototype")
