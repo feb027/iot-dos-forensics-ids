@@ -15,7 +15,6 @@ Machine Learning · Network Forensics · BoT-IoT · SOC Replay Edukatif
 
 [Dashboard Utama](https://feb027.github.io/iot-dos-forensics-ids/) ·
 [SOC Replay Edukatif](https://iot.aquarise.my.id/soc-demo/demo.html) ·
-[Naskah Ilmiah](reports/) ·
 [Artefak Eksperimen](results/) ·
 [Dataset BoT-IoT](https://research.unsw.edu.au/projects/bot-iot-dataset)
 
@@ -107,7 +106,6 @@ dashboard/   Dashboard statis, data JSON, dan halaman SOC replay
 data/        Folder lokal dataset mentah/proses; tidak di-commit
 notebooks/   Notebook EDA, preprocessing, modeling, dan forensik
 references/  Literature matrix, BibTeX, dan sumber rujukan
-reports/     Draft naskah ilmiah, daftar pustaka, dan lampiran
 results/     Metrik, tabel, dan figure hasil eksperimen
 scripts/     Script reproducible untuk audit sampai dashboard
 tests/       Unit tests dan smoke tests
@@ -174,20 +172,6 @@ python3 scripts/generate_dashboard_data.py
 | Error analysis | `results/tables/forensic_error_analysis.csv` |
 | Dashboard data | `dashboard/data/dashboard-data.json` |
 | Demo scenarios | `dashboard/data/demo-scenarios.json` |
-
-## Naskah Ilmiah
-
-Draft laporan tersedia di folder `reports/`:
-
-| Bagian | File |
-|---|---|
-| BAB 1 | `reports/manuscript-draft-bab1.md` |
-| BAB 2 | `reports/manuscript-draft-bab2.md` |
-| BAB 3 | `reports/manuscript-draft-bab3.md` |
-| BAB 4 | `reports/manuscript-draft-bab4.md` |
-| BAB 5 | `reports/manuscript-draft-bab5.md` |
-| Daftar pustaka | `reports/manuscript-daftar-pustaka.md` |
-| Lampiran | `reports/manuscript-lampiran.md` |
 
 ## Dataset
 

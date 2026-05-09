@@ -10,18 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_required_scaffold_files_exist() -> None:
     required = [
         "README.md",
-        "docs/project-brief.md",
-        "docs/dashboard-spec.md",
         "docs/dataset-notes.md",
         "references/literature-matrix.md",
         "references/references.bib",
-        "reports/manuscript-draft-bab1.md",
-        "reports/manuscript-draft-bab2.md",
-        "reports/manuscript-draft-bab3.md",
-        "reports/manuscript-draft-bab4.md",
-        "reports/manuscript-draft-bab5.md",
-        "reports/manuscript-daftar-pustaka.md",
-        "reports/manuscript-lampiran.md",
         "dashboard/index.html",
         "dashboard/app.js",
         "dashboard/data/dashboard-data.json",
